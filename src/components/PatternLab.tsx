@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 
 type Pattern = 'aritmetika' | 'geometri';
 
@@ -17,7 +18,7 @@ export default function PatternLab() {
   const dots = Math.min(current, 42);
 
   return <section className="labCard" aria-label="Laboratorium pola bilangan">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB POLA</span><h3>Bagaimana pola bertumbuh?</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Bagaimana pola bertumbuh?" />
     <p className="labIntro">Pilih jenis pola, atur bilangan awal dan langkahnya, lalu lihat suku ke-n.</p>
     <div className="opTabs" role="group" aria-label="Jenis pola">
       <button type="button" className={`opTab ${pattern === 'aritmetika' ? 'active' : ''}`} aria-pressed={pattern === 'aritmetika'} onClick={() => setPattern('aritmetika')}>Aritmetika (+)</button>

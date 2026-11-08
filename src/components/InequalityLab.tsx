@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 import {designTokens} from '../design/tokens.generated';
 
 const c = designTokens.color;
@@ -16,7 +17,7 @@ export default function InequalityLab() {
   const label = `${a}x + ${b} ${sign} ${limit}`;
 
   return <section className="labCard" aria-label="Laboratorium pertidaksamaan linear">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB PERTIDAKSAMAAN</span><h3>Daerah mana yang memenuhi?</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Daerah mana yang memenuhi?" />
     <p className="labIntro">Ubah koefisien, batas, dan tanda. Garis bilangan menunjukkan semua nilai x yang membuat pertidaksamaan benar.</p>
     <div className="opTabs" role="group" aria-label="Pilih tanda pertidaksamaan">
       {signs.map(item => <button key={item} type="button" className={`opTab ${sign === item ? 'active' : ''}`} aria-pressed={sign === item} onClick={() => setSign(item)}>{item}</button>)}

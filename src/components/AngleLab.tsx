@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 import {designTokens} from '../design/tokens.generated';
 
 const c = designTokens.color;
@@ -15,7 +16,7 @@ export default function AngleLab() {
   const other = 180 - angle;
 
   return <section className="labCard" aria-label="Laboratorium hubungan antar sudut">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB SUDUT</span><h3>Sudut mana yang sama besar?</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Sudut mana yang sama besar?" />
     <p className="labIntro">Dua garis sejajar dipotong satu garis transversal. Geser sudutnya dan amati pasangan sudut yang terbentuk.</p>
     <div className="sliderRow"><label htmlFor="angle-value">Besar sudut transversal</label><strong className="valueChip">{angle}°</strong></div>
     <input id="angle-value" className="rangeInput" type="range" min="20" max="160" value={angle} onChange={event => setAngle(Number(event.target.value))}/>

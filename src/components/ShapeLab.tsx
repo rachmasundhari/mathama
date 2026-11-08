@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 import {designTokens} from '../design/tokens.generated';
 
 const c = designTokens.color;
@@ -15,7 +16,7 @@ export default function ShapeLab() {
   const points = shape === 'segitiga' ? `60,220 ${60 + base * 28},220 60,${220 - height * 28}` : shape === 'jajargenjang' ? `100,220 ${100 + base * 28},220 ${60 + base * 28},${220 - height * 28} 60,${220 - height * 28}` : shape === 'trapesium' ? `60,220 ${60 + base * 28},220 ${60 + (base - top) * 14 + top * 28},${220 - height * 28} ${60 + (base - top) * 14},${220 - height * 28}` : '';
 
   return <section className="labCard" aria-label="Laboratorium segitiga dan segiempat">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB BANGUN DATAR</span><h3>Luas dan keliling</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Luas dan keliling" />
     <p className="labIntro">Pilih bangun, lalu ubah ukurannya. Perhatikan rumus mana yang tetap dan mana yang berubah.</p>
     <div className="opTabs" role="group" aria-label="Pilih bangun datar">
       {shapes.map(item => <button key={item} type="button" className={`opTab ${shape === item ? 'active' : ''}`} aria-pressed={shape === item} onClick={() => setShape(item)}>{item}</button>)}

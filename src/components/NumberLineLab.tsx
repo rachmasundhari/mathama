@@ -1,5 +1,5 @@
 import React, {useRef, useState} from 'react';
-import {FlaskConical} from 'lucide-react';
+import LabHeader from './LabHeader';
 import {designTokens} from '../design/tokens.generated';
 
 const c = designTokens.color;
@@ -53,7 +53,7 @@ export default function NumberLineLab() {
   const check = () => setResult(start === mission.start && step === mission.step ? 'correct' : 'wrong');
   const nextMission = () => {setMissionIndex((missionIndex + 1) % missions.length); setResult(null);};
   return <section className="labCard" aria-label="Eksperimen garis bilangan">
-    <div className="labHeader"><div><span className="cardChip"><FlaskConical size={12} aria-hidden="true" /> Lab Interaktif</span><h3>Bergerak di garis bilangan</h3></div></div>
+    <LabHeader title="Bergerak di garis bilangan" />
     <p className="labIntro">Bilangan positif melangkah ke kanan, sedangkan bilangan negatif ke kiri.</p>
     <div className="labMission" role="group" aria-label={`Tantangan ${missionIndex + 1} dari ${missions.length}`}>
       <div className="labMissionDots" aria-hidden="true">

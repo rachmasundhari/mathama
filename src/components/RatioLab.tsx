@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 
 const price = 3000;
 
@@ -10,7 +11,7 @@ export default function RatioLab() {
 
   if (mode === 'berbalik') {
     return <section className="labCard" aria-label="Perbandingan berbalik nilai">
-      <div className="labHeader"><div><span className="eyebrow teal">PERBANDINGAN BERBALIK NILAI</span><h3>Menambah pekerja, mengurangi waktu</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+      <LabHeader title="Menambah pekerja, mengurangi waktu" />
       <p className="labIntro">Sebuah dinding butuh 24 hari-orang untuk diselesaikan. Atur jumlah pekerja dan lihat waktu yang dibutuhkan.</p>
       <div className="opTabs" role="group" aria-label="Jenis perbandingan">
         <button type="button" className="opTab" onClick={() => setMode('senilai')}>Senilai</button>
@@ -27,7 +28,7 @@ export default function RatioLab() {
   }
 
   return <section className="labCard" aria-label="Perbandingan senilai">
-    <div className="labHeader"><div><span className="eyebrow teal">PERBANDINGAN SENILAI</span><h3>Semakin banyak buku, bagaimana harganya?</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Semakin banyak buku, bagaimana harganya?" />
     <p className="labIntro">Harga satu buku tulis Rp3.000. Atur jumlah bukunya dan amati total harganya.</p>
     <div className="opTabs" role="group" aria-label="Jenis perbandingan">
       <button type="button" className="opTab active" aria-pressed="true" onClick={() => setMode('senilai')}>Senilai</button>

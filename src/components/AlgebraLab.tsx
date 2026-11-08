@@ -1,13 +1,11 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 
 export default function AlgebraLab() {
   const [x, setX] = useState(4);
   return (
     <section className="labCard" aria-label="Laboratorium variabel aljabar">
-      <div className="labHeader">
-        <div><span className="eyebrow teal">COBA SENDIRI</span><h3>Bagaimana cara kerja 2x + 3?</h3></div>
-        <span className="livePill"><span className="liveDot"/> Interaktif</span>
-      </div>
+      <LabHeader title="Bagaimana cara kerja 2x + 3?" />
       <p className="labIntro">Setiap kotak <strong>x</strong> menyimpan jumlah kelereng yang sama. Geser nilainya untuk melihat perubahan total.</p>
       <div className="sliderRow"><label htmlFor="algebra-value">Isi setiap kotak</label><strong className="valueChip">x = {x}</strong></div>
       <input id="algebra-value" type="range" min="1" max="8" step="1" value={x} onChange={(e) => setX(Number(e.target.value))} className="rangeInput"/>

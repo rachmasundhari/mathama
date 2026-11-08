@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 import {designTokens} from '../design/tokens.generated';
 
 const c = designTokens.color;
@@ -13,7 +14,7 @@ export default function SimilarityLab() {
   const areaRatio = factor * factor;
 
   return <section className="labCard" aria-label="Laboratorium kesebangunan segitiga">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB KESEBANGUNAN</span><h3>Ukuran berubah, bentuk tetap</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Ukuran berubah, bentuk tetap" />
     <p className="labIntro">Dua segitiga sebangun memiliki sudut yang sama, tetapi panjang sisinya berlipat dengan faktor yang sama.</p>
     <div className="sliderRow"><label htmlFor="similarity-factor">Faktor skala</label><strong className="valueChip">×{factor.toFixed(1).replace('.', ',')}</strong></div>
     <input id="similarity-factor" className="rangeInput" type="range" min="0.6" max="2" step="0.1" value={factor} onChange={event => setFactor(Number(event.target.value))}/>

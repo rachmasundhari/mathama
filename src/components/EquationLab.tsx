@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 import {designTokens} from '../design/tokens.generated';
 
 const palette = designTokens.color;
@@ -17,7 +18,7 @@ export default function EquationLab() {
   const solved = Math.abs(difference) < 1e-9;
 
   return <section className="labCard" aria-label="Laboratorium persamaan linear">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB PERSAMAAN</span><h3>Buat timbangan menjadi seimbang</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Buat timbangan menjadi seimbang" />
     <p className="labIntro">Timbangan seimbang ketika kedua sisi bernilai sama. Geser nilai x, lalu temukan posisi seimbangnya.</p>
     <div className="equationEditor">
       <label htmlFor="equation-a">Koefisien a <strong>{a}</strong><input id="equation-a" type="range" className="rangeInput" min="1" max="5" value={a} onChange={event => setA(Number(event.target.value))}/></label>

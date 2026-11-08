@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 
 function factorsOf(value: number) {
   return Array.from({length: value}, (_, index) => index + 1).filter(number => value % number === 0);
@@ -22,7 +23,7 @@ export default function FactorLab() {
   const kpk = first * second / fpb;
 
   return <section className="labCard" aria-label="Laboratorium faktor bilangan">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB FAKTOR</span><h3>Berapa cara membagi rata?</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Berapa cara membagi rata?" />
     <p className="labIntro">Faktor adalah bilangan yang membagi habis. Atur dua bilangan dan temukan faktor persekutuan, FPB, serta KPK-nya.</p>
     <div className="twoSliders">
       <div><div className="sliderRow"><label htmlFor="factor-first">Bilangan pertama</label><strong className="valueChip">{first}</strong></div><input id="factor-first" className="rangeInput" type="range" min="2" max="60" value={first} onChange={event => setFirst(Number(event.target.value))}/></div>

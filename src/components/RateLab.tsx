@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 
 function formatNumber(value: number) {
   return value.toLocaleString('id-ID', {maximumFractionDigits: 1});
@@ -10,7 +11,7 @@ export default function RateLab() {
   const speed = distance / time;
 
   return <section className="labCard" aria-label="Laboratorium laju perubahan satuan">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB LAJU</span><h3>Berapa cepat kamu bergerak?</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Berapa cepat kamu bergerak?" />
     <p className="labIntro">Kecepatan adalah jarak yang ditempuh dibagi waktu. Ubah keduanya dan lihat nilai satuannya.</p>
     <div className="twoSliders">
       <div><div className="sliderRow"><label htmlFor="rate-distance">Jarak</label><strong className="valueChip">{distance} km</strong></div><input id="rate-distance" className="rangeInput" type="range" min="10" max="300" step="10" value={distance} onChange={event => setDistance(Number(event.target.value))}/></div>

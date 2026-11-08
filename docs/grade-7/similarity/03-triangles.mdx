@@ -3,6 +3,8 @@ title: "Kesebangunan pada Segitiga"
 sidebar_position: 3
 slug: /grade-7/similarity/triangles
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 import Similarity3DLab from '@site/src/components/Similarity3DLab';
 import SimilarityLab from '@site/src/components/SimilarityLab';
@@ -24,6 +26,8 @@ Materi ini memuat konsep lengkap untuk subbab ini. Cerita pengayaan ada di akhir
 ### Tiga cara memeriksa kesebangunan
 
 Dua segitiga sebangun jika bentuknya sama dan ukurannya boleh berbeda. Ada tiga cara memeriksanya.
+
+<img className="lessonIllustration" src={useBaseUrl('/img/lessons/g7-similarity-triangles-01-objek.webp')} alt="Dua penggaris segitiga sebangun, besar dan kecil" />
 
 **Sudut-sudut (AA).** Dua pasang sudut yang bersesuaian sama besar. Karena jumlah sudut segitiga selalu $180^\circ$, sudut ketiga otomatis sama. Dua sudut sudah mengunci bentuk segitiga, sehingga segitiga yang lain hanya berbeda ukuran.
 
@@ -59,7 +63,9 @@ Karena sisi yang bersesuaian berbanding, tinggi tiang dapat dihitung tanpa meman
 
 ## 2. Contoh
 
-**Contoh 1.** Tongkat setinggi 1 m memiliki bayangan 1,5 m. Pada saat yang sama, bayangan tiang 12 m. Tentukan tinggi tiang.
+<ExampleCard label="Contoh 1">
+
+Tongkat setinggi 1 m memiliki bayangan 1,5 m. Pada saat yang sama, bayangan tiang 12 m. Tentukan tinggi tiang.
 
 Misalkan tinggi tiang $h$. Sisi tegak dibandingkan dengan sisi tegak, dan bayangan dengan bayangan.
 
@@ -85,7 +91,11 @@ $$
 
 Kedua hasil bagi sama, jadi tinggi tiang 8 m.
 
-**Contoh 2.** Penyangga spanduk berbentuk segitiga siku-siku dengan sisi 9 cm dan 12 cm. Sisi miringnya 15 cm. Penyangga besar memakai sisi 36 cm sebagai pasangan sisi 9 cm. Tentukan sisi lainnya.
+</ExampleCard>
+
+<ExampleCard label="Contoh 2">
+
+Penyangga spanduk berbentuk segitiga siku-siku dengan sisi 9 cm dan 12 cm. Sisi miringnya 15 cm. Penyangga besar memakai sisi 36 cm sebagai pasangan sisi 9 cm. Tentukan sisi lainnya.
 
 Faktor skala:
 
@@ -113,7 +123,11 @@ $$
 
 Hasilnya sesuai. Ketiga sisi berlipat dengan faktor 4.
 
-**Contoh 3.** Dua segitiga sebangun. Sisi 4 cm berpasangan dengan 10 cm, dan sisi 6 cm berpasangan dengan $x$. Tentukan $x$.
+</ExampleCard>
+
+<ExampleCard label="Contoh 3">
+
+Dua segitiga sebangun. Sisi 4 cm berpasangan dengan 10 cm, dan sisi 6 cm berpasangan dengan $x$. Tentukan $x$.
 
 $$
 \frac{4}{10} = \frac{6}{x}
@@ -129,7 +143,11 @@ $$
 
 Periksa: $\frac{6}{15} = \frac{2}{5}$ dan $\frac{4}{10} = \frac{2}{5}$. Kedua perbandingan sama.
 
-**Contoh 4.** Sebuah segitiga memiliki sudut $90^\circ$ dan $34^\circ$. Segitiga lain memiliki sudut $90^\circ$ dan $34^\circ$. Apakah keduanya sebangun?
+</ExampleCard>
+
+<ExampleCard label="Contoh 4">
+
+Sebuah segitiga memiliki sudut $90^\circ$ dan $34^\circ$. Segitiga lain memiliki sudut $90^\circ$ dan $34^\circ$. Apakah keduanya sebangun?
 
 Sudut ketiga segitiga pertama:
 
@@ -138,6 +156,8 @@ $$
 $$
 
 Sudut ketiga segitiga kedua juga $56^\circ$. Dua pasang sudut sama besar, jadi kedua segitiga sebangun menurut AA.
+
+</ExampleCard>
 
 ## 3. Lab
 

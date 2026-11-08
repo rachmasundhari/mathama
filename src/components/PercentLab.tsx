@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 
 const rupiah = (value: number) => `Rp${Math.round(value).toLocaleString('id-ID')}`;
 
@@ -10,7 +11,7 @@ export default function PercentLab() {
   const finalPrice = mode === 'diskon' ? price - amount : price + amount;
 
   return <section className="labCard" aria-label="Laboratorium persen">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB PERSEN</span><h3>Berapa yang kamu bayar setelah diskon?</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Berapa yang kamu bayar setelah diskon?" />
     <p className="labIntro">Geser harga dan persentase. Lihat bagaimana satu angka persen mengubah uang yang harus dibayar.</p>
     <div className="opTabs" role="group" aria-label="Pilih jenis persentase">
       <button type="button" className={`opTab ${mode === 'diskon' ? 'active' : ''}`} aria-pressed={mode === 'diskon'} onClick={() => setMode('diskon')}>Diskon</button>

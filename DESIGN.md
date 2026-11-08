@@ -238,6 +238,28 @@ it.
   `aspect-ratio`, never a fixed pixel height. No text over the image.
 - Step cards: one pale-sky icon tile (`#EAF5FA`) with an ocean icon for all
   three steps; do not tint each step differently.
+- Card chip (`.cardChip`): 12px, weight 800, letter-spacing .08em, uppercase,
+  radius 8px, pale sky `#EAF5FA` ground, ocean label, 5px 11px padding, 6px icon
+  gap. One chip per card, above the title. The only variants are the icon
+  (flask, question mark, pencil) and the label text.
+- Lab header (`LabHeader`): chip "Lab Interaktif" with the flask icon, a 12px
+  gap to the title, and the title as `h3` at 22px with card-title tracking. An
+  optional status pill sits in the right slot; only the 3D lab uses it. The
+  generic "Interaktif" pill is retired.
+- Think card (`.thinkCard`): 18px radius, 1px sky border, white ground, no
+  shadow. The chip uses the shared chip values with a 9px gap to the question.
+  Question and answer copy are 14px/1.65, and the header chip stays 12px. The
+  answer panel has a full 1px sky border on all four sides and a 12px radius,
+  with a 1px sky divider above it. The toggle reads "Lihat jawaban" and changes
+  to "Sembunyikan jawaban" when open; a card without an answer slot hides the
+  toggle.
+- Example card (`.exampleCard`): 18px radius, 1px sky border, white ground, no
+  shadow. The pencil chip carries the whole example label, with a 10px gap to
+  the body. Body text and list items are 14px/1.65; display math keeps a 14px
+  top margin. A wide table scrolls inside the card, so the page never scrolls
+  sideways.
+- Long chip labels such as `Contoh 1: ...` wrap inside the chip at 390px; the
+  chip never widens the card.
 
 ### 7.4 Lesson page
 
@@ -247,7 +269,9 @@ it.
 - `h2` is ocean, 29px, followed by a 48px aqua underline.
 - Body prose uses slate at 16px/1.86.
 - Blockquotes: pale ground, 4px aqua left border.
-- Tables: pale sky header, alternating `#F5FAFD` rows.
+- Tables: 12px header on pale ice `#F4FAFD`, 14px body, 16px radius, 1px sky
+  border, 12px 16px cell padding. Global CSS styles every lesson table; do not
+  add per-table classes.
 - Admonitions: 13px radius, aqua left border, no shadow.
 
 ### 7.5 Lab and quiz cards

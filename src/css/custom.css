@@ -244,7 +244,7 @@ h1,h2,h3,h4 {letter-spacing: -.035em;}
 .theme-doc-markdown .admonition {border-left:4px solid #1a9db5;background:#f7fbfd;box-shadow:none;}
 .theme-doc-markdown table {display:table;width:auto;min-width:min(100%,540px);max-width:100%;margin:24px 0;border:1px solid var(--c-sky);border-radius:16px;border-collapse:separate;border-spacing:0;overflow:hidden;font-family:inherit;font-size:var(--type-body-small-size);line-height:1.65;}
 .theme-doc-markdown table thead {background:var(--c-ice);}
-.theme-doc-markdown table th {padding:11px 16px;text-align:left;color:var(--c-ocean);font-size:var(--type-caption-size);font-weight:700;border:0;border-bottom:1px solid var(--c-sky);}
+.theme-doc-markdown table th {padding:12px 16px;text-align:left;color:var(--c-ocean);font-size:var(--type-caption-size);font-weight:700;border:0;border-bottom:1px solid var(--c-sky);}
 .theme-doc-markdown table td {padding:12px 16px;vertical-align:top;color:var(--c-slate);border:0;border-bottom:1px solid var(--c-sky);}
 .theme-doc-markdown table tr:last-child td {border-bottom:0;}
 .theme-doc-markdown table tr:nth-child(even) {background:transparent;}
@@ -707,7 +707,7 @@ body {caret-color:var(--c-ocean);}
 @media (max-width:720px){.conceptFigure{padding:12px;border-radius:12px;}}
 
 /* Reflection cards for material lessons, 2026-11-08 */
-.thinkCard {margin:26px 0;padding:20px;border:1px solid var(--c-sky);border-radius:18px;background:var(--c-white);box-shadow:0 12px 28px rgba(15,80,105,.07);}
+.thinkCard {margin:26px 0;padding:20px;border:1px solid var(--c-sky);border-radius:18px;background:var(--c-white);box-shadow:none;}
 .thinkCard summary {list-style:none;cursor:pointer;border-radius:8px;padding-left:0!important;}
 .thinkCard summary::before {display:none;}
 .thinkCard summary::-webkit-details-marker {display:none;}
@@ -715,12 +715,13 @@ body {caret-color:var(--c-ocean);}
 .thinkCard summary:focus-visible {outline:2px solid var(--c-ocean);outline-offset:2px;}
 .thinkCard p {margin:0;}
 .thinkCard summary p {font-size:var(--type-body-small-size);line-height:1.65;color:var(--c-ink);}
-.thinkCard summary p strong:first-child {display:flex;align-items:center;gap:6px;width:fit-content;margin:0 0 9px;padding:5px 11px;border-radius:8px;background:var(--c-sky-pale);color:var(--c-ocean);font-size:var(--type-caption-size);letter-spacing:.08em;text-transform:uppercase;}
+.thinkCardLabel {display:flex;align-items:center;gap:6px;width:fit-content;margin:0 0 9px;padding:5px 11px;border-radius:8px;background:var(--c-sky-pale);color:var(--c-ocean);font-size:var(--type-caption-size);font-weight:800;letter-spacing:.08em;line-height:var(--type-caption-line);text-transform:uppercase;}
 .thinkCard summary::after {content:"Lihat jawaban";display:inline-block;margin-top:14px;padding:8px 14px;border-radius:10px;border:1px solid var(--c-teal);background:var(--c-white);color:var(--c-ocean);font-size:12px;font-weight:800;}
+.thinkCard[data-no-answer] summary::after {display:none;}
 .thinkCard[open] summary::after {content:"Sembunyikan jawaban";background:var(--c-sky-pale);}
-.thinkCard .collapsibleContent {margin-top:0;padding-top:14px;border-top:1px solid var(--c-sky);}
-.thinkCard>div p {margin:0;padding:13px 15px;border-radius:12px;background:var(--c-white);border:1px solid var(--c-sky);color:var(--c-ink);font-size:var(--type-body-small-size);line-height:1.65;}
-.thinkCard>div p strong:first-child {color:var(--c-ocean);}
+.thinkCardBody {margin-top:0;padding-top:14px;border-top:1px solid var(--c-sky);}
+.thinkCardBody p {margin:0;padding:13px 15px;border-radius:12px;background:var(--c-white);border:1px solid var(--c-sky);color:var(--c-ink);font-size:var(--type-body-small-size);line-height:1.65;}
+.thinkCardBody p strong:first-child {color:var(--c-ocean);}
 @media (max-width:720px){.thinkCard{padding:17px 16px;border-radius:14px;}}
 
 /* Summary cards for material lessons, 2026-11-08 */
@@ -835,16 +836,25 @@ body {caret-color:var(--c-ocean);}
 .mathamaToc .table-of-contents>li:first-child {margin-top:0;}
 @media (max-width:996px) {.mathamaToc {display:none;}}
 /* Worked example blocks */
-.cardChip {display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:8px;background:var(--c-sky-pale);color:var(--c-ocean);font-size:var(--type-caption-size);font-weight:800;letter-spacing:.08em;text-transform:uppercase;}
-.exampleCard {margin:26px 0;padding:22px 24px;border:1px solid var(--c-sky);border-radius:18px;background:var(--c-white);box-shadow:0 12px 28px rgba(15,80,105,.05);}
+.cardChip {display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:8px;background:var(--c-sky-pale);color:var(--c-ocean);font-size:var(--type-caption-size);font-weight:800;letter-spacing:.08em;line-height:var(--type-caption-line);text-transform:uppercase;}
+.exampleCard {margin:26px 0;padding:22px 24px;border:1px solid var(--c-sky);border-radius:18px;background:var(--c-white);overflow-x:auto;}
 .exampleCard .cardChip {margin-bottom:10px;}
 .exampleCard p,.exampleCard li {font-size:var(--type-body-small-size);line-height:1.65;}
 .exampleCard ul {margin:10px 0 14px;}
+.exampleCard ol {margin:10px 0 14px;}
 .exampleCard .katex-display {margin:14px 0 0;}
+.thinkCard li,.thinkCard ol,.thinkCard ul,.exampleCard ol {font-size:var(--type-body-small-size);line-height:1.65;}
+.thinkCard ul,.thinkCard ol {margin:10px 0 14px;}
 @media (max-width:720px) {.exampleCard {padding:18px 16px;border-radius:14px;}}
 /* Lab header chip spacing */
 .labHeader .cardChip + h3,.quizTop .cardChip + h3 {margin-top:12px;}
+.labHeaderStatus {display:flex;align-items:center;flex-shrink:0;}
 /* Navbar brand spacing */
 .navbar__brand {gap:6px;}
 .navbar__logo {margin-right:0;}
 .labHeader:has(.cardChip) + .labIntro {margin-top:10px!important;}
+
+/* Flat content surfaces; labs and practice keep depth. */
+.exampleCard,.thinkCard,.stepCard,.stepCard:hover,.chapterCard,.chapterCard:hover,.catalogCard,.catalogCard:hover,.castCard,.castCard:hover,.lessonIllustration,.floatingNote,.theme-doc-markdown h2[id$="-ringkasan"] + ul {box-shadow:none;}
+
+@media (max-width:720px) {.theme-doc-markdown table {display:block;max-width:100%;min-width:0;overflow-x:auto;}}

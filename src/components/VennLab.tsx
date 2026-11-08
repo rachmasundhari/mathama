@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 import {designTokens} from '../design/tokens.generated';
 
 const c = designTokens.color;
@@ -14,7 +15,7 @@ export default function VennLab() {
   const total = union + outside;
 
   return <section className="labCard" aria-label="Laboratorium diagram Venn">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB HIMPUNAN</span><h3>Dua lingkaran, satu semesta</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Dua lingkaran, satu semesta" />
     <p className="labIntro">Atur banyak anggota di setiap daerah. Diagram Venn menunjukkan hubungan dua himpunan dalam satu semesta.</p>
     <div className="equationEditor">
       <label htmlFor="venn-a">Hanya A <strong>{onlyA}</strong><input id="venn-a" type="range" className="rangeInput" min="0" max="8" value={onlyA} onChange={event => setOnlyA(Number(event.target.value))}/></label>

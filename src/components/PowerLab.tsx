@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 
 export default function PowerLab() {
   const [base, setBase] = useState(3);
@@ -8,7 +9,7 @@ export default function PowerLab() {
   const root = Math.sqrt(value);
 
   return <section className="labCard" aria-label="Laboratorium bilangan berpangkat">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB PANGKAT</span><h3>Perkalian yang berulang</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Perkalian yang berulang" />
     <p className="labIntro">Geser basis dan eksponen. Lihat bagaimana satu bilangan kecil bisa tumbuh cepat.</p>
     <div className="twoSliders">
       <div>

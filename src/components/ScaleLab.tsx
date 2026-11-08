@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 
 const scales = [
   {label: '1 : 100', value: 100},
@@ -21,7 +22,7 @@ export default function ScaleLab() {
   const realCm = mapLength * scale.value;
 
   return <section className="labCard" aria-label="Laboratorium skala">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB SKALA</span><h3>Seberapa jauh sebenarnya?</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Seberapa jauh sebenarnya?" />
     <p className="labIntro">Peta mengecilkan jarak asli. Pilih skala, atur jarak pada peta, lalu temukan jarak sebenarnya.</p>
     <div className="scaleChooser" role="group" aria-label="Pilih skala peta">
       {scales.map((option, index) => <button type="button" key={option.label} className={`scaleChip ${index === scaleIndex ? 'active' : ''}`} aria-pressed={index === scaleIndex} onClick={() => setScaleIndex(index)}>{option.label}</button>)}

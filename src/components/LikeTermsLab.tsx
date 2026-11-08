@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 
 const examples = [
   {terms: ['3x', '2y', '4x'], question:'Suku mana yang bisa digabung?', answer: ['3x','4x'], result:'7x + 2y', explanation:'3x dan 4x sama-sama memiliki variabel x.'},
@@ -12,7 +13,7 @@ export default function LikeTermsLab() {
   const correct = picked.length === data.answer.length && data.answer.every(term => picked.includes(term));
   const choose = (term:string) => {if(checked) return; setPicked(old=>old.includes(term)?old.filter(t=>t!==term):[...old,term]);};
   return <section className="labCard">
-    <div className="labHeader"><div><span className="eyebrow teal">PILIH SUKU SEJENIS</span><h3>{data.question}</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title={data.question} />
     <p className="labIntro">Pilih dua suku yang bisa langsung dijumlahkan.</p>
     <div className="termChooser">{data.terms.map(term=><button type="button" key={term} className={`termTile ${picked.includes(term)?'picked':''}`} aria-pressed={picked.includes(term)} disabled={checked} onClick={()=>choose(term)}>{term}</button>)}</div>
     {checked && <div role="status" className={`feedback ${correct?'feedbackCorrect':'feedbackIncorrect'}`}><strong>{correct?'✓ Benar!':'Belum tepat.'}</strong><p>{data.explanation} Bentuk sederhananya: <strong>{data.result}</strong>.</p></div>}

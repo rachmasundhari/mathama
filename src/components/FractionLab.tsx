@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 
 type Op = '+' | '−' | '×' | '÷';
 const operations: Op[] = ['+', '−', '×', '÷'];
@@ -40,7 +41,7 @@ export default function FractionLab() {
   const comparison = left === right ? '=' : left > right ? '>' : '<';
 
   return <section className="labCard" aria-label="Laboratorium pecahan">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB BILANGAN RASIONAL</span><h3>Pecahan mana yang lebih besar?</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Pecahan mana yang lebih besar?" />
     <p className="labIntro">Atur pembilang dan penyebut kedua pecahan. Bandingkan luas daerahnya, lalu periksa hasil operasinya.</p>
     <div className="fractionStage">
       <div className="fractionColumn">

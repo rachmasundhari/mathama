@@ -9,7 +9,6 @@ import NumberLineLab from '@site/src/components/NumberLineLab';
 import NumberLineFigure from '@site/src/components/NumberLineFigure';
 import LessonComplete from '@site/src/components/LessonComplete';
 import QuizRunner from '@site/src/components/QuizRunner';
-import {CircleQuestionMark, Pencil} from 'lucide-react';
 
 <div className="lessonKicker">KELAS 7 · BILANGAN BULAT · ±20 MENIT</div>
 
@@ -33,6 +32,8 @@ Untuk menghitung banyak benda, kita biasa memakai bilangan **0, 1, 2, 3, ...**. 
 
 Namun, bilangan cacah saja tidak cukup. Misalnya, untuk menyatakan suhu **3 derajat di bawah 0°C** kita menulisnya dengan **−3°C**.
 
+<img className="lessonIllustration" src={useBaseUrl('/img/lessons/g7-integers-number-line-01-objek.webp')} alt="Termometer di dinding dekat jalan menurun ke basement sekolah" />
+
 Dalam bilangan bulat, bilangan yang kurang dari nol disebut **bilangan bulat negatif**, sedangkan bilangan yang lebih dari nol disebut **bilangan bulat positif**. Bilangan 0 berada di antara keduanya.
 
 $$
@@ -49,14 +50,19 @@ Bilangan seperti $\frac{1}{2}$ dan $2{,}5$ **bukan bilangan bulat** karena nilai
 
 Di mal, kita bisa menemukan lantai B1, B2, dan seterusnya. Huruf B di situ adalah nama lantai di bawah lantai dasar. **B1 adalah nama lantai**, bukan penulisan bilangan negatif. Akan tetapi, jika lantai dasar dianggap sebagai posisi 0, lantai pertama di bawahnya dapat kita gambarkan sebagai posisi $-1$.
 
-<details className="thinkCard">
-  <summary>
-    <p><strong><CircleQuestionMark size={12} aria-hidden="true" /> Coba pikirkan</strong> Mana yang dapat dinyatakan dengan bilangan negatif: suhu 4°C di bawah nol, 3 buah apel, atau posisi dua lantai di bawah lantai dasar?</p>
-  </summary>
-  <div>
-    <p><strong>Jawaban:</strong> Suhu 4°C di bawah nol dapat ditulis −4°C. Jika lantai dasar dijadikan posisi 0, dua lantai di bawahnya dapat ditulis −2. Tiga buah apel menunjukkan banyak benda, yaitu 3.</p>
-  </div>
-</details>
+<ThinkCard>
+
+<ThinkCard.Question>
+
+Mana yang dapat dinyatakan dengan bilangan negatif: suhu 4°C di bawah nol, 3 buah apel, atau posisi dua lantai di bawah lantai dasar?
+
+</ThinkCard.Question>
+<ThinkCard.Answer>
+
+**Jawaban:** Suhu 4°C di bawah nol dapat ditulis −4°C. Jika lantai dasar dijadikan posisi 0, dua lantai di bawahnya dapat ditulis −2. Tiga buah apel menunjukkan banyak benda, yaitu 3.
+
+</ThinkCard.Answer>
+</ThinkCard>
 
 ## 2. Memahami garis bilangan
 
@@ -103,7 +109,9 @@ Alasannya, $-10$ berada lebih ke kiri pada garis bilangan.
 
 Mengurutkan bilangan berarti menyusunnya dari **terkecil ke terbesar** atau dari **terbesar ke terkecil**.
 
-**Contoh:** Urutkan $3, -2, 0, -5, 1$ dari yang terkecil ke terbesar.
+<ExampleCard label="Contoh">
+
+Urutkan $3, -2, 0, -5, 1$ dari yang terkecil ke terbesar.
 
 Perhatikan dahulu bilangan negatifnya. Di antara $-5$ dan $-2$, bilangan yang lebih kecil adalah $-5$. Setelah kedua bilangan negatif, tempatkan 0, lalu susun bilangan positif dari yang lebih kecil.
 
@@ -121,14 +129,21 @@ $$
 3 > 1 > 0 > -2 > -5
 $$
 
-<details className="thinkCard">
-  <summary>
-    <p><strong><CircleQuestionMark size={12} aria-hidden="true" /> Coba jawab</strong> Urutkan −1, 4, −6, 2, dan 0 dari yang terkecil ke terbesar.</p>
-  </summary>
-  <div>
-    <p><strong>Jawaban:</strong> −6, −1, 0, 2, 4. Pada garis bilangan, bilangan-bilangan itu tersusun dari kiri ke kanan.</p>
-  </div>
-</details>
+</ExampleCard>
+
+<ThinkCard label="Coba jawab">
+
+<ThinkCard.Question>
+
+Urutkan −1, 4, −6, 2, dan 0 dari yang terkecil ke terbesar.
+
+</ThinkCard.Question>
+<ThinkCard.Answer>
+
+**Jawaban:** −6, −1, 0, 2, 4. Pada garis bilangan, bilangan-bilangan itu tersusun dari kiri ke kanan.
+
+</ThinkCard.Answer>
+</ThinkCard>
 
 ## 5. Membaca perpindahan pada garis bilangan
 
@@ -138,9 +153,7 @@ Garis bilangan juga dapat digunakan untuk menunjukkan perpindahan posisi.
 - Bergerak **ke kiri** berarti posisi berkurang.
 - Perpindahan dapat dimulai dari **bilangan berapa pun**, tidak harus dari nol.
 
-<div className="exampleCard">
-
-<span className="cardChip"><Pencil size={12} aria-hidden="true" /> Contoh A: Bergerak ke kanan</span>
+<ExampleCard label="Contoh A: Bergerak ke kanan">
 
 Mulai dari $-3$, kemudian bergerak **5 langkah ke kanan**.
 
@@ -156,11 +169,9 @@ $$
 -3 + 5 = 2
 $$
 
-</div>
+</ExampleCard>
 
-<div className="exampleCard">
-
-<span className="cardChip"><Pencil size={12} aria-hidden="true" /> Contoh B: Bergerak ke kiri</span>
+<ExampleCard label="Contoh B: Bergerak ke kiri">
 
 Mulai dari $2$, kemudian bergerak **4 langkah ke kiri**.
 
@@ -175,7 +186,7 @@ $$
 2 - 4 = -2
 $$
 
-</div>
+</ExampleCard>
 
 Di sini, penjumlahan dan pengurangan digunakan untuk menggambarkan perubahan posisi. Aturan operasi hitung bilangan bulat akan dibahas lebih lengkap pada materi berikutnya.
 
@@ -187,7 +198,6 @@ Sekarang, gunakan garis bilangan interaktif untuk mencoba beberapa perpindahan. 
 
 ## 7. Bilangan bulat dalam buku kas
 
-<img className="lessonIllustration" src={useBaseUrl('/img/lessons/g7-integers-number-line-02-masalah.webp')} alt="Buku kas kelas dengan catatan pemasukan dan pengeluaran, kalkulator, serta struk" />
 
 Kelasmu memiliki uang kas untuk membeli perlengkapan bersama. Setiap kali ada uang masuk atau keluar, jumlah kas akan berubah.
 
@@ -215,14 +225,19 @@ $$
 
 Tanda negatif pada kolom **perubahan kas** menunjukkan bahwa uang berkurang. Sementara itu, kolom **saldo** menunjukkan sisa uang setelah setiap transaksi.
 
-<details className="thinkCard">
-  <summary>
-    <p><strong><CircleQuestionMark size={12} aria-hidden="true" /> Coba pikirkan</strong> Jika kelas kembali membeli penghapus seharga Rp1.000, berapa saldo yang tersisa?</p>
-  </summary>
-  <div>
-    <p><strong>Jawaban:</strong> Rp1.000, karena saldo sebelumnya Rp2.000 berkurang Rp1.000.</p>
-  </div>
-</details>
+<ThinkCard>
+
+<ThinkCard.Question>
+
+Jika kelas kembali membeli penghapus seharga Rp1.000, berapa saldo yang tersisa?
+
+</ThinkCard.Question>
+<ThinkCard.Answer>
+
+**Jawaban:** Rp1.000, karena saldo sebelumnya Rp2.000 berkurang Rp1.000.
+
+</ThinkCard.Answer>
+</ThinkCard>
 
 ## 8. Kesalahan umum
 

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 import {designTokens} from '../design/tokens.generated';
 
 const c = designTokens.color;
@@ -13,7 +14,7 @@ export default function LineLab() {
   const dy = Math.sin((cross * Math.PI) / 180) * 190;
 
   return <section className="labCard" aria-label="Laboratorium kedudukan dua garis">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB GARIS</span><h3>Bertemu, sejajar, atau tegak lurus?</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Bertemu, sejajar, atau tegak lurus?" />
     <p className="labIntro">Pilih hubungan dua garis. Pada garis berpotongan, geser sudutnya untuk melihat kapan kedua garis menjadi tegak lurus.</p>
     <div className="opTabs" role="group" aria-label="Pilih kedudukan garis">
       {relations.map(item => <button key={item} type="button" className={`opTab ${relation === item ? 'active' : ''}`} aria-pressed={relation === item} onClick={() => setRelation(item)}>{item}</button>)}

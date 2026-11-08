@@ -3,6 +3,8 @@ title: "Mengenal Himpunan dan Anggotanya"
 sidebar_position: 1
 slug: /grade-7/sets/concept
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 import VennLab from '@site/src/components/VennLab';
 import LessonComplete from '@site/src/components/LessonComplete';
@@ -31,6 +33,8 @@ Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 8 ada di akhir bab
 ## 1. Konsep himpunan
 
 Himpunan adalah kumpulan objek yang batasnya jelas. Batas yang jelas berarti kamu dapat memutuskan apakah suatu objek masuk ke dalam kumpulan itu atau tidak.
+
+<img className="lessonIllustration" src={useBaseUrl('/img/lessons/g7-sets-concept-01-objek.webp')} alt="Talenan kayu berisi alat tulis dengan batas tali biru" />
 
 Contoh kumpulan yang batasnya jelas:
 
@@ -86,7 +90,7 @@ Himpunan juga dapat ditulis dengan simbol tiga titik jika polanya sudah jelas, m
 
 ## 3. Contoh
 
-**Contoh 1: daftar peserta stan**
+<ExampleCard label="Contoh 1: daftar peserta stan">
 
 Lembar pendaftaran stan robotik memuat empat nama.
 
@@ -94,13 +98,17 @@ $$R = \{\text{Ayu}, \text{Budi}, \text{Citra}, \text{Dedi}\}$$
 
 Banyak anggotanya $n(R) = 4$. Ayu anggota $R$, ditulis $\text{Ayu} \in R$. Eka tidak terdaftar, ditulis $\text{Eka} \notin R$.
 
-**Contoh 2: dari aturan ke daftar**
+</ExampleCard>
+
+<ExampleCard label="Contoh 2: dari aturan ke daftar">
 
 $$B = \{x \mid 1 \lt x \lt 9,\ x \text{ bilangan ganjil}\}$$
 
 Bilangan ganjil yang lebih dari 1 dan kurang dari 9 adalah 3, 5, dan 7. Jadi $B = \{3, 5, 7\}$ dan $n(B) = 3$.
 
-**Contoh 3: dua stan, satu kelas**
+</ExampleCard>
+
+<ExampleCard label="Contoh 3: dua stan, satu kelas">
 
 Kelas 7 berisi 32 siswa. Stan robotik menerima 18 pendaftar. Stan kuis menerima 15 pendaftar. Ada 7 siswa yang mendaftar di dua stan itu.
 
@@ -115,6 +123,8 @@ Ada 26 siswa yang ikut paling sedikit satu stan. Sisanya tidak mendaftar di kedu
 $$32 - 26 = 6$$
 
 Jadi ada 6 siswa di luar kedua daftar.
+
+</ExampleCard>
 
 ## 4. Lab
 

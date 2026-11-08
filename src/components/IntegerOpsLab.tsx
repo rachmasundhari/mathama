@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LabHeader from './LabHeader';
 
 type Op = '+' | '−' | '×' | '÷';
 const operations: Op[] = ['+', '−', '×', '÷'];
@@ -27,7 +28,7 @@ export default function IntegerOpsLab() {
   const displayB = b < 0 ? `(${b})` : `${b}`;
 
   return <section className="labCard" aria-label="Laboratorium operasi bilangan bulat">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB BILANGAN BULAT</span><h3>Bagaimana tanda memengaruhi hasil?</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
+    <LabHeader title="Bagaimana tanda memengaruhi hasil?" />
     <p className="labIntro">Pilih operasi, lalu geser kedua bilangan. Perhatikan kapan hasilnya berubah tanda.</p>
     <div className="opTabs" role="group" aria-label="Pilih operasi">
       {operations.map(option => <button type="button" key={option} className={`opTab ${op === option ? 'active' : ''}`} aria-pressed={op === option} onClick={() => setOp(option)}>{option}</button>)}

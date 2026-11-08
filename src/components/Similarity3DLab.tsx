@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
+import LabHeader from './LabHeader';
 import {designTokens} from '../design/tokens.generated';
 
 const c = designTokens.color;
@@ -132,7 +133,7 @@ export default function Similarity3DLab() {
   }, [scale]);
 
   return <section className="labCard" aria-label="Laboratorium kesebangunan tiga dimensi">
-    <div className="labHeader"><div><span className="eyebrow teal">LAB 3D · THREE.JS</span><h3>Dua balok, satu bentuk</h3></div><span className="livePill"><span className="liveDot"/> {ready ? '3D siap' : 'Memuat 3D'}</span></div>
+    <LabHeader title="Dua balok, satu bentuk" status={<span className="livePill"><span className="liveDot"/> {ready ? '3D siap' : 'Memuat 3D'}</span>} />
     <p className="labIntro">Balok kecil dan besar sebangun. Geser faktor skala, lalu seret gambar untuk memutar pandangan.</p>
     <div className="sliderRow"><label htmlFor="similarity-3d-scale">Faktor skala ruang</label><strong className="valueChip">×{scale.toFixed(1).replace('.', ',')}</strong></div>
     <input id="similarity-3d-scale" className="rangeInput" type="range" min="1" max="2.5" step="0.1" value={scale} onChange={event => setScale(Number(event.target.value))}/>

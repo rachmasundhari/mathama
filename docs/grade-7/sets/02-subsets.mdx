@@ -3,6 +3,8 @@ title: "Himpunan Semesta, Himpunan Kosong, dan Himpunan Bagian"
 sidebar_position: 2
 slug: /grade-7/sets/subsets
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 import VennLab from '@site/src/components/VennLab';
 import LessonComplete from '@site/src/components/LessonComplete';
@@ -33,6 +35,8 @@ Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 8 ada di akhir bab
 ## 1. Konsep himpunan semesta
 
 Himpunan semesta adalah himpunan yang memuat semua objek yang sedang dibicarakan. Himpunan semesta ditulis $S$.
+
+<img className="lessonIllustration" src={useBaseUrl('/img/lessons/g7-sets-subsets-01-objek.webp')} alt="Kotak kayu bersarang, kotak kecil di dalam kotak besar" />
 
 Misalnya, pembicaraan tentang Pekan Angka di kelas 7 memakai semesta semua siswa kelas 7. Jika kelas itu berisi 32 siswa, maka $n(S) = 32$.
 
@@ -93,13 +97,15 @@ Jumlahnya $1 + 3 + 3 + 1 = 8$. Rumus $2^n$ sudah memasukkan himpunan kosong dan 
 
 ## 5. Contoh
 
-**Contoh 1: himpunan bagian dari himpunan bilangan**
+<ExampleCard label="Contoh 1: himpunan bagian dari himpunan bilangan">
 
 Ambil $A = \{2, 4, 6\}$. Himpunan bagian yang mungkin adalah $\varnothing$, $\{2\}$, $\{4\}$, $\{6\}$, $\{2, 4\}$, $\{2, 6\}$, $\{4, 6\}$, dan $\{2, 4, 6\}$.
 
 Banyaknya $2^3 = 8$.
 
-**Contoh 2: semesta dan himpunan bagian**
+</ExampleCard>
+
+<ExampleCard label="Contoh 2: semesta dan himpunan bagian">
 
 Kelas 7 berisi 32 siswa. Himpunan robotik $R$ punya 18 anggota. Himpunan kuis $K$ punya 15 anggota. Tujuh siswa masuk keduanya, dan 6 siswa tidak masuk keduanya.
 
@@ -113,11 +119,15 @@ Banyak siswa di luar kedua stan:
 
 $$32 - 26 = 6$$
 
-**Contoh 3: memilih tim**
+</ExampleCard>
+
+<ExampleCard label="Contoh 3: memilih tim">
 
 Guru membutuhkan tim yang datang lebih awal dari tiga nama: Ayu, Budi, dan Citra. Tim boleh berisi satu, dua, atau tiga orang. Semua kemungkinan tim adalah delapan himpunan bagian di tabel sebelumnya.
 
 Jika urutan nama dihitung, Ayu lalu Budi akan berbeda dari Budi lalu Ayu. Dalam himpunan bagian, urutan tidak dihitung. $\{\text{Ayu}, \text{Budi}\}$ dan $\{\text{Budi}, \text{Ayu}\}$ adalah tim yang sama.
+
+</ExampleCard>
 
 ## 6. Lab
 
