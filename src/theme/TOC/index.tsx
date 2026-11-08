@@ -16,7 +16,7 @@ const LINK_ACTIVE_CLASS_NAME = 'table-of-contents__link--active';
 export default function TOC({className, ...props}: TOCProps) {
   return (
     <div className={clsx('mathamaToc', 'thin-scrollbar', className)}>
-      <div className="mathamaTocHeading">Di halaman ini</div>
+      <div className="mathamaTocHeading">Daftar isi</div>
       <TOCItems
         {...props}
         linkClassName={LINK_CLASS_NAME}

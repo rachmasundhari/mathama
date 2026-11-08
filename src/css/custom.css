@@ -830,5 +830,7 @@ body {caret-color:var(--c-ocean);}
 }
 /* Lesson table of contents */
 .mathamaToc {max-height:calc(100vh - (var(--ifm-navbar-height) + 2rem));overflow-y:auto;position:sticky;top:calc(var(--ifm-navbar-height) + 1rem);}
-.mathamaTocHeading {font-size:11px;letter-spacing:.15em;font-weight:850;color:#0f6b8f;text-transform:uppercase;margin-bottom:10px;}
+.mathamaTocHeading {font-size:11px;letter-spacing:.15em;font-weight:850;color:#0f6b8f;text-transform:uppercase;margin:0 0 10px;}
+.mathamaToc .table-of-contents {padding-top:0;}
+.mathamaToc .table-of-contents>li:first-child {margin-top:0;}
 @media (max-width:996px) {.mathamaToc {display:none;}}
