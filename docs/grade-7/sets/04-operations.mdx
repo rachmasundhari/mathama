@@ -1,5 +1,5 @@
 ---
-title: "Siapa yang masih kosong?"
+title: "Irisan, Gabungan, dan Komplemen"
 sidebar_position: 4
 slug: /grade-7/sets/operations
 ---
@@ -10,84 +10,94 @@ import QuizRunner from '@site/src/components/QuizRunner';
 
 <div className="lessonKicker">KELAS 7 · HIMPUNAN · 12 MENIT</div>
 
-# Siapa yang masih kosong?
+# Irisan, Gabungan, dan Komplemen
 
-**Tujuan belajar:** Menentukan irisan, gabungan, dan komplemen dua himpunan, lalu memakainya untuk membagi tugas Pekan Angka.
+Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 8 ada di akhir bab.
 
-## 1. Dua kelompok tugas
+**Tujuan belajar:** Menentukan irisan, gabungan, dan komplemen dua himpunan, lalu memakainya untuk menyelesaikan pembagian tugas.
 
-Papan tulis di ruang 7B sudah penuh. Di kiri ada diagram Venn stan robotik dan stan kuis. Di kanan Nara menulis dua kelompok baru: PETUGAS STAN dan TIM DEKORASI.
+**Kata kunci:** irisan, gabungan, komplemen, himpunan semesta, daerah diagram Venn.
 
-"Pendaftaran stan sudah selesai," kata Nara. "Sekarang kita bagi tugas. Delapan belas orang jadi petugas stan, empat belas orang masuk tim dekorasi."
+**Dalam materi ini:**
 
-Bima langsung menjumlahkan. "Delapan belas tambah empat belas, tiga puluh dua. Kelas kita tiga puluh dua. Berarti semua orang sudah dapat tugas."
+1. Konsep irisan
+2. Konsep gabungan
+3. Konsep komplemen
+4. Hubungan antardaerah
+5. Contoh
+6. Lab
+7. Kesalahan umum
+8. Ringkasan
+9. Latihan
 
-Kiki melihat daftarnya. "Berarti tidak ada yang bisa bantu meja hadiah?"
+## 1. Konsep irisan
 
-"Tidak ada," kata Bima. "Semua penuh."
+Irisan dua himpunan adalah himpunan anggota yang masuk kedua himpunan sekaligus. Lambangnya $\cap$.
 
-Nara mengetuk meja. "Tunggu. Enam orang masuk dua kelompok. Mereka jadi petugas stan sekaligus tim dekorasi."
+$$A \cap B = \{x \mid x \in A \text{ dan } x \in B\}$$
 
-Bima mencoret hitungannya. "Kalau begitu tiga puluh dua kurang enam, dua puluh enam yang kosong."
+Kata dan menjadi penentu. Anggota harus memenuhi dua syarat.
 
-Kiki mengerutkan dahi. "Kok yang kosong dua puluh enam? Itu hampir seluruh kelas. Padahal yang dapat tugas juga banyak."
+Contohnya, $A = \{1, 2, 3, 4\}$ dan $B = \{3, 4, 5\}$. Anggota yang muncul di kedua himpunan adalah 3 dan 4.
 
-Nara meletakkan spidol. "Aku juga bingung. Angka yang keluar tergantung cara kita mengurangi, dan aku tidak tahu mana yang benar."
+$$A \cap B = \{3, 4\}$$
 
-Pak Rahmat masuk membawa map. "Kalau satu orang masuk dua kelompok, dia perlu dihitung berapa kali saat kamu mencari yang belum dapat tugas?"
+Pada diagram Venn, irisan adalah daerah tumpukan di tengah.
 
-"Belum tahu, Bu," kata Nara. "Itu yang sedang kami coba."
+Jika tidak ada anggota yang sama, irisannya adalah himpunan kosong. Dua himpunan seperti itu disebut saling lepas.
 
-## 2. Tiga daerah yang menjawab tiga pertanyaan
+## 2. Konsep gabungan
 
-Himpunan $A$ berisi petugas stan, himpunan $B$ berisi tim dekorasi. Himpunan semesta $S$ berisi tiga puluh dua siswa kelas tujuh.
+Gabungan dua himpunan adalah himpunan anggota yang masuk $A$, atau $B$, atau keduanya. Lambangnya $\cup$.
 
-**Irisan** $A \cap B$ adalah himpunan anggota yang masuk $A$ dan $B$ sekaligus. Di soal ini, irisan berisi enam orang yang memegang dua tugas.
+$$A \cup B = \{x \mid x \in A \text{ atau } x \in B\}$$
 
-**Gabungan** $A \cup B$ adalah himpunan anggota yang masuk $A$, atau $B$, atau keduanya. Gabungan menjawab pertanyaan "siapa saja yang sudah mendapat tugas".
+Kata atau di sini tidak berarti salah satu saja. Anggota yang masuk keduanya tetap ikut. Dalam gabungan, anggota yang sama ditulis satu kali.
 
-**Komplemen** $A^c$ adalah himpunan anggota $S$ yang bukan anggota $A$. Komplemen $A$ menjawab "siapa yang tidak masuk kelompok $A$". Komplemen dari gabungan, yaitu $(A \cup B)^c$, berisi orang yang tidak masuk $A$ maupun $B$.
+Untuk $A = \{1, 2, 3, 4\}$ dan $B = \{3, 4, 5\}$:
 
-Nara menulis tiga daftar di buku. "Jadi ada tiga pertanyaan berbeda. Siapa yang di dua kelompok, siapa yang sudah dapat tugas, dan siapa yang belum dapat tugas."
+$$A \cup B = \{1, 2, 3, 4, 5\}$$
 
-"Iya," kata Pak Rahmat. "Ketiganya butuh daerah yang berbeda."
+Banyak anggotanya $n(A \cup B) = 5$, bukan $4 + 3 = 7$, karena 3 dan 4 dihitung satu kali.
 
-Hubungan antardaerah bisa ditulis begini:
+Pada diagram Venn, gabungan adalah seluruh daerah di dalam dua lingkaran, termasuk tumpukan tengah.
 
-$$n(A \cup B) = n(A) + n(B) - n(A \cap B)$$
+## 3. Konsep komplemen
 
-Anggota irisan dihitung dua kali saat $n(A)$ dan $n(B)$ dijumlahkan, jadi harus dikurangi sekali. Untuk mencari yang belum mendapat tugas:
+Komplemen himpunan $A$ adalah himpunan anggota semesta yang bukan anggota $A$. Lambangnya $A^c$.
+
+$$A^c = \{x \mid x \in S \text{ dan } x \notin A\}$$
+
+Komplemen selalu dibaca terhadap semesta. Tanpa semesta yang jelas, komplemen tidak dapat ditentukan.
+
+Pada diagram Venn, komplemen $A$ adalah semua daerah di luar lingkaran $A$, termasuk daerah di dalam lingkaran $B$.
+
+Komplemen dari gabungan, yaitu $(A \cup B)^c$, adalah daerah di luar kedua lingkaran. Daerah ini berisi anggota yang tidak masuk $A$ maupun $B$.
 
 $$n((A \cup B)^c) = n(S) - n(A \cup B)$$
 
-Bima menatap rumus itu. "Kalau aku tidak mengurangi irisan, jumlahnya jadi terlalu besar. Kalau aku mengurangi dari seluruh kelas, aku mengurangi orang yang salah."
+## 4. Hubungan antardaerah
 
-"Betul," kata Nara. "Kita kurangi dulu yang dobel, baru kurangi dari seluruh kelas."
+Untuk dua himpunan $A$ dan $B$ dalam semesta $S$:
 
-## 3. Coba di meja kerja
+$$n(A \cup B) = n(A) + n(B) - n(A \cap B)$$
 
-Raka mendorong layar ke tengah meja. "Atur empat daerah. Lihat mana yang masuk gabungan dan mana yang masuk komplemen."
+Anggota irisan dihitung dua kali saat $n(A)$ dan $n(B)$ dijumlahkan, jadi kurangi sekali.
 
-<VennLab />
+Jika irisannya kosong, rumusnya menjadi:
 
-Lab memakai angka kecil supaya mudah dibaca. Coba hanya $A$ berisi 4, irisan berisi 3, hanya $B$ berisi 2, dan di luar keduanya berisi 1. Maka $n(A) = 7$, $n(B) = 5$, $n(A \cup B) = 9$, dan $n((A \cup B)^c) = 1$.
+$$n(A \cup B) = n(A) + n(B)$$
 
-Bima menunjuk daerah luar. "Kalau aku mencari yang belum dapat tugas, aku lihat angka di luar dua lingkaran."
+Empat daerah pada diagram Venn menjawab empat pertanyaan berbeda:
 
-"Iya," kata Nara. "Bukan angka di dalam lingkaran."
+- $A \setminus B$: hanya anggota $A$.
+- $A \cap B$: anggota kedua himpunan.
+- $B \setminus A$: hanya anggota $B$.
+- $(A \cup B)^c$: anggota di luar keduanya.
 
-Kiki menggeser irisan menjadi nol. "Kalau tidak ada yang dobel, gabungannya tinggal dijumlah?"
+## 5. Contoh
 
-"Kalau irisannya kosong, $n(A \cup B) = n(A) + n(B)$," kata Nara. "Tapi di kelas kita irisannya tidak kosong."
-
-## 4. Catatan klub
-
-Nara menyalin angka sebenarnya ke buku.
-
-- Seluruh kelas: $n(S) = 32$.
-- Petugas stan: $n(A) = 18$.
-- Tim dekorasi: $n(B) = 14$.
-- Masuk dua kelompok: $n(A \cap B) = 6$.
+Kelas 7 berisi 32 siswa. Ada 18 siswa menjadi petugas stan dan 14 siswa masuk tim dekorasi. Enam siswa memegang dua tugas itu.
 
 Langkah penyelesaian:
 
@@ -104,58 +114,54 @@ Langkah penyelesaian:
 | $B \setminus A$ | hanya dekorasi | 8 |
 | $(A \cup B)^c$ | belum dapat tugas | 6 |
 
-Bima memeriksa dengan rumus. "$18 + 14 - 6 = 26$. Lalu $32 - 26 = 6$. Cocok."
+Periksa dengan rumus:
 
-"Jadi yang kosong enam, bukan dua puluh enam," kata Kiki.
+$$n(A \cup B) = 18 + 14 - 6 = 26$$
+$$n((A \cup B)^c) = 32 - 26 = 6$$
 
-"Enam," kata Nara. "Dua puluh enam itu yang sudah dapat tugas."
+Jadi ada 26 siswa yang sudah mendapat tugas dan 6 siswa yang belum mendapat tugas. Angka 26 bukan jumlah siswa yang belum mendapat tugas.
 
-Pak Rahmat menunjuk tabel. "Kalau aku bertanya siapa yang masuk petugas stan saja, daerah mana yang kamu baca?"
+Pertanyaan yang berbeda memakai daerah yang berbeda.
 
-"Baris pertama," kata Bima. "Dua belas."
+- Berapa siswa yang hanya menjadi petugas stan? Jawabannya 12.
+- Berapa siswa yang menjadi petugas stan, termasuk yang memegang dua tugas? Jawabannya $12 + 6 = 18$.
+- Berapa siswa yang belum mendapat tugas? Jawabannya 6.
 
-"Kalau aku bertanya siapa yang masuk petugas stan, termasuk yang dobel?"
+## 6. Lab
 
-"Delapan belas," kata Nara. "Dua belas tambah enam."
+Atur empat daerah, lalu perhatikan mana yang masuk gabungan dan mana yang masuk komplemen.
 
-:::tip Catatan Nara
-Tentukan dulu pertanyaannya: hanya $A$, hanya $B$, keduanya, atau keduanya termasuk yang dobel. Setiap pertanyaan memakai daerah yang berbeda.
-:::
+<VennLab />
 
-## 5. Kembali ke misi
+Coba hanya $A$ berisi 4, irisan berisi 3, hanya $B$ berisi 2, dan di luar keduanya berisi 1. Maka $n(A) = 7$, $n(B) = 5$, $n(A \cup B) = 9$, dan $n((A \cup B)^c) = 1$.
 
-Nara menulis tiga daftar di halaman baru. Daftar pertama berisi enam nama yang masuk dua kelompok. Daftar kedua berisi dua puluh enam nama yang sudah mendapat tugas. Daftar ketiga berisi enam nama yang belum mendapat tugas.
+Geser irisan menjadi 0. Gabungannya menjadi $n(A \cup B) = n(A) + n(B)$, karena tidak ada anggota yang dihitung dua kali. Komplemennya tetap dibaca dari daerah di luar kedua lingkaran.
 
-"Enam nama ini kita pakai untuk meja hadiah," kata Bima. "Empat orang cukup. Sisanya dua orang jadi cadangan."
+## 7. Kesalahan umum
 
-Pak Rahmat membuka map. "Upacara pembukaan butuh delapan orang. Aku baru punya enam yang bebas."
+- Menjumlahkan $n(A)$ dan $n(B)$ tanpa mengurangi irisan. Hasilnya terlalu besar.
+- Mengurangi irisan dari seluruh kelas. Irisan harus dikurangi dari jumlah dua himpunan, bukan dari semesta.
+- Menganggap gabungan hanya berisi anggota yang masuk salah satu himpunan. Anggota irisan tetap masuk gabungan.
+- Membaca komplemen tanpa semesta. Komplemen bergantung pada semesta yang dipakai.
+- Menukar irisan dan gabungan. Irisan memakai kata dan, gabungan memakai kata atau.
+- Menganggap angka di luar lingkaran sebagai bagian dari gabungan. Daerah itu justru komplemen gabungan.
 
-Bima menghitung cepat. "Berarti kurang dua. Kita pinjam dua orang dari daftar yang sudah dapat tugas."
+## 8. Ringkasan
 
-"Yang mana?" tanya Nara.
+- Irisan $A \cap B$ memuat anggota yang masuk $A$ dan $B$.
+- Gabungan $A \cup B$ memuat anggota yang masuk $A$, atau $B$, atau keduanya.
+- Komplemen $A^c$ memuat anggota semesta yang bukan anggota $A$.
+- $n(A \cup B) = n(A) + n(B) - n(A \cap B)$.
+- Jika irisannya kosong, $n(A \cup B) = n(A) + n(B)$.
+- $n((A \cup B)^c) = n(S) - n(A \cup B)$.
+- Setiap pertanyaan memakai daerah yang berbeda, jadi baca kalimatnya dengan teliti.
 
-"Yang cuma pegang satu tugas," kata Bima. "Dua orang dari tim dekorasi, karena dekorasi selesai Jumat."
-
-Nara menulis nama itu di kolom baru. "Aku tulis asalnya, supaya tidak ada yang dapat dua tugas tanpa tahu."
-
-Kiki melihat tiga daftar itu. "Kalau Raka ada di petugas stan dan tim dekorasi, dia pesan kaos satu atau dua?"
-
-Bima menjawab tanpa melihat. "Satu orang, satu kaos."
-
-"Tapi dia tetap masuk dua daftar," kata Kiki.
-
-"Iya," kata Nara. "Daftar tugas boleh dua. Kaosnya tetap satu."
-
-Pak Rahmat mengangkat cangkirnya. "Rapat panitia Jumat nanti. Kamu bawa daftar yang mana?"
-
-Nara menunjuk tiga halaman. "Tergantung pertanyaannya, Bu."
-
-Kiki menutup buku pertanyaannya. "Kalau nanti ada anak yang ikut tiga kegiatan, aku hitungnya pakai rumus yang mana?"
-
-Pak Rahmat menunggu. Nara menulis satu tanda tanya besar di bawah tiga daftarnya.
-
-## 6. Cek pemahaman
+## 9. Latihan
 
 <QuizRunner quizId="sets-operations" />
 
 <LessonComplete lessonId="g7-sets-operations" />
+
+---
+
+**Cerita Bab 8:** [Daftar Peserta dan Stan →](/learn/grade-7/sets/cerita)

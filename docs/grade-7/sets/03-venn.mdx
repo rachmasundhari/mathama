@@ -1,5 +1,5 @@
 ---
-title: "Dua lingkaran yang bertumpuk"
+title: "Membaca dan Menggambar Diagram Venn"
 sidebar_position: 3
 slug: /grade-7/sets/venn
 ---
@@ -10,35 +10,34 @@ import QuizRunner from '@site/src/components/QuizRunner';
 
 <div className="lessonKicker">KELAS 7 · HIMPUNAN · 12 MENIT</div>
 
-# Dua lingkaran yang bertumpuk
+# Membaca dan Menggambar Diagram Venn
+
+Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 8 ada di akhir bab.
 
 **Tujuan belajar:** Membaca dan menggambar diagram Venn dua himpunan, lalu menentukan banyak anggota di setiap daerah.
 
-## 1. Angka yang hilang dari gambar
+**Kata kunci:** diagram Venn, himpunan semesta, irisan, gabungan, daerah diagram.
 
-Raka sudah menggambar dua lingkaran di papan tulis. Lingkaran kiri untuk stan robotik, lingkaran kanan untuk stan kuis. Bagian tengahnya berisi tujuh nama.
+**Dalam materi ini:**
 
-Bima berdiri di depan papan dengan kalkulator. "Robotik delapan belas, kuis lima belas. Aku jumlahkan, tiga puluh tiga. Aku kurangi yang dobel tujuh, jadi dua puluh enam."
+1. Konsep diagram Venn
+2. Empat daerah
+3. Angka di daerah
+4. Contoh
+5. Lab
+6. Kesalahan umum
+7. Ringkasan
+8. Latihan
 
-Nara melihat catatannya. "Dua puluh enam apa?"
+## 1. Konsep diagram Venn
 
-"Peserta Pekan Angka," kata Bima. "Yang ikut paling sedikit satu stan."
+Diagram Venn memakai lingkaran untuk menunjukkan himpunan dan persegi panjang untuk menunjukkan himpunan semesta. Dua lingkaran yang bertumpuk membagi semesta menjadi empat daerah.
 
-"Kelas kita tiga puluh dua orang," kata Nara. "Kalau pesertanya dua puluh enam, enam orang ke mana?"
+Persegi panjang diberi label $S$. Lingkaran kiri diberi label $A$, lingkaran kanan diberi label $B$.
 
-Bima menunjuk papan. "Di luar lingkaran."
+Diagram ini membantu melihat hubungan dua himpunan sekaligus. Kamu dapat melihat anggota yang hanya di $A$, anggota yang hanya di $B$, anggota yang di keduanya, dan anggota yang di luar keduanya.
 
-"Di luar lingkaran itu belum ada angkanya," kata Kiki. "Aku cuma lihat dua lingkaran dan nama-nama di dalamnya."
-
-Bima menggaruk leher. "Berarti gambarnya belum lengkap."
-
-Raka mengambil spidol. "Kotaknya sudah ada. Yang belum angka di tiap daerah. Kalau aku taruh delapan belas di lingkaran kiri, itu jumlah seluruh robotik atau cuma yang robotik saja?"
-
-Nara menatap dua lingkaran itu. "Itu pertanyaan yang bagus. Kita perlu aturan penulisan."
-
-## 2. Membaca daerah, bukan lingkaran
-
-**Diagram Venn** memakai lingkaran untuk menunjukkan himpunan dan persegi panjang untuk menunjukkan himpunan semesta. Dua lingkaran yang bertumpuk membagi semesta menjadi empat daerah.
+## 2. Empat daerah
 
 | Daerah | Arti | Lambang |
 |---|---|---|
@@ -47,56 +46,41 @@ Nara menatap dua lingkaran itu. "Itu pertanyaan yang bagus. Kita perlu aturan pe
 | Kanan saja | anggota $B$ yang bukan anggota $A$ | $B \setminus A$ |
 | Luar lingkaran | anggota $S$ yang bukan anggota $A$ atau $B$ | $(A \cup B)^c$ |
 
-Angka di setiap daerah menunjukkan banyak anggota daerah itu. Jangan menulis total seluruh lingkaran di satu daerah. Kalau angka 7 ditulis di tengah, artinya ada 7 anggota yang masuk $A$ dan $B$ sekaligus.
+Angka di setiap daerah menunjukkan banyak anggota daerah itu. Angka di tengah bukan jumlah seluruh lingkaran. Angka di tengah hanya anggota yang masuk dua himpunan sekaligus.
 
-Dengan begitu, banyak anggota $A$ adalah jumlah daerah kiri dan tengah:
+## 3. Angka di daerah
+
+Banyak anggota $A$ adalah jumlah daerah kiri dan tengah.
 
 $$n(A) = n(A \setminus B) + n(A \cap B)$$
 
-Banyak anggota gabungan adalah jumlah tiga daerah di dalam lingkaran:
+Banyak anggota $B$ adalah jumlah daerah kanan dan tengah.
+
+$$n(B) = n(B \setminus A) + n(A \cap B)$$
+
+Banyak anggota gabungan adalah jumlah tiga daerah di dalam lingkaran.
 
 $$n(A \cup B) = n(A \setminus B) + n(A \cap B) + n(B \setminus A)$$
 
-Ada rumus lain yang sering dipakai:
+Rumus lain yang sering dipakai:
 
 $$n(A \cup B) = n(A) + n(B) - n(A \cap B)$$
 
-Pengurangan $n(A \cap B)$ perlu karena anggota yang sama dihitung dua kali saat $n(A)$ dan $n(B)$ dijumlahkan.
+Pengurangan $n(A \cap B)$ perlu karena anggota di tengah dihitung dua kali saat $n(A)$ dan $n(B)$ dijumlahkan.
 
-Pak Rahmat menunjuk papan. "Kalau kamu menulis 18 di dalam lingkaran kiri, apakah itu 18 anggota $A$ atau 18 anggota yang hanya di $A$?"
+Banyak anggota di luar kedua lingkaran adalah selisih semesta dengan gabungan.
 
-"Tergantung kesepakatan gambar," kata Nara. "Supaya tidak bingung, kita tulis angka di daerah, lalu beri catatan."
+$$n((A \cup B)^c) = n(S) - n(A \cup B)$$
 
-Raka mengangguk. "Aku akan menulis angka di tengah dulu, baru di kiri dan kanan."
+## 4. Contoh
 
-## 3. Coba di meja kerja
-
-Nara mendorong layar ke tengah meja. "Isi empat daerah. Baca $n(A)$, $n(B)$, dan $n(A \cup B)$. Perhatikan angka mana yang ikut berubah."
-
-<VennLab />
-
-Coba hanya $A$ berisi 4, irisan berisi 3, hanya $B$ berisi 2, dan di luar keduanya berisi 1. Maka $n(A) = 4 + 3 = 7$, $n(B) = 3 + 2 = 5$, dan $n(A \cup B) = 4 + 3 + 2 = 9$. Jumlah seluruh semesta adalah $9 + 1 = 10$.
-
-Bima memindahkan dua anggota dari daerah hanya $A$ ke irisan. "Sekarang irisannya lima, hanya $A$ tinggal dua. $n(A)$ tetap tujuh, $n(B)$ jadi tujuh, dan gabungannya tetap sembilan."
-
-"Kalau anggota pindah daerah, jumlah gabungan tidak berubah," kata Kiki. "Yang berubah cuma tempatnya."
-
-"Betul," kata Nara. "Selama tidak ada anggota baru di luar dua lingkaran, gabungannya tetap."
-
-## 4. Catatan klub
-
-Nara menyalin angka sebenarnya ke buku.
-
-- Seluruh kelas: $n(S) = 32$.
-- Anggota stan robotik: $n(R) = 18$.
-- Anggota stan kuis: $n(K) = 15$.
-- Anggota kedua stan: $n(R \cap K) = 7$.
+Kelas 7 berisi 32 siswa. Stan robotik punya 18 anggota, stan kuis punya 15 anggota, dan 7 siswa masuk kedua stan.
 
 Langkah menggambar:
 
 1. Hitung yang hanya robotik: $18 - 7 = 11$.
 2. Hitung yang hanya kuis: $15 - 7 = 8$.
-3. Tulis 11 di kiri, 7 di tengah, 8 di kanan.
+3. Tulis 11 di kiri, 7 di tengah, dan 8 di kanan.
 4. Hitung gabungan: $11 + 7 + 8 = 26$.
 5. Hitung yang di luar: $32 - 26 = 6$.
 6. Periksa jumlah: $11 + 7 + 8 + 6 = 32$.
@@ -109,42 +93,56 @@ Langkah menggambar:
 | Tidak ikut keduanya | 6 |
 | Seluruh kelas | 32 |
 
-Bima memeriksa dengan rumus. "$n(R \cup K) = 18 + 15 - 7 = 26$. Cocok dengan jumlah tiga daerah di dalam lingkaran."
+Periksa dengan rumus gabungan:
 
-"Kalau yang ditanya hanya robotik, jawabannya delapan belas," kata Nara. "Kalau yang ditanya hanya robotik dan tidak ikut kuis, jawabannya sebelas. Dua pertanyaan itu berbeda."
+$$n(R \cup K) = 18 + 15 - 7 = 26$$
 
-Kiki menulis di bukunya: *angka di daerah, bukan angka di lingkaran*. Ia menggari kalimat itu dua kali.
+Hasilnya sama dengan jumlah tiga daerah di dalam lingkaran.
 
-:::warning Pertanyaan Kiki
-Kalau aku menjumlahkan angka 18 dan 15, lalu mengurangi 7, apakah aku sudah menghitung enam anak di luar lingkaran?
-:::
+Pertanyaan yang berbeda memakai daerah yang berbeda.
 
-## 5. Kembali ke misi
+- Berapa siswa yang hanya ikut robotik? Jawabannya 11, yaitu daerah kiri.
+- Berapa siswa yang ikut robotik, termasuk yang ikut kuis? Jawabannya 18, yaitu kiri ditambah tengah.
+- Berapa siswa yang tidak ikut keduanya? Jawabannya 6, yaitu daerah di luar lingkaran.
 
-Raka menyelesaikan gambar. Persegi panjang diberi label $S$. Dua lingkaran diberi label $R$ dan $K$. Di kiri ia menulis 11, di tengah 7, di kanan 8, dan di luar lingkaran 6.
+Kalimat pertanyaan harus dibaca dengan teliti. Kata hanya menunjuk satu daerah. Tanpa kata hanya, anggota irisan ikut dihitung.
 
-Nara menempelkan daftar nama di samping setiap daerah. Tujuh nama di tengah ia beri tanda bintang. "Mereka yang harus dikonfirmasi dulu, karena masuk dua jadwal."
+## 5. Lab
 
-Bima menghitung ulang dari gambar, bukan dari ingatan. "Sebelas tambah tujuh, delapan belas. Delapan tambah tujuh, lima belas. Semua masuk."
+Isi empat daerah, lalu baca $n(A)$, $n(B)$, dan $n(A \cup B)$.
 
-"Dan enam yang di luar?" tanya Kiki.
+<VennLab />
 
-"Belum dapat tugas," kata Nara. "Tapi mereka tetap peserta. Kita bisa minta bantuan mereka untuk meja hadiah."
+Coba hanya $A$ berisi 4, irisan berisi 3, hanya $B$ berisi 2, dan di luar keduanya berisi 1. Maka $n(A) = 4 + 3 = 7$, $n(B) = 3 + 2 = 5$, dan $n(A \cup B) = 4 + 3 + 2 = 9$. Jumlah seluruh semesta adalah $9 + 1 = 10$.
 
-Pak Rahmat melihat gambar itu dari dekat. "Sekarang kamu punya satu gambar yang bisa dibaca orang lain tanpa penjelasan panjang. Bagian mana yang paling sering salah dibaca?"
+Pindahkan dua anggota dari daerah hanya $A$ ke irisan. Sekarang irisan berisi 5, hanya $A$ berisi 2, dan hanya $B$ berisi 2. Maka $n(A) = 2 + 5 = 7$, $n(B) = 5 + 2 = 7$, dan $n(A \cup B) = 2 + 5 + 2 = 9$. Gabungan tidak berubah karena tidak ada anggota yang masuk atau keluar dari dua lingkaran.
 
-Raka menunjuk tengah. "Kalau orang menjumlahkan dua lingkaran, tujuh ini kehitung dua kali."
+## 6. Kesalahan umum
 
-Kiki mengangkat tangan. "Kalau ada anak yang ikut tiga stan, gambarnya jadi tiga lingkaran?"
+- Menulis jumlah seluruh lingkaran di satu daerah. Angka di daerah hanya berlaku untuk daerah itu.
+- Menjumlahkan $n(A)$ dan $n(B)$ tanpa mengurangi irisan. Anggota di tengah terhitung dua kali.
+- Lupa menggambar daerah di luar lingkaran. Siswa yang tidak masuk dua himpunan tetap anggota semesta.
+- Menjawab pertanyaan hanya $A$ dengan $n(A)$. $n(A)$ masih memuat anggota irisan.
+- Menempatkan angka di tengah sebelum menghitung daerah lain. Hitung irisan dulu, lalu kurangi dari setiap himpunan.
+- Memeriksa gambar tanpa menjumlahkan semua daerah. Jumlah semua daerah harus sama dengan $n(S)$.
 
-"Bisa," kata Raka. "Tapi lingkarannya harus disusun ulang. Bagian tengahnya jadi lebih rumit."
+## 7. Ringkasan
 
-Pak Rahmat menunggu. "Menurutmu, apa yang berubah dari gambar dua lingkaran?"
+- Diagram Venn memakai lingkaran untuk himpunan dan persegi panjang untuk semesta.
+- Dua lingkaran membagi semesta menjadi empat daerah.
+- Daerah tengah adalah irisan $A \cap B$.
+- Daerah kiri adalah $A \setminus B$, daerah kanan adalah $B \setminus A$.
+- Daerah luar adalah komplemen gabungan.
+- $n(A)$ adalah jumlah daerah kiri dan tengah.
+- $n(A \cup B) = n(A) + n(B) - n(A \cap B)$.
+- Jumlah semua daerah sama dengan $n(S)$.
 
-Kiki mengangguk pelan, lalu menulis pertanyaannya di buku.
-
-## 6. Cek pemahaman
+## 8. Latihan
 
 <QuizRunner quizId="sets-venn" />
 
 <LessonComplete lessonId="g7-sets-venn" />
+
+---
+
+**Cerita Bab 8:** [Daftar Peserta dan Stan →](/learn/grade-7/sets/cerita)

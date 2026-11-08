@@ -10,130 +10,120 @@ import QuizRunner from '@site/src/components/QuizRunner';
 
 <div className="lessonKicker">KELAS 7 · BENTUK ALJABAR · 14 MENIT</div>
 
-# Empat booth dan satu kurung
+# Sifat Distributif
+
+Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 4 ada di akhir bab.
 
 **Tujuan belajar:** Menggunakan sifat distributif untuk membuka kurung dan menghitung nilai bentuk aljabar dengan dua jenis suku.
 
-## 1. Hadiah untuk empat booth
+**Kata kunci:** sifat distributif, kurung, faktor, suku, perkalian, pengurangan.
 
-Peta Pekan Angka masih tertempel di papan tulis. Nara menunjuk empat kotak kecil di gambar. "Empat booth ini butuh hadiah. Setiap booth memberi tiga hadiah untuk setiap pemenang, lalu menambah empat hadiah cadangan."
+## 1. Konsep
 
-"Berapa pemenang tiap booth?" tanya Kiki.
+Pekan Angka punya empat booth hadiah. Setiap booth memberi hadiah untuk 5 pemenang, yaitu 3 hadiah per pemenang, lalu menambah 4 hadiah cadangan. Banyak hadiah satu booth adalah $3 \times 5 + 4 = 19$. Empat booth membutuhkan $4 \times 19 = 76$ hadiah.
 
-"Lima," kata Bima. "Itu angka dari panitia."
+Hitung cepat $4 \times 3 \times 5 + 4$ memberi 64. Hasil itu kurang 12. Bagian yang tertinggal adalah empat kelompok cadangan, karena angka 4 di depan hanya dikalikan ke $3 \times 5$. Setiap booth punya cadangan, jadi keempat kelompok cadangan harus ikut dihitung.
 
-Nara menulis di buku kas: $4 \times 3 \times 5 + 4$. Ia menghitung cepat. $4 \times 3 = 12$, $12 \times 5 = 60$, lalu $60 + 4 = 64$. "Enam puluh empat hadiah."
-
-Bima mengambil satu daftar booth dan menghitung satu per satu. Satu booth mendapat $3 \times 5 = 15$ hadiah untuk pemenang, ditambah 4 cadangan. Jadi 19 hadiah. Empat booth berarti $4 \times 19 = 76$.
-
-"Kok bisa beda?" kata Kiki. "Cadangannya cuma empat, kan?"
-
-Bima menunjuk tiap booth. "Cadangan ada di setiap booth."
-
-Nara melihat barisnya lagi. "Aku mengalikan 4 hanya ke 15. Empat cadangan yang lain tidak ikut dikali."
-
-Selisihnya 12, tepat tiga kali empat. Nara mencoret 64, lalu menulis 76 dengan garis tebal.
-
-Kiki menghitung ulang di buku pertanyaannya. Ia menulis 76, lalu menggambar empat kotak kecil di pinggir halaman. Setiap kotak ia isi lima belas garis dan empat titik.
-
-## 2. Angka di luar kurung
-
-Pak Rahmat meletakkan termos di ujung meja. "Kamu mengalikan 4 dengan 15. Empat itu apa?"
-
-"Jumlah booth," kata Nara.
-
-"Isi tiap booth hanya satu jenis?"
-
-Nara tidak langsung menjawab. Raka sudah menggambar empat baris di buku sketsa. Setiap baris ia bagi menjadi dua bagian: blok $3 \times 5$ dan empat titik cadangan. "Kalau digambar, ada dua bagian di setiap baris," katanya. "Empat baris kena ke blok hadiah, dan empat baris juga kena ke cadangan."
-
-Nara melihat dua kelompok terpisah. Empat kali lima belas, ditambah empat kali empat. "$60 + 16 = 76$."
-
-"Jadi angka 4 kena ke dua-duanya," kata Bima.
-
-"Kalau kurungnya dibuka, 60 dan 16 itu isi dari empat baris tadi," kata Raka.
-
-Dalam aljabar, aturan itu disebut **sifat distributif**:
+Aturan yang benar disebut **sifat distributif**:
 
 $$a(b + c) = ab + ac$$
 
-Angka di luar kurung dikalikan ke setiap suku di dalam kurung. Kalau di dalamnya ada pengurangan, aturannya tetap sama: $a(b - c) = ab - ac$. Tanda minus ikut dikalikan.
+Bilangan di luar kurung dikalikan ke setiap suku di dalam kurung. Untuk empat booth:
 
-Contoh cepat: $2(x + 3) = 2x + 6$. Kalau 2 hanya dikalikan ke $x$, hasilnya $2x + 3$, dan angka 3 kehilangan pasangannya.
+$$4(3 \times 5 + 4) = 4(15) + 4(4) = 60 + 16 = 76$$
 
-:::note Kata Pak Rahmat
-Kalau 4 hanya dikalikan ke 15, bagian mana yang tidak terhitung? Apakah hasilnya masih mewakili seluruh booth?
-:::
+Aturan yang sama berlaku untuk pengurangan:
 
-## 3. Coba di meja kerja
+$$a(b - c) = ab - ac$$
 
-Raka menunjuk layar kecil. "Ubah jumlah kelompok dan nilai $x$. Kedua sisi harus tetap sama."
+Tanda minus ikut dikalikan. Contoh sederhana:
 
-<DistributiveLab />
+$$2(x + 3) = 2x + 6$$
 
-Nara menggeser jumlah kelompok ke 4 dan nilai $x$ ke 2. Sisi kiri menunjukkan $4(2 + 2)$, sisi kanan $4 \times 2 + 4 \times 2$. Keduanya 16. Ia menggeser lagi, dan kedua sisi tetap bertemu di angka yang sama.
+Kalau 2 hanya dikalikan ke $x$, hasilnya $2x + 3$. Angka 3 kehilangan faktor 2, jadi hasilnya tidak sama dengan bentuk asal.
 
-Bima mencoba kelompok 3 dan $x = 5$. Kiri $3(5 + 2) = 21$. Kanan $3 \times 5 + 3 \times 2 = 15 + 6 = 21$. "Yang di luar masuk ke dua-duanya," katanya.
+Sifat distributif juga berlaku untuk kurung dengan tiga suku:
 
-Kiki mencatat hasilnya di buku pertanyaan. "Kalau di dalam kurung ada tiga suku, apakah angka luar masuk ke semuanya juga?"
+$$2(x + y + 3) = 2x + 2y + 6$$
 
-"Ke semuanya," kata Nara. "Jumlah sukunya boleh bertambah, aturannya tetap."
+Setiap suku di dalam kurung mendapat faktor yang sama.
 
-Nara menulis contoh tiga suku di buku: $2(x + y + 3) = 2x + 2y + 6$. Bima memeriksanya dengan $x = 4$ dan $y = 1$.
+## 2. Contoh
 
-## 4. Catatan klub
-
-Nara menulis dua jenis hadiah dengan nama: $b$ untuk banyak pemenang, dan 3 untuk hadiah per pemenang. Sebelum memakai angka, ia menulis model umum: kalau setiap pemenang mendapat $a$ hadiah dan ada $b$ pemenang, satu booth berisi $ab + 4$. Dengan $a = 3$, modelnya menjadi $3b + 4$.
+Contoh 1. Hadiah untuk empat booth. Misalkan setiap pemenang mendapat 3 hadiah dan banyak pemenang adalah $b$. Satu booth berisi $3b + 4$ hadiah, karena ada 4 cadangan.
 
 $$4(3b + 4) = 12b + 16$$
 
-Ia menghitung nilainya dengan $b = 5$.
+Untuk $b = 5$:
 
 $$12(5) + 16 = 60 + 16 = 76$$
 
-Cara kedua: satu booth $3(5) + 4 = 19$, lalu dikalikan 4. Hasilnya juga 76.
+Cara kedua: satu booth berisi $3(5) + 4 = 19$ hadiah, lalu $4 \times 19 = 76$.
 
-Pak Rahmat juga meminta dua booth demo. Setiap booth demo mendapat $2b + 1$ hadiah.
+Contoh 2. Dua booth demo mendapat $2b + 1$ hadiah per booth.
 
 $$2(2b + 1) = 4b + 2$$
 
-Seluruh hadiah menjadi $12b + 16 + 4b + 2 = 16b + 18$. Untuk $b = 5$, hasilnya $16(5) + 18 = 98$.
+Seluruh hadiah menjadi:
 
-Nara juga mencoba contoh tanpa hadiah. $3(5x + 2)$ menjadi $15x + 6$. Jika $x = 4$, nilainya $15(4) + 6 = 66$. Cara lambat: $5(4) + 2 = 22$, lalu $3 \times 22 = 66$.
+$$12b + 16 + 4b + 2 = 16b + 18$$
 
-Contoh lain: $5(2x - 3)$ menjadi $10x - 15$. Nara sempat menulis $10x - 3$, lalu Bima memintanya menguji dengan $x = 4$. Sisi kiri $5(8 - 3) = 25$. Sisi kanan $40 - 3 = 37$. Tidak sama, jadi tanda minus harus ikut dikalikan.
+Untuk $b = 5$, hasilnya $16(5) + 18 = 98$ hadiah.
 
-:::tip Catatan Nara
-Kalikan angka di luar kurung ke setiap suku, termasuk suku yang bertanda minus. Setelah membuka kurung, cek dengan satu nilai $x$.
-:::
+Contoh 3. $3(5x + 2) = 15x + 6$. Jika $x = 4$, nilainya $15(4) + 6 = 66$. Cara lambat: $5(4) + 2 = 22$, lalu $3 \times 22 = 66$.
 
-## 5. Kembali ke peta Pekan Angka
+Contoh 4. $5(2x - 3) = 10x - 15$. Jika $x = 4$, sisi kiri $5(8 - 3) = 25$. Bentuk $10(4) - 15 = 25$ juga benar. Kalau tanda minus tidak dikalikan dan ditulis $10x - 3$, hasilnya $40 - 3 = 37$, jadi tidak sama.
 
-Pak Rahmat melihat papan tulis. "Jadi berapa hadiah yang harus disiapkan?"
+Contoh 5. Harga. Satu paket alat tulis berisi satu pensil dan dua penghapus. Harga pensil $x$ rupiah dan harga penghapus Rp1.500. Harga satu paket $x + 3.000$ rupiah. Harga lima paket:
 
-"Untuk empat booth, $12b + 16$," kata Nara. "Kalau $b = 5$, tujuh puluh enam. Dengan dua booth demo, sembilan puluh delapan."
+$$5(x + 3.000) = 5x + 15.000$$
 
-"Kalau pemenang tiap booth berubah?"
+Jika $x = 2.000$, harga lima paket $5(2.000) + 15.000 = 25.000$ rupiah.
 
-"Tinggal ganti $b$," kata Bima. "Bentuknya tetap."
+Contoh 6. Harga enam kotak hadiah. Setiap kotak berisi dua pensil, dan ada potongan Rp500 untuk setiap kotak. Harga satu kotak adalah $2x - 500$ rupiah, dengan $x$ harga satu pensil.
 
-Kiki menunjuk angka 4 di kurung. "Kalau cadangannya enam, apakah 4 juga dikali enam?"
+$$6(2x - 500) = 12x - 3.000$$
 
-"Iya," kata Nara. "Karena setiap booth dapat enam cadangan."
+Jika $x = 1.500$, harga enam kotak $12(1.500) - 3.000 = 18.000 - 3.000 = 15.000$ rupiah. Cara lain: satu kotak $2(1.500) - 500 = 2.500$, lalu $6 \times 2.500 = 15.000$.
 
-Nara menulis rumus itu di papan tulis, di bawah peta booth. Ia menambahkan catatan kecil: $4(3b + 4) = 12b + 16$. Bima menyalin ke daftar belanja.
+Pemeriksaan sebaiknya memakai nilai yang tidak nol. Kalau $x = 0$, banyak kesalahan tanda tidak terlihat karena hasilnya bisa kebetulan sama.
 
-Di daftar itu sudah ada harga per hadiah. Nara belum menghitung uangnya karena harga belum turun. Ia hanya menyiapkan jumlah barangnya.
+## 3. Lab
 
-Di luar, suara panitia lain bersiap pulang. Kiki masih melihat papan. "Kalau satu booth batal, apakah rumusnya cukup dikurangi satu kurung?"
+Ubah jumlah kelompok dan nilai $x$. Kedua sisi harus tetap sama.
 
-Nara berpikir. "Bisa. Tapi kita harus tahu booth mana yang batal."
+<DistributiveLab />
 
-Raka menutup buku sketsa. "Kalau digambar, satu baris hilang. Sisanya tetap sama."
+Dengan 4 kelompok dan $x = 2$, sisi kiri $4(2 + 2) = 16$. Sisi kanan $4 \times 2 + 4 \times 2 = 8 + 8 = 16$. Dengan 3 kelompok dan $x = 5$, kiri $3(5 + 2) = 21$ dan kanan $3 \times 5 + 3 \times 2 = 15 + 6 = 21$.
 
-Pak Rahmat mengangkat termosnya. "Menurutmu, kapan menghitung satu per satu justru lebih aman?"
+Geser nilai $x$ dan jumlah kelompok. Selama aturan distributif dipakai, kedua sisi bertemu di angka yang sama.
 
-## 6. Cek pemahaman
+## 4. Kesalahan umum
+
+- Mengalikan faktor luar hanya ke suku pertama. $4(3b + 4)$ bukan $12b + 4$.
+- Lupa mengalikan tanda minus. $5(2x - 3) = 10x - 15$, bukan $10x - 3$.
+- Menambahkan faktor luar ke isi kurung. $2(x + 3)$ bukan $2x + 3$ dan bukan $x + 5$.
+- Membuka kurung dengan tiga suku tetapi melewatkan satu suku. $2(x + y + 3)$ harus menjadi $2x + 2y + 6$.
+- Menganggap $a(b + c)$ sama dengan $ab + c$. Hanya perkalian yang boleh disebar, bukan penjumlahan di luar.
+- Tidak memeriksa hasil. Substitusi satu nilai $x$ yang mudah cepat menunjukkan kurung yang belum terbuka benar.
+
+## 5. Ringkasan
+
+- Sifat distributif: $a(b + c) = ab + ac$.
+- Untuk pengurangan: $a(b - c) = ab - ac$.
+- Faktor di luar kurung dikalikan ke setiap suku di dalam kurung.
+- $4(3b + 4) = 12b + 16$.
+- $2(2b + 1) = 4b + 2$.
+- $3(5x + 2) = 15x + 6$.
+- $5(2x - 3) = 10x - 15$.
+- Periksa hasil dengan mengganti variabel memakai bilangan yang mudah dihitung.
+
+## 6. Latihan
 
 <QuizRunner quizId="algebra-operations" />
 
 <LessonComplete lessonId="g7-algebra-distributive" />
+
+---
+
+**Cerita Bab 4:** [Kotak yang belum dihitung →](/learn/grade-7/algebra/cerita)

@@ -1,5 +1,5 @@
 ---
-title: "Batas Anggaran Stan"
+title: "Pertidaksamaan dan Batas Anggaran"
 sidebar_position: 4
 slug: /grade-7/equations/inequality
 ---
@@ -10,39 +10,42 @@ import QuizRunner from '@site/src/components/QuizRunner';
 
 <div className="lessonKicker">KELAS 7 · PERSAMAAN DAN PERTIDAKSAMAAN · 12 MENIT</div>
 
-# Boleh miring, asal ke arah yang aman
+# Pertidaksamaan dan batas anggaran
 
-**Tujuan belajar:** Menentukan himpunan penyelesaian pertidaksamaan linear satu variabel dan menafsirkan batasnya pada masalah anggaran.
+Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 5 ada di akhir bab.
 
-## 1. Tiga belas pak dan selisih lima belas ribu
+**Tujuan belajar:** Menentukan himpunan penyelesaian pertidaksamaan linear satu variabel, menggambarkannya pada garis bilangan, dan menafsirkan batasnya pada masalah anggaran.
 
-Selasa sore, Pak Rahmat menemukan catatan klub di papan tulis. Di situ tertulis "12 pak hadiah, anggaran habis". Ia mengetuk papan dengan spidol.
+**Kata kunci:** pertidaksamaan, tanda pertidaksamaan, batas, himpunan penyelesaian, garis bilangan.
 
-"Bagus kalian sudah menghitung," katanya. "Tapi kalian membaca amplopnya sebagai target."
+**Dalam materi ini:**
 
-Nara mengangkat kepala. "Bukannya Rp900.000 itu anggaran?"
+1. Persamaan dan pertidaksamaan
+2. Tanda pertidaksamaan
+3. Menyelesaikan pertidaksamaan
+4. Himpunan penyelesaian dan garis bilangan
+5. Lab
+6. Kesalahan umum
+7. Ringkasan
+8. Latihan
 
-"Itu batas maksimum. Kalau kurang, tidak apa-apa. Kalau lebih, tidak boleh."
+## 1. Konsep
 
-Kiki menutup buku pertanyaannya. "Jadi timbangannya boleh miring?"
+### Persamaan dan pertidaksamaan
 
-"Pertanyaan bagus," kata Pak Rahmat. "Coba jelaskan dulu, miring ke arah mana yang masih aman."
+Persamaan menuntut kedua ruas bernilai sama. Pertidaksamaan memberi aturan tentang ruas mana yang boleh lebih besar atau lebih kecil.
 
-Raka mengambil buku sketsa. Ia menggambar timbangan dengan tumpukan biaya di kiri dan amplop di kanan. Kali ini ia menambahkan penyangga kecil di bawah sisi kiri, sehingga sisi kiri boleh lebih ringan, tetapi tidak boleh lebih berat.
+Contoh persamaan:
 
-Nara mencoba menghitung dengan 13 pak. Biaya tetap Rp720.000, satu pak Rp15.000. Totalnya $720\,000 + 195\,000 = 915\,000$.
+$$720\,000 + 15\,000p = 900\,000$$
 
-"Kurang Rp15.000," katanya.
+Contoh pertidaksamaan:
 
-"Lebih," kata Bima. "Amplopnya cuma Rp900.000. Kita kelebihan Rp15.000."
+$$720\,000 + 15\,000p \le 900\,000$$
 
-Nara mencoret angka 13. "Aku pikir selisih kecil masih boleh. Ternyata batasnya keras."
+Persamaan hanya punya satu solusi. Pertidaksamaan biasanya punya banyak penyelesaian, karena banyak nilai yang memenuhi aturannya.
 
-Bima menunjuk buku kas. "Kalau kita menulis minus Rp915.000, saldonya minus Rp15.000. Tidak ada uang yang muncul tiba-tiba."
-
-## 2. Tanda yang mengizinkan beberapa jawaban
-
-Persamaan menuntut kedua sisi sama. Pertidaksamaan memberi aturan tentang sisi mana yang boleh lebih besar. Tanda yang dipakai:
+### Tanda pertidaksamaan
 
 | Tanda | Dibaca | Arti |
 |---|---|---|
@@ -51,111 +54,147 @@ Persamaan menuntut kedua sisi sama. Pertidaksamaan memberi aturan tentang sisi m
 | $>$ | lebih dari | nilai di kiri lebih besar, batas tidak termasuk |
 | $\ge$ | lebih dari atau sama dengan | nilai di kiri lebih besar atau sama, batas termasuk |
 
-Kasus klub ditulis seperti ini:
+### Menyelesaikan pertidaksamaan
+
+Aturannya hampir sama dengan persamaan.
+
+- Menambah atau mengurangi bilangan yang sama pada kedua ruas tidak mengubah arah tanda.
+- Membagi atau mengalikan kedua ruas dengan bilangan positif tidak mengubah arah tanda.
+- Membagi atau mengalikan kedua ruas dengan bilangan negatif membalik arah tanda.
+
+Aturan terakhir perlu diingat. Contoh:
+
+$$-2p \gt 6$$
+
+Bagi kedua ruas dengan $-2$. Karena pembaginya negatif, tanda berbalik.
+
+$$p \lt -3$$
+
+Periksa dengan $p = -4$: $-2(-4) = 8$, dan $8 \gt 6$ benar.
+
+### Himpunan penyelesaian
+
+**Himpunan penyelesaian** adalah kumpulan semua nilai variabel yang memenuhi pertidaksamaan. Pada garis bilangan, daerah yang memenuhi diarsir. Titik batas digambar penuh jika batas termasuk, dan digambar kosong jika batas tidak termasuk.
+
+Contoh untuk $x \le 4$: arsiran ke kiri dari titik 4, dengan titik 4 penuh.
+
+Contoh untuk $x \lt 4$: arsiran ke kiri dari titik 4, dengan titik 4 kosong.
+
+## 2. Contoh
+
+### Contoh 1: batas pak hadiah
+
+Anggaran stan Pekan Angka Rp900.000. Biaya tetap Rp720.000, terdiri atas panggung, spanduk, dan meja. Satu pak hadiah Rp15.000. Berapa pak hadiah yang boleh dibeli agar anggaran tidak terlampaui?
+
+Misalkan $p$ adalah banyak pak hadiah.
 
 $$720\,000 + 15\,000p \le 900\,000$$
 
-Huruf $p$ adalah banyak pak hadiah. Tanda $\le$ berarti biaya tidak boleh melebihi Rp900.000, tetapi boleh kurang.
-
-Kurangi $720\,000$ pada kedua sisi:
+Kurangi $720\,000$ pada kedua ruas:
 
 $$15\,000p \le 180\,000$$
 
-Bagi kedua sisi dengan $15\,000$. Angka ini positif, jadi arah tanda tidak berubah:
+Bagi kedua ruas dengan $15\,000$. Angka ini positif, jadi arah tanda tidak berubah:
 
 $$p \le 12$$
 
-Semua bilangan cacah dari 0 sampai 12 memenuhi pertidaksamaan itu. Himpunan penyelesaiannya adalah $\{0, 1, 2, \ldots, 12\}$. Angka 12 disebut **batas**, dan karena tandanya $\le$, batas itu ikut termasuk.
+Karena banyak pak tidak mungkin negatif dan harus bilangan cacah, himpunan penyelesaiannya adalah $\{0, 1, 2, \ldots, 12\}$.
 
-"Jadi kita boleh membeli sepuluh pak," kata Nara. "Atau dua belas."
+Angka 12 adalah **batas**. Karena tandanya $\le$, batas itu ikut termasuk.
 
-"Boleh," kata Pak Rahmat. "Yang tidak boleh tiga belas."
+Tabel pemeriksaan:
 
-Kiki menatap baris terakhir. "Kalau tandanya cuma $<$, dua belasnya masih boleh?"
+| $p$ | Total biaya | Dibandingkan dengan Rp900.000 | Memenuhi? |
+|---|---|---|---|
+| $10$ | Rp870.000 | kurang Rp30.000 | ya |
+| $11$ | Rp885.000 | kurang Rp15.000 | ya |
+| $12$ | Rp900.000 | pas | ya |
+| $13$ | Rp915.000 | lebih Rp15.000 | tidak |
 
-"Tidak," kata Nara. "Dua belas jadi batas yang tidak termasuk. Paling banyak sebelas."
+Jadi 13 pak tidak memenuhi.
 
-:::danger Jangan tertukar
-Pada $p \le 12$, nilai 12 memenuhi. Pada $p < 12$, nilai 12 tidak memenuhi. Saat membagi atau mengalikan kedua sisi dengan bilangan negatif, arah tanda juga berbalik. Contoh: $-2p > 6$ menjadi $p < -3$.
-:::
+### Contoh 2: uang kas minimum
 
-## 3. Coba di meja kerja
+Uang kas kelas Rp60.000. Setiap anggota menyetor Rp5.000. Kas harus mencapai paling sedikit Rp100.000.
 
-Bima membuka lab di layar. "Aku mau lihat daerah yang boleh, bukan cuma satu titik."
+$$60\,000 + 5\,000n \ge 100\,000$$
+
+Kurangi $60\,000$ pada kedua ruas:
+
+$$5\,000n \ge 40\,000$$
+
+Bagi kedua ruas dengan $5\,000$:
+
+$$n \ge 8$$
+
+Jadi paling sedikit 8 anggota harus menyetor.
+
+### Contoh 3: tiket yang harus terjual
+
+Biaya penyelenggaraan Rp450.000. Harga tiket Rp4.000. Panitia ingin pemasukan tiket lebih dari biaya.
+
+$$4\,000t \gt 450\,000$$
+
+Bagi kedua ruas dengan $4\,000$:
+
+$$t \gt 112{,}5$$
+
+Karena banyak tiket harus bilangan cacah, tiket yang harus terjual paling sedikit 113.
+
+### Contoh 4: tanda yang sama dengan batas
+
+Selesaikan $2x + 3 \le 11$.
+
+Kurangi 3 pada kedua ruas:
+
+$$2x \le 8$$
+
+Bagi kedua ruas dengan 2:
+
+$$x \le 4$$
+
+Periksa $x = 4$: $2(4) + 3 = 11$, dan $11 \le 11$ benar. Periksa $x = 5$: $13 \le 11$ salah.
+
+## 3. Lab
+
+Lab berikut menampilkan pertidaksamaan berbentuk $ax + b \le c$, $ax + b \lt c$, $ax + b \gt c$, atau $ax + b \ge c$.
 
 <InequalityLab />
 
 Atur $a = 2$, $b = 3$, dan $c = 11$. Pilih tanda $\le$. Pertidaksamaannya menjadi $2x + 3 \le 11$. Lab menghitung batas $(11 - 3) \div 2 = 4$, lalu menulis $x \le 4$. Garis bilangan diarsir ke kiri dari titik 4, dan titiknya penuh karena batas termasuk.
 
-Ubah tandanya menjadi $<$. Tulisan berubah menjadi $x < 4$, dan lingkaran di titik 4 menjadi kosong. Nilai 4 tidak lagi memenuhi.
+Ubah tandanya menjadi $<$. Tulisan berubah menjadi $x \lt 4$, dan lingkaran di titik 4 menjadi kosong. Nilai 4 tidak lagi memenuhi.
 
-Sekarang pilih tanda $>$. Arsiran pindah ke kanan. Nara memperhatikan bahwa batasnya tetap 4, tetapi arah daerah yang memenuhi berubah.
+Pilih tanda $>$. Arsiran pindah ke kanan. Batasnya tetap 4, tetapi arah daerah yang memenuhi berubah.
 
-"Jadi tandanya menentukan mana yang boleh," kata Bima. "Bukan cuma satu titik yang dicari."
+Atur $a = 3$, $b = 2$, dan $c = 17$ dengan tanda $\le$. Batasnya $(17 - 2) \div 3 = 5$, jadi $x \le 5$. Periksa $x = 5$: $17 \le 17$ benar. Periksa $x = 6$: $20 \le 17$ salah.
 
-Nara mencoba $a = 3$, $b = 2$, dan $c = 17$ dengan tanda $\le$. Batasnya $(17 - 2) \div 3 = 5$, jadi $x \le 5$. Ia memeriksa $x = 5$: $17 \le 17$, benar. Ia memeriksa $x = 6$: $20 \le 17$, salah.
+## 4. Kesalahan umum
 
-## 4. Catatan klub
+- Menyamakan arti $\le$ dan $<$. Pada $p \le 12$, nilai 12 memenuhi. Pada $p \lt 12$, nilai 12 tidak memenuhi.
+- Lupa membalik arah tanda saat membagi atau mengalikan dengan bilangan negatif.
+- Membalik arah tanda padahal pembaginya positif.
+- Menganggap himpunan penyelesaian hanya berisi satu angka, seperti pada persamaan.
+- Memakai semua bilangan bulat sebagai jawaban, padahal banyak barang harus bilangan cacah.
+- Menganggap batas sebagai target. Batas adalah nilai paling jauh yang masih boleh, bukan jumlah yang harus dipakai.
 
-Nara menulis judul baru di buku kas: *Batas pak hadiah*.
+## 5. Ringkasan
 
-Biaya tetap Rp720.000 terdiri dari panggung, spanduk, dan empat meja. Setiap pak hadiah Rp15.000.
+- Pertidaksamaan menyatakan hubungan tidak sama antara kedua ruas.
+- Tanda $\le$ dan $\ge$ memuat batas. Tanda $<$ dan $>$ tidak memuat batas.
+- Menambah atau mengurangi bilangan yang sama pada kedua ruas tidak mengubah arah tanda.
+- Membagi atau mengalikan kedua ruas dengan bilangan negatif membalik arah tanda.
+- Himpunan penyelesaian memuat semua nilai yang memenuhi, bukan hanya satu nilai.
+- Pada garis bilangan, titik penuh berarti batas termasuk, titik kosong berarti batas tidak termasuk.
+- Dalam masalah barang, jawaban dibatasi bilangan cacah.
+- Batas anggaran adalah nilai maksimum, bukan jumlah yang wajib dihabiskan.
 
-$$720\,000 + 15\,000p \le 900\,000$$
-
-Langkah 1, kurangi $720\,000$ pada kedua sisi:
-
-$$15\,000p \le 180\,000$$
-
-Langkah 2, bagi kedua sisi dengan $15\,000$:
-
-$$p \le 12$$
-
-Nara membuat tabel pemeriksaan.
-
-| $p$ | Total biaya | Dibandingkan dengan Rp900.000 | Memenuhi? |
-|---|---|---|---|
-| 10 | Rp870.000 | kurang Rp30.000 | ya |
-| 11 | Rp885.000 | kurang Rp15.000 | ya |
-| 12 | Rp900.000 | pas | ya |
-| 13 | Rp915.000 | lebih Rp15.000 | tidak |
-
-Bima mengecek satu baris dengan tangan. Untuk $p = 11$, $15\,000 \times 11 = 165\,000$, lalu $720\,000 + 165\,000 = 885\,000$. Angka itu di bawah Rp900.000, jadi masih aman.
-
-"Kalau $p = 13$, kita harus mengambil Rp15.000 dari pos lain," kata Nara. "Itu artinya mengurangi sesuatu yang sudah direncanakan."
-
-Pak Rahmat menunjuk tabel. "Jadi berapa pak yang kalian pilih?"
-
-Nara melihat anggaran lagi. "Sepuluh. Sisanya Rp30.000 untuk kejadian tak terduga."
-
-"Bukan dua belas?"
-
-"Dua belas boleh, tapi tidak perlu. Batasnya bukan target."
-
-## 5. Kembali ke misi
-
-Nara menulis rencana akhir di papan tulis. Empat meja, sepuluh pak hadiah, dan dana cadangan Rp30.000. Total biayanya Rp870.000.
-
-Bima memeriksa buku kas. Panggung minus Rp450.000, spanduk minus Rp90.000, meja minus Rp180.000, hadiah minus Rp150.000. Jumlahnya minus Rp870.000. Saldo amplop masih Rp30.000.
-
-"Masih ada sisa," katanya. "Dan tidak ada yang minus."
-
-Raka menyempurnakan gambar timbangannya. Sisi kiri lebih ringan dari sisi kanan, dan penyangga kecil menahan sisi kiri supaya tidak turun. "Kalau digambar, miringnya ke arah yang aman," katanya.
-
-Kiki mengamati gambar itu. "Jadi timbangan persamaan harus lurus, sedangkan timbangan pertidaksamaan boleh miring?"
-
-"Boleh miring selama sisi biaya tidak lebih berat," kata Nara.
-
-Kiki menulis di bukunya. "Kalau kita menambah satu pak lagi, totalnya Rp885.000. Masih aman."
-
-"Masih," kata Nara.
-
-Nara mengambil pensil. Di papan tulis, angka 12 masih terlihat samar di bawah tulisan baru.
-
-"Kalau harga meja naik Rp10.000 per meja, berapa pak hadiah yang harus kita lepas?" tanya Kiki.
-
-## 6. Cek pemahaman
+## 6. Latihan
 
 <QuizRunner quizId="equation-inequality" />
 
 <LessonComplete lessonId="g7-equations-inequality" />
+
+---
+
+**Cerita Bab 5:** [Anggaran stan yang seimbang →](/learn/grade-7/equations/cerita)

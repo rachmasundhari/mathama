@@ -1,5 +1,5 @@
 ---
-title: "Tim kecil di dalam daftar besar"
+title: "Himpunan Semesta, Himpunan Kosong, dan Himpunan Bagian"
 sidebar_position: 2
 slug: /grade-7/sets/subsets
 ---
@@ -10,160 +10,150 @@ import QuizRunner from '@site/src/components/QuizRunner';
 
 <div className="lessonKicker">KELAS 7 · HIMPUNAN · 12 MENIT</div>
 
-# Tim kecil di dalam daftar besar
+# Himpunan Semesta, Himpunan Kosong, dan Himpunan Bagian
+
+Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 8 ada di akhir bab.
 
 **Tujuan belajar:** Menentukan himpunan semesta, himpunan kosong, dan himpunan bagian, lalu menghitung banyak himpunan bagian dari himpunan kecil.
 
-## 1. Enam nama di luar lingkaran
+**Kata kunci:** himpunan semesta, himpunan bagian, himpunan kosong, lambang himpunan bagian, banyak himpunan bagian.
 
-Selasa berikutnya, dua lingkaran Raka masih di papan tulis. Tujuh nama ada di bagian tengah, nama-nama lain tersebar di sisi kiri dan kanan. Nara menempel selembar kertas besar di samping papan. Kertas itu berisi tiga puluh dua nama siswa kelas tujuh.
+**Dalam materi ini:**
 
-"Enam nama belum masuk lingkaran mana pun," kata Kiki. "Mereka masih ikut Pekan Angka?"
+1. Konsep himpunan semesta
+2. Himpunan bagian
+3. Himpunan kosong
+4. Banyak himpunan bagian
+5. Contoh
+6. Lab
+7. Kesalahan umum
+8. Ringkasan
+9. Latihan
 
-"Iya," kata Nara. "Mereka tetap siswa kelas tujuh. Mereka hanya belum mendaftar di dua stan itu."
+## 1. Konsep himpunan semesta
 
-Kiki menunjuk kertas besar. "Jadi daftar di kertas ini lebih besar dari dua lingkaran tadi?"
+Himpunan semesta adalah himpunan yang memuat semua objek yang sedang dibicarakan. Himpunan semesta ditulis $S$.
 
-"Lebih besar," kata Nara. "Semua nama di lingkaran harus ada di kertas ini juga."
+Misalnya, pembicaraan tentang Pekan Angka di kelas 7 memakai semesta semua siswa kelas 7. Jika kelas itu berisi 32 siswa, maka $n(S) = 32$.
 
-Raka mengambil spidol dan menggambar persegi panjang mengelilingi dua lingkaran. Enam nama yang belum masuk ia tulis di luar lingkaran, tetapi masih di dalam persegi.
+Semesta menjadi batas pembicaraan. Himpunan stan robotik dan himpunan stan kuis berada di dalam semesta itu. Siswa yang tidak mendaftar di dua stan tetap anggota $S$, hanya bukan anggota kedua himpunan stan.
 
-"Kalau digambar, semua nama ada di dalam kotak ini," kata Raka. "Lingkarannya cuma bagian di dalamnya."
+Semesta harus ditentukan sebelum soal dihitung. Semesta yang berbeda memberi jawaban yang berbeda. Jika semesta hanya peserta stan, siswa yang tidak mendaftar tidak ikut dihitung. Jika semesta seluruh kelas, mereka ikut dihitung.
 
-Pak Rahmat meletakkan termos di meja. "Kotak itu punya nama dalam matematika. Sebelum kita beri nama, aku butuh daftar tim untuk datang lebih awal hari Sabtu."
+## 2. Himpunan bagian
 
-Pak Rahmat menulis tiga nama di papan: Raka, Bima, Kiki. "Aku butuh tim yang datang lebih awal. Tim boleh berisi satu orang, dua orang, atau tiga orang. Berapa kemungkinan tim yang bisa aku pilih?"
+Himpunan $A$ disebut himpunan bagian dari $B$ jika setiap anggota $A$ juga anggota $B$. Lambangnya $A \subseteq B$.
 
-Nara langsung menulis. "Tiga pilihan untuk orang pertama, dua untuk orang kedua, satu untuk orang ketiga. Tiga kali dua kali satu, enam tim."
+Contohnya, ambil $T = \{\text{Ayu}, \text{Budi}, \text{Citra}\}$.
 
-Bima menggeleng. "Aku hitung tujuh."
+- $\{\text{Ayu}, \text{Budi}\} \subseteq T$ benar, karena kedua anggotanya ada di $T$.
+- $\{\text{Ayu}, \text{Eka}\} \subseteq T$ salah, karena Eka bukan anggota $T$.
 
-Kiki mengangkat tangan. "Aku dapat delapan."
+Setiap himpunan adalah himpunan bagian dari dirinya sendiri, jadi $T \subseteq T$ benar. Himpunan kosong juga himpunan bagian dari setiap himpunan.
 
-"Kok bisa beda?" tanya Nara.
+Perhatikan perbedaan lambang:
 
-Bima menulis daftarnya.
+- $\in$ dipakai antara anggota dan himpunan, misalnya $\text{Ayu} \in T$.
+- $\subseteq$ dipakai antara dua himpunan, misalnya $\{\text{Ayu}\} \subseteq T$.
 
-1. Raka
-2. Bima
-3. Kiki
-4. Raka dan Bima
-5. Raka dan Kiki
-6. Bima dan Kiki
-7. Raka, Bima, dan Kiki
+## 3. Himpunan kosong
 
-"Itu tujuh," kata Bima.
+Himpunan kosong adalah himpunan yang tidak punya anggota. Lambangnya $\varnothing$ atau $\{\}$.
 
-Kiki menunjuk papan. "Kalau tidak ada yang datang?"
+Himpunan kosong muncul saat syarat keanggotaan tidak dipenuhi objek mana pun. Misalnya, himpunan siswa kelas 7 yang mendaftar stan planetarium, padahal stan itu tidak dibuka.
 
-Bima mengerutkan dahi. "Itu bukan tim."
+Himpunan kosong adalah himpunan bagian dari setiap himpunan. Alasannya, tidak ada anggota yang dapat melanggar syarat. Karena tidak punya anggota, tidak ada objek yang perlu diperiksa.
 
-"Tapi kemungkinannya ada," kata Kiki. "Sabtu pagi bisa saja tidak ada yang datang."
+Himpunan kosong berbeda dari himpunan yang berisi nol. Himpunan $\{0\}$ punya satu anggota, yaitu bilangan 0. Himpunan $\varnothing$ tidak punya anggota, jadi $n(\varnothing) = 0$.
 
-Nara melihat daftar Bima. "Dan kalau aku tulis Raka dan Bima, lalu Bima dan Raka, itu tim yang sama. Hitunganku tadi menghitung urutan, bukan tim."
+## 4. Banyak himpunan bagian
 
-Pak Rahmat mengangguk. "Sekarang kalian punya tiga jawaban: enam, tujuh, dan delapan. Mana yang menghitung setiap kemungkinan tepat satu kali?"
+Untuk himpunan dengan $n$ anggota, banyak himpunan bagiannya adalah $2^n$.
 
-Tidak ada yang langsung menjawab. Nara mengetuk buku dua kali. "Aku perlu cara yang tidak bergantung pada ingatan."
+Setiap anggota punya dua pilihan: masuk ke himpunan bagian atau tidak masuk. Pilihan itu dikalikan untuk semua anggota.
 
-## 2. Himpunan di dalam himpunan
+Untuk $T = \{\text{Ayu}, \text{Budi}, \text{Citra}\}$ dengan $n(T) = 3$:
 
-Kertas besar Nara adalah **himpunan semesta**, yaitu himpunan yang memuat semua objek yang sedang dibicarakan. Himpunan semesta biasanya ditulis $S$. Di ruang 7B, $S$ adalah tiga puluh dua siswa kelas tujuh yang mengikuti Pekan Angka.
+$$2^3 = 2 \times 2 \times 2 = 8$$
 
-Setiap himpunan lain dalam pembicaraan itu adalah **himpunan bagian** dari $S$. Himpunan $R$ untuk stan robotik dan himpunan $K$ untuk stan kuis semuanya berada di dalam $S$. Enam siswa yang tidak mendaftar di dua stan itu tetap anggota $S$, hanya bukan anggota $R$ atau $K$.
+Delapan himpunan bagian itu dapat disusun menurut banyak anggotanya.
 
-Raka menunjuk persegi panjangnya. "Kotak besar itu $S$. Dua lingkaran di dalamnya himpunan bagian."
+| No | Himpunan bagian | Banyak anggota |
+|---|---|---|
+| 1 | $\varnothing$ | 0 |
+| 2 | $\{\text{Ayu}\}$ | 1 |
+| 3 | $\{\text{Budi}\}$ | 1 |
+| 4 | $\{\text{Citra}\}$ | 1 |
+| 5 | $\{\text{Ayu}, \text{Budi}\}$ | 2 |
+| 6 | $\{\text{Ayu}, \text{Citra}\}$ | 2 |
+| 7 | $\{\text{Budi}, \text{Citra}\}$ | 2 |
+| 8 | $\{\text{Ayu}, \text{Budi}, \text{Citra}\}$ | 3 |
 
-Himpunan $A$ disebut himpunan bagian dari $B$ jika setiap anggota $A$ juga anggota $B$. Lambangnya $A \subseteq B$. Kalau ada satu anggota $A$ yang tidak ada di $B$, maka $A$ bukan himpunan bagian dari $B$.
+Jumlahnya $1 + 3 + 3 + 1 = 8$. Rumus $2^n$ sudah memasukkan himpunan kosong dan himpunan penuh.
 
-Contohnya, ambil $T = \{\text{Raka}, \text{Bima}, \text{Kiki}\}$. Tim $\{\text{Raka}, \text{Bima}\}$ adalah himpunan bagian dari $T$, jadi $\{\text{Raka}, \text{Bima}\} \subseteq T$. Tim $\{\text{Raka}, \text{Sari}\}$ bukan himpunan bagian dari $T$, karena Sari tidak ada di $T$.
+## 5. Contoh
 
-Ada satu himpunan yang tidak punya anggota sama sekali, yaitu **himpunan kosong**. Lambangnya $\varnothing$ atau $\{\}$. Himpunan kosong adalah himpunan bagian dari setiap himpunan. Alasannya: tidak ada anggota yang bisa melanggar syarat, karena anggotanya memang tidak ada.
+**Contoh 1: himpunan bagian dari himpunan bilangan**
 
-Setiap himpunan merupakan himpunan bagian dari dirinya sendiri. Jadi $T \subseteq T$ benar.
+Ambil $A = \{2, 4, 6\}$. Himpunan bagian yang mungkin adalah $\varnothing$, $\{2\}$, $\{4\}$, $\{6\}$, $\{2, 4\}$, $\{2, 6\}$, $\{4, 6\}$, dan $\{2, 4, 6\}$.
 
-Banyak himpunan bagian dari himpunan dengan $n$ anggota adalah $2^n$. Setiap anggota punya dua kemungkinan: masuk tim atau tidak masuk. Untuk tiga anggota:
+Banyaknya $2^3 = 8$.
 
-$$2 \times 2 \times 2 = 2^3 = 8$$
+**Contoh 2: semesta dan himpunan bagian**
 
-Delapan kemungkinan itu adalah tujuh daftar Bima ditambah satu tim kosong. Nara menghitung enam karena ia menghitung urutan nama. Di sini yang menentukan adalah pilihan masuk atau tidak untuk setiap anggota.
+Kelas 7 berisi 32 siswa. Himpunan robotik $R$ punya 18 anggota. Himpunan kuis $K$ punya 15 anggota. Tujuh siswa masuk keduanya, dan 6 siswa tidak masuk keduanya.
 
-:::note Kata Pak Rahmat
-Kalau setiap anggota boleh masuk atau tidak masuk, mengapa jumlah kemungkinan dikalikan dua untuk setiap anggota?
-:::
+Karena semua siswa berada di kelas yang sama, $R \subseteq S$ dan $K \subseteq S$. Siswa di luar kedua stan tetap anggota $S$.
 
-## 3. Coba di meja kerja
+Banyak siswa yang ikut paling sedikit satu stan:
 
-Nara menyeret kursi ke layar. "Kosongkan satu daerah. Apakah himpunan kosong masih bagian dari semesta?"
+$$18 + 15 - 7 = 26$$
+
+Banyak siswa di luar kedua stan:
+
+$$32 - 26 = 6$$
+
+**Contoh 3: memilih tim**
+
+Guru membutuhkan tim yang datang lebih awal dari tiga nama: Ayu, Budi, dan Citra. Tim boleh berisi satu, dua, atau tiga orang. Semua kemungkinan tim adalah delapan himpunan bagian di tabel sebelumnya.
+
+Jika urutan nama dihitung, Ayu lalu Budi akan berbeda dari Budi lalu Ayu. Dalam himpunan bagian, urutan tidak dihitung. $\{\text{Ayu}, \text{Budi}\}$ dan $\{\text{Budi}, \text{Ayu}\}$ adalah tim yang sama.
+
+## 6. Lab
+
+Kosongkan satu daerah, lalu perhatikan angka di luar lingkaran.
 
 <VennLab />
 
-Di lab, persegi panjang adalah $S$. Angka di luar dua lingkaran tetap dihitung dalam semesta. Coba hanya $A$ berisi 3, irisan berisi 0, hanya $B$ berisi 4, dan di luar keduanya berisi 2. Maka $n(A) = 3$, $n(B) = 4$, dan $n(S) = 3 + 0 + 4 + 2 = 9$.
+Persegi panjang pada lab adalah $S$. Angka di luar dua lingkaran tetap dihitung dalam semesta. Coba hanya $A$ berisi 3, irisan berisi 0, hanya $B$ berisi 4, dan di luar keduanya berisi 2. Maka $n(A) = 3$, $n(B) = 4$, dan $n(S) = 3 + 0 + 4 + 2 = 9$.
 
-Bima menggeser irisan ke nol. "Berarti tidak ada yang ikut dua-duanya. Irisannya kosong."
+Irisan yang berisi 0 berarti tidak ada anggota yang masuk dua himpunan. Himpunan itu kosong, tetapi tetap berada di dalam semesta.
 
-"Dan himpunan kosong itu tetap himpunan bagian," kata Nara. "Dia ada di dalam semesta, hanya isinya nol."
+## 7. Kesalahan umum
 
-Kiki menunjuk daerah di luar lingkaran. "Kalau daerah ini juga di dalam $S$, berarti anak yang tidak ikut stan tetap anggota semesta."
+- Menentukan semesta terlalu sempit. Jika semesta hanya peserta stan, siswa lain tidak ikut dihitung.
+- Menganggap himpunan kosong sama dengan tidak ada himpunan. Himpunan kosong tetap himpunan dan tetap himpunan bagian.
+- Menukar lambang $\in$ dan $\subseteq$. Lambang $\in$ menghubungkan anggota dengan himpunan, lambang $\subseteq$ menghubungkan dua himpunan.
+- Lupa bahwa himpunan penuh dan himpunan kosong termasuk himpunan bagian.
+- Menghitung urutan saat menyusun himpunan bagian. Urutan tidak menambah kemungkinan baru.
+- Menganggap $\{0\}$ sebagai himpunan kosong. $\{0\}$ punya satu anggota.
 
-"Iya," kata Raka. "Kotaknya lebih besar dari lingkarannya."
+## 8. Ringkasan
 
-## 4. Catatan klub
+- Himpunan semesta memuat semua objek yang sedang dibicarakan.
+- Semesta harus ditentukan sebelum menghitung.
+- $A \subseteq B$ berarti setiap anggota $A$ juga anggota $B$.
+- Setiap himpunan adalah himpunan bagian dari dirinya sendiri.
+- Himpunan kosong tidak punya anggota dan menjadi himpunan bagian dari setiap himpunan.
+- Banyak himpunan bagian dari himpunan dengan $n$ anggota adalah $2^n$.
+- Rumus $2^n$ sudah memasukkan himpunan kosong dan himpunan penuh.
 
-Nara membuka halaman baru dan menulis daftar lengkap tim untuk Pak Rahmat.
-
-| No | Tim | Banyak anggota |
-|---|---|---|
-| 1 | $\varnothing$ | 0 |
-| 2 | $\{\text{Raka}\}$ | 1 |
-| 3 | $\{\text{Bima}\}$ | 1 |
-| 4 | $\{\text{Kiki}\}$ | 1 |
-| 5 | $\{\text{Raka}, \text{Bima}\}$ | 2 |
-| 6 | $\{\text{Raka}, \text{Kiki}\}$ | 2 |
-| 7 | $\{\text{Bima}, \text{Kiki}\}$ | 2 |
-| 8 | $\{\text{Raka}, \text{Bima}, \text{Kiki}\}$ | 3 |
-
-Langkah pemeriksaan:
-
-1. Hitung anggota himpunan asal: $n(T) = 3$.
-2. Hitung banyak himpunan bagian dengan rumus: $2^3 = 8$.
-3. Cocokkan dengan daftar: baris 1 sampai 8 berjumlah 8.
-4. Periksa setiap baris: tidak ada tim yang sama ditulis dua kali.
-
-Bima menghitung ulang. "Tiga tim berisi satu orang, tiga tim berisi dua orang, satu tim berisi tiga orang, satu tim kosong. Tiga tambah tiga tambah satu tambah satu, delapan."
-
-"Kalau empat orang?" tanya Kiki.
-
-"$2^4 = 16$," kata Nara. "Tapi aku belum mau menulis enam belas baris."
-
-:::tip Catatan Nara
-Susun himpunan bagian menurut banyak anggotanya. Mulai dari kosong, lalu satu anggota, dua anggota, sampai himpunan penuh. Cara ini membuat setiap kemungkinan muncul satu kali.
-:::
-
-## 5. Kembali ke misi
-
-Nara menyalin delapan baris itu ke jadwal. Pak Rahmat akan menyiapkan tim lengkap bertiga, dengan satu tim cadangan berisi dua orang.
-
-"Kalau yang datang cuma Raka dan Bima, apakah timnya tetap sah?" tanya Kiki.
-
-"Sah," kata Nara. "Dua orang itu himpunan bagian dari tiga nama yang kita rencanakan."
-
-Bima menunjuk baris pertama. "Yang kosong ini kenapa ditulis? Nanti dikira ada tim yang tidak jadi."
-
-"Supaya kita tahu kemungkinan itu ada," kata Nara. "Kalau semua berhalangan, kita tidak perlu mencari tim baru dari nol."
-
-Kiki mencatat sesuatu di buku pertanyaannya. "Jadi himpunan kosong itu bukan berarti tidak ada di daftar, ya?"
-
-Pak Rahmat mengangkat cangkirnya. "Kalau kamu menulis jadwal untuk empat orang, apakah kamu masih bisa memakai cara yang sama?"
-
-Nara melihat delapan baris di halaman bukunya. "Bisa, tapi daftarnya dua kali lebih panjang."
-
-Kiki menutup buku. "Kalau himpunan kosong bagian dari semua himpunan, apakah 'tidak ada yang datang' juga harus masuk jadwal?"
-
-Pak Rahmat tidak menjawab. Ia hanya menunggu.
-
-## 6. Cek pemahaman
+## 9. Latihan
 
 <QuizRunner quizId="sets-subsets" />
 
 <LessonComplete lessonId="g7-sets-subsets" />
+
+---
+
+**Cerita Bab 8:** [Daftar Peserta dan Stan →](/learn/grade-7/sets/cerita)

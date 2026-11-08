@@ -11,164 +11,128 @@ import QuizRunner from '@site/src/components/QuizRunner';
 
 <div className="lessonKicker">KELAS 7 · BENTUK ALJABAR · 16 MENIT</div>
 
-# Satu kotak terbuka, delapan kotak tersegel
+# Memodelkan Masalah dengan Aljabar
+
+Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 4 ada di akhir bab.
 
 **Tujuan belajar:** Menyusun persamaan dari hubungan antar besaran, menyelesaikannya, dan memeriksa jawaban dengan pola pengiriman.
 
-## 1. Kotak yang akhirnya terbuka
+**Kata kunci:** model, persamaan, variabel, penyelesaian, substitusi, pola.
 
-Kamis sore, hujan baru berhenti. Di ruang 7B ada satu dus yang tidak tersegel lagi. Sisi atasnya terbuka, dan di dalamnya ada 15 pensil. Label di depannya masih terbaca: $2x + 3$.
+## 1. Konsep
 
-Nara menaruh buku kas di samping dus. Ia belum mencatat apa pun karena harga hadiah belum final.
+Satu dus contoh dibuka dan isinya 15 pensil. Label di depannya masih terbaca $2x + 3$. Delapan dus lain yang isinya sama masih tersegel. Yang diketahui adalah isi satu dus, bukan isi satu kotak kecil di dalamnya.
 
-"Supplier meninggalkan satu contoh," kata Pak Rahmat. "Katanya isinya sama dengan dus lain."
+Langkah pertama adalah menentukan apa yang diwakili $x$. Label $2x + 3$ berarti dua paket kecil ditambah tiga pensil lepas. Jadi $x$ adalah isi satu paket kecil, bukan isi seluruh dus. Kalau $x$ diisi 15, dua paket kecil akan terhitung dua kali.
 
-Di sudut ruangan, delapan dus lain masih tersegel. Dus-dus itu yang akan dipakai di meja hadiah.
-
-Bima langsung mengambil pensil. "Berarti $x = 15$."
-
-Nara menulis di buku kotak. "$2(15) + 3 = 33$."
-
-"Kenapa 33?" tanya Kiki.
-
-"Itu nilai labelnya," kata Nara. "Tapi isi dus ini cuma 15 pensil."
-
-Bima menatap dus. "Berarti tebakanku salah."
-
-Kiki membalik label. "Kalau $x$ bukan 15, $x$ itu apa?"
-
-Nara belum menjawab. Ia menggambar satu dus, lalu membuka tutupnya di gambar. Di dalam ada dua paket kecil dan tiga pensil lepas.
-
-Kiki menghitung ulang label dengan jarinya. Dua kali lima belas, tiga puluh. Tambah tiga, tiga puluh tiga. Ia menulis 33 di buku pertanyaannya, lalu mencoretnya. "Angka ini bukan isi dus."
-
-"Labelnya bilang dua paket ditambah tiga pensil," kata Raka. "Bukan dua kali isi seluruh dus."
-
-## 2. x bukan jumlah seluruh isi
-
-Pak Rahmat menuang teh, lalu melihat gambar Raka. "Angka 15 itu mewakili apa?"
-
-"Isi satu dus," kata Nara.
-
-"Kalau $x$ isi satu paket kecil, berapa paket kecil di dalam dus?"
-
-"Dua."
-
-"Dan berapa pensil lepas?"
-
-"Tiga."
-
-Nara menulis persamaan:
+Hubungan antara label dan isi dus ditulis sebagai persamaan:
 
 $$2x + 3 = 15$$
 
-Ia mengurangi 3 dari kedua sisi.
+Persamaan adalah kalimat matematika yang menyatakan dua besaran sama nilainya. Menyelesaikannya berarti mencari nilai $x$ yang membuat kedua sisi seimbang. Operasi yang dikenakan pada satu sisi harus dikenakan juga pada sisi lain.
+
+Kurangi 3 dari kedua sisi:
+
+$$2x + 3 - 3 = 15 - 3$$
 
 $$2x = 12$$
 
-Lalu membagi kedua sisi dengan 2.
+Bagi kedua sisi dengan 2:
 
 $$x = 6$$
 
-Periksa: $2(6) + 3 = 12 + 3 = 15$. Isi satu paket kecil 6 pensil, dua paket 12 pensil, tambah 3 pensil lepas, jadi 15.
+Periksa dengan memasukkan kembali nilai $x$:
 
-Bima membuka dua paket kecil dari dus contoh dan menghitung isinya. Masing-masing 6 pensil. Ia menaruh tiga pensil lepas di sebelahnya. "Cocok. Lima belas."
+$$2(6) + 3 = 12 + 3 = 15$$
 
-Kiki mengangguk pelan. "Jadi $x$ isi paket kecil, bukan isi dus."
+Isi satu paket kecil 6 pensil. Dua paket berisi 12 pensil, ditambah 3 pensil lepas, menjadi 15 pensil.
 
-"Betul," kata Nara. "Angka 15 itu hasil akhir. $x$ ada di dalamnya."
+Setelah $x$ diketahui, semua label lain dapat dihitung. Delapan dus hadiah berisi $8 \times 15 = 120$ pensil. Label $3x$ bernilai $3(6) = 18$, dan label $x + 5$ bernilai $6 + 5 = 11$.
 
-:::note Kata Pak Rahmat
-Kalau 15 adalah seluruh isi dus, mengapa $x$ tidak boleh langsung diisi 15? Bagian mana yang jadi dua kali?
-:::
+Model juga dipakai untuk pola pengiriman. Catatan supplier menunjukkan banyak dus yang turun tiap sore: 10, 12, 14, 16. Setiap hari bertambah 2 dus, dan hari pertama 10 dus. Suku ke-n:
 
-## 3. Coba di meja kerja
+$$U_n = 10 + (n - 1) \times 2 = 2n + 8$$
 
-Bima membuka catatan pengiriman. "Supplier mencatat dus yang turun tiap sore: 10, 12, 14, 16."
+Jumlah empat hari pertama adalah $10 + 12 + 14 + 16 = 52$ dus. Delapan dus di antaranya dipakai untuk meja hadiah.
 
-Nara membuka lab pola. "Geser bedanya, lalu lihat suku ke-n. Aku mau tahu apakah catatan ini punya pola yang rapi."
+## 2. Contoh
+
+Contoh 1. Selesaikan $3x + 4 = 25$.
+
+Kurangi 4 dari kedua sisi:
+
+$$3x = 21$$
+
+Bagi kedua sisi dengan 3:
+
+$$x = 7$$
+
+Periksa: $3(7) + 4 = 21 + 4 = 25$.
+
+Contoh 2. Selesaikan $4x - 2 = 18$.
+
+$$4x - 2 = 18$$
+
+$$4x = 20$$
+
+$$x = 5$$
+
+Periksa: $4(5) - 2 = 20 - 2 = 18$.
+
+Contoh 3. Harga tiga buku dan satu pensil Rp23.000. Harga pensil Rp5.000 dan harga satu buku $x$ rupiah.
+
+$$3x + 5.000 = 23.000$$
+
+$$3x = 18.000$$
+
+$$x = 6.000$$
+
+Harga satu buku Rp6.000. Periksa: $3(6.000) + 5.000 = 23.000$.
+
+Contoh 4. Jalan lain untuk dus contoh. Delapan dus berisi 120 pensil, jadi satu dus berisi $120 \div 8 = 15$ pensil. Dari $2x + 3 = 15$ diperoleh $x = 6$. Dua jalan memberi angka yang sama.
+
+Contoh 5. Pola pengiriman $2n + 8$. Hari ke-4: $2(4) + 8 = 16$ dus. Hari ke-10: $2(10) + 8 = 28$ dus.
+
+## 3. Lab
+
+Lab pola menunjukkan suku ke-n dari sebuah barisan. Atur suku awal 10 dan beda 2 untuk melihat catatan pengiriman.
 
 <PatternLab />
 
-Bima mencoba pola kecil di lab: mulai 2, beda 3. Suku kelima 14. Nara menulis rumusnya, lalu mengganti suku awal dengan 10 dan beda dengan 2 di buku catatan. Rumusnya menjadi $10 + 2(n - 1)$, atau $2n + 8$.
+Suku keempatnya 16. Bentuk yang muncul adalah $10 + (n - 1) \times 2$, yang dapat disederhanakan menjadi $2n + 8$.
 
-"Jumlah empat hari pertama?" tanya Kiki.
-
-Nara menjumlahkan dengan pasangan: $10 + 16 = 26$ dan $12 + 14 = 26$. Seluruhnya 52 dus. Delapan di antaranya dus hadiah. Sisanya untuk booth lain.
-
-Bima menunjuk lab timbangan. "Sekarang bagian persamaannya. Seimbangkan dulu, baru bagi."
+Lab timbangan menunjukkan persamaan sebagai dua sisi yang harus seimbang. Atur $a = 2$, $b = 3$, dan $c = 15$.
 
 <EquationLab />
 
-Nara mengatur $a = 2$, $b = 3$, dan $c = 15$. Timbangan miring ke kiri. Ia menggeser nilai $x$ sampai seimbang di $x = 6$. "Yang dilakukan di kiri harus dilakukan di kanan juga."
+Timbangan miring ke kiri sebelum $x$ diatur. Geser nilai $x$ sampai kedua sisi sama. Keseimbangan terjadi pada $x = 6$, karena $2(6) + 3 = 15$. Jika $x = 5$, sisi kiri $2(5) + 3 = 13$ dan timbangan masih miring.
 
-Kiki mencoba $x = 5$. Sisi kiri $2(5) + 3 = 13$, sisi kanan 15. Timbangan masih miring. Ia menggeser satu lagi, dan angka kiri menjadi 15. "Baru seimbang di enam."
+## 4. Kesalahan umum
 
-## 4. Catatan klub
+- Mengisi $x$ dengan isi seluruh dus. Pada label $2x + 3$, $x$ adalah isi satu paket kecil, bukan 15.
+- Mengurangi hanya satu sisi. Persamaan tetap seimbang hanya jika operasi yang sama dikenakan pada kedua sisi.
+- Membagi sebelum mengurangi. Untuk $2x + 3 = 15$, kurangi 3 dulu, baru bagi dengan 2.
+- Membagi hanya suku yang memuat $x$. Kalau membagi kedua sisi dengan 2, seluruh sisi kiri dan kanan yang dibagi.
+- Berhenti setelah menemukan $x$. Masukkan kembali nilai itu ke setiap label dan ke isi dus untuk memeriksa.
+- Memakai pola tanpa memeriksa suku pertama. Rumus harus cocok untuk $n = 1$ dan satu suku lain.
 
-Nara menulis seluruh penyelesaian di satu halaman.
+## 5. Ringkasan
 
-Langkah 1. Beri nama: $x$ adalah isi satu paket kecil.
+- Model aljabar menghubungkan besaran yang diketahui dengan yang dicari.
+- Tentukan dulu apa yang diwakili variabel.
+- Label $2x + 3$ dan isi 15 pensil memberi persamaan $2x + 3 = 15$.
+- Kurangi 3 dari kedua sisi, lalu bagi dengan 2, sehingga $x = 6$.
+- Satu dus berisi 15 pensil, dan delapan dus berisi 120 pensil.
+- Label lain saat $x = 6$: $3x = 18$ dan $x + 5 = 11$.
+- Pola 10, 12, 14, 16 mempunyai rumus $U_n = 2n + 8$.
+- Periksa jawaban dengan substitusi dan dengan jalan hitung yang berbeda.
 
-Langkah 2. Terjemahkan label dan isi dus.
-
-$$2x + 3 = 15$$
-
-Langkah 3. Kurangi 3 dari kedua sisi.
-
-$$2x = 12$$
-
-Langkah 4. Bagi kedua sisi dengan 2.
-
-$$x = 6$$
-
-Langkah 5. Hitung isi dus dan semua label.
-
-Satu dus berisi $2(6) + 3 = 15$ pensil. Delapan dus hadiah berisi $8 \times 15 = 120$ pensil. Label lain: $3x = 3(6) = 18$ dan $x + 5 = 6 + 5 = 11$.
-
-| Label | Nilai saat $x = 6$ |
-|---|---|
-| $2x + 3$ | 15 |
-| $3x$ | 18 |
-| $x + 5$ | 11 |
-
-Langkah 6. Periksa dengan pola pengiriman.
-
-$$10 + 2(n - 1) = 2n + 8$$
-
-Suku keempat $2(4) + 8 = 16$, dan jumlah $10 + 12 + 14 + 16 = 52$. Delapan dus hadiah adalah bagian dari 52 dus yang datang.
-
-Nara juga mencoba jalan lain. Dari 120 pensil dan 8 dus, satu dus berisi $120 \div 8 = 15$. Lalu $2x + 3 = 15$ memberi $x = 6$. Dua jalan memberi angka yang sama.
-
-Bima mencoret satu baris di papan: "Kalau 15 langsung jadi $x$, dua paket kecil ikut dihitung dua kali." Nara menambahkan tanda centang di pinggir halaman.
-
-:::tip Catatan Nara
-Setelah menemukan $x$, masukkan kembali ke setiap hubungan asal. Kalau ada satu yang tidak cocok, periksa modelnya, bukan angkanya.
-:::
-
-## 5. Kembali ke meja hadiah
-
-Bima mengambil satu dus tersegel dan menimbangnya di timbangan dapur Pak Rahmat. "Beratnya sama dengan lima belas pensil."
-
-Nara menulis $x = 6$ di papan tulis, di samping peta booth. "Berarti semua label bisa dihitung."
-
-Kiki melihat deretan dus. "Kalau kotak lain isinya beda, apakah $x$-nya masih 6?"
-
-"Tergantung labelnya," kata Nara. "Kalau isinya memang sama, $x$-nya tetap."
-
-Bima menata delapan dus di meja hadiah. "Seratus dua puluh pensil. Cukup untuk semua booth."
-
-Nara mencatat 120 di kolom hadiah, lalu menutup buku kas. "Tinggal delapan dus ini yang kita pakai. Sisanya untuk booth lain."
-
-Kiki menghitung dus di meja sekali lagi. "Delapan. Berarti empat puluh empat dus lagi tidak perlu dibuka?"
-
-Pak Rahmat menutup termosnya. "Yang tetap itu $x$ atau labelnya?"
-
-Kiki membuka buku pertanyaannya. "Aku tulis dulu. Nanti kita cek lagi kalau ada dus baru."
-
-Di luar, lampu ruang 7B sudah menyala. Jam dinding menunjukkan pukul lima lewat lima menit, dan tidak ada yang beranjak.
-
-## 6. Cek pemahaman
+## 6. Latihan
 
 <QuizRunner quizId="algebra-modeling" />
 
 <LessonComplete lessonId="g7-algebra-modeling" />
+
+---
+
+**Cerita Bab 4:** [Kotak yang belum dihitung →](/learn/grade-7/algebra/cerita)

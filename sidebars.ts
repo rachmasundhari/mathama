@@ -33,6 +33,7 @@ const sidebars: SidebarsConfig = {
             'grade-7/ratios/scale',
             'grade-7/ratios/proportion',
             'grade-7/ratios/rates',
+            {type: 'doc', id: 'grade-7/ratios/cerita', label: 'Cerita Bab 2'},
           ],
         },
         {
@@ -44,6 +45,7 @@ const sidebars: SidebarsConfig = {
             'grade-7/social/profit-loss',
             'grade-7/social/discount-tax',
             'grade-7/social/net-weight-interest',
+            {type: 'doc', id: 'grade-7/social/cerita', label: 'Cerita Bab 3'},
           ],
         },
         {
@@ -57,6 +59,7 @@ const sidebars: SidebarsConfig = {
             'grade-7/algebra/modeling',
             'grade-7/algebra/patterns',
             'grade-7/algebra/multiply-divide',
+            {type: 'doc', id: 'grade-7/algebra/cerita', label: 'Cerita Bab 4'},
           ],
         },
         {
@@ -68,6 +71,7 @@ const sidebars: SidebarsConfig = {
             'grade-7/equations/add-subtract',
             'grade-7/equations/multiply-divide',
             'grade-7/equations/inequality',
+            {type: 'doc', id: 'grade-7/equations/cerita', label: 'Cerita Bab 5'},
           ],
         },
         {
@@ -79,6 +83,7 @@ const sidebars: SidebarsConfig = {
             'grade-7/geometry/angle-types',
             'grade-7/geometry/angle-pairs',
             'grade-7/geometry/parallel-transversal',
+            {type: 'doc', id: 'grade-7/geometry/cerita', label: 'Cerita Bab 6'},
           ],
         },
         {
@@ -90,6 +95,7 @@ const sidebars: SidebarsConfig = {
             'grade-7/shapes/quadrilaterals',
             'grade-7/shapes/area-perimeter',
             'grade-7/shapes/combined-area',
+            {type: 'doc', id: 'grade-7/shapes/cerita', label: 'Cerita Bab 7'},
           ],
         },
         {
@@ -101,6 +107,7 @@ const sidebars: SidebarsConfig = {
             'grade-7/sets/subsets',
             'grade-7/sets/venn',
             'grade-7/sets/operations',
+            {type: 'doc', id: 'grade-7/sets/cerita', label: 'Cerita Bab 8'},
           ],
         },
         {
@@ -112,6 +119,7 @@ const sidebars: SidebarsConfig = {
             'grade-7/data/types',
             'grade-7/data/diagrams',
             'grade-7/data/interpretation',
+            {type: 'doc', id: 'grade-7/data/cerita', label: 'Cerita Bab 9'},
           ],
         },
         {
@@ -122,6 +130,7 @@ const sidebars: SidebarsConfig = {
             'grade-7/similarity/angles',
             'grade-7/similarity/meaning',
             'grade-7/similarity/triangles',
+            {type: 'doc', id: 'grade-7/similarity/cerita', label: 'Cerita Pengayaan'},
           ],
         },
       ],

@@ -1,5 +1,5 @@
 ---
-title: "Garis yang Kelihatan Lurus"
+title: "Titik, Garis, dan Kedudukannya"
 sidebar_position: 1
 slug: /grade-7/geometry/lines
 ---
@@ -10,119 +10,124 @@ import QuizRunner from '@site/src/components/QuizRunner';
 
 <div className="lessonKicker">KELAS 7 · GARIS DAN SUDUT · 12 MENIT</div>
 
-# Kenapa latar panggung terlihat miring?
+# Titik, Garis, dan Kedudukannya
 
-**Tujuan belajar:** Membedakan garis sejajar, berpotongan, berimpit, dan tegak lurus, lalu memakai sifatnya untuk memeriksa rangka latar panggung.
+Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 6 ada di akhir bab.
 
-## 1. Tiga papan di lantai 7B
+**Tujuan belajar:** Membedakan titik, garis, ruas garis, dan sinar garis, menjelaskan kedudukan dua garis, serta memakai sifat garis sejajar dan tegak lurus untuk memeriksa rangka papan.
 
-Selasa sore, dua minggu sebelum Pekan Angka. Di papan tulis, angka "2 minggu" ditulis besar-besar oleh Nara. Tiga papan latar panggung tergeletak di lantai ruang 7B. Masing-masing berukuran 120 cm kali 180 cm, cukup besar untuk menutupi bagian belakang panggung kecil di aula.
+**Kata kunci:** titik, garis, ruas garis, sinar garis, sejajar, berpotongan, tegak lurus, berimpit.
 
-Raka duduk bersila di ujung papan dengan buku sketsa di lutut. Ia baru saja menggambar rancangan latar: tiga panel berdiri berdampingan, dengan garis atas dan garis bawah yang sejajar.
+## 1. Titik, garis, ruas garis, sinar garis
 
-"Bagian atasnya sudah ketemu," kata Bima. Ia menekan dua papan hingga rapat.
+Titik hanya menunjukkan posisi. Titik tidak punya panjang atau lebar, dan namanya ditulis dengan huruf kapital, misalnya titik $A$.
 
-Nara mengukur celah di bagian bawah. "Kiri rapat. Kanan masih terbuka dua setengah sentimeter."
+Garis adalah kumpulan titik yang memanjang ke dua arah tanpa berhenti. Garis $AB$ melewati titik $A$ dan $B$, lalu terus berlanjut di kedua ujungnya. Karena tidak berujung, garis tidak bisa diukur panjangnya.
 
-Kiki berdiri di belakang mereka. "Kalau tiap papan lurus, kok gabungannya kelihatan miring?"
+Ada dua bagian garis yang punya batas:
 
-Raka mengangkat penggaris panjang. Ia memeriksa sisi setiap papan satu per satu. Semuanya lurus. Tidak ada yang bengkok.
+- **Ruas garis** punya dua titik ujung. Ruas garis $AB$ berhenti di $A$ dan di $B$, jadi panjangnya bisa diukur dengan meteran.
+- **Sinar garis** punya satu titik ujung dan memanjang ke satu arah. Sinar garis dari $A$ melewati $B$ berhenti di $A$, lalu terus ke arah $B$.
 
-"Berarti lantainya yang miring," kata Bima.
+## 2. Empat kedudukan dua garis
 
-Mereka menggeser papan ke sisi lain ruangan. Celahnya tetap ada. Bima meletakkan papan lain di bawah sebagai ganjal, lalu mengukur lagi. Hasilnya sama.
+Dua garis pada satu bidang dapat berada dalam empat keadaan.
 
-Nara mencatat tiga angka di buku kotaknya: kiri 180 cm, tengah 179 cm, kanan 177,5 cm. "Jarak garis atas ke garis bawah tidak sama," katanya. "Berarti dua garis itu belum sejajar."
+| Kedudukan | Ciri | Lambang |
+|---|---|---|
+| Berpotongan | bertemu di satu titik | tidak ada lambang khusus |
+| Tegak lurus | berpotongan pada sudut $90^\circ$ | $AB \perp CD$ |
+| Sejajar | tidak bertemu walaupun diperpanjang, jaraknya tetap | $AB \parallel CD$ |
+| Berimpit | menempati garis yang sama, semua titiknya sama | tidak ada lambang khusus |
 
-Raka menatap gambarnya. "Tapi aku menggambar garis atas dan garis bawah dengan penggaris. Dua-duanya lurus."
+Dua garis berpotongan cukup bertemu di satu titik. Tegak lurus adalah satu jenis perpotongan, yaitu perpotongan yang sudutnya tepat $90^\circ$. Jadi semua garis tegak lurus pasti berpotongan, tetapi tidak semua garis berpotongan itu tegak lurus.
 
-"Lurus iya," kata Nara. "Sejajar belum tentu."
+Dua garis sejajar tidak pernah bertemu. Jarak antara keduanya sama di setiap titik. Sifat jarak inilah yang bisa diukur, karena "tidak bertemu" sulit dibuktikan hanya dengan melihat gambar di kertas.
 
-## 2. Lurus belum tentu sejajar
+Garis berimpit menempati garis yang sama, sehingga seluruh titiknya sama.
 
-Satu garis bisa diperpanjang ke dua arah tanpa berhenti. Bagian yang punya dua titik ujung disebut **ruas garis**. Bagian yang hanya punya satu titik ujung dan terus memanjang ke satu arah disebut **sinar garis**. Dalam gambar rancangan, Raka memakai ruas garis karena papan memang punya batas.
+<figure style={{maxWidth: '560px', margin: '1.5rem auto'}}>
+  <svg viewBox="0 0 560 320" width="100%" role="img" aria-label="Empat kedudukan dua garis: berpotongan, tegak lurus, sejajar, dan berimpit">
+    <g stroke="var(--c-ocean)" strokeWidth="4" fill="none">
+      <line x1="30" y1="60" x2="230" y2="60"/>
+      <line x1="130" y1="20" x2="130" y2="100"/>
+      <line x1="310" y1="60" x2="510" y2="60"/>
+      <line x1="410" y1="20" x2="410" y2="100"/>
+      <line x1="30" y1="200" x2="230" y2="200"/>
+      <line x1="30" y1="240" x2="230" y2="240"/>
+      <line x1="310" y1="200" x2="510" y2="200"/>
+      <line x1="310" y1="206" x2="510" y2="206"/>
+    </g>
+    <rect x="410" y="48" width="12" height="12" fill="none" stroke="var(--c-teal)" strokeWidth="2"/>
+    <text x="130" y="132" textAnchor="middle" fontSize="15" fontWeight="700" fill="var(--c-ink)">berpotongan</text>
+    <text x="410" y="132" textAnchor="middle" fontSize="15" fontWeight="700" fill="var(--c-ink)">tegak lurus</text>
+    <text x="130" y="278" textAnchor="middle" fontSize="15" fontWeight="700" fill="var(--c-ink)">sejajar</text>
+    <text x="410" y="278" textAnchor="middle" fontSize="15" fontWeight="700" fill="var(--c-ink)">berimpit</text>
+  </svg>
+</figure>
 
-Ketika dua garis berada di satu bidang, ada empat kemungkinan hubungan.
+## 3. Contoh: memeriksa rangka papan
 
-Dua garis **berpotongan** jika bertemu di satu titik. Kalau pertemuannya membentuk sudut $90^\circ$, kedua garis itu **tegak lurus**. Dua garis **sejajar** jika tidak bertemu walaupun diperpanjang ke dua arah, dan jarak antara keduanya tetap di setiap titik. Dua garis **berimpit** jika keduanya menempati garis yang sama, sehingga seluruh titiknya sama.
+Sebuah papan latar berukuran $120$ cm kali $180$ cm. Rangkanya diperiksa dengan tali dan meteran.
 
-Dalam lambang, $AB \parallel CD$ dibaca "garis AB sejajar garis CD", dan $AB \perp CD$ dibaca "garis AB tegak lurus garis CD".
-
-"Jadi garisnya tidak salah," kata Raka pelan. "Aku menggambar dua garis lurus, tetapi tidak pernah membandingkan arah keduanya."
-
-Pak Rahmat mengangguk dari meja guru. "Kalau jarak dua garis di ujung kertas sama, apakah itu sudah cukup untuk bilang sejajar?"
-
-Nara membuka halaman baru. "Belum. Harus dicek di beberapa tempat."
-
-:::warning Pertanyaan Kiki
-Kalau dua garis belum bertemu di kertas ini, apakah mereka sudah pasti sejajar? Bagaimana kalau kertasnya diperbesar?
-:::
-
-## 3. Coba di meja kerja
-
-Raka mendorong buku sketsanya ke tengah meja. "Pilih sejajar dulu. Lihat jarak di antara dua garis. Setelah itu pilih berpotongan, lalu pilih tegak lurus untuk membandingkan."
-
-<LineLab />
-
-Saat memilih **sejajar**, lab menampilkan dua garis dengan jarak yang sama dari ujung ke ujung. Saat memilih **berpotongan**, kedua garis bertemu di satu titik. Slider berhenti di $80^\circ$. Untuk melihat sudut $90^\circ$, pilih tombol **tegak lurus**.
-
-Bima menempelkan sudut karton ke layar pada pilihan tegak lurus. "Kalau sudutnya pas dengan karton, berarti 90."
-
-Kiki memilih berpotongan, lalu menggeser slider ke 40. "Sekarang 40. Berarti dua garis ini berpotongan, tapi belum tegak lurus."
-
-"Betul," kata Raka. "Tegak lurus itu satu jenis perpotongan. Bukan semua perpotongan."
-
-## 4. Catatan klub
-
-Nara menulis judul di bukunya: *Memeriksa rangka latar*.
-
-1. Tandai satu garis acuan di sisi atas papan dengan tali.
-2. Ukur 180 cm ke bawah dari tali itu di ujung kiri dan ujung kanan.
+1. Rentangkan tali pertama di sisi atas sebagai acuan.
+2. Ukur $180$ cm ke bawah dari tali itu di ujung kiri dan ujung kanan.
 3. Hubungkan kedua tanda dengan tali kedua.
-4. Ukur jarak kedua tali di kiri, tengah, dan kanan. Ketiganya harus sama.
-5. Periksa setiap pojok dengan sudut karton. Sudutnya harus $90^\circ$.
-6. Ukur kedua diagonal papan. Keduanya harus sama panjang.
+4. Ukur jarak kedua tali di kiri, tengah, dan kanan.
+5. Periksa setiap pojok dengan sudut karton siku-siku.
+6. Ukur kedua diagonal papan.
 
-Langkah 4 memeriksa kesejajaran. Langkah 5 memeriksa ketegaklurusan. Langkah 6 memeriksa bentuk papan secara keseluruhan.
+Hasil pengukuran pertama: jarak tali $180$ cm di kiri, $179$ cm di tengah, dan $177{,}5$ cm di kanan. Jaraknya berubah, jadi kedua tali belum sejajar. Selisih $2{,}5$ cm sudah cukup membuat papan terlihat miring dari jarak sepuluh meter.
+
+Diagonal papan pertama $216$ cm dan $216$ cm, jadi papan itu persegi panjang. Diagonal papan kedua $215{,}5$ cm dan $217$ cm, sehingga pojoknya belum siku-siku.
+
+Setelah tali dipasang ulang, jaraknya $180$ cm di tiga tempat dan semua pojok pas dengan karton.
 
 | Pasangan garis pada rangka | Kedudukan | Alasan |
 |---|---|---|
-| Garis atas dan garis bawah | sejajar | jaraknya 180 cm di semua titik |
-| Garis kiri dan garis kanan | sejajar | jaraknya 120 cm di semua titik |
-| Garis atas dan garis kiri | tegak lurus | bertemu pada sudut $90^\circ$ |
+| Tali atas dan tali bawah | sejajar | jaraknya $180$ cm di semua titik |
+| Sisi kiri dan sisi kanan | sejajar | jaraknya $120$ cm di semua titik |
+| Tali atas dan sisi kiri | tegak lurus | bertemu pada sudut $90^\circ$ |
 
-Dengan data awal Nara, jarak atas ke bawah adalah 180 cm di kiri, 179 cm di tengah, dan 177,5 cm di kanan. Selisih 2,5 cm itu cukup untuk membuat papan terlihat miring dari sepuluh meter. Mata penonton membaca kemiringan seluruh bidang.
+## 4. Contoh: tali di area upacara
 
-Bima mengukur diagonal papan pertama: 216 cm dan 216 cm. Papan kedua: 215,5 cm dan 217 cm. "Yang kedua belum persegi panjang," katanya. "Pojoknya juga belum pas dengan karton."
+Barisan kursi upacara harus sejajar dengan sisi aula. Paving di area itu ternyata tidak siku. Sudut satu pojok paving $87^\circ$, kurang $3^\circ$ dari siku-siku.
 
-## 5. Kembali ke misi
+Pada barisan sepanjang 4 m, kesalahan $3^\circ$ menggeser ujung barisan sekitar 21 cm. Kursi paling ujung jadi menonjol keluar garis.
 
-Mereka membongkar rangka dan memulai lagi. Nara memegang ujung meteran di tali atas. Bima menandai 180 cm di kedua sisi. Raka menarik tali bawah dari tanda ke tanda, lalu menekannya dengan penggaris panjang.
+Mereka menarik tali baru dari dinding aula, memeriksa sudutnya dengan karton, lalu mengukur jarak tali ke dinding di kedua ujung. Setelah kedua jarak sama, barisan kursi ditata mengikuti tali.
 
-Nara mengukur jarak tali di tiga tempat. "180, 180, 180."
+## 5. Coba di meja kerja
 
-Bima menempelkan sudut karton di setiap pojok. "Kiri atas pas. Kanan atas pas."
+Pilih jenis kedudukan, lalu perhatikan posisi kedua garis. Untuk pilihan berpotongan, geser sudutnya.
 
-Kiki memeriksa celah antara dua papan. "Sudah rapat. Tidak ada yang terbuka."
+<LineLab />
 
-Sore itu mereka juga membawa karton ke area tiang bendera. Pak Rahmat meminta area upacara ditandai dengan tali, dan Bima memakai cara yang sama untuk memeriksa pojoknya. Satu pojok paving ternyata tidak siku. Mereka tidak memakai paving itu sebagai patokan, tetapi menarik tali baru dari dinding aula.
+Saat memilih **sejajar**, kedua garis tampil dengan jarak yang sama dari ujung ke ujung. Saat memilih **berpotongan**, kedua garis bertemu di satu titik, dan slider berhenti di $80^\circ$. Sudut $90^\circ$ hanya muncul pada tombol **tegak lurus**.
 
-"Jadi talinya yang membuat latar panggung lurus," kata Kiki.
+## 6. Kesalahan umum
 
-Raka menutup buku sketsa. "Aku masih penasaran. Kalau dua garis sejajar diteruskan sampai jauh di luar kertas, apakah mereka benar-benar tidak bertemu?"
+- Menganggap garis lurus pasti sejajar dengan garis lurus lain. Arah kedua garis tetap harus dibandingkan.
+- Menilai kesejajaran hanya dari gambar di kertas. Dua garis bisa terlihat sejajar, tetapi bertemu setelah diperpanjang.
+- Menyamakan berpotongan dengan tegak lurus. Tegak lurus hanya perpotongan yang sudutnya $90^\circ$.
+- Mengukur jarak dua garis hanya di satu tempat. Kesejajaran diperiksa di beberapa titik.
+- Memakai ruas garis dan garis sebagai istilah yang sama.
 
-Pak Rahmat menuang teh ke tutup termosnya. "Menurutmu, apa yang bisa kamu ukur untuk menjawab pertanyaan itu?"
+## 7. Ringkasan
 
-Kiki membuka buku pertanyaannya. "Jaraknya. Kalau jaraknya berubah, berarti mereka akan bertemu."
+- Garis memanjang ke dua arah tanpa berhenti; ruas garis punya dua titik ujung dan sinar garis punya satu.
+- Dua garis berpotongan jika bertemu di satu titik.
+- Dua garis tegak lurus jika berpotongan pada sudut $90^\circ$.
+- Dua garis sejajar jika tidak bertemu dan jaraknya tetap.
+- Dua garis berimpit jika menempati garis yang sama.
+- Kesejajaran diperiksa dengan jarak di beberapa titik, ketegaklurusan dengan sudut siku-siku.
 
-"Kalau jaraknya tetap?" tanya Nara.
-
-Kiki menatap talinya yang lurus. "Berarti ... aku belum bisa membayangkan garis yang tidak pernah bertemu."
-
-Pak Rahmat mendorong buku sketsa ke arah Raka. "Gambarkan dulu. Besok kita cek lagi."
-
-## 6. Cek pemahaman
+## 8. Latihan
 
 <QuizRunner quizId="geometry-lines" />
 
 <LessonComplete lessonId="g7-geometry-lines" />
+
+---
+
+**Cerita Bab 6:** [Panggung yang Lurus →](/learn/grade-7/geometry/cerita)

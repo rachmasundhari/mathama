@@ -1,5 +1,5 @@
 ---
-title: "Aturan yang Sama di Kedua Sisi"
+title: "Menyelesaikan Persamaan dengan Menambah atau Mengurangi"
 sidebar_position: 2
 slug: /grade-7/equations/add-subtract
 ---
@@ -10,140 +10,190 @@ import QuizRunner from '@site/src/components/QuizRunner';
 
 <div className="lessonKicker">KELAS 7 · PERSAMAAN DAN PERTIDAKSAMAAN · 12 MENIT</div>
 
-# Meja mana yang membuat timbangan tetap lurus?
+# Menyelesaikan persamaan dengan menambah atau mengurangi
 
-**Tujuan belajar:** Menyelesaikan persamaan linear satu variabel dengan menambah atau mengurangi bilangan yang sama pada kedua sisi, lalu memeriksa solusinya.
+Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 5 ada di akhir bab.
 
-## 1. Aturan pindah ruas yang terlalu cepat
+**Tujuan belajar:** Menyelesaikan persamaan linear satu variabel dengan menambah atau mengurangi bilangan yang sama pada kedua ruas, lalu memeriksa solusinya.
 
-Selasa sore berikutnya, Nara membuka buku kas dengan wajah tidak senang. "Aku mau prosedur tertulis," katanya. "Bukan cuma jawaban."
+**Kata kunci:** sifat kesamaan, operasi yang membatalkan, pindah ruas, substitusi.
 
-"Dua belas pak hadiah sudah masuk hitungan," kata Bima. "Panggung Rp450.000, spanduk Rp90.000, hadiah Rp180.000. Biaya tetapnya Rp720.000. Sekarang kita cek apakah empat meja dari denah benar-benar muat."
+**Dalam materi ini:**
 
-Ia menulis persamaan di papan tulis:
+1. Timbangan yang seimbang
+2. Sifat kesamaan
+3. Menyelesaikan persamaan satu langkah
+4. Contoh dengan bilangan negatif
+5. Lab
+6. Kesalahan umum
+7. Ringkasan
+8. Latihan
+
+## 1. Konsep
+
+### Timbangan yang seimbang
+
+Bayangkan persamaan sebagai timbangan yang lurus. Ruas kiri ada di satu piring, ruas kanan di piring lain. Selama kedua piring sama berat, timbangan tetap lurus.
+
+Persamaan bersifat seperti timbangan. Apa pun yang dilakukan pada satu ruas harus dilakukan juga pada ruas lain. Kalau hanya satu ruas yang diubah, keseimbangan rusak.
+
+### Sifat kesamaan
+
+**Menambah atau mengurangi bilangan yang sama pada kedua ruas tidak mengubah solusi persamaan.**
+
+Jika $A = B$, maka:
+
+$$A + c = B + c$$
+
+$$A - c = B - c$$
+
+untuk setiap bilangan $c$.
+
+Aturan ini dipakai untuk membuat variabel berdiri sendiri. Caranya, pilih operasi yang membatalkan operasi di sekitar variabel.
+
+- Penambahan dibatalkan oleh pengurangan.
+- Pengurangan dibatalkan oleh penambahan.
+
+### Pindah ruas hanyalah cara cepat
+
+Banyak siswa menulis "pindah ruas lalu ganti tanda". Cara itu memang sering benar, tetapi mudah salah kalau dipakai tanpa berpikir. Yang sebenarnya terjadi adalah kedua ruas dikurangi atau ditambah bilangan yang sama.
+
+Perhatikan:
+
+$$x + 7 = 12$$
+
+Kurangi 7 pada kedua ruas:
+
+$$x + 7 - 7 = 12 - 7$$
+
+$$x = 5$$
+
+Cara cepatnya menulis $x = 12 - 7$. Hasilnya sama, tetapi alasannya adalah pengurangan pada kedua ruas, bukan perpindahan angka.
+
+## 2. Contoh
+
+### Contoh 1: banyak meja di stan
+
+Anggaran stan Pekan Angka Rp900.000. Biaya tetap yang sudah direncanakan Rp720.000, terdiri atas panggung, spanduk, dan pak hadiah. Sisanya dipakai untuk meja, satu meja Rp45.000.
+
+Misalkan $t$ adalah banyak meja.
 
 $$45\,000t + 720\,000 = 900\,000$$
 
-Huruf $t$ adalah banyak meja. Bima melanjutkan dengan cepat. "Rp720.000 pindah ke kanan, jadi tambah. Sisanya Rp1.620.000. Bagi Rp45.000, dapat 36 meja."
-
-Raka mengangkat pensil. "Tiga puluh enam meja?"
-
-"Kenapa?" tanya Bima.
-
-"Mejanya sampai jalan raya."
-
-Nara memeriksa dengan memasukkan $t = 36$ ke sisi kiri. $45\,000 \times 36 = 1\,620\,000$. Ditambah $720\,000$, hasilnya $2\,340\,000$. Sisi kanan tetap $900\,000$. Selisihnya Rp1.440.000.
-
-"Jauh," kata Nara. "Aturanmu bukan cuma salah sedikit."
-
-Bima menatap papan tulis. "Aku memang membalik tandanya. Harusnya jadi kurang, ya?"
-
-"Kita belum tahu," kata Pak Rahmat dari belakang. "Coba jelaskan kenapa tandanya berubah. Kalau kamu bisa menjelaskan, kamu tidak perlu menghafal."
-
-## 2. Operasi yang membatalkan
-
-Nara menggambar timbangan di buku kotaknya. Di sisi kiri ada $45\,000t$ dan tumpukan Rp720.000. Di sisi kanan ada Rp900.000.
-
-"Kalau aku mengambil Rp720.000 dari sisi kiri saja, timbangannya miring ke kanan," katanya. "Jadi aku harus mengambil jumlah yang sama dari dua sisi."
-
-Ia menulis:
+Langkah 1, kurangi $720\,000$ pada kedua ruas:
 
 $$45\,000t + 720\,000 - 720\,000 = 900\,000 - 720\,000$$
 
 $$45\,000t = 180\,000$$
 
-Baris kedua masih seimbang karena kedua sisi dikurangi bilangan yang sama. Inilah aturan yang sebenarnya. **Menambah atau mengurangi bilangan yang sama pada kedua sisi tidak mengubah solusi persamaan.**
+Langkah 2, bagi kedua ruas dengan $45\,000$:
 
-"Pindah ruas itu cuma cara cepat menulisnya," kata Nara. "Kalau bilangan positif pindah ke sisi lain, ia menjadi negatif. Tapi kita tidak perlu mengingat kata pindah. Kita cukup bertanya: operasi apa yang membatalkan operasi ini?"
-
-Bima mengangguk. "Kalau di kiri ada tambah Rp720.000, aku kurangi Rp720.000."
-
-"Di kedua sisi," kata Nara.
-
-"Di kedua sisi," ulang Bima.
-
-Kiki menulis di bukunya: *tambah dibatalkan kurang, kurang dibatalkan tambah*. Ia lalu bertanya, "Kalau angka yang mau dihilangkan itu negatif, kita tambah?"
-
-"Ya," kata Nara. "Mengurangi bilangan negatif sama dengan menambah."
-
-Pak Rahmat menaruh cangkirnya. "Sekarang coba satu angka kecil dulu. Jangan langsung ke rupiah."
-
-:::note Kata Pak Rahmat
-Kalau kamu mengurangi Rp720.000 dari sisi kiri, operasi apa yang kamu lakukan pada sisi kanan supaya timbangan tetap lurus?
-:::
-
-## 3. Coba di meja kerja
-
-Bima menarik kursi ke layar. "Aku mau lihat selisihnya, bukan cuma jawabannya."
-
-<EquationLab />
-
-Lab itu memakai bentuk $ax + b = c$. Atur $a = 2$, $b = 3$, dan $c = 11$. Persamaannya menjadi $2x + 3 = 11$.
-
-Geser $x$ sampai label berubah menjadi SEIMBANG. Saat $x = 4$, sisi kiri bernilai 11 dan sisi kanan bernilai 11. Di kotak langkah, lab menulis bahwa 3 dikurangi dari kedua sisi, lalu kedua sisi dibagi 2.
-
-Bima mencoba $b = -4$ dan $c = 8$ dengan $a = 2$. Persamaannya menjadi $2x - 4 = 8$. Lab mengurangi $-4$, yang sama dengan menambah 4 pada kedua sisi. Hasilnya $2x = 12$, lalu $x = 6$.
-
-"Jadi tandanya ikut berubah karena operasinya memang begitu," kata Bima. "Bukan karena ada aturan hafalan."
-
-Nara mencatat dua contoh itu di buku. "Sekarang kita kembali ke meja."
-
-## 4. Catatan klub
-
-Nara menulis prosedur lengkap untuk laporan klub.
-
-1. Tulis persamaan asli: $45\,000t + 720\,000 = 900\,000$.
-2. Kurangi $720\,000$ pada kedua sisi.
-3. Tulis hasilnya: $45\,000t = 180\,000$.
-4. Tentukan $t$ dengan pembagian: $t = 4$.
-5. Periksa dengan substitusi.
-
-Langkah 4 memakai pembagian. Nara menjelaskannya sebagai "membagi kedua sisi dengan 45.000", bukan memindahkan angka. Alasannya sama: kedua sisi harus diperlakukan sama.
+$$t = \frac{180\,000}{45\,000} = 4$$
 
 Pemeriksaannya:
 
 $$45\,000(4) + 720\,000 = 180\,000 + 720\,000 = 900\,000$$
 
-Nara juga membuat tabel untuk melihat nilai di sekitar solusi.
+Jadi $t = 4$. Empat meja muat di anggaran.
+
+Tabel berikut menunjukkan nilai di sekitar solusi.
 
 | $t$ | $45\,000t + 720\,000$ | Dibandingkan dengan Rp900.000 |
 |---|---|---|
-| 3 | Rp855.000 | kurang Rp45.000 |
-| 4 | Rp900.000 | pas |
-| 5 | Rp945.000 | lebih Rp45.000 |
+| $3$ | Rp855.000 | kurang Rp45.000 |
+| $4$ | Rp900.000 | pas |
+| $5$ | Rp945.000 | lebih Rp45.000 |
 
-"Perhatikan jaraknya," kata Nara. "Setiap tambahan satu meja menambah Rp45.000. Karena itu nilai yang pas cuma satu."
+Setiap tambahan satu meja menambah Rp45.000. Karena itu nilai yang pas hanya satu.
 
-Bima memeriksa lewat buku kas. Ia menulis pengeluaran sebagai bilangan negatif: minus Rp450.000 untuk panggung, minus Rp90.000 untuk spanduk, minus Rp180.000 untuk meja, dan minus Rp180.000 untuk hadiah. Jumlahnya minus Rp900.000. Saldo akhir nol.
+### Contoh 2: bilangan negatif
 
-"Buku kas dan persamaan memberi jawaban yang sama," katanya. "Berarti langkahnya masuk akal."
+Selesaikan $2x - 4 = 8$.
 
-:::tip Catatan Nara
-Kerjakan operasi yang membatalkan angka terdekat dulu. Kalau ada tambahan, kurangi. Kalau ada perkalian, bagi. Tulis operasinya di kedua sisi, jangan cuma di satu sisi.
-:::
+Angka $-4$ dihilangkan dengan menambah 4 pada kedua ruas.
 
-## 5. Kembali ke misi
+$$2x - 4 + 4 = 8 + 4$$
 
-Nara menulis angka 4 di kolom meja. "Empat meja. Sesuai denah."
+$$2x = 12$$
 
-Bima mengecek sekali lagi. $45\,000 \times 4 = 180\,000$. Ditambah biaya tetap Rp720.000, totalnya Rp900.000. Tidak ada yang berlebih.
+$$x = 6$$
 
-Raka menggambar empat meja di denah, lalu menaruh timbangan kecil di sudut halaman. Sisi kiri dan kanan sama tinggi.
+Pemeriksaan: $2(6) - 4 = 12 - 4 = 8$. Benar.
 
-Kiki mengangkat tangan. "Aku masih bingung satu hal. Kalau kita mengurangi Rp720.000, apakah uang di amplop ikut berkurang?"
+Mengurangi bilangan negatif sama dengan menambah. Karena itu, jika variabel dikurangi suatu bilangan, kedua ruas ditambah bilangan itu.
 
-"Tidak," kata Nara. "Amplopnya tidak berubah. Kita cuma menghitung ulang. Angka Rp720.000 itu bagian dari biaya, bukan uang yang keluar dua kali."
+### Contoh 3: uang kas setelah pengeluaran
 
-"Jadi kita mengurangi angka di kertas, bukan uang di amplop?"
+Uang kas kelas Rp150.000. Setelah membeli perlombaan, sisa Rp95.000. Berapa biaya perlombaan?
 
-"Betul. Uangnya baru keluar saat kita membayar."
+Misalkan $b$ adalah biaya perlombaan.
 
-Kiki menulis kalimat itu, lalu bertanya lagi. "Berarti mengurangi cuma langkah pertama? Setelah itu masih ada angka yang menempel pada $t$?"
+$$150\,000 - b = 95\,000$$
 
-Nara menutup buku kas. "Iya. Kalau angka itu mengalikan $t$, operasi apa yang membatalkannya?"
+Tambahkan $b$ pada kedua ruas:
 
-## 6. Cek pemahaman
+$$150\,000 = 95\,000 + b$$
+
+Kurangi $95\,000$ pada kedua ruas:
+
+$$55\,000 = b$$
+
+Jadi biaya perlombaan Rp55.000. Pemeriksaan: $150\,000 - 55\,000 = 95\,000$.
+
+### Contoh 4: dua langkah
+
+Selesaikan $3x + 5 = 20$.
+
+Kurangi 5 pada kedua ruas:
+
+$$3x = 15$$
+
+Bagi kedua ruas dengan 3:
+
+$$x = 5$$
+
+Pemeriksaan: $3(5) + 5 = 15 + 5 = 20$. Benar.
+
+Urutan pengerjaannya penting. Angka yang ditambahkan atau dikurangkan disingkirkan lebih dulu, baru angka yang mengalikan variabel.
+
+## 3. Lab
+
+Lab berikut menampilkan persamaan $ax + b = c$. Atur nilainya, lalu geser $x$ sampai timbangan seimbang.
+
+<EquationLab />
+
+Atur $a = 2$, $b = 3$, dan $c = 11$. Persamaannya menjadi $2x + 3 = 11$.
+
+Geser $x$ sampai label berubah menjadi SEIMBANG. Saat $x = 4$, ruas kiri bernilai 11 dan ruas kanan bernilai 11. Kotak langkah menulis bahwa 3 dikurangi dari kedua ruas, lalu kedua ruas dibagi 2.
+
+Sekarang atur $b = -4$ dan $c = 8$ dengan $a = 2$. Persamaannya menjadi $2x - 4 = 8$. Lab mengurangi $-4$, yang sama dengan menambah 4 pada kedua ruas. Hasilnya $2x = 12$, lalu $x = 6$.
+
+Perhatikan kotak langkah. Lab tidak memindahkan angka. Lab melakukan operasi yang sama pada kedua ruas.
+
+## 4. Kesalahan umum
+
+- Mengubah hanya satu ruas. Jika satu ruas dikurangi $720\,000$, ruas lain juga harus dikurangi $720\,000$.
+- Membalik tanda dengan hafalan tanpa memeriksa operasinya. Tanda berubah karena operasi yang dilakukan, bukan karena angka berpindah tempat.
+- Menambah ketika seharusnya mengurangi. Lihat dulu operasi di sekitar variabel.
+- Lupa bahwa mengurangi bilangan negatif sama dengan menambah, sehingga hasilnya salah tanda.
+- Berhenti setelah angka tetap disingkirkan. Jika masih ada angka yang mengalikan variabel, persamaan belum selesai.
+- Tidak memeriksa jawaban. Substitusi menunjukkan apakah kedua ruas benar-benar sama.
+
+## 5. Ringkasan
+
+- Menambah atau mengurangi bilangan yang sama pada kedua ruas tidak mengubah solusi persamaan.
+- Operasi yang membatalkan penambahan adalah pengurangan, dan sebaliknya.
+- Pindah ruas adalah cara cepat menulis aturan kesamaan, bukan aturan yang berbeda.
+- Mengurangi bilangan negatif sama dengan menambah bilangan positif.
+- Jika variabel masih dikalikan suatu angka, selesaikan dengan membagi kedua ruas.
+- Periksa solusi dengan substitusi ke persamaan asal.
+
+## 6. Latihan
 
 <QuizRunner quizId="equation-add-subtract" />
 
 <LessonComplete lessonId="g7-equations-add-subtract" />
+
+---
+
+**Cerita Bab 5:** [Anggaran stan yang seimbang →](/learn/grade-7/equations/cerita)

@@ -1,5 +1,5 @@
 ---
-title: "Tiga Kantong dan Satu Kurung"
+title: "Mengalikan dan Membagi Bentuk Aljabar"
 sidebar_position: 6
 slug: /grade-7/algebra/multiply-divide
 ---
@@ -10,45 +10,37 @@ import QuizRunner from '@site/src/components/QuizRunner';
 
 <div className="lessonKicker">KELAS 7 · OPERASI ALJABAR · 12 MENIT</div>
 
-# Isi kotak yang tidak boleh tertinggal
+# Mengalikan dan Membagi Bentuk Aljabar
+
+Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 4 ada di akhir bab.
 
 **Tujuan belajar:** Mengalikan dan membagi bentuk aljabar sederhana, termasuk membuka kurung dengan sifat distributif.
 
-## 1. Tiga kantong hadiah
+**Kata kunci:** perkalian, pembagian, kurung, sifat distributif, faktor, suku.
 
-Nara meletakkan tiga kantong kain di meja. Setiap kantong berisi kotak pensil dan dua penghapus. Kotak pensilnya belum dibuka, jadi jumlah pensil di dalamnya belum diketahui. Nara memberi nama isi kotak itu $x$.
+## 1. Konsep
 
-"Setiap kantong isinya satu kotak pensil dan dua penghapus," kata Nara. "Ada tiga kantong. Berapa isinya seluruhnya?"
+Tiga kantong hadiah berisi satu kotak pensil dan dua penghapus. Isi kotak pensil belum diketahui, jadi diberi nama $x$. Satu kantong berisi $x + 2$ benda. Tiga kantong berisi:
 
-Bima menulis cepat di papan: $3x + 2$.
+$$3(x + 2)$$
 
-Kiki menghitung penghapus di meja. "Aku melihat enam penghapus. Kok di tulisanmu cuma dua?"
+Bentuk itu dibaca sebagai tiga kelompok, setiap kelompok berisi $x$ dan 2. Hasilnya tiga kotak pensil dan enam penghapus:
 
-Bima menatap tulisannya. "Oh. Dua penghapus itu isi satu kantong. Ada tiga kantong."
+$$3(x + 2) = 3x + 6$$
 
-Ia membuka ketiga kantong dan menata isinya. Setiap kantong punya satu kotak dan dua penghapus. Tiga kantong berarti tiga kotak dan enam penghapus. Tulisan yang benar adalah $3x + 6$.
+Menulis $3x + 2$ berarti tiga kotak dan dua penghapus. Itu hanya satu kantong ditambah dua kantong kosong, bukan tiga kantong penuh. Setiap kantong menyumbang dua penghapus, jadi penghapusnya berjumlah $3 \times 2 = 6$.
 
-Raka menggambar tiga kotak besar, masing-masing berisi satu kotak kecil berlabel $x$ dan dua bulatan kecil. "Kalau digambar, angka tiga di luar kurung berlaku untuk keduanya, bukan cuma untuk $x$."
-
-Nara menulis bentuk asalnya di papan: $3(x + 2)$. "Ini membaca tiga kelompok, setiap kelompok berisi $x$ dan 2."
-
-## 2. Angka di luar kurung
-
-Mengalikan bentuk aljabar dengan satu bilangan memakai **sifat distributif**. Bilangan di luar kurung dikalikan ke setiap suku di dalam kurung.
+Perkalian bentuk aljabar dengan satu bilangan memakai **sifat distributif**:
 
 $$a(b + c) = ab + ac$$
 
-Untuk kantong hadiah:
-
-$$3(x + 2) = 3 \times x + 3 \times 2 = 3x + 6$$
-
-Kesalahan Bima terjadi karena ia hanya mengalikan suku pertama. Ia membayangkan tiga kotak pensil, lalu menambahkan dua penghapus sekali. Padahal setiap kantong menyumbang dua penghapus.
-
-Aturan yang sama berlaku untuk pengurangan.
+Aturan yang sama berlaku untuk pengurangan:
 
 $$4(2x - 3) = 4 \times 2x - 4 \times 3 = 8x - 12$$
 
-Nara memberi contoh dengan angka. Jika $x = 5$, maka $4(2 \times 5 - 3) = 4(10 - 3) = 4 \times 7 = 28$. Bentuk lain, $8(5) - 12 = 40 - 12 = 28$. Keduanya sama.
+Jika $x = 5$, sisi kiri $4(10 - 3) = 4 \times 7 = 28$. Sisi kanan $8(5) - 12 = 40 - 12 = 28$. Keduanya sama.
+
+Setiap suku di dalam kurung mendapat faktor yang sama. Kalau suku di dalamnya sudah punya koefisien, koefisien itu ikut dikalikan. $3(4x) = 12x$, dan $2(5a + 3b) = 10a + 6b$.
 
 Pembagian bentuk aljabar memakai gagasan yang mirip. Setiap suku dibagi dengan pembaginya.
 
@@ -56,87 +48,89 @@ $$\frac{12x}{4} = 3x$$
 
 $$\frac{15x + 10}{5} = \frac{15x}{5} + \frac{10}{5} = 3x + 2$$
 
-Pembagian bisa diperiksa dengan perkalian. $5(3x + 2) = 15x + 10$. Hasilnya kembali ke bentuk awal.
+Pembagian dapat diperiksa dengan perkalian:
 
-:::danger
-**Jangan tertukar.** $3(x + 2)$ bukan $3x + 2$. Angka 3 harus dikalikan ke $x$ dan ke 2. Periksa dengan angka kecil, misalnya $x = 1$: $3(1 + 2) = 9$, sedangkan $3(1) + 2 = 5$.
-:::
+$$5(3x + 2) = 15x + 10$$
 
-## 3. Coba di meja kerja
+Hasilnya kembali ke bentuk awal.
 
-Raka mendorong laptop ke tengah meja. "Ubah jumlah kelompok dan nilai $x$. Perhatikan kedua sisi persamaan."
+## 2. Contoh
 
-<DistributiveLab />
-
-Lab menampilkan $a(x + 2) = ax + 2a$. Atur jumlah kelompok 3 dan nilai $x = 4$. Sisi kiri menjadi $3(4 + 2) = 3 \times 6 = 18$. Sisi kanan menjadi $3(4) + 6 = 12 + 6 = 18$.
-
-Geser nilai $x$ menjadi 5. Sisi kiri $3(5 + 2) = 21$, sisi kanan $3(5) + 6 = 21$. Hasilnya tetap sama karena setiap kelompok mendapat tambahan 2.
-
-Bima menunjuk angka 2 di layar. "Jadi angka dua itu tidak berubah, tetapi jumlahnya ikut dikali."
-
-"Jumlah kelompoknya yang membuat dua itu menjadi enam," kata Nara. "Kalau kelompoknya empat, tambahannya menjadi delapan."
-
-Kiki mencoba jumlah kelompok 4. Ia menulis $4(x + 2) = 4x + 8$. Lab menunjukkan hasil yang sama.
-
-## 4. Catatan klub
-
-Nara menulis tiga contoh di buku kotak, lalu memeriksanya dengan substitusi.
-
-| Bentuk awal | Dibuka | Periksa untuk $x = 6$ |
-|---|---|---|
-| $3(x + 2)$ | $3x + 6$ | $3(8) = 24$ dan $18 + 6 = 24$ |
-| $4(2x - 3)$ | $8x - 12$ | $4(9) = 36$ dan $48 - 12 = 36$ |
-| $\frac{12x + 8}{4}$ | $3x + 2$ | $(72 + 8) \div 4 = 20$ dan $18 + 2 = 20$ |
-
-Langkah membuka kurung:
-
-1. Tulis bilangan di luar kurung.
-2. Kalikan bilangan itu ke setiap suku di dalam kurung.
-3. Jumlahkan atau kurangkan hasilnya sesuai tanda.
-4. Periksa dengan satu nilai $x$ yang mudah.
-
-Untuk pembagian, langkahnya:
-
-1. Bagi setiap suku dengan bilangan pembagi.
-2. Tulis hasil tiap suku.
-3. Periksa dengan mengalikan kembali.
-
-Mereka memakai contoh hadiah yang lebih besar. Ada 12 kantong, setiap kantong berisi $x$ pensil dan 2 penghapus. Seluruh isinya:
+Contoh 1. Dua belas kantong, setiap kantong berisi $x$ pensil dan 2 penghapus.
 
 $$12(x + 2) = 12x + 24$$
 
-Dengan $x = 6$, jumlah pensil $12 \times 6 = 72$ dan penghapus $12 \times 2 = 24$. Seluruhnya 96 benda.
+Jika $x = 6$, jumlah pensil $12 \times 6 = 72$ dan penghapus $12 \times 2 = 24$. Seluruhnya 96 benda. Cara lain: satu kantong berisi $6 + 2 = 8$ benda, lalu $12 \times 8 = 96$.
 
-Bima menghitung dengan cara lain. "Dua belas kantong, tiap kantong delapan benda. $12 \times 8 = 96$." Hasilnya sama.
+Contoh 2. Setiap kantong berisi $x$ pensil dan 3 penghapus.
 
-:::tip
-**Catatan Nara.** Periksa hasil aljabar dengan angka. Kalau dua bentuk memberi hasil berbeda untuk $x$ yang sama, salah satu langkah pasti tertinggal.
-:::
+$$12(x + 3) = 12x + 36$$
 
-## 5. Kembali ke misi
+Jika $x = 6$, pensilnya 72 dan penghapusnya 36. Seluruhnya 108 benda.
 
-Nara menutup buku kas dan meletakkan tiga kantong contoh di depan Bima. "Sekarang kita tahu isi satu kotak, yaitu 6 pensil. Berapa isi dua belas kantong?"
+Contoh 3. Harga. Satu paket berisi satu buku dan dua pensil. Harga buku $x$ rupiah dan harga pensil Rp2.000. Harga delapan paket:
 
-Bima menulis $12(6 + 2) = 12 \times 8 = 96$. Ia membuka satu kantong untuk memeriksa. Enam pensil dan dua penghapus, delapan benda. Dua belas kantong berarti 96 benda.
+$$8(x + 4.000) = 8x + 32.000$$
 
-Kiki memeriksa penghapusnya. "Dua belas kali dua, dua puluh empat. Pensilnya tujuh puluh dua. Jumlahnya sembilan puluh enam."
+Jika $x = 6.000$, harganya $8(6.000) + 32.000 = 80.000$ rupiah.
 
-Raka menambahkan label pada gambar kantong. "Kalau digambar, dua belas kelompok. Setiap kelompok punya satu kotak dan dua bulatan."
+Contoh 4. Pembagian. Uang kas sebesar $12x$ rupiah dibagi rata untuk 4 kelompok.
 
-Pak Rahmat berhenti di dekat meja. "Kalau setiap kantong berisi $x$ pensil dan 3 penghapus, bagaimana kamu menulis isi dua belas kantong?"
+$$\frac{12x}{4} = 3x$$
 
-Kiki menulis $12(x + 3)$. "Berarti $12x + 36$."
+Jika $x = 5.000$, setiap kelompok mendapat $3(5.000) = 15.000$ rupiah. Periksa: $4 \times 15.000 = 60.000$, sama dengan $12(5.000)$.
 
-"Kalau $x = 6$?" tanya Pak Rahmat.
+Contoh 5. Pembagian dengan dua suku.
 
-"Tujuh puluh dua pensil dan tiga puluh enam penghapus," kata Kiki. "Seluruhnya seratus delapan."
+$$\frac{18x + 12}{6} = 3x + 2$$
 
-Bima menutup kantong terakhir. "Semoga penghapusnya cukup. Kalau kurang, kita tinggal menambah kantongnya."
+Periksa dengan $x = 4$: $(72 + 12) \div 6 = 84 \div 6 = 14$, dan $3(4) + 2 = 14$.
 
-Kiki menatap tulisannya. "Kalau angka di luar kurungnya berubah, apakah angka di dalam kurung juga berubah?"
+Contoh 6. Pembagian yang tidak habis per suku tidak disederhanakan dengan cara ini. $\frac{5x + 3}{2}$ tetap ditulis sebagai satu pecahan karena 3 tidak habis dibagi 2.
 
-## 6. Cek pemahaman
+Contoh 7. Kantong berisi $x$ pensil dan $y$ penghapus. Enam kantong berisi:
+
+$$6(x + y) = 6x + 6y$$
+
+Jika $x = 4$ dan $y = 3$, isinya $6(4) + 6(3) = 24 + 18 = 42$ benda.
+
+Contoh 8. Pembagian dipakai untuk memeriksa isi dus. Delapan dus berisi 120 pensil, jadi satu dus berisi $120 \div 8 = 15$ pensil. Kalau label dus $2x + 3$, persamaan $2x + 3 = 15$ memberi $x = 6$. Periksa dengan perkalian: $2(6) + 3 = 15$.
+
+## 3. Lab
+
+Ubah jumlah kelompok dan nilai $x$. Lab menampilkan $a(x + 2) = ax + 2a$.
+
+<DistributiveLab />
+
+Dengan 3 kelompok dan $x = 4$, sisi kiri $3(4 + 2) = 18$ dan sisi kanan $3(4) + 6 = 18$. Dengan 4 kelompok, bentuknya $4(x + 2) = 4x + 8$. Jumlah kelompok menentukan koefisien $x$ dan banyak penghapus.
+
+## 4. Kesalahan umum
+
+- Menulis $3(x + 2)$ sebagai $3x + 2$. Angka 3 harus dikalikan ke $x$ dan ke 2.
+- Menghitung penghapus hanya satu kantong. Tiga kantong berarti $3 \times 2 = 6$ penghapus.
+- Lupa mengalikan tanda minus. $4(2x - 3) = 8x - 12$, bukan $8x - 3$.
+- Membagi hanya suku pertama. $\frac{15x + 10}{5}$ harus menjadi $3x + 2$, bukan $3x + 10$.
+- Membalik urutan operasi. Bagi setiap suku, bukan hasil penjumlahannya saja.
+- Tidak memeriksa hasil. Substitusi satu nilai $x$ menunjukkan apakah kurung sudah dibuka dengan benar.
+
+## 5. Ringkasan
+
+- $a(b + c) = ab + ac$.
+- $a(b - c) = ab - ac$.
+- $3(x + 2) = 3x + 6$.
+- $4(2x - 3) = 8x - 12$.
+- $12(x + 2) = 12x + 24$.
+- $\frac{12x}{4} = 3x$.
+- $\frac{15x + 10}{5} = 3x + 2$.
+- Pembagian dapat diperiksa dengan mengalikan hasilnya kembali.
+- Periksa hasil aljabar dengan mengganti variabel memakai bilangan yang mudah.
+
+## 6. Latihan
 
 <QuizRunner quizId="algebra-multiply-divide" />
 
 <LessonComplete lessonId="g7-algebra-multiply-divide" />
+
+---
+
+**Cerita Bab 4:** [Kotak yang belum dihitung →](/learn/grade-7/algebra/cerita)
