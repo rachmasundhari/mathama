@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import TOCItems from '@theme/TOCItems';
+import TOCItems from '@theme-original/TOCItems';
 import type {TOCItem} from '@docusaurus/mdx-loader';
 
 type TOCProps = {
