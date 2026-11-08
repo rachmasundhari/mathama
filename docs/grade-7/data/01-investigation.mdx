@@ -1,0 +1,133 @@
+---
+title: "Investigasi Statistika"
+sidebar_position: 1
+slug: /grade-7/data/investigation
+---
+
+import DataLab from '@site/src/components/DataLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · DATA DAN DIAGRAM · 12 MENIT</div>
+
+# Pertanyaan mana yang bisa dihitung?
+
+**Tujuan belajar:** Merancang pertanyaan tertutup, mengumpulkan data dari sebagian pengunjung, dan mencatat jawaban dengan turus.
+
+## 1. Tenda di pinggir lapangan
+
+Festival layang-layang belum resmi dibuka, tetapi lapangan sudah penuh. Ari menahan tenda klub agar tidak terbang, Bima menyusun kotak pensil, dan Odi membawa ember penuh tutup botol. Naya memegang papan jalan pinjaman Kak Rani.
+
+Pak Darto dari komite kota berhenti di depan meja. "Kami mau membangun jalan baru dari mercusuar ke kota. Ada tiga calon titik awal. Komite ingin memutuskan berdasarkan suara pengunjung, bukan suara orang di ruang rapat saja."
+
+Naya langsung membuka buku kotak-kotaknya. "Kami bisa bertanya." Ia menulis satu judul di kepala halaman: Suara Tanjung Cakrawala.
+
+Bima mengangkat tangan. "Gampang. Aku tanya satu per satu: jalan baru sebaiknya di mana?"
+
+Kak Rani menuang teh ke cangkir enamel. Ia tidak menjawab.
+
+## 2. Dua belas jawaban, nol hitungan
+
+Bima berjalan ke kerumunan. Ia kembali dengan dada membusung dan dua belas jawaban di halaman belakang buku tulis.
+
+"Jalan baru sebaiknya di mana?" Naya membaca catatan itu keras-keras.
+
+- "Dekat warung Bu Ina, biar aku bisa beli es."
+- "Dekat dermaga. Perahu bapakku lewat situ."
+- "Jangan di tanjakan. Licin kalau hujan."
+- "Dekat lapangan. Anak-anak sering main di sana."
+- "Terserah pemerintah sajalah."
+- "Dekat rumahku."
+
+Naya menulis semuanya di satu kolom. Ari mencoba mengelompokkan dengan spidol. "Warung" dan "dermaga" bisa masuk daftar tempat. "Jangan di tanjakan" bukan nama tempat. "Terserah pemerintah" bukan pilihan sama sekali.
+
+Odi membaca dari belakang. "Kok jawabannya beda-beda semua? Nanti yang menang yang mana?"
+
+Belum ada yang menjawab, hujan turun. Mereka menarik tenda, tetapi papan jalan sudah basah. Tinta menyebar dan separuh catatan Bima berubah jadi titik biru. Bima mengusapnya dengan lengan. Hasilnya lebih buruk. "Hilang," katanya.
+
+"Jadi berapa yang memilih dermaga?" tanya Ari.
+
+Tidak ada yang bisa menjawab. Piko mengulang kata Bima. "Hilang. Hilang."
+
+Kak Rani mengangkat papan yang basah. "Kalau setiap jawaban punya bentuk sendiri, apa yang mau kamu hitung?"
+
+"Berarti pertanyaannya salah," kata Bima.
+
+"Pertanyaannya belum tentu salah. Mungkin terlalu terbuka. Pertanyaan seperti apa yang bisa dijawab dengan satu turus?"
+
+## 3. Mengubah cerita menjadi pilihan
+
+Statistika adalah cara mengumpulkan, menyusun, dan membaca keterangan agar keputusan tidak hanya berdasarkan tebakan. Keterangan itu disebut data. Seluruh orang yang ingin kita dengarkan disebut populasi. Orang yang benar-benar kita tanya disebut sampel.
+
+Pertanyaan Bima membuat setiap orang menjawab dengan caranya sendiri. Jawaban seperti itu kaya cerita, tetapi sulit dihitung. Untuk menghitung, klub perlu pertanyaan tertutup: pertanyaan dengan pilihan jawaban yang sudah disiapkan.
+
+Naya menulis pertanyaan baru di kertas kering. "Dari mana jalan baru sebaiknya dimulai?" Pilihannya: pasar ikan, lapangan layang-layang, dermaga, sekolah, atau lainnya.
+
+"Kenapa ada pilihan lainnya?" tanya Odi.
+
+"Supaya orang tidak dipaksa memilih tempat yang tidak dia mau," kata Naya.
+
+Sebelum bertanya, Naya menulis tanggal, jam, dan tempat di setiap lembar. Ari menambahkan gambar kecil tenda di sudut kertas. "Supaya nanti kita ingat dari mana data ini datang," kata Naya. Bima mengangguk dan mulai berkeliling.
+
+Mereka menguji pertanyaan itu kepada dua puluh orang. Ari menggambar kotak di papan yang sudah dibungkus plastik. Setiap jawaban dicatat dengan turus. Naya menjelaskan aturannya: satu garis untuk satu orang, dan setiap kelompok lima ditutup dengan garis miring agar mudah dihitung.
+
+:::tip
+**Catatan Naya.** Pertanyaan yang baik hanya menanyakan satu hal, pilihannya tidak saling tumpang tindih, dan selalu menyediakan jalan keluar untuk jawaban di luar dugaan.
+:::
+
+## 4. Coba di meja kerja
+
+Naya membuka contoh data empat hari milik klub. "Geser jumlahnya. Lihat apakah kesimpulanmu berubah saat satu hari kosong," katanya.
+
+<DataLab />
+
+## 5. Catatan klub
+
+Setelah uji coba, mereka menghitung hasil dua puluh responden.
+
+| Pilihan | Banyak | Persentase |
+|---|---|---|
+| Pasar ikan | 9 | 45% |
+| Lapangan layang-layang | 5 | 25% |
+| Dermaga | 4 | 20% |
+| Sekolah | 2 | 10% |
+
+Langkah pertama, jumlahkan semua jawaban: $9+5+4+2=20$. Jumlah ini harus sama dengan banyak responden.
+
+Langkah kedua, ubah setiap jawaban menjadi persentase.
+
+$$\text{persentase} = \frac{\text{banyak jawaban}}{\text{jumlah responden}} \times 100\%$$
+
+$$\frac{9}{20} \times 100\% = 45\%$$
+
+Langkah ketiga, periksa hasilnya: $45\%+25\%+20\%+10\%=100\%$. Kalau jumlahnya tidak seratus persen, ada jawaban yang terlewat atau terhitung dua kali.
+
+Arti kesimpulan juga harus dijaga. Naya menulis: "Dari 20 orang yang kami tanya, 9 memilih pasar ikan." Ia tidak menulis bahwa seluruh warga kota memilih pasar.
+
+:::warning
+**Pertanyaan Odi.** Kalau klub hanya bertanya kepada teman-teman sendiri, apakah jawaban mereka masih disebut sampel pengunjung?
+:::
+
+## 6. Kembali ke misi
+
+Sore itu mereka berhasil mengumpulkan seratus tiga puluh lima lembar. Hujan datang lagi, jadi Bima memindahkan meja ke bawah tenda dan Ari memasukkan tumpukan kertas ke dalam kantong plastik. Naya memberi nomor setiap lembar.
+
+Seratus dua puluh lembar terlihat lengkap. Lima belas lembar lain ditulis dengan tangan yang sama dan pertanyaannya berbeda. Naya meletakkannya di kotak terpisah. "Jangan dihitung dulu. Besok kita periksa."
+
+Ari menancapkan tiga pin di sketsa peta. Bima menunjuk pin di dekat pasar. "Yang ini paling banyak."
+
+"Paling banyak di antara dua puluh orang," kata Naya. "Belum tentu paling banyak di seluruh kota."
+
+Odi mengangkat ember tutup botolnya. "Kak, kalau kita cuma bertanya orang yang lewat dekat meja kita, apakah suara mereka sama dengan suara seluruh kota?"
+
+Naya membuka mulut, lalu menutupnya lagi.
+
+"Besok kita periksa siapa yang belum kita tanya," kata Ari.
+
+Odi mengangguk. "Jadi... siapa yang belum kita tanya?"
+
+## 7. Cek pemahaman
+
+<QuizRunner quizId="data-basics" />
+
+<LessonComplete lessonId="g7-data-investigation" />

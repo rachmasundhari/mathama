@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>Cakrawala — Pilot website matematika SMP</title><meta name="description" content="Pilot situs belajar matematika SMP dengan materi interaktif dan latihan soal"><style>/* Cakrawala design system — customize tokens here. */
+:root {
+  --ifm-color-primary: #126e64;
+  --ifm-color-primary-dark: #0d625a;
+  --ifm-color-primary-darker: #0b5a53;
+  --ifm-color-primary-darkest: #084840;
+  --ifm-color-primary-light: #168077;
+  --ifm-color-primary-lighter: #1b887e;
+  --ifm-color-primary-lightest: #269c90;
+  --ifm-font-family-base: 'Plus Jakarta Sans', 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-heading-font-family: 'Plus Jakarta Sans', 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-font-color-base: #203c3a;
+  --ifm-background-color: #fcfaf6;
+  --ifm-heading-color: #183f3a;
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-height: 78px;
+  --ifm-global-radius: 14px;
+  --ifm-link-color: #126e64;
+  --ink: #153c38;
+  --muted: #667b76;
+  --green: #126e64;
+  --cream: #fcfaf6;
+  --line: #dce5df;
+}
+* {box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+body {background: #fcfaf6; color: var(--ink);}
+::selection {background: #c4e8d6; color: #123d36;}
+a:hover {text-decoration: none;}
+button, input {font: inherit;}
+button {cursor: pointer;}
+button:disabled {cursor: not-allowed; opacity: .55;}
+button:focus-visible, a:focus-visible, input:focus-visible {outline: 3px solid #ecaa60; outline-offset: 3px;}
+h1,h2,h3,h4 {letter-spacing: -.035em;}
+.navbar {background: #fcfaf6;box-shadow: none; border-bottom:1px solid #e5e9e3; padding: 0 32px;}
+.navbar__inner {max-width: 1220px; margin:auto;}
+.navbar__brand {gap:11px; margin-right:44px;}
+.navbar__logo {height:35px;}
+.navbar__title {color: var(--ink);font-size:25px;font-weight:850; letter-spacing:-.06em;}
+.navbar__item {font-size:14px;font-weight:660;color:#576d67;padding:0 16px;}
+.navbar__link:hover, .navbar__link--active {color:var(--green);}
+.navbar__cta {background: #176e63; color:white !important; border-radius:100px; padding:12px 20px !important; margin-left:8px; font-weight:700;}
+.navbar__cta:hover {background:#0d584e;color:white!important;}
+.navbar__toggle {color: var(--ink);}
+.footer {background:#f2f4ed; border-top:1px solid #e0e6dd; color:#36514b;}
+.footer__title {color:var(--ink);font-weight:800;}
+.footer__link-item {color:#536a64;}
+.footer__copyright {color:#7b8b85; font-size:12px; text-align:left;}
+.footer__links {margin-bottom:54px;}
+.pageContainer {max-width:1180px;margin:0 auto;padding:0 24px;}
+.siteMain {overflow:hidden;}
+.eyebrow {display:block;font-size:11px;letter-spacing:.15em;font-weight:850;color:#c1793d;text-transform:uppercase;}
+.eyebrow.teal {color:var(--green);}
+.button {display:inline-flex;align-items:center;justify-content:center;gap:18px;font-weight:800;border:none;text-decoration:none!important;border-radius:999px;transition:transform .15s ease,background .15s ease,box-shadow .15s ease;}
+.button:hover {transform:translateY(-2px);}
+.primaryButton {background:#126e64;color:white!important;padding:13px 24px;box-shadow:0 9px 18px rgba(21,102,90,.13);}
+.primaryButton:hover {background:#0b5b52;color:white;}
+.outlineButton {background:transparent;border:1.5px solid #d1ddd5;color:#315e54!important;padding:12px 22px;}
+.outlineButton:hover {background:#fff;}
+.bigButton {font-size:14px;min-height:52px; padding:15px 22px;}
+.lightButton {color:#104b43!important;background:#fff9e9;padding:14px 22px;}
+.sectionHeading {display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:32px;}
+.sectionHeading h2 {font-size:clamp(29px,3vw,42px);margin:8px 0 0;font-weight:830;}
+.sectionHeading p {font-size:14px;line-height:1.75;max-width:370px;color:var(--muted);margin:0;}
+.sectionLink {font-size:13px;font-weight:800;color:var(--green);white-space:nowrap;}
+.heroSection {position:relative;padding:86px 0 90px;background:radial-gradient(circle at 75% 30%,#edf6ed 0,transparent 45%), #fcfaf6;}
+.heroGrid {display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:70px;}
+.heroCopy {padding:12px 0;}
+.announcement {display:inline-flex;align-items:center;gap:9px;border:1px solid #e2e7d9;background:#f5f8ee;border-radius:99px;padding:8px 14px;font-size:10.5px;font-weight:850;letter-spacing:.09em;color:#3e7766;margin-bottom:26px;}
+.announcement span {font-size:15px;color:#e8a955;}
+.heroCopy h1 {max-width:620px;font-size:clamp(44px,5vw,76px);font-weight:850;letter-spacing:-.075em;line-height:1.1;margin:0 0 26px;color:#163f39;}
+.heroCopy h1 em {font-style:normal;color:#18756a;position:relative;white-space:nowrap;}
+.heroCopy h1 em:after {content:'';position:absolute;left:1%;right:3%;bottom:-4px;height:9px;background:#f3bf79;opacity:.65;border-radius:100%;z-index:-1;transform:rotate(-1deg);}
+.heroCopy>p {max-width:455px;font-size:16px;line-height:1.9;color:#627770;margin:0 0 30px;}
+.heroButtons {display:flex;gap:11px;flex-wrap:wrap;}
+.heroTrust {display:flex;align-items:center;gap:16px;margin-top:47px;}
+.tinyAvatars {display:flex;padding-left:7px;}
+.tinyAvatars span {display:grid;place-items:center;width:34px;height:34px;border-radius:50%;margin-left:-7px;border:3px solid #fcfaf6;font-weight:850;font-size:16px;color:#34645c;background:#dbefe3;}
+.tinyAvatars span:nth-child(2){background:#ffe4cb;color:#945d3e}.tinyAvatars span:nth-child(3){background:#e8e2f5;color:#75609e}
+.heroTrust strong,.heroTrust small {display:block;}.heroTrust strong {font-size:11px;font-weight:780;}.heroTrust small {color:#8a9a93;font-size:11px;margin-top:1px;}
+.heroVisual {position:relative;padding:25px 10px 20px;}
+.heroDemo {position:relative;background:#fff;border:1px solid #e5e9e3;border-radius:27px;box-shadow:0 25px 65px rgba(38,65,49,.1);padding:28px 30px 20px;transform:rotate(-1.3deg);}
+.heroDemoTop {display:flex;align-items:center;justify-content:space-between;padding-bottom:23px;border-bottom:1px solid #edf0ea;}
+.heroDemoTop>span:first-child {font-size:10px;font-weight:900;color:#4c8272;letter-spacing:.11em;}
+.greenCircle,.liveDot {display:inline-block;width:8px;height:8px;border-radius:100%;background:#43b58c;margin-right:5px;}
+.demoDots {font-size:8px;color:#bdcbc1;letter-spacing:5px;}
+.demoIntro {font-size:17px;margin:28px 0 16px;color:#3b5851;}
+.demoIntro strong {color:#0d665a;}
+.heroEquation {display:flex;align-items:center;gap:15px;font-size:32px;font-weight:850;color:var(--ink);letter-spacing:-.04em;}
+.heroEquation>span:first-child {background:#eef7ed;padding:13px 17px;border-radius:13px;}
+.heroEquationEquals {color:#97b5a7;}
+.heroEquation strong {color:var(--green);font-size:39px;}
+.heroGroups {display:flex;align-items:center;justify-content:center;gap:11px;margin:22px 0 22px;padding:24px 10px;background:#f8fbf7;border-radius:16px;min-height:130px;}
+.heroGroup {border-radius:13px;border:2px solid #b6dcd0;min-width:83px;min-height:90px;padding:9px;background:#e7f4e8;text-align:center;}
+.heroGroup small {display:block;font-weight:850;font-size:12px;color:#3a8875;margin-bottom:10px;}
+.heroGroup>div {display:flex;gap:4px;justify-content:center;flex-wrap:wrap;max-width:88px;}
+.heroGroup>div span {background:#61b99d;width:12px;height:12px;border-radius:50%;}
+.heroGroup.constants {background:#fff0d5;border-color:#f3d69c;min-width:80px;}
+.heroGroup.constants small {color:#be8a34;}
+.heroGroup.constants>div span {background:#edbb6c;}
+.plusSign {font-size:22px;color:#abbaa9;font-weight:750;}
+.heroDemoSlider {margin:0 0 16px;}
+.heroDemoSlider>div:first-child {display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:12px;color:#64796f;}
+.heroDemoSlider strong {background:#e8f5e8;color:#17685e;padding:5px 10px;border-radius:7px;font-size:12px;}
+.heroDemoSlider input,.rangeInput {appearance:none;-webkit-appearance:none;background:#d8e5dd;height:7px;border-radius:99px;width:100%;display:block;outline-offset:4px;accent-color:#126e64;}
+.heroDemoSlider input::-webkit-slider-thumb,.rangeInput::-webkit-slider-thumb {appearance:none;width:19px;height:19px;border:4px solid #fff;background:#177469;border-radius:50%;box-shadow:0 0 0 2px #177469;cursor:pointer;}
+.heroDemoSlider input::-moz-range-thumb,.rangeInput::-moz-range-thumb {width:13px;height:13px;border:4px solid #fff;background:#177469;border-radius:50%;box-shadow:0 0 0 2px #177469;cursor:pointer;}
+.heroDemoScale,.rangeMarks {display:flex;justify-content:space-between;color:#91a39b;font-size:10px;margin-top:10px;}
+.heroDemoFoot {display:flex;align-items:center;gap:8px;border-top:1px dashed #e2e9e0;margin-top:17px;padding-top:15px;color:#7b9588;font-size:11px;}
+.heroDemoFoot span {color:#eda85c;font-size:16px;}
+.floatingNote {position:absolute;z-index:2;background:#fff;border:1px solid #e4e9e4;box-shadow:0 9px 23px rgba(30,63,54,.08);border-radius:12px;color:#4a6f63;font-size:11px;font-weight:800;padding:11px 15px;}
+.floatingNote.noteTop {top:5px;right:-27px;transform:rotate(5deg);}
+.floatingNote.noteTop span {color:#edb56b;}
+.floatingNote.noteBottom {bottom:0;left:-30px;transform:rotate(-5deg);color:#936737;background:#fff3d9;}
+.stepsSection {padding:78px 0 100px;background:#fff;}
+.compactHeading {margin-bottom:29px;}
+.stepsGrid {display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.stepCard {border:1px solid #e5ebe5;border-radius:19px;padding:28px;background:white;min-height:220px;}
+.stepIcon {display:grid;place-items:center;width:50px;height:50px;border-radius:15px;margin-bottom:26px;font-size:26px;font-weight:700;}
+.iconCream {background:#faf0d9;color:#b98944;}.iconMint {background:#e3f3e8;color:#217c6d;}.iconPeach {background:#fee8da;color:#c97d57;}
+.stepCard>span {font-size:10px;font-weight:850;letter-spacing:.14em;color:#99a49b;}
+.stepCard h3 {font-size:20px;margin:6px 0 8px;}.stepCard p {font-size:13px;color:#71857c;line-height:1.8;margin:0;}
+.chaptersSection {padding:91px 0 108px;background:#f8f8f2;}
+.chapterGrid {display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.chapterCard {color:var(--ink)!important;border:1px solid #e5e9e0;border-radius:22px;padding:24px 25px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s ease,box-shadow .2s ease;}
+.chapterCard:hover,.catalogCard:hover {transform:translateY(-5px);box-shadow:0 15px 30px rgba(20,56,45,.09);}
+.cardMint {background:#e4f3e8;}.cardPeach {background:#fbe8d9;}.cardLilac {background:#ece8f6;}
+.chapterHeader {display:flex;justify-content:space-between;align-items:center;}
+.chapterHeader>span:first-child {font-size:10px;font-weight:900;letter-spacing:.13em;color:#667c6d;}
+.chapterArrow {display:grid;place-items:center;font-size:20px;width:37px;height:37px;border:1px solid rgba(35,72,59,.15);border-radius:50%;}
+.chapterSymbol {display:grid;place-items:center;font-size:45px;font-weight:830;letter-spacing:-.05em;min-height:80px;transform:rotate(-7deg);}
+.chapterCard h3 {font-size:22px;margin:0 0 4px;}.chapterCard p {font-size:12px;line-height:1.6;margin:0 0 15px;color:#64796c;}.chapterCount {font-size:11px;font-weight:830;color:#2c6659;}
+.spotlightSection {background:#fff;padding:110px 0;}
+.spotlightBox {background:#124c44;border-radius:27px;min-height:366px;padding:58px 65px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center;overflow:hidden;position:relative;}
+.spotlightBox::before {content:'';position:absolute;width:480px;height:480px;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.1);border-radius:50%;right:-170px;top:-170px;}
+.spotlightCopy {position:relative;z-index:1;}
+.spotlightCopy .eyebrow {color:#ebba77;}.spotlightCopy h2 {color:#fffdf3;font-size:clamp(32px,3.3vw,46px);line-height:1.13;margin:12px 0 16px;}
+.spotlightCopy p {color:#bad7ce;line-height:1.8;max-width:400px;font-size:14px;margin:0 0 27px;}
+.spotlightVisual {display:flex;align-items:center;justify-content:center;gap:9px;position:relative;transform:rotate(-6deg);}
+.spotBox {width:112px;height:120px;background:#e8f7e9;border:4px solid #c5e5cd;box-shadow:0 11px 0 rgba(0,0,0,.08);color:#1f806d;border-radius:17px;text-align:center;font-size:35px;font-weight:850;padding:16px 5px;}
+.spotBox span {display:block;font-size:14px;letter-spacing:4px;white-space:nowrap;margin-top:4px;}
+.spotPlus {font-size:32px;color:#fff;}.spotResult {font-size:38px;color:#ffcf8b;font-weight:800;white-space:nowrap;}
+.bottomCta {background:#fff;padding:12px 0 120px;}.bottomCtaInner {display:flex;align-items:center;justify-content:space-between;gap:35px;}
+.bottomCtaInner h2 {font-size:31px;margin:11px 0 8px;}.bottomCtaInner p {font-size:14px;color:#75867f;margin:0;}
+/* Catalogue and practice */
+.subPage {padding:65px 0 110px;min-height:68vh;background:#fcfaf6;}
+.catalogHero {max-width:690px;margin-bottom:35px;}
+.catalogHero h1 {font-size:clamp(35px,4vw,55px);margin:10px 0 12px;font-weight:850;line-height:1.1;}
+.catalogHero p {font-size:15px;line-height:1.8;color:#70837b;margin:0;}
+.gradeTabs {display:flex;gap:8px;border-bottom:1px solid #dfe8df;margin-bottom:25px;}
+.gradeTab {border:0;background:transparent;padding:14px 24px;margin-bottom:-1px;color:#73877b;font-size:14px;font-weight:770;border-bottom:3px solid transparent;}
+.gradeTab.active {color:#156e64;border-color:#156e64;}
+.catalogMeta {display:flex;align-items:center;justify-content:space-between;margin:0 0 22px;}.catalogMeta strong {font-size:23px;}.catalogMeta span {font-size:12px;color:#7b8c82;}
+.catalogGrid {display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.catalogCard {border:1px solid #e3eae2;background:white;border-radius:20px;overflow:hidden;color:var(--ink)!important;transition:transform .2s ease,box-shadow .2s ease;}
+.catalogArt {height:170px;display:flex;justify-content:center;align-items:center;position:relative;}.catalogArt.mint {background:#e1f1e4;}.catalogArt.peach {background:#fbe8db;}.catalogArt.lavender {background:#eae5f5;}.catalogArt.cream {background:#f6ecd4;}
+.catalogMath {font-size:43px;font-weight:850;letter-spacing:-.055em;transform:rotate(-8deg);}.catalogStatus {position:absolute;top:16px;left:16px;font-size:10px;font-weight:800;letter-spacing:.03em;padding:7px 10px;background:rgba(255,255,255,.82);border-radius:99px;color:#497064;}
+.catalogCardBody {padding:24px;min-height:188px;display:flex;flex-direction:column;align-items:start;}.catalogCardBody small {font-size:10px;letter-spacing:.12em;font-weight:900;color:#96a49b;}.catalogCardBody h3 {font-size:20px;margin:7px 0;}.catalogCardBody p {font-size:12px;color:#72877d;line-height:1.6;flex:1;margin:0 0 19px;}.catalogCardAction {font-size:12px;color:var(--green);font-weight:830;}.catalogFooter {font-size:12px;color:#92a197;padding:26px 0;}
+.practiceGrid {display:grid;grid-template-columns:275px 1fr;gap:25px;align-items:start;}
+.practiceSidebar {background:#fff;border:1px solid #e4e9e1;border-radius:19px;padding:22px;}.practiceSidebar h3 {font-size:16px;margin:0 0 18px;}.practiceSidebar>p {font-size:11px;line-height:1.7;color:#8ba094;margin:18px 4px 0;}
+.practiceSelect {display:flex;width:100%;gap:12px;align-items:center;border:1px solid transparent;border-radius:12px;background:transparent;padding:11px;text-align:left;margin-bottom:4px;color:#43665c;}
+.practiceSelect>span:first-child {background:#f4f5e8;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font-size:19px;}
+.practiceSelect.active {border-color:#d4e7dc;background:#ecf7ee;}.practiceSelect strong,.practiceSelect small {display:block;}.practiceSelect strong {font-size:12px;}.practiceSelect small {font-size:10px;color:#879c90;margin-top:3px;}
+/* Docs */
+.theme-doc-markdown {font-size:16px;line-height:1.86;}
+.theme-doc-markdown h1 {font-size:clamp(32px,3vw,47px);margin-top:0;margin-bottom:16px;line-height:1.18;}
+.theme-doc-markdown h2 {font-size:27px;margin-top:42px;margin-bottom:18px;border-bottom:0;}
+.theme-doc-markdown p,.theme-doc-markdown li {color:#4e665f;}
+.theme-doc-markdown .katex-display {padding:18px 0;overflow:auto;}
+.theme-doc-markdown .admonition {box-shadow:none;border-radius:13px;}
+.theme-doc-sidebar-container {border-right:1px solid #e4ebe3!important;}
+.menu__link {border-radius:10px;font-size:13px;}
+.menu__link--active {background:#e3f2e9;}
+.table-of-contents__link {font-size:12px;}
+.lessonKicker {display:inline-flex;background:#eaf4eb;border:1px solid #daeadc;color:#377568;border-radius:99px;padding:7px 12px;font-size:10px;font-weight:900;letter-spacing:.1em;margin-bottom:18px;}
+/* Interactive lessons */
+.labCard,.quizCard {background:#fff;border:1px solid #dfe9e0;border-radius:21px;padding:28px;box-shadow:0 13px 34px rgba(40,79,58,.04);margin:27px 0;line-height:1.6;}
+.labHeader,.quizTop {display:flex;justify-content:space-between;align-items:start;gap:14px;}
+.labHeader h3,.quizTop h3 {font-size:22px;line-height:1.28;margin:7px 0 0;}
+.livePill {display:inline-flex;align-items:center;white-space:nowrap;background:#e6f5e9;border:1px solid #d6ecd9;border-radius:99px;padding:6px 11px;color:#377b60;font-size:10px;font-weight:800;}
+.labIntro {font-size:13px!important;color:#78897e!important;line-height:1.8!important;margin:16px 0 25px!important;}
+.sliderRow {display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;}.sliderRow label {font-size:13px;font-weight:800;color:#3d5a51;}.valueChip {background:#e7f2e8;color:#146e64;border-radius:8px;padding:6px 10px;font-size:14px;}
+.rangeInput {margin-top:14px;margin-bottom:2px;}.rangeMarks {margin-bottom:20px;}
+.algebraScene {display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:13px;background:#f6f9f5;border:1px solid #edf2e9;border-radius:15px;padding:28px 13px;margin:23px 0 19px;}
+.variableBox,.constantBox {background:#e4f3e9;border:2px solid #b6dcc5;min-width:120px;min-height:112px;border-radius:14px;padding:13px;display:flex;flex-direction:column;align-items:center;gap:16px;}.constantBox {background:#fff0db;border-color:#f2d8a8;min-width:105px;}
+.variableLabel {font-weight:800;font-size:12px;color:#2b826c;}.constantBox .variableLabel {color:#b68c40;}
+.dotGrid {display:flex;max-width:110px;gap:5px;flex-wrap:wrap;justify-content:center;}.mathDot {width:13px;height:13px;border-radius:50%;background:#50ad8b;box-shadow:inset 0 -2px 0 rgba(0,0,0,.07);}.mathDot.goldDot {background:#ecb15e;}.scenePlus {font-size:25px;font-weight:800;color:#abc2b0;}
+.equationSummary {display:flex;align-items:center;justify-content:center;gap:13px;flex-wrap:wrap;background:#eaf5ec;border-radius:15px;padding:19px;color:#245f55;font-size:22px;font-weight:760;margin-top:12px;}.equationSummary .equals {color:#8daf9e;}.equationSummary strong {font-size:31px;color:#0b6459;}.equationFoot {font-size:10px;color:#7d9588;font-weight:500;}
+.microNote {background:#fffaeb;border-left:3px solid #eeb86a;border-radius:4px 12px 12px 4px;padding:12px 16px;font-size:12px!important;line-height:1.8!important;color:#806c50!important;margin:18px 0 0!important;}
+.twoSliders {display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:23px 0;}.numberLineCanvas {background:#f7faf6;border:1px solid #ecf0e7;border-radius:15px;padding:14px 15px;}.numberLineCanvas svg {width:100%;height:auto;display:block;}
+.bookShelf {min-height:130px;display:flex;align-items:center;justify-content:center;gap:13px;flex-wrap:wrap;background:#f7f9f4;border-radius:15px;padding:24px 12px;margin-bottom:15px;}.bookIcon {width:40px;height:64px;background:#76b7a5;border:3px solid #4b9d87;border-radius:4px 9px 9px 4px;box-shadow:3px 4px 0 #cfe4d9;position:relative;padding:5px;}.bookInner {font-size:17px;text-align:center;color:white;font-weight:850;}.bookInner span {display:block;font-size:10px;}
+.distributiveGroups {display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:20px 0;}.distributiveGroup {border:1px solid #d8e6dd;background:#f7faf6;border-radius:14px;padding:12px;min-width:140px;text-align:center;}.groupCaption {font-size:10px;color:#7d9789;font-weight:800;}.groupContent {display:flex;align-items:center;justify-content:center;gap:7px;margin-top:10px;}.groupBlue,.groupGold {font-size:22px;font-weight:800;border-radius:8px;padding:8px;background:#e1f1e7;color:#237663;}.groupGold {background:#ffefd2;color:#ba812c;}.groupBlue small {display:block;font-size:8px;font-weight:500;}.groupPlus {font-size:16px;color:#8a9f91;}
+.termChooser {display:flex;justify-content:center;gap:13px;padding:28px 10px;background:#f7faf6;border-radius:15px;}.termTile {font-size:28px;font-weight:800;color:#4c8276;padding:15px 25px;border:2px solid #d5e6d9;background:#fff;border-radius:15px;transition:all .15s ease;}.termTile.picked {border-color:#17796c;background:#e6f4e8;color:#0c6c60;box-shadow:0 0 0 2px #ccebdd;}
+.lessonComplete {margin:40px 0 20px;background:#edf5eb;border:1px solid #d7e8d6;border-radius:15px;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:20px;}.lessonComplete strong {font-size:15px;}.lessonComplete p {font-size:12px;color:#789184;margin:4px 0 0;}.successButton {background:#c7e7d2;color:#206a51;padding:13px 19px;}
+/* Quiz */
+.quizCard {padding:30px;}.quizTop h3 {font-size:24px;}.questionCount {font-weight:800;font-size:13px;color:var(--green);background:#ebf6ed;border-radius:9px;padding:7px 10px;white-space:nowrap;}.quizProgress {height:6px;background:#e9efe8;border-radius:99px;overflow:hidden;margin:22px 0 34px;}.quizProgress span {display:block;background:#198270;height:100%;border-radius:99px;transition:width .2s;}.topicTag {display:inline-block;background:#fff0dd;color:#b57c3c;border-radius:5px;padding:5px 8px;font-size:10px;font-weight:900;letter-spacing:.06em;}.questionArea h4 {font-size:21px;line-height:1.5;margin:16px 0 25px;max-width:650px;}.optionList {display:grid;gap:10px;}.quizOption {display:flex;align-items:center;gap:14px;border:1.5px solid #e1e8e1;border-radius:13px;padding:14px 16px;cursor:pointer;font-size:14px;color:#405e53;background:#fff;transition:background .12s,border-color .12s;}.quizOption:hover {background:#f6f9f6;}.quizOption.selected {border-color:#7fb9a1;background:#f1f8f0;}.quizOption.correctChoice {border-color:#7ebf96;background:#e3f5e9;}.quizOption input {position:absolute;opacity:0;pointer-events:none;}.quizOption:focus-within {outline:3px solid #efca97;outline-offset:2px;}.optionLetter {display:grid;place-items:center;flex-shrink:0;width:32px;height:32px;background:#f1f3ef;border-radius:9px;font-size:12px;color:#698578;font-weight:850;}.quizOption.selected .optionLetter {background:#cae8d9;color:#1b7666;}.mathInputLabel {font-weight:750;font-size:12px;display:flex;flex-direction:column;gap:9px;max-width:380px;}.mathTextInput {border:1.5px solid #d8e6da;padding:15px 16px;border-radius:12px;font-size:19px;color:var(--ink);width:100%;background:#fff;}.mathTextInput:focus {border-color:#198577;outline:none;box-shadow:0 0 0 3px #d5f0e4;}.feedback {border-radius:12px;padding:16px 18px;margin-top:19px;font-size:13px;}.feedback p {margin:5px 0 0;color:inherit;font-size:13px;}.feedbackCorrect {background:#e6f5e9;color:#21654e;border:1px solid #bfe5cd;}.feedbackIncorrect {background:#fff6e7;color:#845f38;border:1px solid #f4dbb2;}.hintBox {background:#fff9e9;border-radius:9px;padding:12px 15px;font-size:12px;color:#997d4a!important;}.quizActions {display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:30px;}.textButton {border:0;background:transparent;color:#548377;padding:7px;font-size:12px;font-weight:750;}.quizResults {text-align:center;padding:45px 20px;}.resultMedal {display:grid;place-items:center;width:65px;height:65px;border-radius:50%;background:#f5ebd7;color:#ba8a47;font-size:36px;margin:17px auto;}.quizResults h3 {font-size:27px;}.resultScore {font-size:67px;font-weight:850;color:#156d62;letter-spacing:-.08em;line-height:1.2;}.resultScore span {font-size:28px;color:#8cb7a4;}.quizResults p {color:#738d7b;font-size:14px;}.quizResults small {display:block;color:#94a396;font-size:10px;margin:16px auto;}
+@media (max-width: 996px) {
+  :root {--ifm-navbar-height: 65px;}
+  .navbar {padding:0 18px;}.pageContainer {padding:0 21px;}
+  .heroSection {padding:60px 0;}.heroGrid {grid-template-columns:1fr 1fr;gap:30px;}.heroCopy h1 {font-size:51px;}.heroCopy>p {font-size:14px;}.floatingNote.noteTop {right:-10px;}.floatingNote.noteBottom {left:-9px;}
+  .heroDemo {padding:20px 19px;}.heroGroup {min-width:62px;}.spotlightBox {padding:40px;}.spotBox {width:75px;height:93px;font-size:28px;}.spotResult {font-size:30px;}
+  .catalogGrid {grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width: 720px) {
+  .heroSection {padding:50px 0 62px;}.heroGrid {grid-template-columns:1fr;gap:35px;}.heroCopy h1 {font-size:clamp(44px,10vw,58px);}.heroVisual {max-width:490px;width:100%;margin:auto;}.heroTrust {margin-top:30px;}.heroCopy>p {font-size:15px;}.heroDemo {transform:none;}.floatingNote.noteTop {right:0;}.floatingNote.noteBottom {left:0;}
+  .stepsSection,.chaptersSection,.spotlightSection {padding:65px 0;}.sectionHeading {align-items:start;gap:16px;}.sectionHeading p {display:none;}.sectionHeading h2 {font-size:30px;}.stepsGrid,.chapterGrid {grid-template-columns:1fr;gap:13px;}.stepCard {min-height:175px;padding:23px;}.stepIcon {margin-bottom:15px;}.chapterCard {min-height:245px;}.spotlightBox {grid-template-columns:1fr;padding:35px 26px;gap:40px;}.spotlightVisual {margin:15px 0;}.bottomCta {padding:30px 0 65px;}.bottomCtaInner {align-items:start;flex-direction:column;gap:20px;}.bottomCtaInner h2 {font-size:27px;}
+  .catalogGrid {grid-template-columns:1fr;}.catalogHero h1 {font-size:39px;}.subPage {padding:42px 0 70px;}.gradeTab {padding:13px 17px;}.practiceGrid {grid-template-columns:1fr;}.practiceSidebar {padding:17px;}
+  .labCard,.quizCard {padding:20px 16px;}.labHeader h3,.quizTop h3 {font-size:20px;}.livePill {font-size:9px;}.algebraScene {gap:8px;padding:16px 6px;}.variableBox,.constantBox {min-width:81px;min-height:100px;padding:9px;}.dotGrid {max-width:68px;}.mathDot {height:10px;width:10px;}.scenePlus {font-size:19px;}.twoSliders {grid-template-columns:1fr;gap:10px;}.equationSummary {font-size:18px;}.equationSummary strong {font-size:25px;}.lessonComplete {align-items:start;flex-direction:column;}.quizActions {flex-wrap:wrap;}.quizActions .button {margin-left:auto;}.termTile {font-size:23px;padding:12px 20px;}.sectionLink {font-size:11px;}
+}
+@media (prefers-reduced-motion: reduce) {*,*::before,*::after {animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}}
+
+
+body{margin:0;font-family:var(--ifm-font-family-base);}
+.previewNav{position:sticky;top:0;z-index:20;background:#fcfaf6;border-bottom:1px solid #e4ebe3;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,calc((100vw - 1180px)/2));}
+.previewBrand{display:flex;align-items:center;gap:10px;color:var(--ink)!important;font-size:25px;font-weight:850;letter-spacing:-.05em;}.previewBrand>span{display:grid;place-items:center;background:#126e64;color:#fff;width:35px;height:35px;border-radius:11px;font-size:23px;}
+.previewLinks{display:flex;align-items:center;gap:27px;}.previewLinks a{font-size:13px;color:#61776d;font-weight:760;}.previewLinks .button{color:#fff;}.previewBadge{position:fixed;bottom:15px;right:15px;z-index:40;background:#173f37;color:#fff;font-weight:800;letter-spacing:.05em;font-size:10px;padding:9px 13px;border-radius:999px;box-shadow:0 12px 32px #163a3330;}
+.previewLesson{padding:95px 0;background:#fff;}.previewLessonGrid{display:grid;grid-template-columns:240px minmax(0,1fr);gap:60px;}.previewSidebar{border-right:1px solid #e3e9e3;padding:0 20px 0 0;position:sticky;top:96px;align-self:start;}.previewSidebar>p{font-weight:800;font-size:11px;color:#8ba094;letter-spacing:.1em;}.previewSidebar a{display:block;padding:12px 14px;border-radius:10px;font-size:13px;color:#627a70;font-weight:700;}.previewSidebar a.active{background:#e7f4eb;color:#126e64;}.previewContent h2{font-size:42px;line-height:1.15;margin:15px 0;}.previewContent>p{color:#60796d;font-size:15px;line-height:1.9;}.previewContent h3{font-size:25px;margin-top:30px;}.mathInline{font-family:Georgia,serif;font-style:italic;font-weight:800;color:#146b61;}.previewExplain{background:#f6f9f2;border-left:3px solid #abd9bd;padding:17px 20px;margin:22px 0;border-radius:0 12px 12px 0;color:#597568;font-size:14px;line-height:1.7;}
+.previewRangeLabel{font-size:11px;font-weight:800;color:#7e988a;}.previewExtra{background:#f8f8f2;padding:85px 0;}.previewExtra h2{font-size:36px;}.previewQuizWrap{background:#fff;padding:85px 0 100px;}.previewQuizWrap .quizCard{max-width:800px;margin:30px auto;}.previewQuizWrap h2{font-size:38px;}.previewQuizWrap .sectionIntro{font-size:14px;color:#7a8c81;}
+.previewFooter{padding:38px 0;background:#173f37;text-align:center;color:#cce1d4;font-size:13px;}.previewFooter strong{font-size:20px;color:white;display:block;margin-bottom:10px;}
+.previewLesson .labCard{margin-top:29px;}
+@media(max-width:850px){.previewLinks>a:not(.button){display:none;}.previewLessonGrid{grid-template-columns:1fr;gap:15px;}.previewSidebar{position:static;border:0;display:flex;flex-wrap:wrap;gap:5px;}.previewSidebar>p{width:100%;margin-bottom:0;}.previewSidebar a{padding:10px;}.previewContent h2{font-size:35px;}}
+@media(max-width:600px){.previewNav{padding:0 18px;}.previewLinks{gap:10px;}.previewLinks .button{font-size:11px;padding:11px 12px;}.previewContent h2{font-size:29px;}.previewLesson,.previewExtra,.previewQuizWrap{padding:55px 0;}.previewBadge{display:none;}}
+</style></head><body>
+<nav class="previewNav" aria-label="Navigasi utama"><a href="#home" class="previewBrand"><span>n</span>cakrawala.</a><div class="previewLinks"><a href="#courses">Jelajahi materi</a><a href="#lesson">Buku belajar</a><a href="#practice">Latihan soal</a><a href="#lesson" class="button primaryButton">Mulai belajar ↗</a></div></nav>
+<main>
+<section id="home" class="heroSection"><div class="pageContainer heroGrid"><div class="heroCopy"><div class="announcement"><span>✳</span> TEMPAT BELAJAR MATEMATIKA SMP</div><h1>Matematika jadi <em>masuk akal.</em></h1><p>Bukan cuma hafal rumus. Pahami konsepnya, coba sendiri, lalu buktikan kamu bisa. Satu langkah kecil setiap hari.</p><div class="heroButtons"><a href="#lesson" class="button primaryButton bigButton">Mulai belajar <span>↗</span></a><a href="#courses" class="button outlineButton bigButton">Jelajahi materi <span>→</span></a></div><div class="heroTrust"><div class="tinyAvatars"><span>∑</span><span>π</span><span>∞</span></div><div><strong>Dibuat untuk siswa penasaran.</strong><small>Materi SMP Kelas 7, 8 &amp; 9</small></div></div></div>
+<div class="heroVisual"><div class="floatingNote noteTop"><span>✧</span> Coba, bukan cuma baca</div><div class="heroDemo"><div class="heroDemoTop"><span><i class="greenCircle"></i> LAB INTERAKTIF</span><span class="demoDots">● ● ●</span></div><div class="demoIntro">Apa yang terjadi jika <strong>x</strong> berubah?</div><div class="heroEquation"><span>2x + 3</span><span class="heroEquationEquals">=</span><strong id="hero-value">9</strong></div><div class="heroGroups"><div class="heroGroup"><small>x</small><div id="hero-group-1"></div></div><div class="heroGroup"><small>x</small><div id="hero-group-2"></div></div><span class="plusSign">+</span><div class="heroGroup constants"><small>3</small><div><span></span><span></span><span></span></div></div></div><div class="heroDemoSlider"><div><label for="hero-x">Geser nilai x</label><strong id="hero-x-label">x = 3</strong></div><input aria-label="Nilai x demo" id="hero-x" type="range" min="1" max="6" value="3"><div class="heroDemoScale"><span>1</span><span>6</span></div></div><div class="heroDemoFoot"><span>✦</span> Belajar konsep lewat eksplorasi langsung.</div></div><div class="floatingNote noteBottom">✦ Aha! Aku paham.</div></div></div></section>
+<section class="stepsSection"><div class="pageContainer"><div class="sectionHeading compactHeading"><div><span class="eyebrow">CARA BELAJARNYA</span><h2>Tiga langkah, lebih paham.</h2></div><p>Kami percaya matematika paling mudah dimengerti ketika kamu bisa melihat dan mencobanya.</p></div><div class="stepsGrid"><div class="stepCard"><div class="stepIcon iconCream">◎</div><span>01 / PELAJARI</span><h3>Pahami idenya</h3><p>Penjelasan singkat dengan contoh yang dekat dengan keseharian.</p></div><div class="stepCard"><div class="stepIcon iconMint">↔</div><span>02 / EKSPLORASI</span><h3>Coba sendiri</h3><p>Geser, ubah nilai, dan temukan pola dari eksperimen interaktif.</p></div><div class="stepCard"><div class="stepIcon iconPeach">✓</div><span>03 / LATIH</span><h3>Uji pemahaman</h3><p>Kerjakan latihan dan lihat pembahasan setiap jawaban.</p></div></div></div></section>
+<section id="courses" class="chaptersSection"><div class="pageContainer"><div class="sectionHeading"><div><span class="eyebrow">MULAI DARI SINI</span><h2>Belajar apa hari ini?</h2></div><a href="#lesson" class="sectionLink">Lihat materi pilot ↗</a></div><div class="chapterGrid"><a href="#numberline" class="chapterCard cardMint"><div class="chapterHeader"><span>BAB 01 · KELAS 7</span><span class="chapterArrow">↗</span></div><div class="chapterSymbol">−3 + 5</div><div><h3>Bilangan bulat</h3><p>Kenali arah, jarak, dan nilai negatif.</p><span class="chapterCount">↗ Buka eksperimen</span></div></a><a href="#lesson" class="chapterCard cardPeach"><div class="chapterHeader"><span>BAB 02 · KELAS 7</span><span class="chapterArrow">↗</span></div><div class="chapterSymbol">2x + 3</div><div><h3>Aljabar</h3><p>Dari variabel sampai operasi bentuk aljabar.</p><span class="chapterCount">↗ Buka pelajaran</span></div></a><a href="#practice" class="chapterCard cardLilac"><div class="chapterHeader"><span>LATIHAN · KELAS 7</span><span class="chapterArrow">↗</span></div><div class="chapterSymbol">2 : 3</div><div><h3>Latihan mandiri</h3><p>Kerjakan soal, lihat petunjuk, dan pelajari jawabannya.</p><span class="chapterCount">↗ Mulai latihan</span></div></a></div></div></section>
+<section id="lesson" class="previewLesson"><div class="pageContainer previewLessonGrid"><aside class="previewSidebar"><p>BUKU BELAJAR · KELAS 7</p><a class="active" href="#lesson">01 · Kenalan dengan x</a><a href="#numberline">02 · Garis bilangan</a><a href="#practice">03 · Latihan mandiri</a></aside><article class="previewContent"><div class="lessonKicker">KELAS 7 · ALJABAR · 12 MENIT</div><h2>Apa sebenarnya arti huruf x?</h2><p>Kamu punya <b>dua kotak yang sama</b>. Kita belum tahu berapa banyak kelereng di setiap kotaknya. Karena nilainya belum diketahui, kita beri nama <span class="mathInline">x</span>.</p><div class="previewExplain">Kalau kedua kotak digabung, jumlah kelerengnya ditulis <b>x + x = 2x</b>. Jadi, 2x artinya <b>dua kelompok berisi x</b>, bukan x dikali dirinya sendiri.</div>
+<section class="labCard" aria-label="Laboratorium variabel aljabar"><div class="labHeader"><div><span class="eyebrow teal">COBA SENDIRI</span><h3>Bagaimana cara kerja 2x + 3?</h3></div><span class="livePill"><span class="liveDot"></span> Interaktif</span></div><p class="labIntro">Setiap kotak <b>x</b> menyimpan jumlah kelereng yang sama. Geser nilainya untuk melihat perubahan total.</p><div class="sliderRow"><label for="algebra-x">Isi setiap kotak</label><strong class="valueChip" id="algebra-x-label">x = 4</strong></div><input class="rangeInput" id="algebra-x" type="range" min="1" max="8" value="4"><div class="rangeMarks"><span>1</span><span>8</span></div><div class="algebraScene"><div class="variableBox"><div class="variableLabel">Kotak x</div><div class="dotGrid" id="algebra-group-1"></div></div><div class="variableBox"><div class="variableLabel">Kotak x</div><div class="dotGrid" id="algebra-group-2"></div></div><div class="scenePlus">+</div><div class="constantBox"><span class="variableLabel">3 kelereng</span><div class="dotGrid"><span class="mathDot goldDot"></span><span class="mathDot goldDot"></span><span class="mathDot goldDot"></span></div></div></div><div class="equationSummary"><span id="algebra-formula">2 × 4 + 3</span><span class="equals">=</span><strong id="algebra-total">11</strong><span class="equationFoot">kelereng seluruhnya</span></div><p class="microNote">💡 <b>2x</b> artinya dua kelompok yang masing-masing berisi <b>x</b>.</p></section>
+<h3>Memahami substitusi</h3><p>Ketika isi satu kotak diketahui, kita cukup mengganti nilai x ke dalam bentuk aljabar, lalu menghitung hasilnya.</p><div class="previewExplain">Contoh: Jika x = 4, maka <b>2x + 3 = 2 × 4 + 3 = 11</b>.</div><button id="mark-complete" type="button" class="button primaryButton">✓ Tandai pelajaran selesai</button><p class="previewRangeLabel" id="completion-caption">Progres disimpan di perangkat ini.</p></article></div></section>
+<section id="numberline" class="previewExtra"><div class="pageContainer"><div class="sectionHeading"><div><span class="eyebrow">EKSPERIMEN KEDUA</span><h2>Bergerak di garis bilangan.</h2></div><p>Jangan cuma menghafal aturan tanda positif dan negatif. Lihat arah geraknya.</p></div><section class="labCard" style="max-width:850px;margin:auto"><div class="labHeader"><div><span class="eyebrow teal">LAB BILANGAN BULAT</span><h3>Ubah titik awal dan langkah</h3></div><span class="livePill"><span class="liveDot"></span> Interaktif</span></div><p class="labIntro">Bergeser ke kanan berarti bertambah, bergeser ke kiri berarti berkurang.</p><div class="twoSliders"><div><div class="sliderRow"><label for="line-start">Titik awal</label><strong class="valueChip" id="line-start-label">−3</strong></div><input id="line-start" class="rangeInput" type="range" min="-6" max="6" value="-3"></div><div><div class="sliderRow"><label for="line-step">Perubahan</label><strong class="valueChip" id="line-step-label">+5</strong></div><input id="line-step" class="rangeInput" type="range" min="-4" max="4" value="4"></div></div><div class="numberLineCanvas"><svg viewBox="0 0 580 148" role="img" aria-label="Garis bilangan" id="preview-numberline"><defs><marker id="preview-arrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#14756c" stroke-width="1.5"/></marker></defs><path d="M25 95H555" stroke="#7a9189" stroke-width="2" stroke-linecap="round"/><g id="numberline-ticks"></g><g id="numberline-live"></g></svg></div><div class="equationSummary"><span id="line-equation">−3 + 4</span><span class="equals">=</span><strong id="line-total">1</strong></div></section></div></section>
+<section id="practice" class="previewQuizWrap"><div class="pageContainer"><span class="eyebrow teal">TEMPAT LATIHAN</span><h2>Berani mencoba?</h2><p class="sectionIntro">Tak apa salah, yang penting tahu alasannya. Kerjakan lima soal aljabar dasar.</p><div id="pilot-quiz" class="quizCard" aria-live="polite"></div></div></section>
+<section class="bottomCta"><div class="pageContainer bottomCtaInner"><div><span class="eyebrow">LANGKAH PERTAMA SELESAI</span><h2>Sedikit demi sedikit, kamu pasti bisa.</h2><p>Kamu bisa mulai mengembangkan aplikasi sesungguhnya dari source Docusaurus yang disertakan.</p></div><a href="#home" class="button primaryButton bigButton">Kembali ke atas ↑</a></div></section>
+</main><footer class="previewFooter"><strong>cakrawala.</strong>Pilot interaktif matematika SMP · Demo offline tanpa dependencies.</footer><div class="previewBadge">INTERACTIVE PILOT · OFFLINE PREVIEW</div>
+<script>
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const dots = (count,klass) => Array.from({length:count}, () => `<span class="${klass}"></span>`).join('');
+  const heroUpdate = () => {const n=Number($('hero-x').value);$('hero-value').textContent=String(n*2+3);$('hero-x-label').textContent='x = '+n;for(const id of ['hero-group-1','hero-group-2']) $(id).innerHTML=dots(n,'');};
+  $('hero-x').addEventListener('input',heroUpdate);heroUpdate();
+  const labUpdate = () => {const n=Number($('algebra-x').value);$('algebra-x-label').textContent='x = '+n;$('algebra-formula').textContent=`2 × ${n} + 3`;$('algebra-total').textContent=String(n*2+3);for(const id of ['algebra-group-1','algebra-group-2']) $(id).innerHTML=dots(n,'mathDot');};
+  $('algebra-x').addEventListener('input',labUpdate);labUpdate();
+  const pointX=n=>36+(n+10)*25.2;
+  const ticks = $('numberline-ticks');
+  ticks.innerHTML=Array.from({length:21},(_,i)=>i-10).map(n=>`<path d="M${pointX(n)} 89v12" stroke="#9dadac" stroke-width="1.4"/><text x="${pointX(n)}" y="122" font-size="11" fill="#718481" text-anchor="middle">${n%2===0?n:''}</text>`).join('');
+  const lineUpdate=()=>{const start=Number($('line-start').value),step=Number($('line-step').value),end=start+step,left=pointX(start),right=pointX(end);$('line-start-label').textContent=String(start);$('line-step-label').textContent=step>=0?'+'+step:String(step);$('line-equation').textContent=`${start} ${step>=0?'+':'−'} ${Math.abs(step)}`;$('line-total').textContent=String(end);$('numberline-live').innerHTML=`${step!==0?`<path d="M${left} 83 Q${(left+right)/2} ${Math.max(10,65-Math.abs(step)*5)} ${right} 83" fill="none" stroke="#14756c" stroke-width="3.5" stroke-linecap="round" marker-end="url(#preview-arrow)"/>`:''}<circle cx="${left}" cy="95" r="6" fill="#edaa59" stroke="white" stroke-width="2"/><circle cx="${right}" cy="95" r="7.5" fill="#14756c" stroke="white" stroke-width="2.5"/><text x="${right}" y="70" font-size="12" font-weight="700" fill="#14756c" text-anchor="middle">${end}</text>`;};
+  ['line-start','line-step'].forEach(id=>$(id).addEventListener('input',lineUpdate));lineUpdate();
+  const progressKey='cakrawala:completed-lessons:v1';
+  try {if(JSON.parse(localStorage.getItem(progressKey)||'[]').includes('g7-algebra-variables')) { $('mark-complete').textContent='✓ Sudah diselesaikan'; $('mark-complete').disabled=true; }} catch {}
+  $('mark-complete').addEventListener('click',()=>{try{const list=JSON.parse(localStorage.getItem(progressKey)||'[]');if(!list.includes('g7-algebra-variables'))list.push('g7-algebra-variables');localStorage.setItem(progressKey,JSON.stringify(list));}catch {}$('mark-complete').textContent='✓ Sudah diselesaikan';$('mark-complete').disabled=true;$('completion-caption').textContent='Bagus! Kamu telah menyelesaikan materi ini.';});
+  const questions = [
+    {topic:'Variabel',prompt:'Dalam bentuk 4x + 7, manakah yang menjadi variabel?',options:['4','x','7','4x'],correct:1,hint:'Variabel adalah huruf yang mewakili nilai yang dapat berubah.',explanation:'Huruf x adalah variabel. Angka 4 koefisien, sedangkan 7 konstanta.'},
+    {topic:'Substitusi',prompt:'Jika x = 4, berapakah nilai 2x + 3?',answer:11,hint:'Ganti x dengan 4, lalu kalikan sebelum menjumlah.',explanation:'2 × 4 + 3 = 8 + 3 = 11.'},
+    {topic:'Suku Sejenis',prompt:'Pasangan suku mana yang bisa langsung dijumlahkan?',options:['3x dan 2y','5x dan 7x','x dan x²','4 dan 4x'],correct:1,hint:'Suku sejenis punya variabel dan pangkat yang sama.',explanation:'5x dan 7x adalah suku sejenis, hasilnya 12x.'},
+    {topic:'Operasi Aljabar',prompt:'Jika x = 3, berapakah nilai 5x − 4?',answer:11,hint:'Hitung 5 × 3 terlebih dahulu.',explanation:'5 × 3 − 4 = 11.'},
+    {topic:'Distributif',prompt:'Bentuk yang setara dengan 2(x + 3) adalah ...',options:['2x + 3','x + 6','2x + 6','5x'],correct:2,hint:'Kalikan 2 ke setiap suku di dalam kurung.',explanation:'2(x + 3) = 2x + 6.'}
+  ];
+  let index=0, response='',checked=false,hint=false,score=0;
+  const escapeHtml=(value)=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const numeric=(str)=>{let s=str.trim().replace(/\s/g,'').replace(/−/g,'-');if(/^[-]?\d{1,3}(\.\d{3})+(,\d+)?$/.test(s))s=s.replace(/\./g,'').replace(',','.');else if(/^[-]?\d+,\d+$/.test(s))s=s.replace(',','.');if(!/^-?(?:\d+\.?\d*|\.\d+)$/.test(s))return null;return Number(s);};
+  const isCorrect=()=>{const q=questions[index];return q.options?Number(response)===q.correct:numeric(response)===q.answer;};
+  const renderQuiz=()=>{const q=questions[index],right=checked&&isCorrect();$('pilot-quiz').innerHTML=`<div class="quizTop"><div><span class="eyebrow teal">LATIHAN MANDIRI</span><h3>Latihan Aljabar Dasar</h3></div><span class="questionCount">${index+1} / ${questions.length}</span></div><div class="quizProgress"><span style="width:${(index+1)*100/questions.length}%"></span></div><div class="questionArea"><span class="topicTag">${q.topic}</span><h4>${escapeHtml(q.prompt)}</h4>${q.options?`<div class="optionList" role="radiogroup" aria-label="Pilihan jawaban">${q.options.map((o,i)=>`<label class="quizOption ${response===String(i)?'selected':''} ${checked&&i===q.correct?'correctChoice':''}"><input type="radio" name="pilot-answer" value="${i}" ${response===String(i)?'checked':''} ${checked?'disabled':''}/><span class="optionLetter">${'ABCD'[i]}</span>${escapeHtml(o)}</label>`).join('')}</div>`:`<label class="mathInputLabel">Jawabanmu<input class="mathTextInput" type="text" inputmode="decimal" id="pilot-numeric" autocomplete="off" ${checked?'disabled':''} placeholder="Contoh: 11" value="${escapeHtml(response)}"/></label>`}${checked?`<div class="feedback ${right?'feedbackCorrect':'feedbackIncorrect'}" role="status"><strong>${right?'✓ Tepat sekali!':'↗ Belum tepat, yuk pelajari pembahasannya.'}</strong><p>${escapeHtml(q.explanation)}</p></div>`:''}${hint&&!checked?`<p class="hintBox"><strong>Petunjuk:</strong> ${escapeHtml(q.hint)}</p>`:''}</div><div class="quizActions"><button class="textButton" type="button" id="pilot-hint" ${checked?'disabled':''}>${hint?'Tutup petunjuk':'✧ Butuh petunjuk?'}</button><button class="button primaryButton" type="button" id="pilot-action" ${!response.trim()&&!checked?'disabled':''}>${checked?(index===questions.length-1?'Lihat hasil →':'Soal berikutnya →'):'Periksa jawaban →'}</button></div>`;
+    document.querySelectorAll('input[name="pilot-answer"]').forEach(input=>input.addEventListener('change',e=>{response=e.target.value;renderQuiz();}));
+    const numericInput=$('pilot-numeric');if(numericInput)numericInput.addEventListener('input',e=>{response=e.target.value;const b=$('pilot-action');if(b)b.disabled=!response.trim();});
+    $('pilot-hint').addEventListener('click',()=>{hint=!hint;renderQuiz();});
+    $('pilot-action').addEventListener('click',()=>{if(!checked){if(!response.trim())return;checked=true;if(isCorrect())score++;renderQuiz();return;}if(index===questions.length-1){renderResults();}else {index++;response='';checked=false;hint=false;renderQuiz();}});
+  };
+  const renderResults=()=>{$('pilot-quiz').classList.add('quizResults');$('pilot-quiz').innerHTML=`<span class="eyebrow teal">LATIHAN SELESAI</span><div class="resultMedal">✦</div><h3>${score===5?'Hebat, semua benar!':'Kamu sudah berlatih. Bagus!'}</h3><div class="resultScore">${score}<span>/5</span></div><p>${score===5?'Kamu menguasai konsep dasar materi ini.':'Coba ulangi untuk memahami pembahasan tiap soal.'}</p><button class="button primaryButton" id="restart-quiz" type="button">↻ Ulangi latihan</button><small>Skor pilot ini tidak dikirim ke server.</small>`;$('restart-quiz').addEventListener('click',()=>{index=0;score=0;response='';checked=false;hint=false;$('pilot-quiz').classList.remove('quizResults');renderQuiz();});};
+  renderQuiz();
+})();
+</script></body></html>

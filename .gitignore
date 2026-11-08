@@ -1,0 +1,8 @@
+node_modules/
+.docusaurus/
+build/
+.cache/
+.DS_Store
+.env
+.env.*
+!.env.example

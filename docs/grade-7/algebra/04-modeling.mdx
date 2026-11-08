@@ -1,0 +1,156 @@
+---
+title: "Memodelkan Masalah dengan Aljabar"
+sidebar_position: 4
+slug: /grade-7/algebra/modeling
+---
+
+import PatternLab from '@site/src/components/PatternLab';
+import EquationLab from '@site/src/components/EquationLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · BENTUK ALJABAR · 16 MENIT</div>
+
+# Catatan kedua di dalam tutup kotak
+
+**Tujuan belajar:** Menyusun persamaan dari hubungan antar besaran, menyelesaikannya, dan memeriksa jawaban dengan pola penjualan.
+
+## 1. Kunci yang akhirnya datang
+
+Malam sudah turun ketika ketua panitia membawa kunci kotak uang. Lampu gerbang tinggal dua yang menyala. Naya, Ari, dan Bima menunggu di meja belakang.
+
+"Ada catatan lain," kata ketua panitia. "Ternyata ditempel di dalam tutup kotak."
+
+Tulisan di kertas kecil itu: "Selisih tiket dewasa dan tiket anak 26 lembar."
+
+Bima membuka kotak. Di dalamnya ada uang Rp455.000 dan selembar kertas lain berisi angka penjualan per jam: 10, 12, 14, 16.
+
+Naya memeriksa kertas itu. "Ini ditulis per jam, bukan per jenis tiket."
+
+"Setidaknya kita punya angka pembanding," kata Bima.
+
+Naya langsung menghitung. "Rp455.000 dibagi Rp10.000 sama dengan 45,5. Masa ada tiket setengah?"
+
+"Tiket setengah untuk anak setengah?" kata Odi.
+
+Bima mengambil kalkulator. "Kamu membagi semua uang dengan harga tiket dewasa. Padahal sebagian uang itu dari tiket anak."
+
+Naya mencoba lagi. "Selisihnya 26. Kalau tiket dewasa tiga kali tiket anak, aku bagi 26 dengan 3." Hasilnya 8,67. "Catatan ini aneh."
+
+Bima menepuk meja pelan. "Kamu membagi selisih dengan tiga. Selisih itu antara tiga kotak dan satu kotak, bukan tiga kotak saja."
+
+## 2. Selisih bukan jumlah
+
+Kak Rani datang membawa teko terakhir malam itu. Ia tidak membuka kotak uang, hanya melihat catatan di tutupnya. "Dari dua catatan itu, mana yang bisa kamu gambar?"
+
+Naya membuka buku kotaknya, lalu berhenti. "Ari, coba gambarmu dulu."
+
+Ari menggambar tiga kotak kecil berdampingan, lalu satu kotak kecil di bawahnya. "Tiga kotak ini tiket dewasa. Satu kotak ini tiket anak." Ia memberi garis di antara keduanya. "Selisihnya dua kotak."
+
+"Dan dua kotak itu 26 lembar," kata Naya.
+
+Ia menulis di buku: $2x = 26$, jadi $x = 13$. Tiket anak 13 lembar. Tiket dewasa $3 \times 13 = 39$ lembar. Jumlah seluruhnya 52.
+
+Kak Rani menunjuk kotak uang. "Sekarang cek dengan uang."
+
+$$39 \times 10.000 + 13 \times 5.000 = 390.000 + 65.000 = 455.000$$
+
+Uang di kotak Rp455.000. Angkanya sama persis. Bima menghitung ulang dua kali, lalu mengangguk.
+
+:::note
+**Kata Kak Rani.** Kalau selisih dua kotak itu 26, apa yang bisa kamu ketahui tentang satu kotak tanpa menebak isinya?
+:::
+
+## 3. Coba di meja kerja
+
+Naya membuka lab pola. "Geser beda polanya, lalu lihat suku ke-n. Aku mau tahu apakah angka per jam ini punya pola yang rapi."
+
+<PatternLab />
+
+Ari mencoba pola kecil: mulai 2, beda 3. Suku kelima 14. Naya menulis rumusnya, $2 + 3(n - 1)$, lalu mengganti suku awal dengan 10 dan beda dengan 2 di buku catatannya untuk daftar penjualan tadi.
+
+Bima menunjuk lab timbangan. "Sekarang bagian persamaannya. Seimbangkan dulu, baru bagi."
+
+<EquationLab />
+
+Naya mencoba $2x + 3 = 11$. Ia mengurangi 3 dari kedua sisi, lalu membagi dua. Timbangan miring ke kiri, ia menggeser nilai $x$ sampai seimbang di $x = 4$. "Yang dilakukan di kiri harus dilakukan di kanan juga."
+
+"Pola ini dipakai untuk memeriksa jumlah tiket yang sudah kita hitung," katanya kemudian.
+
+## 4. Catatan klub
+
+Naya menulis seluruh penyelesaian di satu halaman.
+
+Langkah 1. Beri nama: $x$ adalah banyak tiket anak. Tiket dewasa $3x$.
+
+Langkah 2. Terjemahkan catatan kedua. Selisih berarti pengurangan.
+
+$$3x - x = 26$$
+
+Langkah 3. Sederhanakan suku sejenis.
+
+$$2x = 26$$
+
+$$x = 13$$
+
+Langkah 4. Hitung jumlah tiket.
+
+$$3x = 39 \quad \text{dan} \quad x + 3x = 4(13) = 52$$
+
+Langkah 5. Periksa dengan uang dan pola.
+
+$$39 \times 10.000 + 13 \times 5.000 = 455.000$$
+
+Penjualan per jam 10, 12, 14, 16 memiliki beda 2. Suku ke-n:
+
+$$10 + 2(n - 1) = 2n + 8$$
+
+Suku keempat $2(4) + 8 = 16$, dan jumlah keempatnya $10 + 12 + 14 + 16 = 52$. Naya menjumlahkan dengan pasangan: $10 + 16 = 26$ dan $12 + 14 = 26$, jadi seluruhnya 52. Hasilnya cocok dengan total tiket.
+
+Naya juga mencoba jalan lain. Dari catatan pertama dan uang di kotak, ia sudah punya $35.000x = 455.000$. Dibagi 35.000, hasilnya $x = 13$. Dua jalan memberi angka yang sama.
+
+Odi mengangkat tangan. "Berarti kalau salah satu catatan hilang, kita masih bisa?"
+
+"Selama uangnya masih ada," kata Naya.
+
+:::tip
+**Catatan Naya.** Setelah menemukan $x$, masukkan kembali ke setiap hubungan asal. Kalau ada satu yang tidak cocok, periksa modelnya, bukan angkanya.
+:::
+
+## 5. Kembali ke kotak misterius
+
+Ketua panitia membuka buku besar. "Jadi berapa yang harus saya catat?"
+
+"39 tiket dewasa, 13 tiket anak," kata Naya. "Total 52 tiket. Uangnya Rp455.000."
+
+Ketua panitia menghitung uang di kotak, lalu mencocokkannya dengan kertas penjualan per jam. "Benar semua."
+
+Bima menutup kotak. "Kami cek dari tiga arah. Uang, selisih, dan pola."
+
+Ketua panitia menutup buku besar. "Kalau jumlah tiket tahun depan berbeda, apakah cara kalian masih dipakai?"
+
+"Masih," kata Naya. "Hubungannya tetap, angkanya yang berubah."
+
+Piko di atas kursi ikut bersuara. "Cocok. Cocok."
+
+Ketua panitia melihat catatan di tutup kotak. "Kalian tahu jumlah tiketnya padahal catatannya cuma bilang selisih. Bagaimana bisa?"
+
+"Kami menebak dengan alasan," kata Naya. "Lalu mengecek tebakan itu dengan angka lain."
+
+Di luar, gerbang festival sudah gelap. Ari melipat gambar empat kotaknya. "Gambarku cuma empat kotak kecil."
+
+"Dari gambar itu kita tahu 52 harus dibagi 4," kata Naya.
+
+Kak Rani mengangkat teko yang sudah kosong. "Kalau catatan selisih itu hilang, apa yang masih bisa kalian jawab?"
+
+"Uangnya cukup," kata Bima. "Rp455.000 dibagi 35.000 juga dapat 13."
+
+Naya menutup buku. "Berarti catatan kedua itu jalan pintas. Masih ada jalan lain."
+
+Ari melihat papan harga di depan booth. "Kalau tahun depan harga tiketnya berubah, apakah 39 dan 13 masih benar?"
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="algebra-modeling" />
+
+<LessonComplete lessonId="g7-algebra-modeling" />

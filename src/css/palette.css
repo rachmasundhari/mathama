@@ -1,0 +1,80 @@
+.palettePage {background:#ffffff;color:#173a46;padding:56px 0 100px;min-height:70vh;}
+.palettePage .pageContainer {max-width:1120px;}
+.paletteHero {max-width:760px;margin-bottom:42px;}
+.paletteHero h1 {font-size:clamp(38px,4.5vw,62px);line-height:1.05;letter-spacing:-.05em;margin:10px 0 14px;color:#173a46;}
+.paletteHero p {font-size:16px;line-height:1.8;color:#5f747b;margin:0;}
+.paletteMeta {display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;}
+.paletteMeta span {background:#f4fafd;border:1px solid #d9e8f0;border-radius:999px;padding:7px 12px;font-size:11px;font-weight:800;color:#0a5674;}
+.paletteSection {margin:50px 0;}
+.paletteSection>h2 {font-size:28px;margin:0 0 6px;color:#173a46;}
+.paletteSection>p {font-size:13px;line-height:1.7;color:#5f747b;margin:0 0 22px;max-width:700px;}
+.swatchGrid {display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.swatch {border:1px solid #dce8ee;border-radius:16px;overflow:hidden;background:#ffffff;text-align:left;padding:0;transition:transform .15s ease,box-shadow .15s ease;}
+.swatch:hover {transform:translateY(-3px);box-shadow:0 12px 24px rgba(23,58,70,.12);}
+.swatchColor {height:112px;display:flex;align-items:flex-end;justify-content:flex-end;padding:10px;}
+.swatchColor span {font-size:10px;font-weight:850;background:rgba(255,255,255,.9);color:#173a46;border-radius:99px;padding:5px 8px;}
+.swatchBody {padding:12px 14px 15px;}
+.swatchBody strong {display:block;font-size:13px;color:#173a46;}
+.swatchBody small {display:block;font-size:10px;color:#5f747b;margin-top:3px;letter-spacing:.03em;}
+.swatchBody em {display:block;font-style:normal;font-size:10px;line-height:1.5;color:#86979c;margin-top:6px;}
+.swatchWide {grid-column:span 2;}
+.paletteRow {display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.gradientCard {border:1px solid #dce8ee;border-radius:18px;overflow:hidden;background:#ffffff;}
+.gradientBar {height:105px;}
+.gradientCard div:last-child {padding:14px 16px;}
+.gradientCard strong {font-size:13px;display:block;color:#173a46;}
+.gradientCard small {font-size:10px;color:#5f747b;display:block;margin-top:3px;}
+.paletteUsage {display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.usageCard {border:1px solid #dce8ee;border-radius:16px;padding:18px;background:#ffffff;}
+.usageCard strong {display:block;font-size:28px;color:#0f6b8f;letter-spacing:-.04em;}
+.usageCard b {display:block;font-size:12px;margin:4px 0;color:#173a46;}
+.usageCard p {font-size:11px;line-height:1.6;color:#5f747b;margin:0;}
+.paletteSample {display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:stretch;}
+.sampleCard {border:1px solid #dce8ee;border-radius:20px;background:#ffffff;padding:24px;}
+.sampleCard h3 {font-size:22px;margin:0 0 8px;color:#173a46;}
+.sampleCard p {font-size:12px;line-height:1.7;color:#5f747b;}
+.sampleButtons {display:flex;flex-wrap:wrap;gap:9px;margin:18px 0;}
+.sampleButtons span {border-radius:999px;padding:10px 16px;font-size:11px;font-weight:800;}
+.samplePrimary {background:#0f6b8f;color:#ffffff;}
+.sampleSky {background:#eaf5fa;color:#0a5674;border:1px solid #cfe8f3;}
+.sampleOutline {border:1.5px solid #b9d6e4;color:#4a5f66;}
+.sampleBadges {display:flex;flex-wrap:wrap;gap:7px;}
+.sampleBadges span {font-size:10px;font-weight:800;border-radius:99px;padding:6px 10px;}
+.badgeWarm {background:#d8efec;color:#0a4f6b;}
+.badgeSky {background:#eaf5fa;color:#0a5674;}
+.badgeSand {background:#eaf5fa;color:#0a5674;}
+.sampleChart {display:flex;align-items:flex-end;gap:10px;height:120px;margin-top:18px;}
+.sampleChart span {flex:1;border-radius:8px 8px 3px 3px;background:#0f6b8f;}
+.sampleChart span:nth-child(2) {background:#62c4c3;}
+.sampleChart span:nth-child(3) {background:#cfe8f3;}
+.sampleChart span:nth-child(4) {background:#1a9db5;}
+.paletteNote {border-left:3px solid #1a9db5;background:#f4fafd;border-radius:4px 12px 12px 4px;padding:13px 16px;font-size:12px;line-height:1.7;color:#5f747b;margin-top:20px;}
+.paletteHorizon {position:relative;height:280px;border-radius:22px;overflow:hidden;border:1px solid #dce8ee;background:#eaf5fa;margin:8px 0 14px;}
+.horizonSky {position:absolute;inset:0 0 38% 0;background:linear-gradient(180deg,#eaf5fa 0%,#cfe8f3 55%,#f4fafd 100%);}
+.horizonSun {display:none;}
+.horizonSea {position:absolute;left:0;right:0;bottom:22%;height:24%;background:linear-gradient(180deg,#62c4c3 0%,#1a9db5 52%,#0f6b8f 100%);overflow:hidden;}
+.horizonSea i {position:absolute;left:-25%;width:150%;height:16px;border-radius:50%;border-top:2px solid rgba(255,255,255,.5);}
+.horizonSea i:nth-child(1) {top:18%;}
+.horizonSea i:nth-child(2) {top:48%;left:-10%;border-color:rgba(255,255,255,.3);}
+.horizonSea i:nth-child(3) {top:74%;left:-35%;border-color:rgba(255,255,255,.22);}
+.horizonSand {position:absolute;left:0;right:0;bottom:0;height:24%;background:linear-gradient(180deg,#ffffff 0%,#f4fafd 60%,#eaf5fa 100%);}
+.horizonSand::after {content:'';position:absolute;left:0;right:0;top:16px;height:1px;background:rgba(15,107,143,.12);}
+.horizonCloud {position:absolute;width:96px;height:22px;border-radius:99px;background:rgba(255,255,255,.8);}
+.horizonCloud::before,.horizonCloud::after {content:'';position:absolute;background:inherit;border-radius:50%;}
+.horizonCloud::before {width:36px;height:36px;left:16px;top:-17px;}
+.horizonCloud::after {width:26px;height:26px;left:52px;top:-11px;}
+.cloudOne {left:13%;top:22%;}
+.cloudTwo {left:48%;top:13%;transform:scale(.7);opacity:.68;}
+.horizonCaption {position:absolute;left:18px;right:18px;bottom:9px;display:flex;justify-content:space-between;font-size:8px;letter-spacing:.22em;font-weight:900;color:#5f747b;}
+.paletteCode {display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.paletteCode code {background:#f4fafd;border:1px solid #d9e8f0;border-radius:7px;padding:5px 8px;font-size:11px;color:#0a5674;}
+@media (max-width:900px) {
+  .swatchGrid {grid-template-columns:repeat(3,1fr);}
+  .paletteSample {grid-template-columns:1fr;}
+}
+@media (max-width:640px) {
+  .swatchGrid {grid-template-columns:repeat(2,1fr);}
+  .swatchWide {grid-column:span 1;}
+  .paletteRow,.paletteUsage {grid-template-columns:1fr;}
+  .swatchColor {height:92px;}
+}

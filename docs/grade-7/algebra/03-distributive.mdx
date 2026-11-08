@@ -1,0 +1,143 @@
+---
+title: "Sifat Distributif"
+sidebar_position: 3
+slug: /grade-7/algebra/distributive
+---
+
+import DistributiveLab from '@site/src/components/DistributiveLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · BENTUK ALJABAR · 14 MENIT</div>
+
+# Enam kantong dan satu kurung
+
+**Tujuan belajar:** Menggunakan sifat distributif untuk membuka kurung dan menghitung nilai bentuk aljabar dengan dua jenis suku.
+
+## 1. Enam kantong di bawah meja
+
+Kotak uang masih terkunci, tetapi di bawah meja ada enam kantong kain. Angin dari laut membuat tenda bergoyang, dan uang kertas di meja Naya harus ditindih gelas.
+
+"Kantongnya disiapkan panitia kemarin," kata Bima. "Isinya sama semua."
+
+Ketua panitia menitipkan kantong-kantong itu untuk uang kembalian. Setiap kantong berisi dua lembar sepuluh ribuan dan tiga lembar lima ribuan. Naya membuka satu dan menghitung pelan.
+
+Naya perlu tahu berapa uang kembalian yang disiapkan. "Satu kantong isinya lima lembar," katanya. "Enam kantong berarti tiga puluh lembar. Kalau semuanya lima ribuan, uangnya Rp150.000."
+
+Bima membuka satu kantong dan menata isinya di meja. Dua lembar sepuluh ribuan, tiga lembar lima ribuan. "Coba hitung yang ini."
+
+Naya menghitung. "Dua kali sepuluh ribu, tiga kali lima ribu. Rp35.000."
+
+"Enam kantong?"
+
+Naya mengalikan. "$35.000 \times 6 = 210.000$."
+
+Uang yang tadi ia hitung Rp150.000. Selisihnya Rp60.000. Odi membandingkan dua angka itu. "Kok bisa beda? Kantongnya sama, kan?"
+
+Bima menata satu kantong lagi. "Coba pakai cara lambat. Dua lembar sepuluh ribuan, tiga lembar lima ribuan. Berapa?"
+
+"Tiga puluh lima ribu."
+
+"Enam kantong?"
+
+"Rp210.000." Naya mencoret angka Rp150.000 di bukunya.
+
+Naya menatap lima lembar di tangannya. "Aku mengalikan jumlah lembarnya dengan satu harga. Padahal lembarnya dua jenis."
+
+## 2. Angka di luar kurung
+
+Kak Rani meletakkan teko di ujung meja. "Kamu mengalikan 6 dengan 5. Lima itu apa?"
+
+"Jumlah lembar dalam satu kantong," kata Naya.
+
+"Isi kantongnya hanya satu jenis?"
+
+Naya tidak langsung menjawab. Ari menggambar enam baris di buku sketsa. Setiap baris ia bagi menjadi dua bagian: dua kotak kecil dan tiga kotak kecil. "Kalau digambar, ada dua kolom," katanya. "Enam baris kali dua kotak, dan enam baris kali tiga kotak."
+
+Naya melihat dua kelompok yang terpisah. Dua belas lembar sepuluh ribuan. Delapan belas lembar lima ribuan. "Jadi angka 6 kena ke dua-duanya."
+
+"Kalau kurungnya dibuka, dua belas dan delapan belas itu isi dari enam baris tadi, hanya ditulis sebagai hasil kali," kata Ari.
+
+"Jadi aku salah memilih apa yang dikalikan," kata Naya. "Hitungannya sendiri benar." Kak Rani tidak mengoreksi. Ia hanya menunggu Naya menulis ulang.
+
+Dalam aljabar, aturan itu disebut **sifat distributif**:
+
+$$a(b + c) = ab + ac$$
+
+Angka di luar kurung dikalikan ke setiap suku di dalam kurung. Kalau di dalamnya ada pengurangan, aturannya tetap sama: $a(b - c) = ab - ac$. Tanda minus ikut dikalikan.
+
+:::note
+**Kata Kak Rani.** Kalau 6 hanya dikalikan ke 3, lembar jenis mana yang tidak terhitung? Apakah hasilnya masih mewakili seluruh kantong?
+:::
+
+## 3. Coba di meja kerja
+
+Ari menunjuk layar kecil. "Ubah jumlah kelompok dan nilai $x$. Kedua sisi harus tetap sama."
+
+<DistributiveLab />
+
+Naya menggeser jumlah kelompok ke 4 dan nilai $x$ ke 2. Sisi kiri menunjukkan $4(2 + 2)$, sisi kanan $4 \times 2 + 4 \times 2$. Keduanya 16. Ia menggeser lagi, dan kedua sisi tetap bertemu di angka yang sama.
+
+## 4. Catatan klub
+
+Naya menulis dua jenis lembar dengan nama: $p$ untuk sepuluh ribuan, $q$ untuk lima ribuan. Satu kantong berisi $2p + 3q$.
+
+$$6(2p + 3q) = 12p + 18q$$
+
+Ia menghitung nilainya dengan $p = 10.000$ dan $q = 5.000$.
+
+$$12(10.000) + 18(5.000) = 120.000 + 90.000 = 210.000$$
+
+Cara kedua: satu kantong $2(10.000) + 3(5.000) = 35.000$, lalu dikalikan 6. Hasilnya juga Rp210.000. Bima menumpuk empat kantong lain di meja. Setiap kantong berisi tiga lembar sepuluh ribuan dan satu lembar lima ribuan.
+
+$$4(3p + q) = 12p + 4q = 140.000$$
+
+Seluruh kembalian yang disiapkan: $210.000 + 140.000 = 350.000$.
+
+Naya juga mencoba contoh tanpa uang. $5(2x - 3)$ menjadi $10x - 15$. Ia sempat menulis $10x - 3$, lalu Bima memintanya menguji dengan $x = 4$. Sisi kiri $5(8 - 3) = 25$. Sisi kanannya $40 - 3 = 37$. Tidak sama, jadi tanda minus harus ikut dikalikan.
+
+Bima menulis aturan itu di pinggir papan: angka di luar kurung bekerja untuk setiap suku di dalamnya.
+
+"Berarti rumus ini bisa dipakai untuk kantong jenis lain," katanya. "Asal isinya tetap dua jenis."
+
+:::tip
+**Catatan Naya.** Kalikan angka di luar kurung ke setiap suku, termasuk suku yang bertanda minus. Setelah membuka kurung, cek dengan satu nilai $x$.
+:::
+
+## 5. Kembali ke kotak misterius
+
+Ketua panitia kembali menjelang sore. "Kembaliannya sudah siap?"
+
+"Rp350.000," kata Naya. "Dua ratus sepuluh ribu dari enam kantong pertama, seratus empat puluh ribu dari empat kantong kedua."
+
+"Kalian hitung satu per satu?"
+
+"Kami hitung satu kantong, lalu kalikan," kata Bima. "Cara yang sama berlaku untuk tumpukan tiket."
+
+Ketua panitia menghitung uang di salah satu kantong, lalu mencocokkannya dengan catatan Naya. "Cara kalian lebih cepat dari caraku."
+
+Ia mencatat Rp350.000 di bukunya. "Kembalian ini untuk dua hari?"
+
+"Untuk satu hari," kata Naya. "Besok kami hitung lagi dengan isi kantong yang baru."
+
+Percakapan beralih ke tumpukan tiket di depan booth. Naya membuka buku catatannya. "Tiket dewasa Rp10.000 dan tiket anak Rp5.000. Kalau tiket anak $x$, uangnya $10.000(3x) + 5.000x$."
+
+"Itu jadi $35.000x$," kata Bima.
+
+Ketua panitia melihat kotak uang yang masih terkunci. "Berarti kalian sudah tahu isinya tanpa membukanya?"
+
+"Belum tahu angkanya," kata Naya. "Tapi kami tahu bentuk hitungannya."
+
+Di luar, tenda makanan mulai dibuka. Odi menghitung kantong yang tersisa. "Kalau kantongnya dua puluh, apakah rumusnya masih sama?"
+
+"Masih," kata Naya. "Tinggal ganti 6 dengan 20."
+
+Ari melihat gambar enam barisnya. "Kalau isi tiap kantong beda-beda, apakah masih bisa ditulis satu kurung?"
+
+Naya berpikir. "Kalau beda, kita harus menulis satu per satu." Ia membuka halaman baru. "Menurutmu, kapan cara satu per satu justru lebih aman?"
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="algebra-operations" />
+
+<LessonComplete lessonId="g7-algebra-distributive" />
