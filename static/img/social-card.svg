@@ -3,11 +3,11 @@
   <circle cx="1015" cy="105" r="260" fill="#e0f0e7"/>
   <circle cx="1030" cy="505" r="180" fill="#fbe3bf"/>
   <rect x="76" y="66" width="82" height="82" rx="22" fill="#126c64"/>
-  <path d="M134 94a20 20 0 1 0 0 24" fill="none" stroke="#fff8e9" stroke-width="9" stroke-linecap="round"/>
-  <text x="178" y="124" font-family="Arial" font-size="44" font-weight="bold" fill="#173e3a">cakrawala.</text>
+  <path d="M97 128V94l20 22 20-22v34" fill="none" stroke="#fff8e9" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="178" y="124" font-family="Arial" font-size="44" font-weight="bold" fill="#173e3a">mathama.</text>
   <text x="76" y="300" font-family="Arial" font-size="84" font-weight="bold" fill="#173e3a">Matematika</text>
   <text x="76" y="398" font-family="Arial" font-size="84" font-weight="bold" fill="#126c64">punya cerita.</text>
-  <text x="80" y="474" font-family="Arial" font-size="29" fill="#546966">Klub Cakrawala · SMP Kelas 7 · Kurikulum Merdeka</text>
+  <text x="80" y="474" font-family="Arial" font-size="29" fill="#546966">Klub Mathama · SMP Kelas 7 · Kurikulum Merdeka</text>
   <line x1="76" y1="522" x2="520" y2="522" stroke="#d6e4da" stroke-width="3"/>
   <text x="76" y="566" font-family="Arial" font-size="24" fill="#6c8078">Ari · Naya · Bima · Odi · Kak Rani</text>
   <g transform="translate(800 250)">

@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import Waves from '../components/Waves';
+import BoidsFlock from '../components/BoidsFlock';
 import {ArrowUpRight, BookOpen, CircleCheckBig, FlaskConical} from 'lucide-react';
 import {useLessonProgress} from '../hooks/useLessonProgress';
 
@@ -90,14 +91,15 @@ function HeroExperiment() {
 export default function Home(): React.ReactNode {
   const {completed, loaded} = useLessonProgress();
   return <Layout>
-    <Head><title>Cakrawala: Matematika Kelas 7</title><meta name="description" content="Belajar Matematika SMP Kelas 7: materi bertahap, laboratorium interaktif, latihan dengan pembahasan, dan satu cerita di akhir tiap bab."/></Head>
+    <Head><title>Mathama: Matematika Kelas 7</title><meta name="description" content="Belajar Matematika SMP Kelas 7: materi bertahap, laboratorium interaktif, latihan dengan pembahasan, dan satu cerita di akhir tiap bab."/></Head>
     <main className="siteMain">
       <section className="heroSection">
+        <BoidsFlock />
         <div className="pageContainer heroGrid">
         <div className="heroCopy"><div className="announcement"><span>✳</span> Matematika SMP</div>
           <h1>Belajar Matematika, <em>Mulai dari Sini</em></h1>
           <div className="heroButtons"><Link to="/learn/grade-7/integers/number-line" className="button primaryButton bigButton">Mulai belajar <span>↗</span></Link><Link to="/courses" className="button outlineButton bigButton">Jelajahi materi <span>→</span></Link></div>
-          <div className="heroTrust"><div className="tinyAvatars"><span>∑</span><span>π</span><span>∞</span></div><div><strong>9 bab · 45 pelajaran · 40 latihan</strong><small>Kurikulum Merdeka Kelas 7</small></div></div>
+          <div className="heroTrust"><div className="tinyAvatars"><span>∑</span><span>π</span><span>∞</span></div><div><strong>9 bab · 45 pelajaran · 40 latihan</strong><small>Kurikulum Merdeka SMP</small></div></div>
         </div>
         <div className="heroVisual"><div className="floatingNote noteTop"><span>✧</span> Coba, bukan cuma baca</div><HeroExperiment/><div className="floatingNote noteBottom">✦ "Oh, ternyata begitu."</div></div>
       </div></section>

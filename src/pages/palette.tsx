@@ -74,11 +74,11 @@ export default function Palette(): React.ReactNode {
   };
 
   return <Layout>
-    <Head><title>Palet warna Cakrawala</title><meta name="description" content="Panduan visual palet Cakrawala: putih, langit biru, laut, dan toska."/></Head>
+    <Head><title>Palet warna Mathama</title><meta name="description" content="Panduan visual palet Mathama: putih, langit biru, laut, dan toska."/></Head>
     <main className="palettePage"><div className="pageContainer">
       <div className="paletteHero">
         <span className="eyebrow teal">PANDUAN VISUAL</span>
-        <h1>Palet Cakrawala.</h1>
+        <h1>Palet Mathama.</h1>
         <p>Putih polos, langit biru, dan laut toska. Tidak ada krem atau beige: latar tetap putih, lalu biru dipakai untuk kedalaman dan toska untuk titik hidup.</p>
         <div className="paletteMeta"><span>Putih polos</span><span>Langit biru</span><span>Laut</span><span>Toska</span></div>
       </div>

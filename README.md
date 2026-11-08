@@ -1,8 +1,8 @@
-# Cakrawala — Interactive Grade 7 Mathematics
+# Mathama — Interactive Grade 7 Mathematics
 
-Cakrawala is a Docusaurus + React + TypeScript site for junior-high mathematics.
+Mathama is a Docusaurus + React + TypeScript site for junior-high mathematics.
 Each subchapter is a material-first lesson. At the end of every chapter, one
-story follows the **Klub Matematika** at **SMP Cakrawala**, an ordinary secondary
+story follows the **Klub Matematika** at **SMP Mathama**, an ordinary secondary
 school preparing its small mathematics week. The Grade 7 curriculum is complete;
 Grades 8 and 9 are placeholders.
 
@@ -63,7 +63,7 @@ chapter is one preparation task for Pekan Angka, from the class cash book to the
 student survey.
 
 All published Grade 7 lessons now follow the school canon: Raka, Nara, Bima,
-Kiki, and Pak Rahmat at SMP Cakrawala.
+Kiki, and Pak Rahmat at SMP Mathama.
 
 Character portraits are generated illustrations stored in
 `static/img/characters/`.
@@ -137,7 +137,7 @@ automatically. Do not edit `src/css/design-tokens.css` or
 
 ## Deployment
 
-1. Replace `url: 'https://cakrawala.example.com'` in `docusaurus.config.ts`
+1. Replace `url: 'https://mathama.example.com'` in `docusaurus.config.ts`
    with the production domain.
 2. Run `npm run build`.
 3. Deploy `build/` to Cloudflare Pages, Netlify, or Vercel.

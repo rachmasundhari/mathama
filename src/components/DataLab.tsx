@@ -32,7 +32,7 @@ export default function DataLab() {
 
   return <section className="labCard" aria-label="Laboratorium data dan diagram">
     <div className="labHeader"><div><span className="eyebrow teal">LAB DATA</span><h3>Ceritakan data dengan gambar</h3></div><span className="livePill"><span className="liveDot"/> Interaktif</span></div>
-    <p className="labIntro">Klub Cakrawala mencatat banyak pengunjung selama empat hari. Ubah datanya, lalu pilih diagram yang paling jelas.</p>
+    <p className="labIntro">Klub Mathama mencatat banyak pengunjung selama empat hari. Ubah datanya, lalu pilih diagram yang paling jelas.</p>
     <div className="dataSliders">
       {categories.map((category, index) => <label key={category} htmlFor={`data-${index}`}>{category}<strong>{values[index]}</strong><input id={`data-${index}`} className="rangeInput" type="range" min="0" max="20" value={values[index]} onChange={event => setValues(old => old.map((value, position) => position === index ? Number(event.target.value) : value))}/></label>)}
     </div>

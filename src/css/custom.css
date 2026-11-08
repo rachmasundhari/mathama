@@ -1,6 +1,6 @@
 @import "./design-tokens.css";
 
-/* Cakrawala design system. Tokens come from design/tokens.json. */
+/* Mathama design system. Tokens come from design/tokens.json. */
 * {box-sizing: border-box;}
 html {scroll-behavior: smooth;}
 body {background: var(--c-white); color: var(--ink);}
@@ -34,8 +34,8 @@ h1,h2,h3,h4 {letter-spacing: -.035em;}
 .button:hover {transform:translateY(-2px);}
 .primaryButton {background:#0f6b8f;color:white!important;padding:13px 24px;box-shadow:0 9px 18px rgba(21,102,90,.13);}
 .primaryButton:hover {background:#0a5674;color:white;}
-.outlineButton {background:transparent;border:1.5px solid #c3d9e4;color:#5f747b!important;padding:12px 22px;}
-.outlineButton:hover {background:#fff;}
+.outlineButton {background:#eaf5fa;border:1.5px solid transparent;color:#0f6b8f!important;padding:12px 22px;}
+.outlineButton:hover {background:#dceef7;}
 .bigButton {font-size:14px;min-height:52px; padding:15px 22px;}
 .lightButton {color:#0a5674!important;background:#ffffff;padding:14px 22px;}
 .sectionHeading {display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:32px;}
@@ -188,6 +188,8 @@ h1,h2,h3,h4 {letter-spacing: -.035em;}
 .navbar {background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);}
 .navbar__cta {box-shadow:0 8px 18px rgba(15,107,143,.22);}
 .heroSection {isolation:isolate;overflow:hidden;background:#ffffff;}
+.heroBoids {position:absolute;inset:0;z-index:0;width:100%;height:100%;pointer-events:none;}
+.heroGrid {position:relative;z-index:1;}
 .heroWaves {display:none;}
 .heroSection::before {display:none;}
 .heroSection::after {content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,#b9d6e4,transparent);}
@@ -234,15 +236,26 @@ h1,h2,h3,h4 {letter-spacing: -.035em;}
 .labCard {border-top:4px solid #62c4c3;}
 .labCard .labHeader h3,.quizTop h3 {letter-spacing:-.04em;}
 .lessonKicker {background:linear-gradient(90deg,#eaf5fa,#d8efec);border-color:transparent;box-shadow:0 2px 0 rgba(15,107,143,.06);}
-.theme-doc-markdown h1 {font-size:var(--type-page-size);line-height:var(--type-page-line);letter-spacing:var(--type-page-tracking);margin:0 0 24px;padding:26px 28px 28px;border-radius:20px;background:var(--c-ice);border:1px solid #d9e9ec;position:relative;overflow:hidden;}
+.theme-doc-markdown h1 {font-size:var(--type-page-size);line-height:var(--type-page-line);letter-spacing:var(--type-page-tracking);margin:0 0 24px;padding:26px 28px 28px;border-radius:20px;background:var(--c-ice);border:1px solid #d9e9ec;position:relative;overflow:hidden;color:var(--c-ocean);}
 .theme-doc-markdown h2 {font-size:var(--type-section-size);line-height:var(--type-section-line);letter-spacing:var(--type-section-tracking);color:#0f6b8f;padding-bottom:8px;}
 .theme-doc-markdown h2::after {content:'';display:block;width:48px;height:3px;border-radius:99px;background:#62c4c3;margin-top:9px;}
 .theme-doc-markdown h3 {color:#173a46;}
 .theme-doc-markdown blockquote {border-left:4px solid #62c4c3;background:#f7fbfd;border-radius:0 12px 12px 0;padding:12px 18px;color:#5f747b;}
 .theme-doc-markdown .admonition {border-left:4px solid #1a9db5;background:#f7fbfd;box-shadow:none;}
-.theme-doc-markdown table thead {background:#eaf5fa;}
-.theme-doc-markdown table th {color:#0a5674;}
-.theme-doc-markdown table tr:nth-child(even) {background:#f5fafd;}
+.theme-doc-markdown table {display:table;width:auto;min-width:min(100%,540px);max-width:100%;margin:24px 0;border:1px solid var(--c-sky);border-radius:16px;border-collapse:separate;border-spacing:0;overflow:hidden;font-family:inherit;font-size:var(--type-body-size);line-height:1.6;}
+.theme-doc-markdown table thead {background:var(--c-ice);}
+.theme-doc-markdown table th {padding:12px 16px;text-align:left;color:var(--c-ocean);font-size:var(--type-body-small-size);font-weight:700;border:0;border-bottom:1px solid var(--c-sky);}
+.theme-doc-markdown table td {padding:14px 16px;vertical-align:top;color:var(--c-slate);border:0;border-bottom:1px solid var(--c-sky);}
+.theme-doc-markdown table tr:last-child td {border-bottom:0;}
+.theme-doc-markdown table tr:nth-child(even) {background:transparent;}
+.theme-doc-markdown table tbody tr:hover {background:color-mix(in srgb, var(--c-muted) 4%, var(--c-white));}
+.theme-doc-markdown table td:first-child {color:var(--c-ink);font-weight:500;}
+.theme-doc-markdown table th,.theme-doc-markdown table td {border-right:1px solid color-mix(in srgb, var(--c-muted) 18%, var(--c-white));}
+.theme-doc-markdown table th:last-child,.theme-doc-markdown table td:last-child {border-right:0;}
+.theme-doc-markdown table thead th:first-child {border-top-left-radius:15px;}
+.theme-doc-markdown table thead th:last-child {border-top-right-radius:15px;}
+.theme-doc-markdown table tbody tr:last-child td:first-child {border-bottom-left-radius:15px;}
+.theme-doc-markdown table tbody tr:last-child td:last-child {border-bottom-right-radius:15px;}
 .theme-doc-markdown a {text-decoration-thickness:1px;text-underline-offset:3px;}
 .footer {background:#ffffff;}
 .footer__links {row-gap:22px;}
@@ -283,8 +296,8 @@ h1,h2,h3,h4 {letter-spacing: -.035em;}
 .eyebrow.teal {color:#0f6b8f;}
 .primaryButton {background:#0f6b8f;color:#ffffff!important;box-shadow:0 10px 20px rgba(15,107,143,.18);}
 .primaryButton:hover {background:#084b65;}
-.outlineButton {border-color:#b9d6e4;color:#4a5f66!important;}
-.outlineButton:hover {background:#ffffff;}
+.outlineButton {border-color:transparent;color:#0f6b8f!important;background:#eaf5fa;}
+.outlineButton:hover {background:#dceef7;}
 .lightButton {color:#063b50!important;background:#eaf5fa;}
 .heroSection {background:#ffffff;}
 .announcement {border-color:#cfe8f3;background:#eaf5fa;color:#0a5674;}
@@ -815,3 +828,7 @@ body {caret-color:var(--c-ocean);}
   .heroDemo {transform:rotate(var(--heroTilt));}
   .heroCopy h1 em:after {transform:rotate(-1deg);}
 }
+/* Lesson table of contents */
+.mathamaToc {max-height:calc(100vh - (var(--ifm-navbar-height) + 2rem));overflow-y:auto;position:sticky;top:calc(var(--ifm-navbar-height) + 1rem);}
+.mathamaTocHeading {font-size:11px;letter-spacing:.15em;font-weight:850;color:#0f6b8f;text-transform:uppercase;margin-bottom:10px;}
+@media (max-width:996px) {.mathamaToc {display:none;}}

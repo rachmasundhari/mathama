@@ -1,6 +1,6 @@
-# Cakrawala design system
+# Mathama design system
 
-This is the authoritative visual and interface specification for the Cakrawala
+This is the authoritative visual and interface specification for the Mathama
 site in `web/`. It records what the site already uses, not a future redesign.
 When a new value is needed, add it here first, then use it in code.
 
@@ -193,6 +193,10 @@ it.
   never the only cue for a state. The spotlight boxes bob and share the symbol
   noise sets, on their own delays. The demo card itself stays still: it holds a
   slider, and the value must not move under the visitor's hand.
+- The hero boid canvas sits at `z-index: 0`, under the copy (`z-index: 1`), with
+  `pointer-events: none`. Triangles stay 3–5.6px at 10–20% teal. The flock stops
+  offscreen and in a hidden tab, and clamps to one static frame under reduced
+  motion. Do not let it paint over text at higher opacity.
 - Use the separate `translate` and `scale` properties for idle loops so they do
   not fight a `transform` that carries a static rotation.
 
@@ -201,7 +205,7 @@ it.
 ### 7.1 Navbar and footer
 
 - 78px tall desktop, 65px mobile. White ground, 1px bottom border, no shadow.
-- Brand title `cakrawala.` at 25px, weight 850.
+- Brand title `mathama.` at 25px, weight 850.
 - Links 14px, weight 660, slate; active and hover use ocean.
 - One primary pill CTA at the right, ocean background, white label.
 - Brand mark: ocean rounded tile `#0F6B8F`, white stroke, sea-glass dot
@@ -212,7 +216,8 @@ it.
 
 - `.button` is the shared base: inline-flex, gap 18px, pill radius, weight 800.
 - `.primaryButton`: ocean ground, white label. Hover darkens; focus ring visible.
-- `.outlineButton`: transparent, 1.5px border, slate label.
+- `.outlineButton`: pale sky ground, no border, ocean label. It reads as the
+  secondary action without competing with the ocean primary.
 - `.lightButton`: white or pale sky ground for use on dark panels.
 - `.successButton`: pale sea glass ground, deep ocean label, never the only
   success cue; pair with text or an icon.
@@ -366,7 +371,7 @@ The OpenCode config `opencode.jsonc` installs
 [`VoltAgent/awesome-design-md`](https://github.com/VoltAgent/awesome-design-md)
 as the `awesome-design-md` reference. The global `design-reference` skill
 (`~/.agents/skills/design-reference/`) looks up a brand's `DESIGN.md` and
-adapts its rules to Cakrawala.
+adapts its rules to Mathama.
 
 ```powershell
 & "$HOME/.agents/skills/design-reference/lookup.ps1" linear

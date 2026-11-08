@@ -1,7 +1,7 @@
 import {useCallback, useEffect, useState} from 'react';
 
-const STORAGE_KEY = 'cakrawala:completed-lessons:v1';
-const SCORE_KEY = 'cakrawala:quiz-scores:v1';
+const STORAGE_KEY = 'mathama:completed-lessons:v1';
+const SCORE_KEY = 'mathama:quiz-scores:v1';
 
 export function useLessonProgress() {
   const [completed, setCompleted] = useState<string[]>([]);

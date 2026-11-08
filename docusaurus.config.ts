@@ -4,11 +4,11 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
-  title: 'Cakrawala: Matematika Kelas 7',
+  title: 'Mathama: Matematika Kelas 7',
   tagline: 'Pelajari konsepnya, coba sendiri, lalu jadi paham.',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/mathama-favicon.svg',
   // IMPORTANT: change to your production domain before deployment.
-  url: 'https://cakrawala.example.com',
+  url: 'https://mathama.example.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   i18n: {defaultLocale: 'id', locales: ['id']},
@@ -36,8 +36,8 @@ const config: Config = {
     image: 'img/social-card.svg',
     colorMode: {defaultMode: 'light', disableSwitch: true, respectPrefersColorScheme: false},
     navbar: {
-      title: 'cakrawala.',
-      logo: {alt: 'Cakrawala', src: 'img/logo.svg'},
+      title: 'mathama.',
+      logo: {alt: 'Mathama', src: 'img/mathama-mark.svg'},
       hideOnScroll: false,
       items: [
         {to: '/courses', label: 'Jelajahi materi', position: 'left'},
@@ -66,7 +66,7 @@ const config: Config = {
           {label: 'Tentang proyek', to: '/about'},
         ]},
       ],
-      copyright: `© ${new Date().getFullYear()} Cakrawala. Matematika yang bisa dicoba.`,
+      copyright: `© ${new Date().getFullYear()} Mathama. Matematika yang bisa dicoba.`,
     },
     prism: {theme: prismThemes.github, darkTheme: prismThemes.dracula},
   },
