@@ -7,9 +7,10 @@ const config: Config = {
   title: 'Mathama: Matematika Kelas 7',
   tagline: 'Pelajari konsepnya, coba sendiri, lalu jadi paham.',
   favicon: 'img/mathama-favicon.svg',
-  // IMPORTANT: change to your production domain before deployment.
-  url: 'https://mathama.example.com',
-  baseUrl: '/',
+  url: 'https://rachmasundhari.github.io',
+  baseUrl: '/mathama/',
+  organizationName: 'rachmasundhari',
+  projectName: 'mathama',
   onBrokenLinks: 'throw',
   i18n: {defaultLocale: 'id', locales: ['id']},
   presets: [

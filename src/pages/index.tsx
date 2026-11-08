@@ -6,6 +6,7 @@ import Waves from '../components/Waves';
 import BoidsFlock from '../components/BoidsFlock';
 import {ArrowUpRight, BookOpen, CircleCheckBig, FlaskConical} from 'lucide-react';
 import {useLessonProgress} from '../hooks/useLessonProgress';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const chapters: {num:string;name:string;desc:string;label:string;symbol:string;url:string}[] = [
   {num:'01',name:'Bilangan dan operasinya',desc:'Bilangan bulat, pecahan, pangkat, dan faktor.',label:'8 pelajaran',symbol:'−3 + 5',url:'/learn/grade-7/integers/number-line'},
@@ -90,6 +91,7 @@ function HeroExperiment() {
 
 export default function Home(): React.ReactNode {
   const {completed, loaded} = useLessonProgress();
+  const base = useBaseUrl('/');
   return <Layout>
     <Head><title>Mathama: Matematika Kelas 7</title><meta name="description" content="Belajar Matematika SMP Kelas 7: materi bertahap, laboratorium interaktif, latihan dengan pembahasan, dan satu cerita di akhir tiap bab."/></Head>
     <main className="siteMain">
@@ -113,7 +115,7 @@ export default function Home(): React.ReactNode {
       </div></section>
 
       {showCast && <section className="castSection"><div className="pageContainer"><div className="sectionHeading"><div><span className="eyebrow">TOKOH CERITA</span><h2>Kenalan dengan Klub Matematika.</h2></div><Link to="/about" className="sectionLink">Baca karakter lengkap ↗</Link></div>
-        <div className="castGrid">{characters.map(person=><article className="castCard" key={person.name}><div className="castPortrait"><img src={person.img} alt={`Ilustrasi ${person.name}, ${person.role.toLowerCase()}`} loading="lazy" style={{objectPosition: person.position}}/></div><div className="castName"><h3>{person.name}</h3></div></article>)}</div>
+        <div className="castGrid">{characters.map(person=><article className="castCard" key={person.name}><div className="castPortrait"><img src={`${base}${person.img.replace(/^\//, '')}`} alt={`Ilustrasi ${person.name}, ${person.role.toLowerCase()}`} loading="lazy" style={{objectPosition: person.position}}/></div><div className="castName"><h3>{person.name}</h3></div></article>)}</div>
       </div></section>}
 
       <section className="spotlightSection"><div className="pageContainer"><div className="spotlightBox"><div className="spotlightWaves" aria-hidden="true"><Waves lineColor="#a7d8cd" accentColor="#62c4c3" backgroundColor="transparent" lineStyle="solid" spacing={22} lineWidth={1} rotation={-4} amplitude={12} scale={1.2} twist={0.5} speed={0.35} variation={4} mouseInteraction={false} clickRipple={false} intro={true} fade={0.5} opacity={0.3} /></div><div className="spotlightCopy"><span className="eyebrow">MISI BAB 4 · POLA DAN BENTUK ALJABAR</span><h2>Kotak yang belum dihitung.</h2><p>Kiki menemukan kotak hadiah bertuliskan "2x + 3". Isinya berapa? Huruf x bukan monster. Ia cuma kotak yang belum diisi.</p><Link to="/learn/grade-7/algebra/variables" className="button lightButton">Masuk ke bab aljabar ↗</Link></div><div className="spotlightVisual"><div className="spotBox">x <span>● ● ●</span></div><div className="spotPlus">+</div><div className="spotBox">x <span>● ● ●</span></div><div className="spotResult">= 2x</div></div></div></div></section>

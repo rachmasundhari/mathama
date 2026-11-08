@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {ListChecks} from 'lucide-react';
 import {quizBank} from '../data/questions';
 import {checkNumericAnswer} from '../lib/answerChecker';
 import {saveBestScore} from '../hooks/useLessonProgress';
@@ -44,7 +45,7 @@ export default function QuizRunner({quizId = 'algebra-basics'}: {quizId?: string
   </section>;
 
   return <section className="quizCard" aria-label={quiz.title}>
-    <div className="quizTop"><div><span className="eyebrow teal">LATIHAN MANDIRI</span><h3>{quiz.title}</h3></div><span className="questionCount">{index+1} / {quiz.questions.length}</span></div>
+    <div className="quizTop"><div><span className="cardChip"><ListChecks size={12} aria-hidden="true" /> Latihan Mandiri</span><h3>{quiz.title}</h3></div><span className="questionCount">{index+1} / {quiz.questions.length}</span></div>
     <div className="quizProgress" role="progressbar" aria-valuenow={index+1} aria-valuemin={1} aria-valuemax={quiz.questions.length} aria-label="Progres latihan"><span style={{width:`${(index+1)/quiz.questions.length*100}%`}}/></div>
     <div className="questionArea">
       <span className="topicTag">{question.topic}</span>
