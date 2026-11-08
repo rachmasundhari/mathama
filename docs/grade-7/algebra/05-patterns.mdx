@@ -1,0 +1,138 @@
+---
+title: "Kotak yang Bertambah Tiga"
+sidebar_position: 5
+slug: /grade-7/algebra/patterns
+---
+
+import PatternLab from '@site/src/components/PatternLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · POLA BILANGAN · 12 MENIT</div>
+
+# Berapa kotak pada susunan kelima puluh?
+
+**Tujuan belajar:** Mengenali pola bilangan, menentukan beda atau rasio, dan menuliskan suku ke-n sebagai bentuk aljabar.
+
+## 1. Barisan kotak di lantai
+
+Kiki menata kotak hadiah di lantai ruang 7B. Ia membuat susunan pertama dari empat kotak. Susunan kedua memakai tujuh kotak. Susunan ketiga memakai sepuluh kotak. Setiap susunan baru lebih panjang tiga kotak daripada susunan sebelumnya.
+
+"Kalau kita sampai susunan kelima puluh, berapa kotak yang dibutuhkan?" tanya Nara.
+
+Bima mengambil papan tulis kecil. "Tinggal tambah tiga terus."
+
+Ia menulis angka di papan: 4, 7, 10, 13, 16, 19. Sampai situ ia berhenti. "Tunggu. Ini baru susunan keenam. Aku harus menambah empat puluh empat kali lagi."
+
+Kiki menghitung dengan jari, lalu kehilangan tempat. "Aku dapat seratus lima puluh satu, tapi aku tidak yakin."
+
+Nara memeriksa. "Kamu mulai dari empat, lalu menambah tiga. Kalau menambah tiga sebanyak empat puluh sembilan kali, hasilnya $4 + 147 = 151$."
+
+Bima mengangguk. "Benar. Tapi kalau susunannya berubah, aku harus menghitung ulang dari awal."
+
+Raka sudah menggambar susunan kotak di buku sketsa. Ia memberi jarak yang sama di antara kotak, lalu menandai kotak tambahan dengan warna berbeda. "Kalau digambar, setiap susunan punya empat kotak awal dan beberapa kelompok tiga."
+
+Pak Rahmat, yang sedang menyusun buku di rak, berhenti sebentar. "Kalau kamu sudah tahu susunan pertama dan besar tambahannya, apakah kamu perlu menggambar semuanya?"
+
+## 2. Pola yang bisa ditulis singkat
+
+Barisan 4, 7, 10, 13, 16, ... disebut **pola aritmetika**. Setiap suku bertambah dengan bilangan tetap. Bilangan tetap itu disebut **beda**. Di sini bedanya 3.
+
+Nara menulis nama setiap bagian. Suku pertama $U_1 = 4$. Suku kedua $U_2 = 7$. Suku ketiga $U_3 = 10$. Selisih antara dua suku berdekatan selalu 3.
+
+Untuk mencari suku ke-n, mereka menyusun cara singkat. Susunan pertama berisi 4 kotak. Setiap langkah setelahnya menambah 3 kotak. Jadi dari suku pertama ke suku ke-n ada $n - 1$ langkah.
+
+$$U_n = 4 + (n - 1) \times 3$$
+
+Bentuk itu bisa disederhanakan:
+
+$$U_n = 4 + 3n - 3 = 3n + 1$$
+
+Periksa untuk beberapa nilai. Jika $n = 1$, maka $3(1) + 1 = 4$. Jika $n = 2$, maka $3(2) + 1 = 7$. Jika $n = 3$, maka $3(3) + 1 = 10$. Hasilnya cocok dengan hitungan Bima.
+
+Nara menunjuk angka pada rumus. "Angka 3 berasal dari tambahan setiap susunan. Angka 1 berasal dari empat kotak awal yang dikurangi tiga."
+
+Kiki menulis di buku pertanyaannya. "Kalau susunan pertama hanya satu kotak dan setiap susunan bertambah dua, apakah rumusnya $2n - 1$?"
+
+Nara mengujinya. $n = 1$ memberi $2 - 1 = 1$. $n = 2$ memberi $4 - 1 = 3$. $n = 3$ memberi $6 - 1 = 5$. "Iya. Polanya 1, 3, 5, 7."
+
+Raka menambahkan catatan di gambar. "Bentuk aljabar membuat gambar bisa dihitung tanpa digambar satu per satu."
+
+:::note
+**Kata Pak Rahmat.** Kalau bedanya bukan 3, bagian mana dari rumus yang berubah? Kalau suku pertamanya bukan 4, bagian mana yang berubah?
+:::
+
+## 3. Coba di meja kerja
+
+Raka membuka lab pola di laptop. "Atur suku awal empat dan bedanya tiga. Lihat suku ke-n yang muncul."
+
+<PatternLab />
+
+Pada pola aritmetika, atur suku awal 4, beda 3, dan $n = 10$. Deretan yang muncul adalah 4, 7, 10, 13, 16, 19, 22, 25, 28, 31. Suku kesepuluhnya 31. Lab juga menampilkan bentuk $4 + (n - 1) \times 3$.
+
+Lab hanya menampilkan sampai $n = 10$, tetapi rumus bisa dipakai lebih jauh. Untuk $n = 20$, $U_{20} = 3(20) + 1 = 61$. Menghitung satu per satu sampai dua puluh memang mungkin, tetapi rumus memberi jawaban tanpa menghitung semua suku di antaranya.
+
+Coba juga tombol "Geometri". Dengan suku awal 2 dan rasio 3, barisannya menjadi 2, 6, 18, 54. Setiap suku dikali 3, bukan ditambah 3. Lab menampilkan bentuk $2 \times 3^{n-1}$. Pola seperti ini tumbuh lebih cepat daripada pola aritmetika.
+
+Bima memperhatikan layar. "Kalau aritmetika, bedanya tetap. Kalau geometri, rasionya tetap."
+
+"Dan keduanya bisa ditulis sebagai bentuk aljabar," kata Nara.
+
+## 4. Catatan klub
+
+Nara menyalin pola kotak ke buku kotak. Ia membuat tabel supaya hubungan antara $n$ dan banyak kotak terlihat.
+
+| $n$ | Hitungan | Banyak kotak |
+|---|---|---|
+| 1 | $4 + 0 \times 3$ | 4 |
+| 2 | $4 + 1 \times 3$ | 7 |
+| 3 | $4 + 2 \times 3$ | 10 |
+| 4 | $4 + 3 \times 3$ | 13 |
+| 5 | $4 + 4 \times 3$ | 16 |
+| 12 | $4 + 11 \times 3$ | 37 |
+| 50 | $4 + 49 \times 3$ | 151 |
+
+Langkah menentukan suku ke-n:
+
+1. Tulis beberapa suku pertama: 4, 7, 10, 13.
+2. Cari beda: $7 - 4 = 3$, $10 - 7 = 3$. Bedanya tetap 3.
+3. Tulis bentuk umum: $U_n = a + (n - 1)b$.
+4. Masukkan $a = 4$ dan $b = 3$: $U_n = 4 + (n - 1) \times 3$.
+5. Sederhanakan: $U_n = 3n + 1$.
+6. Periksa dengan suku yang sudah diketahui. Untuk $n = 4$, $3(4) + 1 = 13$.
+
+Bima memakai rumus untuk menghitung susunan kelima puluh. $3(50) + 1 = 151$. Ia membandingkan dengan hitungan jarinya tadi, yang juga 151. "Ternyata hitunganku benar, cuma lama."
+
+Nara menambahkan satu contoh lain. Meja panggung disusun dari kursi. Susunan pertama 5 kursi, setiap susunan berikutnya menambah 4 kursi. Beda 4, suku pertama 5.
+
+$$U_n = 5 + (n - 1) \times 4 = 4n + 1$$
+
+Untuk susunan kesepuluh, $4(10) + 1 = 41$ kursi.
+
+:::tip
+**Catatan Nara.** Cari beda dengan mengurangkan dua suku berdekatan. Setelah rumus jadi, selalu periksa dengan suku pertama dan satu suku lain. Kalau tidak cocok, periksa lagi tanda atau urutan operasinya.
+:::
+
+## 5. Kembali ke misi
+
+Kiki memindahkan kotak ke susunan kedua belas. Ia menghitung dengan rumus: $3(12) + 1 = 37$. Setelah menata, jumlahnya memang 37. Ia mencentang buku pertanyaannya.
+
+"Kalau kita lanjut sampai susunan kelima puluh, total kotaknya seratus lima puluh satu," kata Nara. "Itu terlalu banyak untuk meja hadiah."
+
+Bima mengukur meja. "Kita bisa berhenti di susunan kedua belas. Tiga puluh tujuh kotak masih muat."
+
+Raka menambahkan gambar susunan kedua belas di sudut denah. "Kalau digambar, empat kotak awal dan sebelas kelompok tiga."
+
+Kiki menatap pola di lantai. "Kalau setiap susunan bertambah lima, bukan tiga, apakah rumusnya masih $3n + 1$?"
+
+Nara menggeleng. "Angka 3 berubah menjadi 5. Suku pertamanya juga perlu diperiksa lagi."
+
+Pak Rahmat menutup buku di rak. "Jadi kalau susunan pertama berisi 7 kotak dan setiap susunan berikutnya bertambah 4, berapa kotak pada susunan kesembilan?"
+
+Kiki mengambil pensil. "Aku coba tulis dulu bentuk umumnya."
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="algebra-patterns" />
+
+<LessonComplete lessonId="g7-algebra-patterns" />

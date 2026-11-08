@@ -1,0 +1,150 @@
+---
+title: "Dua lingkaran yang bertumpuk"
+sidebar_position: 3
+slug: /grade-7/sets/venn
+---
+
+import VennLab from '@site/src/components/VennLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · HIMPUNAN · 12 MENIT</div>
+
+# Dua lingkaran yang bertumpuk
+
+**Tujuan belajar:** Membaca dan menggambar diagram Venn dua himpunan, lalu menentukan banyak anggota di setiap daerah.
+
+## 1. Angka yang hilang dari gambar
+
+Raka sudah menggambar dua lingkaran di papan tulis. Lingkaran kiri untuk stan robotik, lingkaran kanan untuk stan kuis. Bagian tengahnya berisi tujuh nama.
+
+Bima berdiri di depan papan dengan kalkulator. "Robotik delapan belas, kuis lima belas. Aku jumlahkan, tiga puluh tiga. Aku kurangi yang dobel tujuh, jadi dua puluh enam."
+
+Nara melihat catatannya. "Dua puluh enam apa?"
+
+"Peserta Pekan Angka," kata Bima. "Yang ikut paling sedikit satu stan."
+
+"Kelas kita tiga puluh dua orang," kata Nara. "Kalau pesertanya dua puluh enam, enam orang ke mana?"
+
+Bima menunjuk papan. "Di luar lingkaran."
+
+"Di luar lingkaran itu belum ada angkanya," kata Kiki. "Aku cuma lihat dua lingkaran dan nama-nama di dalamnya."
+
+Bima menggaruk leher. "Berarti gambarnya belum lengkap."
+
+Raka mengambil spidol. "Kotaknya sudah ada. Yang belum angka di tiap daerah. Kalau aku taruh delapan belas di lingkaran kiri, itu jumlah seluruh robotik atau cuma yang robotik saja?"
+
+Nara menatap dua lingkaran itu. "Itu pertanyaan yang bagus. Kita perlu aturan penulisan."
+
+## 2. Membaca daerah, bukan lingkaran
+
+**Diagram Venn** memakai lingkaran untuk menunjukkan himpunan dan persegi panjang untuk menunjukkan himpunan semesta. Dua lingkaran yang bertumpuk membagi semesta menjadi empat daerah.
+
+| Daerah | Arti | Lambang |
+|---|---|---|
+| Tumpukan tengah | anggota kedua himpunan | $A \cap B$ |
+| Kiri saja | anggota $A$ yang bukan anggota $B$ | $A \setminus B$ |
+| Kanan saja | anggota $B$ yang bukan anggota $A$ | $B \setminus A$ |
+| Luar lingkaran | anggota $S$ yang bukan anggota $A$ atau $B$ | $(A \cup B)^c$ |
+
+Angka di setiap daerah menunjukkan banyak anggota daerah itu. Jangan menulis total seluruh lingkaran di satu daerah. Kalau angka 7 ditulis di tengah, artinya ada 7 anggota yang masuk $A$ dan $B$ sekaligus.
+
+Dengan begitu, banyak anggota $A$ adalah jumlah daerah kiri dan tengah:
+
+$$n(A) = n(A \setminus B) + n(A \cap B)$$
+
+Banyak anggota gabungan adalah jumlah tiga daerah di dalam lingkaran:
+
+$$n(A \cup B) = n(A \setminus B) + n(A \cap B) + n(B \setminus A)$$
+
+Ada rumus lain yang sering dipakai:
+
+$$n(A \cup B) = n(A) + n(B) - n(A \cap B)$$
+
+Pengurangan $n(A \cap B)$ perlu karena anggota yang sama dihitung dua kali saat $n(A)$ dan $n(B)$ dijumlahkan.
+
+Pak Rahmat menunjuk papan. "Kalau kamu menulis 18 di dalam lingkaran kiri, apakah itu 18 anggota $A$ atau 18 anggota yang hanya di $A$?"
+
+"Tergantung kesepakatan gambar," kata Nara. "Supaya tidak bingung, kita tulis angka di daerah, lalu beri catatan."
+
+Raka mengangguk. "Aku akan menulis angka di tengah dulu, baru di kiri dan kanan."
+
+## 3. Coba di meja kerja
+
+Nara mendorong layar ke tengah meja. "Isi empat daerah. Baca $n(A)$, $n(B)$, dan $n(A \cup B)$. Perhatikan angka mana yang ikut berubah."
+
+<VennLab />
+
+Coba hanya $A$ berisi 4, irisan berisi 3, hanya $B$ berisi 2, dan di luar keduanya berisi 1. Maka $n(A) = 4 + 3 = 7$, $n(B) = 3 + 2 = 5$, dan $n(A \cup B) = 4 + 3 + 2 = 9$. Jumlah seluruh semesta adalah $9 + 1 = 10$.
+
+Bima memindahkan dua anggota dari daerah hanya $A$ ke irisan. "Sekarang irisannya lima, hanya $A$ tinggal dua. $n(A)$ tetap tujuh, $n(B)$ jadi tujuh, dan gabungannya tetap sembilan."
+
+"Kalau anggota pindah daerah, jumlah gabungan tidak berubah," kata Kiki. "Yang berubah cuma tempatnya."
+
+"Betul," kata Nara. "Selama tidak ada anggota baru di luar dua lingkaran, gabungannya tetap."
+
+## 4. Catatan klub
+
+Nara menyalin angka sebenarnya ke buku.
+
+- Seluruh kelas: $n(S) = 32$.
+- Anggota stan robotik: $n(R) = 18$.
+- Anggota stan kuis: $n(K) = 15$.
+- Anggota kedua stan: $n(R \cap K) = 7$.
+
+Langkah menggambar:
+
+1. Hitung yang hanya robotik: $18 - 7 = 11$.
+2. Hitung yang hanya kuis: $15 - 7 = 8$.
+3. Tulis 11 di kiri, 7 di tengah, 8 di kanan.
+4. Hitung gabungan: $11 + 7 + 8 = 26$.
+5. Hitung yang di luar: $32 - 26 = 6$.
+6. Periksa jumlah: $11 + 7 + 8 + 6 = 32$.
+
+| Daerah | Banyak anggota |
+|---|---|
+| Hanya robotik | 11 |
+| Robotik dan kuis | 7 |
+| Hanya kuis | 8 |
+| Tidak ikut keduanya | 6 |
+| Seluruh kelas | 32 |
+
+Bima memeriksa dengan rumus. "$n(R \cup K) = 18 + 15 - 7 = 26$. Cocok dengan jumlah tiga daerah di dalam lingkaran."
+
+"Kalau yang ditanya hanya robotik, jawabannya delapan belas," kata Nara. "Kalau yang ditanya hanya robotik dan tidak ikut kuis, jawabannya sebelas. Dua pertanyaan itu berbeda."
+
+Kiki menulis di bukunya: *angka di daerah, bukan angka di lingkaran*. Ia menggari kalimat itu dua kali.
+
+:::warning Pertanyaan Kiki
+Kalau aku menjumlahkan angka 18 dan 15, lalu mengurangi 7, apakah aku sudah menghitung enam anak di luar lingkaran?
+:::
+
+## 5. Kembali ke misi
+
+Raka menyelesaikan gambar. Persegi panjang diberi label $S$. Dua lingkaran diberi label $R$ dan $K$. Di kiri ia menulis 11, di tengah 7, di kanan 8, dan di luar lingkaran 6.
+
+Nara menempelkan daftar nama di samping setiap daerah. Tujuh nama di tengah ia beri tanda bintang. "Mereka yang harus dikonfirmasi dulu, karena masuk dua jadwal."
+
+Bima menghitung ulang dari gambar, bukan dari ingatan. "Sebelas tambah tujuh, delapan belas. Delapan tambah tujuh, lima belas. Semua masuk."
+
+"Dan enam yang di luar?" tanya Kiki.
+
+"Belum dapat tugas," kata Nara. "Tapi mereka tetap peserta. Kita bisa minta bantuan mereka untuk meja hadiah."
+
+Pak Rahmat melihat gambar itu dari dekat. "Sekarang kamu punya satu gambar yang bisa dibaca orang lain tanpa penjelasan panjang. Bagian mana yang paling sering salah dibaca?"
+
+Raka menunjuk tengah. "Kalau orang menjumlahkan dua lingkaran, tujuh ini kehitung dua kali."
+
+Kiki mengangkat tangan. "Kalau ada anak yang ikut tiga stan, gambarnya jadi tiga lingkaran?"
+
+"Bisa," kata Raka. "Tapi lingkarannya harus disusun ulang. Bagian tengahnya jadi lebih rumit."
+
+Pak Rahmat menunggu. "Menurutmu, apa yang berubah dari gambar dua lingkaran?"
+
+Kiki mengangguk pelan, lalu menulis pertanyaannya di buku.
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="sets-venn" />
+
+<LessonComplete lessonId="g7-sets-venn" />

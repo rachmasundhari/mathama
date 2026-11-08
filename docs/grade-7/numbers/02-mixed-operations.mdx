@@ -1,0 +1,147 @@
+---
+title: "Urutan yang Menyelamatkan Saldo"
+sidebar_position: 2
+slug: /grade-7/numbers/mixed-operations
+---
+
+import IntegerOpsLab from '@site/src/components/IntegerOpsLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · OPERASI CAMPURAN · 12 MENIT</div>
+
+# Satu buku kas, empat transaksi, dua jawaban
+
+**Tujuan belajar:** Menghitung operasi campuran bilangan bulat, pecahan, desimal, dan persen dengan urutan yang benar, termasuk penggunaan tanda kurung.
+
+## 1. Baris yang dihitung terlalu cepat
+
+Nara membuka buku kas klub di atas meja. Halaman terakhir penuh angka yang ditulis dengan dua warna: hitam untuk pemasukan, merah untuk pengeluaran. Pekan Angka sudah dekat, dan setoran booth harus dibayar Jumat.
+
+"Saldo awal dua ratus lima puluh ribu," kata Nara. "Empat tiket konsultasi terjual, masing-masing lima belas ribu. Kita beli tiga spidol, satu spidol delapan belas ribu. Lalu Pak Rahmat menambahkan sepuluh persen dari saldo awal untuk kas kecil."
+
+Bima mengambil kalkulator dari tasnya. "Tinggal hitung."
+
+Nara menulis satu baris panjang di papan:
+
+$$250.000 + 4 \times 15.000 - 3 \times 18.000 + 10\% \times 250.000$$
+
+Bima menekan tombol dengan cepat. "Sisa sebelum kas kecil dua ratus delapan puluh tiga ribu. Setengahnya untuk deposit, seratus empat puluh satu ribu lima ratus."
+
+"Tunggu," kata Nara. "Dari mana angka dua ratus delapan puluh tiga ribu?"
+
+Bima menunjuk layar. "Aku bagi pengeluarannya dulu, lalu kurangkan dari pemasukan."
+
+Nara mengulang perhitungan di kertas. Ia menghitung seluruh pemasukan tiket, mengurangkan pengeluaran, baru membagi hasilnya. Angka yang muncul dua ratus lima puluh enam ribu, dan setengahnya seratus dua puluh delapan ribu.
+
+"Kok bisa beda?" tanya Kiki. "Angkanya sama, kok hasilnya jauh."
+
+Bima menatap kalkulatornya. "Aku menekan dua lima nol, tambah enam puluh, kurang lima puluh empat, bagi dua. Kalkulator membagi lima puluh empat dulu, baru mengurangkan."
+
+Nara menulis dua hasil di papan. Satu hasil memakai tanda kurung, satu hasil tidak. Selisihnya besar, padahal angkanya sama.
+
+## 2. Kesepakatan urutan
+
+Pak Rahmat menyeret kursi ke dekat papan. "Kalau satu baris berisi beberapa operasi, bagaimana kita memutuskan mana yang dikerjakan lebih dulu?"
+
+"Yang di kiri dulu?" jawab Bima.
+
+"Kalau begitu, $2 + 3 \times 4$ hasilnya dua puluh," kata Nara. "Padahal $3 \times 4$ dua belas, ditambah dua empat belas. Dua jawaban untuk satu baris."
+
+Pak Rahmat menulis aturan di papan. Urutan operasi disepakati agar semua orang membaca baris yang sama dengan cara yang sama:
+
+1. Kerjakan isi tanda kurung lebih dulu.
+2. Hitung bilangan berpangkat dan akar.
+3. Kerjakan perkalian dan pembagian dari kiri ke kanan.
+4. Terakhir, kerjakan penjumlahan dan pengurangan dari kiri ke kanan.
+
+Tanda kurung penting karena mengubah kelompok. Baris $250.000 + 60.000 - 54.000 \div 2$ berbeda dari $(250.000 + 60.000 - 54.000) \div 2$. Pada baris pertama, pembagian hanya berlaku untuk 54.000. Pada baris kedua, seluruh sisa dibagi dua.
+
+Persen juga termasuk perkalian. $10\%$ sama dengan $\frac{10}{100}$ atau $0{,}1$. Jadi $10\% \times 250.000$ berarti $0{,}1 \times 250.000 = 25.000$.
+
+"Jadi urutannya bukan selera," kata Nara. "Urutan itu menjaga arti barisnya."
+
+:::note
+**Kata Pak Rahmat.** Kalau kamu menambah tanda kurung di tempat yang berbeda, apakah angkanya berubah? Coba satu contoh kecil sebelum menghitung angka besar.
+:::
+
+## 3. Coba di meja kerja
+
+Bima membuka lab di laptop. "Pilih perkalian, lalu masukkan bilangan negatif. Aku mau lihat apakah tandanya berubah."
+
+<IntegerOpsLab />
+
+Atur bilangan pertama $-4$ dan bilangan kedua $3$, lalu pilih $\times$. Hasilnya $-12$. Sekarang ganti operasinya menjadi $+$. Hasilnya berubah menjadi $-1$. Operasi yang berbeda memberi tanda dan nilai yang berbeda.
+
+Lab ini berguna untuk memeriksa satu potong perhitungan. Dalam baris yang panjang, potongan itu dikerjakan lebih dulu sebelum penjumlahan. Misalnya:
+
+$$12 - 3 \times (-4)$$
+
+Perkalian dikerjakan lebih dulu: $3 \times (-4) = -12$. Lalu pengurangan: $12 - (-12) = 12 + 12 = 24$. Kalau kamu mengerjakan pengurangan lebih dulu, hasilnya berbeda.
+
+Nara mencatat satu hal. "Mengurangi bilangan negatif sama dengan menambah. Jadi tanda minus di depan kurung tidak selalu mengurangi."
+
+## 4. Catatan klub
+
+Nara menulis empat contoh di buku kotak. Setiap contoh memakai bentuk bilangan yang berbeda.
+
+| Baris | Langkah | Hasil |
+|---|---|---|
+| $12 - 3 \times (-4)$ | $3 \times (-4) = -12$, lalu $12 + 12$ | 24 |
+| $\frac{1}{2} + \frac{3}{4} \times \frac{2}{3}$ | $\frac{3}{4} \times \frac{2}{3} = \frac{1}{2}$, lalu $\frac{1}{2} + \frac{1}{2}$ | 1 |
+| $2{,}5\% \times 256.000$ | $0{,}025 \times 256.000$ | 6.400 |
+| $(250.000 + 60.000 - 54.000) \div 2$ | $256.000 \div 2$ | 128.000 |
+
+Contoh pertama memakai bilangan bulat negatif. Contoh kedua memakai pecahan. Contoh ketiga memakai persen dan desimal. Contoh keempat memakai tanda kurung karena seluruh sisa dibagi dua.
+
+Mereka kembali ke buku kas. Nara menghitung dari awal dengan urutan yang benar.
+
+Pemasukan: $250.000 + 4 \times 15.000 = 250.000 + 60.000 = 310.000$.
+
+Pengeluaran: $3 \times 18.000 = 54.000$.
+
+Sisa: $310.000 - 54.000 = 256.000$.
+
+Kas kecil: $10\% \times 250.000 = 25.000$.
+
+Saldo akhir: $256.000 + 25.000 = 281.000$.
+
+Deposit diambil dari sisa sebelum kas kecil. Setengah sisa: $256.000 \div 2 = 128.000$.
+
+Bima memeriksa dengan cara lain. Ia menghitung pengeluaran lebih dulu, lalu memasukkannya sebagai bilangan negatif.
+
+$$250.000 + 60.000 + (-54.000) + 25.000 = 281.000$$
+
+Hasilnya sama. "Jadi tandanya yang penting, bukan cuma angkanya," katanya.
+
+:::tip
+**Catatan Nara.** Sebelum menghitung, tandai operasi yang harus dikerjakan lebih dulu. Kalau ada pembagian atau persen yang berlaku untuk seluruh jumlah, pasang tanda kurung.
+:::
+
+## 5. Kembali ke misi
+
+Nara menyalin hasil akhir ke buku kas dengan rapi. Di kolom bawah ia menulis: saldo Rp281.000, deposit Rp128.000, sisa kas Rp153.000.
+
+"Jadi cukup untuk setoran?" tanya Bima.
+
+"Cukup," kata Nara. "Dan masih ada uang untuk membeli tali dan label harga."
+
+Kiki menunjuk baris yang tadi dihitung Bima. "Kalau kamu menulis tanpa kurung, hasilnya dua ratus delapan puluh tiga ribu. Uang tambahan itu dari mana?"
+
+"Tidak dari mana-mana," kata Bima. "Aku cuma membagi angka yang salah."
+
+Pak Rahmat menutup teko. "Kalau satu baris punya dua tanda kurung, mana yang kamu kerjakan lebih dulu?"
+
+"Yang di dalam," kata Kiki. "Kalau ada kurung di dalam kurung?"
+
+Nara menggambar kurung kecil di dalam kurung besar. "Yang paling dalam dulu, lalu keluar."
+
+Bima menempelkan hasil akhir di papan, tepat di bawah hitungan mundur. "Semoga tidak ada transaksi baru sebelum Jumat."
+
+Kiki sudah menulis pertanyaan berikutnya di buku. "Kalau persennya dihitung dari saldo akhir, bukan saldo awal, apakah jumlahnya berubah?"
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="number-mixed" />
+
+<LessonComplete lessonId="g7-numbers-mixed" />

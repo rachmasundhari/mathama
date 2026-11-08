@@ -1,0 +1,151 @@
+---
+title: "Siapa yang dipanggil dua kali?"
+sidebar_position: 1
+slug: /grade-7/sets/concept
+---
+
+import VennLab from '@site/src/components/VennLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · HIMPUNAN · 12 MENIT</div>
+
+# Siapa yang dipanggil dua kali?
+
+**Tujuan belajar:** Menulis himpunan dalam bentuk daftar dan bentuk aturan, lalu menentukan anggota dan banyak anggotanya.
+
+## 1. Dua kolom di papan tulis
+
+Selasa sore, ruang 7B masih menyimpan sisa pelajaran pagi. Di sudut papan tulis ada tulisan "PR kemarin" yang belum dihapus. Jam dinding menunjukkan pukul tiga lewat lima menit, jadi Bima menganggap dirinya tepat waktu.
+
+Nara berdiri di depan papan dengan spidol biru. "Pekan Angka tinggal dua minggu. Kita perlu daftar peserta untuk setiap stan."
+
+Ia menggambar dua kolom. Dua stan lain sudah punya daftar sendiri, jadi Nara mulai dari dua yang paling ramai. Kolom kiri diberi judul STAN ROBOTIK, kolom kanan STAN KUIS. Nama-nama dari lembar pendaftaran di kantin ia salin berurutan.
+
+"Robotik delapan belas nama," kata Bima sambil menghitung. "Kuis lima belas. Berarti tiga puluh tiga peserta."
+
+Kiki mengangkat tangan. "Kelas tujuh kan tiga puluh dua orang."
+
+Bima mengetuk meja. "Berarti ada satu nama lebih. Atau ada yang salah tulis."
+
+Nara memeriksa kolomnya. "Beberapa anak ikut dua stan. Aku menulis nama mereka di dua kolom."
+
+"Kalau begitu coret yang dobel," kata Bima. Ia mengambil spidol dan mulai mencoret. Raka di kolom kuis. Sari di kolom robotik. Dito di kolom kuis.
+
+Setelah beberapa menit ia berhenti. "Sisa dua puluh enam." Ia menghitung ulang. "Dua puluh enam, tapi aku tidak yakin tujuh nama yang aku coret semuanya dobel."
+
+Kiki menunjuk papan. "Kok bisa? Kamu baru saja mencoretnya."
+
+"Aku mencoret nama yang aku ingat," kata Bima. "Kalau ada nama yang sama tapi orangnya beda, atau nama yang muncul dua kali di kolom yang sama, aku tidak tahu."
+
+Nara mengangguk pelan. "Dan setelah dicoret, aku juga tidak tahu Sari ikut stan yang mana."
+
+## 2. Kumpulan yang batasnya jelas
+
+Pak Rahmat masuk membawa termos teh. Ia meletakkannya di meja, lalu melihat papan tanpa mengambil spidol. "Kalau satu nama muncul dua kali, apakah orangnya jadi dua?"
+
+"Tidak, Bu," kata Kiki.
+
+"Lalu apa yang sebenarnya kalian hitung?"
+
+Nara menatap kolomnya. "Nama, Bu. Bukan orang."
+
+"Kalau begitu, kalian perlu cara menulis kumpulan nama yang tidak membuat satu orang terhitung dua kali."
+
+Dalam matematika, **himpunan** adalah kumpulan objek yang batasnya jelas. Objek di dalamnya disebut **anggota**. Batas yang jelas berarti kamu bisa memutuskan apakah suatu objek masuk atau tidak. "Siswa kelas tujuh yang namanya ada di lembar pendaftaran stan robotik" punya batas jelas karena lembar itu ada. "Siswa yang suka robot" tidak jelas, karena kata suka bergantung pada siapa yang ditanya.
+
+Himpunan biasanya diberi nama dengan huruf kapital. Anggotanya ditulis di antara kurung kurawal dan dipisahkan koma. Bentuk ini disebut **bentuk daftar** atau bentuk tabulasi.
+
+$$T = \{\text{Raka}, \text{Nara}, \text{Sari}, \text{Adi}\}$$
+
+Nama yang sama cukup ditulis sekali. Urutan penulisan juga tidak mengubah himpunan. Himpunan $T$ di atas punya empat anggota, jadi $n(T) = 4$. Tanda $\in$ berarti anggota, sedangkan $\notin$ berarti bukan anggota. Raka anggota $T$ ditulis $\text{Raka} \in T$. Dito bukan anggota $T$ ditulis $\text{Dito} \notin T$.
+
+Daftar panjang bisa diganti dengan aturan. Bentuk ini disebut **notasi pembentuk himpunan**.
+
+$$R = \{x \mid x \text{ siswa kelas 7 yang mendaftar stan robotik}\}$$
+
+Dibaca: himpunan semua $x$, dengan $x$ adalah siswa kelas 7 yang mendaftar stan robotik. Sebelum garis tegak, $x$ hanyalah nama sementara. Setelah garis tegak, syaratnya ditulis.
+
+Raka membuka buku sketsanya dan menggambar satu kotak besar berisi nama-nama. "Kalau digambar, himpunan itu seperti kotak. Yang penting batas kotaknya, bukan urutan isinya."
+
+Kiki menunjuk kotak itu. "Jadi kalau aku tulis Raka dua kali di dalam kurung, anggotanya tetap satu?"
+
+"Iya," kata Nara. "Nama yang sama cukup sekali. Kalau ditulis dua kali, tetap satu orang."
+
+:::note Kata Pak Rahmat
+Kalau batas himpunanmu tidak bisa kamu jelaskan ke orang lain, apakah kumpulan itu masih bisa disebut himpunan?
+:::
+
+## 3. Coba di meja kerja
+
+Kiki menarik kursinya ke dekat layar. "Geser jumlah di setiap daerah. Lihat angka $n(A)$ dan $n(A \cup B)$. Kalau satu orang masuk dua lingkaran, dia dihitung berapa kali?"
+
+<VennLab />
+
+Lab itu memisahkan empat daerah: hanya $A$, irisan $A$ dan $B$, hanya $B$, serta di luar keduanya. Coba hanya $A$ berisi 4, irisan berisi 3, dan hanya $B$ berisi 2. Maka $n(A) = 4 + 3 = 7$, $n(B) = 3 + 2 = 5$, dan $n(A \cup B) = 4 + 3 + 2 = 9$.
+
+Bima menunjuk angka-angka itu. "Kalau aku jumlahkan $n(A)$ dan $n(B)$, hasilnya dua belas. Padahal gabungannya sembilan. Selisihnya tiga, yang dobel."
+
+"Jadi gabungan menghitung orang di tengah sekali saja," kata Kiki.
+
+"Betul," kata Nara. "Kalau dihitung dua kali, jumlahnya jadi lebih besar dari jumlah orang yang sebenarnya."
+
+## 4. Catatan klub
+
+Nara membuka halaman baru dan menulis judul: *Dua stan, satu kelas*.
+
+| Bentuk | Tulisan | Arti |
+|---|---|---|
+| Daftar | $R = \{\text{Raka}, \text{Nara}, \text{Sari}, \dots\}$ | anggota disebut satu per satu (sebagian) |
+| Aturan | $R = \{x \mid x \text{ siswa kelas 7 yang mendaftar stan robotik}\}$ | anggota ditentukan oleh syarat |
+| Banyak anggota | $n(R) = 18$ | himpunan $R$ punya 18 anggota |
+
+Ia lalu menghitung ulang isi papan tulis dengan urutan yang bisa diperiksa.
+
+1. Tulis setiap nama satu kali di kolom stan masing-masing. Robotik berisi 18 nama, kuis berisi 15 nama.
+2. Beri tanda pada nama yang muncul di dua kolom. Ada 7 nama bertanda.
+3. Jumlahkan seluruh entri: $18 + 15 = 33$.
+4. Kurangi nama yang dihitung dua kali: $33 - 7 = 26$.
+5. Kurangi dari seluruh kelas: $32 - 26 = 6$.
+
+Hasil langkah keempat adalah banyak siswa yang ikut paling sedikit satu stan. Hasil langkah kelima adalah siswa yang tidak mendaftar di kedua stan itu.
+
+Bima memeriksa dengan cara lain. "Kalau dua puluh enam nama unik dan tujuh nama dobel, entrinya dua puluh enam tambah tujuh, tiga puluh tiga. Cocok."
+
+Nara mengetuk buku dua kali. "Sekarang angkanya sama, tetapi aku masih butuh daftar nama yang dobel. Angka saja tidak cukup untuk membuat jadwal."
+
+:::warning Pertanyaan Kiki
+Kalau aku menulis nama Raka di kolom robotik dan kolom kuis, apakah aku punya dua himpunan atau satu himpunan dengan satu anggota yang muncul di dua tempat?
+:::
+
+## 5. Kembali ke misi
+
+Nara menghapus papan dan menulis ulang. Kali ini setiap nama muncul satu kali di kolomnya. Ia memberi judul himpunan dengan huruf kapital: $R$ untuk robotik, $K$ untuk kuis.
+
+Nara memeriksa coretan Bima dengan lembar pendaftaran asli. Ketujuhnya benar dobel.
+
+Bima mengambil spidol merah dan memberi titik pada tujuh nama yang ada di dua kolom. "Tujuh orang ini yang harus kita tanyakan dulu jadwalnya."
+
+Raka mengambil spidol dan menggambar dua lingkaran di bawah daftar. Lingkaran kiri ia beri label $R$, lingkaran kanan $K$. Tujuh nama bertitik ia tulis di bagian yang bertumpuk.
+
+Nara melihat gambar itu. "Bagian tengahnya untuk yang ikut dua stan?"
+
+"Iya," kata Raka. "Supaya kelihatan siapa yang dipanggil dua kali."
+
+Kiki menunjuk enam nama yang tidak masuk lingkaran mana pun. "Kalau mereka, di mana?"
+
+Raka mengangkat spidol, lalu berhenti. "Belum aku gambar."
+
+Pak Rahmat menuang teh ke cangkirnya. "Selasa depan kamu harus menunjukkan tujuh nama itu kepada panitia tanpa membaca dua daftar. Gambar seperti apa yang bisa dipakai?"
+
+Raka menatap dua lingkarannya. "Kalau digambar, mungkin lingkarannya harus punya tempat untuk yang di luar."
+
+Kiki menoleh. "Kalau ada anak yang ikut tiga stan, lingkarannya jadi tiga?"
+
+Pak Rahmat menunggu. Raka belum menjawab.
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="sets-concept" />
+
+<LessonComplete lessonId="g7-sets-concept" />

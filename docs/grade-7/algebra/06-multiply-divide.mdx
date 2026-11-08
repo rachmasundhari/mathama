@@ -1,0 +1,142 @@
+---
+title: "Tiga Kantong dan Satu Kurung"
+sidebar_position: 6
+slug: /grade-7/algebra/multiply-divide
+---
+
+import DistributiveLab from '@site/src/components/DistributiveLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · OPERASI ALJABAR · 12 MENIT</div>
+
+# Isi kotak yang tidak boleh tertinggal
+
+**Tujuan belajar:** Mengalikan dan membagi bentuk aljabar sederhana, termasuk membuka kurung dengan sifat distributif.
+
+## 1. Tiga kantong hadiah
+
+Nara meletakkan tiga kantong kain di meja. Setiap kantong berisi kotak pensil dan dua penghapus. Kotak pensilnya belum dibuka, jadi jumlah pensil di dalamnya belum diketahui. Nara memberi nama isi kotak itu $x$.
+
+"Setiap kantong isinya satu kotak pensil dan dua penghapus," kata Nara. "Ada tiga kantong. Berapa isinya seluruhnya?"
+
+Bima menulis cepat di papan: $3x + 2$.
+
+Kiki menghitung penghapus di meja. "Aku melihat enam penghapus. Kok di tulisanmu cuma dua?"
+
+Bima menatap tulisannya. "Oh. Dua penghapus itu isi satu kantong. Ada tiga kantong."
+
+Ia membuka ketiga kantong dan menata isinya. Setiap kantong punya satu kotak dan dua penghapus. Tiga kantong berarti tiga kotak dan enam penghapus. Tulisan yang benar adalah $3x + 6$.
+
+Raka menggambar tiga kotak besar, masing-masing berisi satu kotak kecil berlabel $x$ dan dua bulatan kecil. "Kalau digambar, angka tiga di luar kurung berlaku untuk keduanya, bukan cuma untuk $x$."
+
+Nara menulis bentuk asalnya di papan: $3(x + 2)$. "Ini membaca tiga kelompok, setiap kelompok berisi $x$ dan 2."
+
+## 2. Angka di luar kurung
+
+Mengalikan bentuk aljabar dengan satu bilangan memakai **sifat distributif**. Bilangan di luar kurung dikalikan ke setiap suku di dalam kurung.
+
+$$a(b + c) = ab + ac$$
+
+Untuk kantong hadiah:
+
+$$3(x + 2) = 3 \times x + 3 \times 2 = 3x + 6$$
+
+Kesalahan Bima terjadi karena ia hanya mengalikan suku pertama. Ia membayangkan tiga kotak pensil, lalu menambahkan dua penghapus sekali. Padahal setiap kantong menyumbang dua penghapus.
+
+Aturan yang sama berlaku untuk pengurangan.
+
+$$4(2x - 3) = 4 \times 2x - 4 \times 3 = 8x - 12$$
+
+Nara memberi contoh dengan angka. Jika $x = 5$, maka $4(2 \times 5 - 3) = 4(10 - 3) = 4 \times 7 = 28$. Bentuk lain, $8(5) - 12 = 40 - 12 = 28$. Keduanya sama.
+
+Pembagian bentuk aljabar memakai gagasan yang mirip. Setiap suku dibagi dengan pembaginya.
+
+$$\frac{12x}{4} = 3x$$
+
+$$\frac{15x + 10}{5} = \frac{15x}{5} + \frac{10}{5} = 3x + 2$$
+
+Pembagian bisa diperiksa dengan perkalian. $5(3x + 2) = 15x + 10$. Hasilnya kembali ke bentuk awal.
+
+:::danger
+**Jangan tertukar.** $3(x + 2)$ bukan $3x + 2$. Angka 3 harus dikalikan ke $x$ dan ke 2. Periksa dengan angka kecil, misalnya $x = 1$: $3(1 + 2) = 9$, sedangkan $3(1) + 2 = 5$.
+:::
+
+## 3. Coba di meja kerja
+
+Raka mendorong laptop ke tengah meja. "Ubah jumlah kelompok dan nilai $x$. Perhatikan kedua sisi persamaan."
+
+<DistributiveLab />
+
+Lab menampilkan $a(x + 2) = ax + 2a$. Atur jumlah kelompok 3 dan nilai $x = 4$. Sisi kiri menjadi $3(4 + 2) = 3 \times 6 = 18$. Sisi kanan menjadi $3(4) + 6 = 12 + 6 = 18$.
+
+Geser nilai $x$ menjadi 5. Sisi kiri $3(5 + 2) = 21$, sisi kanan $3(5) + 6 = 21$. Hasilnya tetap sama karena setiap kelompok mendapat tambahan 2.
+
+Bima menunjuk angka 2 di layar. "Jadi angka dua itu tidak berubah, tetapi jumlahnya ikut dikali."
+
+"Jumlah kelompoknya yang membuat dua itu menjadi enam," kata Nara. "Kalau kelompoknya empat, tambahannya menjadi delapan."
+
+Kiki mencoba jumlah kelompok 4. Ia menulis $4(x + 2) = 4x + 8$. Lab menunjukkan hasil yang sama.
+
+## 4. Catatan klub
+
+Nara menulis tiga contoh di buku kotak, lalu memeriksanya dengan substitusi.
+
+| Bentuk awal | Dibuka | Periksa untuk $x = 6$ |
+|---|---|---|
+| $3(x + 2)$ | $3x + 6$ | $3(8) = 24$ dan $18 + 6 = 24$ |
+| $4(2x - 3)$ | $8x - 12$ | $4(9) = 36$ dan $48 - 12 = 36$ |
+| $\frac{12x + 8}{4}$ | $3x + 2$ | $(72 + 8) \div 4 = 20$ dan $18 + 2 = 20$ |
+
+Langkah membuka kurung:
+
+1. Tulis bilangan di luar kurung.
+2. Kalikan bilangan itu ke setiap suku di dalam kurung.
+3. Jumlahkan atau kurangkan hasilnya sesuai tanda.
+4. Periksa dengan satu nilai $x$ yang mudah.
+
+Untuk pembagian, langkahnya:
+
+1. Bagi setiap suku dengan bilangan pembagi.
+2. Tulis hasil tiap suku.
+3. Periksa dengan mengalikan kembali.
+
+Mereka memakai contoh hadiah yang lebih besar. Ada 12 kantong, setiap kantong berisi $x$ pensil dan 2 penghapus. Seluruh isinya:
+
+$$12(x + 2) = 12x + 24$$
+
+Dengan $x = 6$, jumlah pensil $12 \times 6 = 72$ dan penghapus $12 \times 2 = 24$. Seluruhnya 96 benda.
+
+Bima menghitung dengan cara lain. "Dua belas kantong, tiap kantong delapan benda. $12 \times 8 = 96$." Hasilnya sama.
+
+:::tip
+**Catatan Nara.** Periksa hasil aljabar dengan angka. Kalau dua bentuk memberi hasil berbeda untuk $x$ yang sama, salah satu langkah pasti tertinggal.
+:::
+
+## 5. Kembali ke misi
+
+Nara menutup buku kas dan meletakkan tiga kantong contoh di depan Bima. "Sekarang kita tahu isi satu kotak, yaitu 6 pensil. Berapa isi dua belas kantong?"
+
+Bima menulis $12(6 + 2) = 12 \times 8 = 96$. Ia membuka satu kantong untuk memeriksa. Enam pensil dan dua penghapus, delapan benda. Dua belas kantong berarti 96 benda.
+
+Kiki memeriksa penghapusnya. "Dua belas kali dua, dua puluh empat. Pensilnya tujuh puluh dua. Jumlahnya sembilan puluh enam."
+
+Raka menambahkan label pada gambar kantong. "Kalau digambar, dua belas kelompok. Setiap kelompok punya satu kotak dan dua bulatan."
+
+Pak Rahmat berhenti di dekat meja. "Kalau setiap kantong berisi $x$ pensil dan 3 penghapus, bagaimana kamu menulis isi dua belas kantong?"
+
+Kiki menulis $12(x + 3)$. "Berarti $12x + 36$."
+
+"Kalau $x = 6$?" tanya Pak Rahmat.
+
+"Tujuh puluh dua pensil dan tiga puluh enam penghapus," kata Kiki. "Seluruhnya seratus delapan."
+
+Bima menutup kantong terakhir. "Semoga penghapusnya cukup. Kalau kurang, kita tinggal menambah kantongnya."
+
+Kiki menatap tulisannya. "Kalau angka di luar kurungnya berubah, apakah angka di dalam kurung juga berubah?"
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="algebra-multiply-divide" />
+
+<LessonComplete lessonId="g7-algebra-multiply-divide" />

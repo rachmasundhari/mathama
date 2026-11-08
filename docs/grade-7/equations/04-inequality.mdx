@@ -1,0 +1,161 @@
+---
+title: "Batas Anggaran Stan"
+sidebar_position: 4
+slug: /grade-7/equations/inequality
+---
+
+import InequalityLab from '@site/src/components/InequalityLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · PERSAMAAN DAN PERTIDAKSAMAAN · 12 MENIT</div>
+
+# Boleh miring, asal ke arah yang aman
+
+**Tujuan belajar:** Menentukan himpunan penyelesaian pertidaksamaan linear satu variabel dan menafsirkan batasnya pada masalah anggaran.
+
+## 1. Tiga belas pak dan selisih lima belas ribu
+
+Selasa sore, Pak Rahmat menemukan catatan klub di papan tulis. Di situ tertulis "12 pak hadiah, anggaran habis". Ia mengetuk papan dengan spidol.
+
+"Bagus kalian sudah menghitung," katanya. "Tapi kalian membaca amplopnya sebagai target."
+
+Nara mengangkat kepala. "Bukannya Rp900.000 itu anggaran?"
+
+"Itu batas maksimum. Kalau kurang, tidak apa-apa. Kalau lebih, tidak boleh."
+
+Kiki menutup buku pertanyaannya. "Jadi timbangannya boleh miring?"
+
+"Pertanyaan bagus," kata Pak Rahmat. "Coba jelaskan dulu, miring ke arah mana yang masih aman."
+
+Raka mengambil buku sketsa. Ia menggambar timbangan dengan tumpukan biaya di kiri dan amplop di kanan. Kali ini ia menambahkan penyangga kecil di bawah sisi kiri, sehingga sisi kiri boleh lebih ringan, tetapi tidak boleh lebih berat.
+
+Nara mencoba menghitung dengan 13 pak. Biaya tetap Rp720.000, satu pak Rp15.000. Totalnya $720\,000 + 195\,000 = 915\,000$.
+
+"Kurang Rp15.000," katanya.
+
+"Lebih," kata Bima. "Amplopnya cuma Rp900.000. Kita kelebihan Rp15.000."
+
+Nara mencoret angka 13. "Aku pikir selisih kecil masih boleh. Ternyata batasnya keras."
+
+Bima menunjuk buku kas. "Kalau kita menulis minus Rp915.000, saldonya minus Rp15.000. Tidak ada uang yang muncul tiba-tiba."
+
+## 2. Tanda yang mengizinkan beberapa jawaban
+
+Persamaan menuntut kedua sisi sama. Pertidaksamaan memberi aturan tentang sisi mana yang boleh lebih besar. Tanda yang dipakai:
+
+| Tanda | Dibaca | Arti |
+|---|---|---|
+| $<$ | kurang dari | nilai di kiri lebih kecil, batas tidak termasuk |
+| $\le$ | kurang dari atau sama dengan | nilai di kiri lebih kecil atau sama, batas termasuk |
+| $>$ | lebih dari | nilai di kiri lebih besar, batas tidak termasuk |
+| $\ge$ | lebih dari atau sama dengan | nilai di kiri lebih besar atau sama, batas termasuk |
+
+Kasus klub ditulis seperti ini:
+
+$$720\,000 + 15\,000p \le 900\,000$$
+
+Huruf $p$ adalah banyak pak hadiah. Tanda $\le$ berarti biaya tidak boleh melebihi Rp900.000, tetapi boleh kurang.
+
+Kurangi $720\,000$ pada kedua sisi:
+
+$$15\,000p \le 180\,000$$
+
+Bagi kedua sisi dengan $15\,000$. Angka ini positif, jadi arah tanda tidak berubah:
+
+$$p \le 12$$
+
+Semua bilangan cacah dari 0 sampai 12 memenuhi pertidaksamaan itu. Himpunan penyelesaiannya adalah $\{0, 1, 2, \ldots, 12\}$. Angka 12 disebut **batas**, dan karena tandanya $\le$, batas itu ikut termasuk.
+
+"Jadi kita boleh membeli sepuluh pak," kata Nara. "Atau dua belas."
+
+"Boleh," kata Pak Rahmat. "Yang tidak boleh tiga belas."
+
+Kiki menatap baris terakhir. "Kalau tandanya cuma $<$, dua belasnya masih boleh?"
+
+"Tidak," kata Nara. "Dua belas jadi batas yang tidak termasuk. Paling banyak sebelas."
+
+:::danger Jangan tertukar
+Pada $p \le 12$, nilai 12 memenuhi. Pada $p < 12$, nilai 12 tidak memenuhi. Saat membagi atau mengalikan kedua sisi dengan bilangan negatif, arah tanda juga berbalik. Contoh: $-2p > 6$ menjadi $p < -3$.
+:::
+
+## 3. Coba di meja kerja
+
+Bima membuka lab di layar. "Aku mau lihat daerah yang boleh, bukan cuma satu titik."
+
+<InequalityLab />
+
+Atur $a = 2$, $b = 3$, dan $c = 11$. Pilih tanda $\le$. Pertidaksamaannya menjadi $2x + 3 \le 11$. Lab menghitung batas $(11 - 3) \div 2 = 4$, lalu menulis $x \le 4$. Garis bilangan diarsir ke kiri dari titik 4, dan titiknya penuh karena batas termasuk.
+
+Ubah tandanya menjadi $<$. Tulisan berubah menjadi $x < 4$, dan lingkaran di titik 4 menjadi kosong. Nilai 4 tidak lagi memenuhi.
+
+Sekarang pilih tanda $>$. Arsiran pindah ke kanan. Nara memperhatikan bahwa batasnya tetap 4, tetapi arah daerah yang memenuhi berubah.
+
+"Jadi tandanya menentukan mana yang boleh," kata Bima. "Bukan cuma satu titik yang dicari."
+
+Nara mencoba $a = 3$, $b = 2$, dan $c = 17$ dengan tanda $\le$. Batasnya $(17 - 2) \div 3 = 5$, jadi $x \le 5$. Ia memeriksa $x = 5$: $17 \le 17$, benar. Ia memeriksa $x = 6$: $20 \le 17$, salah.
+
+## 4. Catatan klub
+
+Nara menulis judul baru di buku kas: *Batas pak hadiah*.
+
+Biaya tetap Rp720.000 terdiri dari panggung, spanduk, dan empat meja. Setiap pak hadiah Rp15.000.
+
+$$720\,000 + 15\,000p \le 900\,000$$
+
+Langkah 1, kurangi $720\,000$ pada kedua sisi:
+
+$$15\,000p \le 180\,000$$
+
+Langkah 2, bagi kedua sisi dengan $15\,000$:
+
+$$p \le 12$$
+
+Nara membuat tabel pemeriksaan.
+
+| $p$ | Total biaya | Dibandingkan dengan Rp900.000 | Memenuhi? |
+|---|---|---|---|
+| 10 | Rp870.000 | kurang Rp30.000 | ya |
+| 11 | Rp885.000 | kurang Rp15.000 | ya |
+| 12 | Rp900.000 | pas | ya |
+| 13 | Rp915.000 | lebih Rp15.000 | tidak |
+
+Bima mengecek satu baris dengan tangan. Untuk $p = 11$, $15\,000 \times 11 = 165\,000$, lalu $720\,000 + 165\,000 = 885\,000$. Angka itu di bawah Rp900.000, jadi masih aman.
+
+"Kalau $p = 13$, kita harus mengambil Rp15.000 dari pos lain," kata Nara. "Itu artinya mengurangi sesuatu yang sudah direncanakan."
+
+Pak Rahmat menunjuk tabel. "Jadi berapa pak yang kalian pilih?"
+
+Nara melihat anggaran lagi. "Sepuluh. Sisanya Rp30.000 untuk kejadian tak terduga."
+
+"Bukan dua belas?"
+
+"Dua belas boleh, tapi tidak perlu. Batasnya bukan target."
+
+## 5. Kembali ke misi
+
+Nara menulis rencana akhir di papan tulis. Empat meja, sepuluh pak hadiah, dan dana cadangan Rp30.000. Total biayanya Rp870.000.
+
+Bima memeriksa buku kas. Panggung minus Rp450.000, spanduk minus Rp90.000, meja minus Rp180.000, hadiah minus Rp150.000. Jumlahnya minus Rp870.000. Saldo amplop masih Rp30.000.
+
+"Masih ada sisa," katanya. "Dan tidak ada yang minus."
+
+Raka menyempurnakan gambar timbangannya. Sisi kiri lebih ringan dari sisi kanan, dan penyangga kecil menahan sisi kiri supaya tidak turun. "Kalau digambar, miringnya ke arah yang aman," katanya.
+
+Kiki mengamati gambar itu. "Jadi timbangan persamaan harus lurus, sedangkan timbangan pertidaksamaan boleh miring?"
+
+"Boleh miring selama sisi biaya tidak lebih berat," kata Nara.
+
+Kiki menulis di bukunya. "Kalau kita menambah satu pak lagi, totalnya Rp885.000. Masih aman."
+
+"Masih," kata Nara.
+
+Nara mengambil pensil. Di papan tulis, angka 12 masih terlihat samar di bawah tulisan baru.
+
+"Kalau harga meja naik Rp10.000 per meja, berapa pak hadiah yang harus kita lepas?" tanya Kiki.
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="equation-inequality" />
+
+<LessonComplete lessonId="g7-equations-inequality" />

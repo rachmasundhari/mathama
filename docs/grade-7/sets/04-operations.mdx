@@ -1,0 +1,161 @@
+---
+title: "Siapa yang masih kosong?"
+sidebar_position: 4
+slug: /grade-7/sets/operations
+---
+
+import VennLab from '@site/src/components/VennLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · HIMPUNAN · 12 MENIT</div>
+
+# Siapa yang masih kosong?
+
+**Tujuan belajar:** Menentukan irisan, gabungan, dan komplemen dua himpunan, lalu memakainya untuk membagi tugas Pekan Angka.
+
+## 1. Dua kelompok tugas
+
+Papan tulis di ruang 7B sudah penuh. Di kiri ada diagram Venn stan robotik dan stan kuis. Di kanan Nara menulis dua kelompok baru: PETUGAS STAN dan TIM DEKORASI.
+
+"Pendaftaran stan sudah selesai," kata Nara. "Sekarang kita bagi tugas. Delapan belas orang jadi petugas stan, empat belas orang masuk tim dekorasi."
+
+Bima langsung menjumlahkan. "Delapan belas tambah empat belas, tiga puluh dua. Kelas kita tiga puluh dua. Berarti semua orang sudah dapat tugas."
+
+Kiki melihat daftarnya. "Berarti tidak ada yang bisa bantu meja hadiah?"
+
+"Tidak ada," kata Bima. "Semua penuh."
+
+Nara mengetuk meja. "Tunggu. Enam orang masuk dua kelompok. Mereka jadi petugas stan sekaligus tim dekorasi."
+
+Bima mencoret hitungannya. "Kalau begitu tiga puluh dua kurang enam, dua puluh enam yang kosong."
+
+Kiki mengerutkan dahi. "Kok yang kosong dua puluh enam? Itu hampir seluruh kelas. Padahal yang dapat tugas juga banyak."
+
+Nara meletakkan spidol. "Aku juga bingung. Angka yang keluar tergantung cara kita mengurangi, dan aku tidak tahu mana yang benar."
+
+Pak Rahmat masuk membawa map. "Kalau satu orang masuk dua kelompok, dia perlu dihitung berapa kali saat kamu mencari yang belum dapat tugas?"
+
+"Belum tahu, Bu," kata Nara. "Itu yang sedang kami coba."
+
+## 2. Tiga daerah yang menjawab tiga pertanyaan
+
+Himpunan $A$ berisi petugas stan, himpunan $B$ berisi tim dekorasi. Himpunan semesta $S$ berisi tiga puluh dua siswa kelas tujuh.
+
+**Irisan** $A \cap B$ adalah himpunan anggota yang masuk $A$ dan $B$ sekaligus. Di soal ini, irisan berisi enam orang yang memegang dua tugas.
+
+**Gabungan** $A \cup B$ adalah himpunan anggota yang masuk $A$, atau $B$, atau keduanya. Gabungan menjawab pertanyaan "siapa saja yang sudah mendapat tugas".
+
+**Komplemen** $A^c$ adalah himpunan anggota $S$ yang bukan anggota $A$. Komplemen $A$ menjawab "siapa yang tidak masuk kelompok $A$". Komplemen dari gabungan, yaitu $(A \cup B)^c$, berisi orang yang tidak masuk $A$ maupun $B$.
+
+Nara menulis tiga daftar di buku. "Jadi ada tiga pertanyaan berbeda. Siapa yang di dua kelompok, siapa yang sudah dapat tugas, dan siapa yang belum dapat tugas."
+
+"Iya," kata Pak Rahmat. "Ketiganya butuh daerah yang berbeda."
+
+Hubungan antardaerah bisa ditulis begini:
+
+$$n(A \cup B) = n(A) + n(B) - n(A \cap B)$$
+
+Anggota irisan dihitung dua kali saat $n(A)$ dan $n(B)$ dijumlahkan, jadi harus dikurangi sekali. Untuk mencari yang belum mendapat tugas:
+
+$$n((A \cup B)^c) = n(S) - n(A \cup B)$$
+
+Bima menatap rumus itu. "Kalau aku tidak mengurangi irisan, jumlahnya jadi terlalu besar. Kalau aku mengurangi dari seluruh kelas, aku mengurangi orang yang salah."
+
+"Betul," kata Nara. "Kita kurangi dulu yang dobel, baru kurangi dari seluruh kelas."
+
+## 3. Coba di meja kerja
+
+Raka mendorong layar ke tengah meja. "Atur empat daerah. Lihat mana yang masuk gabungan dan mana yang masuk komplemen."
+
+<VennLab />
+
+Lab memakai angka kecil supaya mudah dibaca. Coba hanya $A$ berisi 4, irisan berisi 3, hanya $B$ berisi 2, dan di luar keduanya berisi 1. Maka $n(A) = 7$, $n(B) = 5$, $n(A \cup B) = 9$, dan $n((A \cup B)^c) = 1$.
+
+Bima menunjuk daerah luar. "Kalau aku mencari yang belum dapat tugas, aku lihat angka di luar dua lingkaran."
+
+"Iya," kata Nara. "Bukan angka di dalam lingkaran."
+
+Kiki menggeser irisan menjadi nol. "Kalau tidak ada yang dobel, gabungannya tinggal dijumlah?"
+
+"Kalau irisannya kosong, $n(A \cup B) = n(A) + n(B)$," kata Nara. "Tapi di kelas kita irisannya tidak kosong."
+
+## 4. Catatan klub
+
+Nara menyalin angka sebenarnya ke buku.
+
+- Seluruh kelas: $n(S) = 32$.
+- Petugas stan: $n(A) = 18$.
+- Tim dekorasi: $n(B) = 14$.
+- Masuk dua kelompok: $n(A \cap B) = 6$.
+
+Langkah penyelesaian:
+
+1. Hitung yang hanya petugas stan: $18 - 6 = 12$.
+2. Hitung yang hanya tim dekorasi: $14 - 6 = 8$.
+3. Hitung gabungan: $12 + 6 + 8 = 26$.
+4. Hitung komplemen: $32 - 26 = 6$.
+5. Periksa jumlah semua daerah: $12 + 6 + 8 + 6 = 32$.
+
+| Daerah | Pertanyaan | Banyak anggota |
+|---|---|---|
+| $A \setminus B$ | hanya petugas stan | 12 |
+| $A \cap B$ | dua kelompok | 6 |
+| $B \setminus A$ | hanya dekorasi | 8 |
+| $(A \cup B)^c$ | belum dapat tugas | 6 |
+
+Bima memeriksa dengan rumus. "$18 + 14 - 6 = 26$. Lalu $32 - 26 = 6$. Cocok."
+
+"Jadi yang kosong enam, bukan dua puluh enam," kata Kiki.
+
+"Enam," kata Nara. "Dua puluh enam itu yang sudah dapat tugas."
+
+Pak Rahmat menunjuk tabel. "Kalau aku bertanya siapa yang masuk petugas stan saja, daerah mana yang kamu baca?"
+
+"Baris pertama," kata Bima. "Dua belas."
+
+"Kalau aku bertanya siapa yang masuk petugas stan, termasuk yang dobel?"
+
+"Delapan belas," kata Nara. "Dua belas tambah enam."
+
+:::tip Catatan Nara
+Tentukan dulu pertanyaannya: hanya $A$, hanya $B$, keduanya, atau keduanya termasuk yang dobel. Setiap pertanyaan memakai daerah yang berbeda.
+:::
+
+## 5. Kembali ke misi
+
+Nara menulis tiga daftar di halaman baru. Daftar pertama berisi enam nama yang masuk dua kelompok. Daftar kedua berisi dua puluh enam nama yang sudah mendapat tugas. Daftar ketiga berisi enam nama yang belum mendapat tugas.
+
+"Enam nama ini kita pakai untuk meja hadiah," kata Bima. "Empat orang cukup. Sisanya dua orang jadi cadangan."
+
+Pak Rahmat membuka map. "Upacara pembukaan butuh delapan orang. Aku baru punya enam yang bebas."
+
+Bima menghitung cepat. "Berarti kurang dua. Kita pinjam dua orang dari daftar yang sudah dapat tugas."
+
+"Yang mana?" tanya Nara.
+
+"Yang cuma pegang satu tugas," kata Bima. "Dua orang dari tim dekorasi, karena dekorasi selesai Jumat."
+
+Nara menulis nama itu di kolom baru. "Aku tulis asalnya, supaya tidak ada yang dapat dua tugas tanpa tahu."
+
+Kiki melihat tiga daftar itu. "Kalau Raka ada di petugas stan dan tim dekorasi, dia pesan kaos satu atau dua?"
+
+Bima menjawab tanpa melihat. "Satu orang, satu kaos."
+
+"Tapi dia tetap masuk dua daftar," kata Kiki.
+
+"Iya," kata Nara. "Daftar tugas boleh dua. Kaosnya tetap satu."
+
+Pak Rahmat mengangkat cangkirnya. "Rapat panitia Jumat nanti. Kamu bawa daftar yang mana?"
+
+Nara menunjuk tiga halaman. "Tergantung pertanyaannya, Bu."
+
+Kiki menutup buku pertanyaannya. "Kalau nanti ada anak yang ikut tiga kegiatan, aku hitungnya pakai rumus yang mana?"
+
+Pak Rahmat menunggu. Nara menulis satu tanda tanya besar di bawah tiga daftarnya.
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="sets-operations" />
+
+<LessonComplete lessonId="g7-sets-operations" />

@@ -209,7 +209,7 @@ h1,h2,h3,h4 {letter-spacing: -.035em;}
 .chapterCard:hover .chapterSymbol {transform:rotate(-4deg) scale(1.04);}
 .chapterArrow svg {display:block;}
 .castCard {position:relative;}
-.castPortrait {aspect-ratio:1/1;height:auto;position:relative;border-bottom:1px solid rgba(15,107,143,.08);background:#ffffff;}
+.castPortrait {width:100%;aspect-ratio:1/1;height:auto;position:relative;border-bottom:1px solid rgba(15,107,143,.08);background:#ffffff;}
 .castPortrait img {object-position:center center;}
 .castPortrait::after {content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 62%,rgba(10,79,107,.16));pointer-events:none;}
 .castCard:hover .castPortrait img {transform:scale(1.035);}
@@ -425,11 +425,11 @@ h1,h2,h3,h4 {letter-spacing: -.035em;}
 
 /* Cast and story */
 .castSection {background:#fff;padding:95px 0 105px;}
-.castGrid {display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.castGrid {display:grid;grid-template-columns:repeat(5,1fr);gap:18px;}
 .castCard {background:#f7fbfd;border:1px solid #dce8ee;border-radius:20px;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease;}
 .castCard:hover {transform:translateY(-4px);box-shadow:0 14px 30px rgba(20,56,45,.09);}
 .castPortrait {height:225px;overflow:hidden;background:#dce8ee;}
-.castPortrait img {width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
+.castPortrait img {width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;}
 .castCard>div:last-child {padding:17px 19px 21px;}
 .castCard span {font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#0f6b8f;}
 .castCard h3 {font-size:21px;margin:5px 0 4px;}
@@ -578,7 +578,7 @@ h1,h2,h3,h4 {letter-spacing: -.035em;}
 @media (max-width:720px) {
   .castSection {padding:60px 0;}
   .castGrid,.aboutCast {grid-template-columns:repeat(2,1fr);gap:11px;}
-  .castPortrait {height:180px;}
+  .castPortrait {height:auto;}
   .castCard>div:last-child {padding:13px;}
   .castCard h3 {font-size:18px;}
   .fractionStage {grid-template-columns:1fr;}
@@ -595,7 +595,7 @@ h1,h2,h3,h4 {letter-spacing: -.035em;}
 }
 @media (max-width:460px) {
   .castGrid,.aboutCast {grid-template-columns:1fr;}
-  .castPortrait {height:260px;}
+  .castPortrait {height:auto;}
   .heroCopy h1 {font-size:clamp(30px,8.6vw,36px);letter-spacing:-.05em;overflow-wrap:break-word;}
   .heroCopy>p {font-size:14px;line-height:1.75;}
   .heroVisual {padding:18px 0 14px;}
@@ -646,4 +646,49 @@ body {caret-color:var(--c-ocean);}
   .practiceList {max-height:520px;overflow-y:auto;padding-right:8px;scrollbar-width:thin;}
 }
 
-.theme-doc-markdown {max-width:74ch;}
+.theme-doc-markdown {max-width:900px;margin-left:auto;margin-right:auto;}
+
+/* Cast cards show names only. */
+.castCard>.castName {padding:14px 18px 18px;}
+.castName h3 {margin:0;font-size:21px;}
+
+/* About page: group illustration. */
+.clubGroup {margin:0 0 34px;border:1px solid #dce8ee;border-radius:20px;overflow:hidden;background:#ffffff;}
+.clubGroup img {display:block;width:100%;height:auto;}
+.clubGroup figcaption {padding:10px 16px;border-top:1px solid #e8f2f7;font-size:11px;color:#5f747b;}
+
+/* Lesson illustrations, 2026-11-08 */
+.lessonIllustration {display:block;width:100%;height:auto;margin:24px 0 30px;border:1px solid var(--c-sky);border-radius:16px;background:var(--c-ice);box-shadow:0 10px 24px rgba(15,80,105,.08);}
+@media (max-width:720px){.lessonIllustration{margin:18px 0 24px;border-radius:12px;}}
+
+/* Impeccable layout pass: tighten the vertical rhythm. */
+.heroSection {padding:72px 0 72px;}
+.stepsSection,.chaptersSection,.castSection,.spotlightSection {padding:64px 0;}
+.bottomCta {padding:0 0 80px;}
+.sectionHeading {margin-bottom:28px;}
+.chapterCard {min-height:270px;}
+.stepCard {min-height:200px;}
+@media (max-width:996px) {
+  .heroSection {padding:48px 0 52px;}
+  .stepsSection,.chaptersSection,.castSection,.spotlightSection {padding:48px 0;}
+  .bottomCta {padding:0 0 60px;}
+}
+@media (max-width:460px) {
+  .heroSection {padding:40px 0 44px;}
+  .stepsSection,.chaptersSection,.castSection,.spotlightSection {padding:40px 0;}
+}
+
+/* One chapter surface and one accent across the catalogue. */
+.chapterGrid .chapterCard {background:var(--c-ice)!important;}
+.chapterGrid .chapterCard::after {background:var(--c-teal)!important;}
+.catalogGrid .catalogArt[data-chapter] {background:var(--c-ice)!important;}
+
+/* Second spacing pass: remove the remaining dead bands. */
+.heroSection {padding:64px 0 64px;}
+.stepsSection,.chaptersSection,.castSection,.spotlightSection {padding:52px 0;}
+.bottomCta {padding:0 0 72px;}
+@media (max-width:996px) {
+  .heroSection {padding:44px 0 48px;}
+  .stepsSection,.chaptersSection,.castSection,.spotlightSection {padding:42px 0;}
+  .bottomCta {padding:0 0 56px;}
+}

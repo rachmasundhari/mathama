@@ -1,0 +1,152 @@
+---
+title: "Diskon 20% Bukan Potongan Rp20"
+sidebar_position: 3
+slug: /grade-7/social/discount-tax
+---
+
+import PercentLab from '@site/src/components/PercentLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · ARITMETIKA SOSIAL · 12 MENIT</div>
+
+# Harga yang berubah setelah satu kata
+
+**Tujuan belajar:** Menghitung harga setelah diskon atau pajak dan membedakan arah keduanya.
+
+## 1. Tag harga dan satu coretan
+
+Raka menata 60 tag harga di meja. Setiap tag berbunyi "Kue Rp5.000". Ia baru selesai menebalkan angkanya ketika Pak Rahmat masuk membawa map.
+
+"Untuk anggota klub, kita beri diskon 20%," kata Pak Rahmat.
+
+Kiki langsung mengambil spidol. "Berarti Rp5.000 dikurangi 20." Ia menulis Rp4.980 di satu tag.
+
+Bima melihat tag itu. "Diskonnya cuma Rp20. Pembeli tidak akan merasa dapat apa-apa."
+
+"Kan tulisannya 20," kata Kiki.
+
+Nara mengambil kalkulator dari tangan Bima. "Coba hitung 20% dari 5.000."
+
+Bima mengetik. "1.000."
+
+"Berarti harganya jadi 4.000," kata Nara. "Bukan 4.980."
+
+Kiki membandingkan dua tag di tangannya. "Kok bisa beda jauh?"
+
+"Karena 20 itu angka persen, bukan rupiah," kata Pak Rahmat. "Sekarang kita lihat dari mana angka itu dihitung."
+
+## 2. Diskon dihitung dari harga awal
+
+Nara menulis di papan: *diskon = potongan harga*. Besarnya diskon adalah persentase dari harga sebelum diskon.
+
+$$\text{diskon} = \frac{p}{100} \times \text{harga awal}$$
+
+$$\text{harga bayar} = \text{harga awal} - \text{diskon}$$
+
+Pada harga Rp5.000 dengan diskon 20%, potongannya $0{,}2 \times 5.000 = 1.000$. Harga bayar $5.000 - 1.000 = 4.000$.
+
+"Cara cepatnya," kata Nara, "kalau diskon 20%, pembeli membayar 80% dari harga awal. $0{,}8 \times 5.000 = 4.000$."
+
+Bima mengangguk. "Jadi 20% itu bagian yang hilang. 80% itu bagian yang dibayar."
+
+Kalau diskonnya 35%, pembeli membayar 65% dari harga awal. Nara menulis bentuk umumnya: untuk diskon $p\%$, pembeli membayar $(100-p)\%$ dari harga awal. Untuk pajak $p\%$, pembeli membayar $(100+p)\%$ dari harga sebelum pajak.
+
+Pajak bergerak ke arah sebaliknya. Pajak menambah harga, dan dihitung dari harga sebelum pajak.
+
+$$\text{pajak} = \frac{p}{100} \times \text{harga sebelum pajak}$$
+
+$$\text{harga bayar} = \text{harga sebelum pajak} + \text{pajak}$$
+
+"Kalau harga barang Rp72.000 dan pajaknya 10%, berapa yang dibayar?" tanya Pak Rahmat.
+
+Kiki menghitung. "Pajaknya 7.200. Totalnya 79.200."
+
+"Bedanya dengan diskon apa?" tanya Pak Rahmat lagi.
+
+"Kalau diskon, potongannya mengurangi," kata Kiki. "Kalau pajak, tambahannya menambah."
+
+:::danger Jangan tertukar
+Diskon dan pajak sama-sama dihitung dari harga awal. Yang berbeda hanya arah: diskon mengurangi, pajak menambah. Jangan menghitung pajak dari harga yang sudah didiskon kecuali soal memang mengatakannya.
+:::
+
+## 3. Coba di meja kerja
+
+Raka menyalakan layar lab. "Coba harga yang sama, lalu ganti arahnya. Lihat angkanya."
+
+<PercentLab />
+
+Dengan harga awal Rp80.000 dan persentase 25%, mode diskon memberi potongan Rp20.000. Harga akhirnya Rp60.000. Bima menekan tombol pajak tanpa mengubah angka. Harga akhirnya menjadi Rp100.000.
+
+"Persentasenya sama," kata Bima. "Hasilnya beda karena arahnya beda."
+
+"Kalau diskon 25%, pembeli bayar 75%," kata Nara. "Kalau pajak 25%, pembeli bayar 125%."
+
+Kiki mencoba persentase 10%. "Potongannya Rp8.000. Kalau pajak, tambahannya Rp8.000 juga."
+
+"Bagian persennya sama," kata Raka. "Yang berubah cuma tanda di depannya."
+
+Nara mencoba 5%. "Potongannya Rp4.000. Setengah dari potongan tadi."
+
+## 4. Catatan klub
+
+Nara menulis contoh pertama: harga kue untuk anggota klub.
+
+1. Harga awal satu kue Rp5.000.
+2. Diskon 20%: $0{,}2 \times 5.000 = 1.000$.
+3. Harga bayar: $5.000 - 1.000 = 4.000$.
+4. Periksa: $4.000 \div 5.000 = 0{,}8 = 80\%$. Pembeli membayar 80% dari harga awal.
+
+Untuk 60 kue, uang yang diterima adalah $60 \times 4.000 = 240.000$. Tanpa diskon, uangnya $60 \times 5.000 = 300.000$. Selisih Rp60.000 itu adalah total diskon.
+
+Contoh kedua adalah pajak pada nota supplier. Harga air minum Rp72.000. Pajak 10%.
+
+1. Pajak: $0{,}1 \times 72.000 = 7.200$.
+2. Total bayar: $72.000 + 7.200 = 79.200$.
+
+Nara menaruh kedua contoh dalam satu tabel.
+
+| Keterangan | Harga awal | Persen | Perubahan | Harga bayar |
+|---|---|---|---|---|
+| Diskon kue | Rp5.000 | 20% | −Rp1.000 | Rp4.000 |
+| Pajak air | Rp72.000 | 10% | +Rp7.200 | Rp79.200 |
+
+"Perhatikan kolom perubahan," kata Pak Rahmat. "Tanda minus dan plus itu penting. Banyak kesalahan terjadi karena tandanya hilang."
+
+Bima menambahkan satu catatan di bawah tabel. "Kalau diskon 20% lalu diskon 10% lagi, bukan berarti diskon 30%."
+
+Ia mengujinya dengan harga Rp100.000. Diskon 20% menyisakan Rp80.000. Diskon 10% berikutnya dihitung dari Rp80.000, yaitu Rp8.000. Harga akhirnya Rp72.000. Total potongannya Rp28.000, atau 28%, bukan 30%.
+
+"Karena diskon kedua dihitung dari harga yang sudah turun," kata Nara.
+
+## 5. Kembali ke misi
+
+Raka mencoret Rp4.980 dan menulis Rp4.000 di semua tag. Kiki menghitung ulang satu per satu untuk memastikan tidak ada yang tertinggal.
+
+Bima menjumlahkan uang yang akan masuk. "$60 \times 4.000 = 240.000$."
+
+"Kalau tanpa diskon?" tanya Pak Rahmat.
+
+"Rp300.000," kata Nara. "Berarti kita memberi potongan Rp60.000."
+
+Pak Rahmat menunjuk papan. "Kalau pembeli juga dikenai pajak 10%, berapa yang mereka bayar?"
+
+Nara menghitung. "Pajaknya Rp400. Totalnya Rp4.400 per kue."
+
+"Kalau pajak dihitung sebelum diskon, hasilnya bisa berbeda," kata Pak Rahmat. "Urutannya harus disebutkan."
+
+"Jadi kita tulis urutannya, bukan cuma hasil akhirnya," kata Nara.
+
+Kiki menutup buku tanyanya. "Jadi diskon dan pajak sama-sama persen, tapi arahnya selalu berlawanan?"
+
+Bima mengangkat kedua tag di tangannya. "Iya. Satu memotong, satu menambah."
+
+Kiki melihat tag terakhir. "Kalau dua-duanya ada di satu nota, mana yang dihitung dulu?"
+
+Pak Rahmat tersenyum dan menunjuk tumpukan nota berikutnya. "Itu pertanyaan untuk nota besok."
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="social-discount-tax" />
+
+<LessonComplete lessonId="g7-social-discount-tax" />

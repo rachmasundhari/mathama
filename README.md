@@ -1,9 +1,9 @@
 # Cakrawala — Interactive Grade 7 Mathematics
 
 Cakrawala is a Docusaurus + React + TypeScript site for junior-high mathematics.
-Every lesson is a scene in the story of **Klub Cakrawala**, a group of students
-in the fictional coastal town of Tanjung Cakrawala. The Grade 7 curriculum is
-complete; Grades 8 and 9 are placeholders.
+Every lesson is a scene in the story of the **Klub Matematika** at **SMP
+Cakrawala**, an ordinary secondary school preparing its small mathematics week.
+The Grade 7 curriculum is complete; Grades 8 and 9 are placeholders.
 
 The site is in Indonesian. Documentation and code are in English.
 
@@ -29,14 +29,14 @@ npm run serve      # inspect the build
 
 ## What is implemented
 
-- Six Grade 7 chapters, 19 lessons, 14 practice sets
-- Story-driven MDX lessons with recurring characters and one community mission
+- Nine ATP Grade 7 chapters, one enrichment chapter, 45 lessons, 40 practice sets
+- Story-driven MDX lessons with recurring characters and one preparation task
   per chapter
 - Interactive React labs, including a three.js 3D similarity lab
 - KaTeX math, quiz hints and explanations, local progress and best scores
 - Responsive layout, keyboard-accessible controls, reduced-motion support
 - Character portraits in `static/img/characters/`
-- Coast palette and visual guide at `/palette`
+- Sea palette and visual guide at `/palette`
 
 Grade 8 and 9 course pages are placeholders. There is no login, server-side
 grading, database, or analytics.
@@ -54,9 +54,15 @@ grading, database, or analytics.
 
 ## Story and characters
 
-The canon is `../agents/character-bible.md`. Ari notices, Naya organizes, Bima
-tests, Odi asks the obvious question, and Kak Rani guides with questions. Each
-chapter has one mission, from the lighthouse tide board to the town survey.
+The canon is `../agents/character-bible.md`; the chapter plan is
+`../agents/mission-map.md`; the cast visual brief is
+`../agents/illustration-sheet.md`. Raka notices and draws, Nara organizes, Bima
+tests, Kiki asks the obvious question, and Pak Rahmat guides with questions. Each
+chapter is one preparation task for Pekan Angka, from the class cash book to the
+student survey.
+
+All published Grade 7 lessons now follow the school canon: Raka, Nara, Bima,
+Kiki, and Pak Rahmat at SMP Cakrawala.
 
 Character portraits are generated illustrations stored in
 `static/img/characters/`.

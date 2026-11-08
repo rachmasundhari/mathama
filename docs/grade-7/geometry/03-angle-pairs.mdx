@@ -1,0 +1,152 @@
+---
+title: "Dua Kayu yang Menyilang"
+sidebar_position: 3
+slug: /grade-7/geometry/angle-pairs
+---
+
+import AngleLab from '@site/src/components/AngleLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · GARIS DAN SUDUT · 12 MENIT</div>
+
+# Empat sudut, satu titik
+
+**Tujuan belajar:** Menggunakan sifat sudut berpenyiku, berpelurus, dan bertolak belakang untuk menghitung sudut yang belum diketahui.
+
+## 1. Potongan yang tidak pas
+
+Raka menggambar dua bilah kayu yang menyilang di belakang latar panggung. Bentuknya seperti huruf X, dengan titik silang tepat di tengah. Pak Rahmat menyetujui rancangan itu karena papan jadi lebih kokoh dan tidak mudah goyang.
+
+Bima memotong dua bilah sepanjang 160 cm. Ia meletakkannya menyilang di lantai, lalu mengukur sudut di salah satu sisi. "Seratus dua puluh derajat."
+
+Nara mencatat. "Berarti sudut yang lain juga 120."
+
+Bima memotong empat balok kecil sebagai pengunci di setiap sisi silang. Semuanya ia potong dengan sudut $120^\circ$. Ketika balok pertama ditempelkan, ujungnya melewati kayu sejauh hampir dua sentimeter. Balok kedua juga tidak duduk rapat.
+
+"Kayunya bengkok," kata Bima.
+
+Raka memutar salah satu bilah. "Kalau dipaksa, X-nya jadi tidak simetris."
+
+Kiki mengambil busur derajat dan mengukur sudut di sebelah balok yang tidak muat. "Yang ini 60 derajat."
+
+Bima menatap empat sudut di titik silang. "Tadi aku ukur 120. Kok sekarang ada 60?"
+
+Nara mengetuk buku catatannya dua kali. "Kamu mengukur sudut yang berbeda. Di titik silang ini ada empat sudut, bukan satu."
+
+## 2. Sudut yang berdampingan dan yang saling membelakangi
+
+Pada titik potong dua garis, sudut-sudut yang bersebelahan berbagi satu kaki dan menutupi satu garis lurus. Karena satu garis lurus besarnya $180^\circ$, jumlah dua sudut bersebelahan itu $180^\circ$. Pasangan seperti ini disebut **sudut berpelurus**.
+
+Sudut yang saling membelakangi titik potong disebut **sudut bertolak belakang**. Keduanya tidak berbagi kaki, tetapi menghadap arah yang berlawanan. Besarnya selalu sama.
+
+Ada satu pasangan lagi yang berguna: dua sudut yang jumlahnya $90^\circ$ disebut **sudut berpenyiku**. Pasangan ini biasanya muncul di dalam sudut siku-siku, misalnya pada sambungan dua kayu yang dipotong miring.
+
+<figure style={{maxWidth: '560px', margin: '1.5rem auto'}}>
+  <svg viewBox="0 0 600 310" width="100%" role="img" aria-label="Dua garis berpotongan membentuk sudut 120 derajat dan 60 derajat">
+    <line x1="60" y1="150" x2="540" y2="150" stroke="var(--c-ocean)" strokeWidth="4"/>
+    <line x1="225" y1="280" x2="375" y2="20" stroke="var(--c-teal)" strokeWidth="4"/>
+    <circle cx="300" cy="150" r="6" fill="var(--c-ink)"/>
+    <text x="386" y="112" fontSize="18" fontWeight="800" fill="var(--c-ocean)">60°</text>
+    <text x="180" y="112" fontSize="18" fontWeight="800" fill="var(--c-ocean)">120°</text>
+    <text x="176" y="222" fontSize="18" fontWeight="800" fill="var(--c-ocean)">60°</text>
+    <text x="386" y="222" fontSize="18" fontWeight="800" fill="var(--c-ocean)">120°</text>
+    <text x="60" y="292" fontSize="13" fill="var(--c-muted)">dua garis berpotongan</text>
+  </svg>
+  <figcaption style={{textAlign: 'center', fontSize: '0.9rem', color: 'var(--c-muted)'}}>
+    Sudut 120° dan 60° bersebelahan dan berjumlah 180°. Sudut yang saling membelakangi sama besar.
+  </figcaption>
+</figure>
+
+Pada titik silang tadi, dua sudut yang berpelurus berjumlah $180^\circ$. Kalau satu sudutnya $120^\circ$, sudut di sebelahnya adalah $60^\circ$. Sudut $120^\circ$ yang berada di seberang juga $120^\circ$, dan sudut $60^\circ$ di seberangnya juga $60^\circ$.
+
+"Jadi di titik silang ini cuma ada dua ukuran," kata Raka. "120 dan 60."
+
+"Dan yang saling membelakangi selalu sama," tambah Nara. "Garisnya lurus, dan itu yang membuat kedua sudut di seberang sama besar."
+
+Bima mengambil balok pengunci yang tadi gagal. "Berarti aku salah memilih pasangan. Aku mengukur 120, lalu memotong semua balok 120. Padahal dua balok harus 60."
+
+:::danger Jangan tertukar
+Sudut bertolak belakang sama besar. Sudut berpelurus berjumlah $180^\circ$, jadi nilainya belum tentu sama.
+:::
+
+## 3. Coba di meja kerja
+
+Raka menggeser buku sketsanya. "Geser sudutnya. Perhatikan angka yang satu dan angka di sebelahnya. Jumlahnya selalu 180 derajat."
+
+<AngleLab />
+
+Lab menampilkan dua garis sejajar yang dipotong satu garis miring. Kotak **sudut dalam sepihak** menunjukkan sudut yang berpelurus dengan sudut acuan. Saat sudutnya $55^\circ$, kotak itu menunjukkan $125^\circ$. Saat sudutnya $90^\circ$, keduanya $90^\circ$.
+
+Kiki menggeser slider ke 120. "Yang satu 120, yang lain 60. Sama seperti di kayu tadi."
+
+"Kalau digeser ke 150?" tanya Bima.
+
+"Yang lain 30." Kiki menulis kedua angka di bukunya. "Jumlahnya tetap 180."
+
+Nara menambahkan, "Kalau kedua sudutnya sama besar, berarti masing-masing 90. Itu satu-satunya pasangan berpelurus yang sama."
+
+## 4. Catatan klub
+
+Nara menggambar titik silang dan menulis satu sudut yang diketahui: $120^\circ$.
+
+Langkah 1. Sudut di sebelahnya berpelurus.
+
+$$120^\circ + x = 180^\circ$$
+
+$$x = 60^\circ$$
+
+Langkah 2. Sudut di seberang $120^\circ$ bertolak belakang, jadi besarnya $120^\circ$.
+
+Langkah 3. Sudut di seberang $60^\circ$ juga $60^\circ$.
+
+Keempat sudut itu adalah $120^\circ$, $60^\circ$, $120^\circ$, dan $60^\circ$.
+
+Nara menambahkan contoh kedua dengan bentuk aljabar. Dua sudut berpenyiku besarnya $3x$ dan $2x$.
+
+$$3x + 2x = 90^\circ$$
+
+$$5x = 90^\circ$$
+
+$$x = 18^\circ$$
+
+Sudut pertama $3(18^\circ) = 54^\circ$. Sudut kedua $2(18^\circ) = 36^\circ$. Jumlahnya $90^\circ$, jadi hasilnya masuk akal.
+
+Bima memeriksa dengan busur. "54 dan 36. Pas."
+
+| Pasangan sudut | Hubungan | Jumlah atau besar |
+|---|---|---|
+| $120^\circ$ dan $60^\circ$ | berpelurus | berjumlah $180^\circ$ |
+| $120^\circ$ dan $120^\circ$ | bertolak belakang | sama besar |
+| $54^\circ$ dan $36^\circ$ | berpenyiku | berjumlah $90^\circ$ |
+| $60^\circ$ dan $60^\circ$ | bertolak belakang | sama besar |
+
+## 5. Kembali ke misi
+
+Bima memotong balok baru. Dua balok dibuat dengan sudut $120^\circ$, dua balok lain dengan sudut $60^\circ$. Ia menempelkan balok 120 di sisi yang lebar, lalu balok 60 di sisi yang sempit.
+
+Semua balok duduk rapat. Tidak ada ujung yang menonjol.
+
+Raka mengangkat rangka X dan menempelkannya ke belakang papan. Nara memeriksa jarak papan ke lantai di kedua sisi. "Sama. Seratus delapan puluh sentimeter."
+
+Kiki mengukur sudut silang sekali lagi. "120 dan 60. Kali ini cocok."
+
+Pak Rahmat membawa termos ke dekat papan. "Kalau dua garis tidak berpotongan tepat di tengah, apakah sudut bertolak belakang masih sama?"
+
+Kiki menatap titik silang yang bergeser sedikit dari tengah. "Kayaknya iya. Yang berubah cuma panjang sisinya."
+
+"Bagaimana kamu bisa yakin?" tanya Pak Rahmat.
+
+Kiki membuka buku pertanyaannya, lalu menggambar dua garis yang menyilang tidak simetris. "Aku gambar dulu. Kalau garisnya tetap lurus, sudut yang membelakangi harus tetap sama."
+
+Bima menempelkan karton siku-siku ke salah satu sudut. "Kalau yang ini 90, yang seberang juga 90. Berarti X-nya bisa jadi tanda plus."
+
+Raka menggeleng. "Jangan. Nanti latarnya kelihatan seperti kotak obat."
+
+Kiki menutup buku pertanyaannya. "Tapi kalau titik silangnya digeser ke atas, apakah empat sudutnya masih 120 dan 60?"
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="geometry-angle-pairs" />
+
+<LessonComplete lessonId="g7-geometry-angle-pairs" />

@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "noEmit": true,
-    "strict": true
+    "strict": true,
+    "allowImportingTsExtensions": true
   },
   "include": ["src/**/*", "docs/**/*", "docusaurus.config.ts", "sidebars.ts"]
 }

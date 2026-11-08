@@ -1,3 +1,13 @@
+import {socialQuizzes} from './quizzes/social.ts';
+import {equationQuizzes} from './quizzes/equations.ts';
+import {geometryQuizzes} from './quizzes/geometry.ts';
+import {shapeQuizzes} from './quizzes/shapes.ts';
+import {setQuizzes} from './quizzes/sets.ts';
+import {numberQuizzes} from './quizzes/numbers.ts';
+import {ratioExtraQuizzes} from './quizzes/ratios-extra.ts';
+import {algebraExtraQuizzes} from './quizzes/algebra-extra.ts';
+import {dataExtraQuizzes} from './quizzes/data-extra.ts';
+
 export type Question = {
   id: string;
   kind: 'multiple-choice' | 'number';
@@ -9,9 +19,9 @@ export type Question = {
   explanation: string;
 };
 
-type Quiz = {title: string; description: string; questions: Question[]};
+export type Quiz = {title: string; description: string; questions: Question[]};
 
-export const quizBank: Record<string, Quiz> = {
+const baseQuizBank: Record<string, Quiz> = {
   'integer-basics': {
     title: 'Bilangan Bulat di Garis Bilangan',
     description: 'Membandingkan, mengurutkan, dan menghitung bilangan positif serta negatif.',
@@ -111,8 +121,8 @@ export const quizBank: Record<string, Quiz> = {
         hint: 'Bagi kedua bilangan dengan FPB-nya, yaitu 6.', explanation: '12 ÷ 6 = 2 dan 18 ÷ 6 = 3, jadi 2 : 3.'},
       {id: 'rb-02', kind: 'number', topic: 'Senilai', prompt: 'Jika 3 pulpen berharga Rp9.000, berapa harga 5 pulpen? (tulis angka rupiah tanpa titik)', answer: 15000,
         hint: 'Cari harga satu pulpen lebih dulu.', explanation: 'Satu pulpen Rp3.000, jadi 5 pulpen Rp15.000.'},
-      {id: 'rb-03', kind: 'number', topic: 'Rasio', prompt: 'Perbandingan kelereng Ari dan Bima adalah 2 : 5. Jika total 35 kelereng, berapa kelereng Ari?', answer: 10,
-        hint: 'Jumlah bagian = 2 + 5 = 7.', explanation: 'Satu bagian = 35 ÷ 7 = 5. Ari punya 2 × 5 = 10 kelereng.'},
+      {id: 'rb-03', kind: 'number', topic: 'Rasio', prompt: 'Perbandingan kelereng Raka dan Bima adalah 2 : 5. Jika total 35 kelereng, berapa kelereng Raka?', answer: 10,
+        hint: 'Jumlah bagian = 2 + 5 = 7.', explanation: 'Satu bagian = 35 ÷ 7 = 5. Raka punya 2 × 5 = 10 kelereng.'},
       {id: 'rb-04', kind: 'multiple-choice', topic: 'Senilai', prompt: 'Manakah contoh perbandingan senilai?',
         options: [{id: 'a', label: 'Banyak pekerja dan lama pekerjaan'}, {id: 'b', label: 'Kecepatan dan waktu tempuh'}, {id: 'c', label: 'Banyak barang dan total harga'}, {id: 'd', label: 'Jumlah anak dan jatah kue per anak'}], answer: 'c',
         hint: 'Senilai berarti kedua besaran naik atau turun bersama.', explanation: 'Semakin banyak barang, total harga semakin besar dengan rasio tetap.'},
@@ -265,4 +275,17 @@ export const quizBank: Record<string, Quiz> = {
         hint: 'Satu lingkaran penuh 360°.', explanation: '25% × 360° = 90°.'},
     ],
   },
+};
+
+export const quizBank: Record<string, Quiz> = {
+  ...baseQuizBank,
+  ...numberQuizzes,
+  ...ratioExtraQuizzes,
+  ...socialQuizzes,
+  ...algebraExtraQuizzes,
+  ...equationQuizzes,
+  ...geometryQuizzes,
+  ...shapeQuizzes,
+  ...setQuizzes,
+  ...dataExtraQuizzes,
 };

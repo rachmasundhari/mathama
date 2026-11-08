@@ -1,0 +1,155 @@
+---
+title: "Membagi Rata, Bukan Menebak"
+sidebar_position: 3
+slug: /grade-7/equations/multiply-divide
+---
+
+import EquationLab from '@site/src/components/EquationLab';
+import LessonComplete from '@site/src/components/LessonComplete';
+import QuizRunner from '@site/src/components/QuizRunner';
+
+<div className="lessonKicker">KELAS 7 · PERSAMAAN DAN PERTIDAKSAMAAN · 12 MENIT</div>
+
+# Lima jam atau lima koma enam jam?
+
+**Tujuan belajar:** Menyelesaikan persamaan berbentuk $ax = b$ dan persamaan dua langkah dengan membagi kedua sisi, lalu memeriksa hasilnya pada konteks nyata.
+
+## 1. Tagihan panggung yang belum dibaca sampai habis
+
+Selasa sore, Bima membawa selembar tagihan dari ruang serbaguna. Ia meletakkannya di meja klub dan menunjuk satu baris kecil di bagian bawah.
+
+"Sewa panggung Rp450.000," katanya. "Sudah termasuk biaya pasang Rp50.000. Sisanya dihitung per jam, Rp80.000 per jam."
+
+Nara mengambil kalkulator. "Berarti tinggal bagi. Rp450.000 dibagi Rp80.000."
+
+Layar kalkulator menunjukkan 5,625.
+
+"Lima koma enam dua lima jam," kata Nara. "Tulis saja 5,625 jam di jadwal."
+
+Kiki melihat jadwal itu. "Jam berapa itu? Aku belum pernah lihat jam 5,625."
+
+Bima tertawa. "Jam lima lewat tiga puluh tujuh menit, kira-kira."
+
+"Kira-kira?" kata Kiki. "Berarti jadwalnya belum pasti."
+
+Nara memeriksa kembali. Jika biaya per jam Rp80.000 dan lama sewanya 5,625 jam, biaya sewanya Rp450.000. Ditambah biaya pasang Rp50.000, totalnya Rp500.000. Padahal tagihan tertulis Rp450.000.
+
+"Ada yang salah," kata Nara. "Aku membagi seluruh tagihan, padahal Rp50.000 bukan biaya per jam."
+
+Raka mengambil pensil. "Kalau digambar, ada dua tumpukan. Satu tumpukan kecil yang tidak ikut dihitung per jam, satu tumpukan jam yang bisa dibagi."
+
+## 2. Dua operasi, dua langkah
+
+Nara menulis persamaan dari tagihan itu:
+
+$$80\,000h + 50\,000 = 450\,000$$
+
+Huruf $h$ adalah lama sewa dalam jam. Angka $80\,000$ disebut **koefisien** karena mengalikan $h$. Angka $50\,000$ adalah **konstanta** karena berdiri sendiri.
+
+"Kita tidak bisa langsung membagi Rp450.000 dengan Rp80.000," kata Nara. "Rp50.000 harus disingkirkan dulu."
+
+Langkah pertama, kurangi $50\,000$ pada kedua sisi:
+
+$$80\,000h + 50\,000 - 50\,000 = 450\,000 - 50\,000$$
+
+$$80\,000h = 400\,000$$
+
+Langkah kedua, bagi kedua sisi dengan $80\,000$:
+
+$$h = \frac{400\,000}{80\,000} = 5$$
+
+Jadi lama sewanya 5 jam. Pemeriksaannya:
+
+$$80\,000(5) + 50\,000 = 400\,000 + 50\,000 = 450\,000$$
+
+"Pembagian itu membatalkan perkalian," kata Nara. "Kalau $h$ dikalikan Rp80.000, kita bagi dengan Rp80.000 untuk mendapat $h$ sendiri."
+
+Kiki mengangguk. "Jadi kalau ada angka yang menempel pada huruf, kita bagi?"
+
+"Kalau angka itu mengalikan," kata Pak Rahmat. "Kalau angka itu menambah, kita kurangi. Kamu harus lihat operasinya. Posisi angka di kiri atau kanan tidak menentukan."
+
+:::warning Pertanyaan Kiki
+Kenapa angka 5,625 tadi kelihatan masuk akal? Karena kalkulatornya benar. Yang salah adalah angka yang aku masukkan ke kalkulator.
+:::
+
+## 3. Coba di meja kerja
+
+Bima menggeser kursinya. "Aku mau coba yang tanpa angka tambahan dulu. Biar kelihatan pembagiannya."
+
+<EquationLab />
+
+Atur $a = 4$, $b = 0$, dan $c = 20$. Persamaannya menjadi $4x = 20$. Geser $x$ sampai seimbang. Saat $x = 5$, sisi kiri bernilai 20 dan sisi kanan bernilai 20. Kotak langkah menulis pengurangan 0, lalu pembagian oleh 4.
+
+Sekarang ubah $a$ menjadi 5 tanpa mengubah $c$. Persamaannya menjadi $5x = 20$. Solusinya bergeser ke $x = 4$. Angka di kanan tetap, tetapi banyak kelompok berubah.
+
+"Kalau $b = 0$, lab tidak perlu mengurangi apa pun," kata Bima. "Langsung bagi."
+
+Nara mencoba $a = 3$, $b = 2$, dan $c = 17$. Lab menunjukkan $x = 5$. Ia memeriksa dengan tangan: $3(5) + 2 = 17$. Cocok.
+
+"Jadi urutannya tetap," katanya. "Singkirkan konstanta dulu, baru bagi dengan koefisien."
+
+## 4. Catatan klub
+
+Nara membuka dua halaman. Halaman kiri untuk harga meja, halaman kanan untuk lama sewa panggung.
+
+**Harga satu meja.** Empat meja berharga total Rp180.000. Semua meja sama.
+
+$$4c = 180\,000$$
+
+Kedua sisi dibagi 4:
+
+$$c = \frac{180\,000}{4} = 45\,000$$
+
+Satu meja berharga Rp45.000. Pemeriksaan: $4 \times 45\,000 = 180\,000$.
+
+**Lama sewa panggung.** Tagihan Rp450.000 terdiri dari biaya pasang Rp50.000 dan biaya per jam Rp80.000.
+
+$$80\,000h + 50\,000 = 450\,000$$
+
+Kurangi $50\,000$ pada kedua sisi:
+
+$$80\,000h = 400\,000$$
+
+Bagi kedua sisi dengan $80\,000$:
+
+$$h = 5$$
+
+Nara menulis ringkasan langkah di buku kotaknya.
+
+| Langkah | Operasi | Hasil |
+|---|---|---|
+| 1 | Kurangi Rp50.000 di kedua sisi | $80\,000h = 400\,000$ |
+| 2 | Bagi kedua sisi dengan Rp80.000 | $h = 5$ |
+| 3 | Periksa dengan substitusi | $80\,000(5) + 50\,000 = 450\,000$ |
+
+"Kalau aku berhenti di langkah 1, aku belum mendapat $h$," kata Nara. "Kalau aku membagi sebelum mengurangi, aku membagi angka yang salah."
+
+Bima memeriksa jadwal. Lima jam berarti panggung bisa dipasang pukul 07.00 dan siap dipakai pukul 12.00. Ia menambahkan satu jam cadangan untuk membersihkan panggung.
+
+## 5. Kembali ke misi
+
+Nara mencoret angka 5,625 dari jadwal. Ia menulis 5 jam dengan spidol biru.
+
+"Angka 5,625 itu bukan salah hitung," katanya. "Aku cuma membagi Rp450.000, padahal Rp50.000 bukan biaya per jam."
+
+Kiki menyalin kalimat itu ke buku pertanyaannya. "Jadi kalau ada biaya tetap, kita harus mengeluarkannya dulu."
+
+"Ya," kata Nara. "Biaya tetap tidak ikut berubah saat jamnya berubah."
+
+Bima menempelkan jadwal baru di papan tulis. Panggung dipasang pukul 07.00, siap pukul 12.00, dan upacara pembukaan pukul 13.00. Raka menggambar jam kecil di samping panggung, dengan satu panah dari 07.00 ke 12.00.
+
+Kiki masih memandang angka 5,625 di buku lama. "Kalau tarif per jamnya naik, apakah lima jamnya masih lima jam?"
+
+Nara berpikir. "Belum tentu. Kalau total tagihannya tetap, tarif yang lebih tinggi berarti jamnya lebih sedikit."
+
+"Berarti angka 5 itu jawaban untuk tagihan ini, bukan untuk semua panggung?"
+
+"Betul," kata Nara. "Angka itu berlaku selama biaya pasang dan tarif per jamnya tidak berubah."
+
+Pak Rahmat menutup termosnya. "Pertanyaan berikutnya: kalau biaya pasangnya yang naik, apa yang berubah?"
+
+## 6. Cek pemahaman
+
+<QuizRunner quizId="equation-multiply-divide" />
+
+<LessonComplete lessonId="g7-equations-multiply-divide" />
