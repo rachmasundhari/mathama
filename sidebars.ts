@@ -14,7 +14,6 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           items: [
             'grade-7/integers/number-line',
-            'grade-7/integers/number-line-materi',
             'grade-7/integers/operations',
             'grade-7/integers/factors',
             'grade-7/rational/between',
@@ -22,6 +21,7 @@ const sidebars: SidebarsConfig = {
             'grade-7/rational/operations',
             'grade-7/numbers/powers',
             'grade-7/numbers/mixed-operations',
+            {type: 'doc', id: 'grade-7/integers/cerita', label: 'Cerita Bab 1'},
           ],
         },
         {

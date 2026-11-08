@@ -1,5 +1,5 @@
 ---
-title: "Kotak Kecil yang Bertumpuk Rapi"
+title: "Bilangan Berpangkat dan Akar Kuadrat"
 sidebar_position: 1
 slug: /grade-7/numbers/powers
 ---
@@ -10,129 +10,189 @@ import QuizRunner from '@site/src/components/QuizRunner';
 
 <div className="lessonKicker">KELAS 7 · BILANGAN BERPANGKAT · 12 MENIT</div>
 
-# Berapa kotak di dalam tumpukan itu?
+# Bilangan Berpangkat dan Akar Kuadrat
 
-**Tujuan belajar:** Menjelaskan basis dan eksponen, menghitung bilangan berpangkat dengan eksponen bilangan bulat positif, dan menentukan akar kuadrat sederhana.
+Materi ini memuat konsep lengkap untuk subbab ini.
 
-## 1. Tumpukan di sudut ruang 7B
+**Tujuan belajar:** Menjelaskan basis dan eksponen, menghitung bilangan berpangkat dengan eksponen bilangan bulat positif, menulis perkalian berulang dalam bentuk pangkat, dan menentukan akar kuadrat sederhana.
 
-Selasa sore, ruang 7B berbau kapur dan teh. Di sudut dekat papan tulis ada tumpukan kotak kado kecil untuk Pekan Angka. Nara memegang daftar hadiah, Bima mengukur tumpukan dengan penggaris logam, dan Raka menggambar susunannya di buku sketsa biru.
+**Kata kunci:** basis, eksponen, pangkat, kuadrat, kubus, akar kuadrat.
 
-"Kotaknya disusun kubus," kata Bima. "Empat kotak ke samping, empat ke belakang, empat ke atas."
+**Dalam materi ini:**
 
-Nara menurunkan daftarnya. "Berarti kita perlu tahu jumlah seluruhnya. Aku tidak mau menghitung satu per satu, nanti ada yang terlewat."
+1. Perkalian berulang
+2. Basis dan eksponen
+3. Kuadrat dan susunan kubus
+4. Akar kuadrat
+5. Lab
+6. Menerapkan pada kotak hadiah
+7. Kesalahan umum
+8. Ringkasan
+9. Latihan
 
-Bima menunjuk tiga arah dengan jarinya. "Empat ke samping, empat ke belakang, empat ke atas. Jadi $4 \times 3 = 12$."
+## 1. Perkalian berulang
 
-Nara berhenti menulis. "Dua belas itu apa? Jumlah arah atau jumlah kotak?"
+Kotak hadiah untuk Pekan Angka disusun menjadi kubus: 4 kotak ke samping, 4 kotak ke belakang, dan 4 lapis ke atas.
 
-Bima mengulang hitungannya dengan jari. Ia menunjuk satu lapisan bawah. "Oh. Satu lapisan isinya empat kali empat, bukan empat."
+Satu lapisan berisi $4 \times 4 = 16$ kotak. Ada 4 lapisan, jadi seluruhnya:
 
-Ia menghitung pelan. "Empat, delapan, dua belas, enam belas. Satu lapisan enam belas kotak."
+$$
+16 + 16 + 16 + 16 = 64
+$$
 
-"Ada berapa lapisan?" tanya Nara.
+Cara menulisnya bisa dipendekkan. Karena 16 juga berasal dari 4, seluruh hitungan dapat ditulis sebagai perkalian yang berulang:
 
-"Empat."
+$$
+4 \times 4 \times 4 = 64
+$$
 
-Bima lalu menulis enam belas sebanyak empat kali. $16 + 16 + 16 + 16 = 64$. Ia menghitung dua kali karena takut salah. Di ujung meja, Kiki mengangkat tangan.
+Bentuk pendek dari $4 \times 4 \times 4$ adalah $4^3$, dibaca "empat pangkat tiga".
 
-"Kalau tumpukannya sepuluh lapis, apakah kita harus menulis enam belas tambah enam belas sepuluh kali?"
+## 2. Basis dan eksponen
 
-Raka menambahkan satu lapisan lagi di gambarnya. "Kalau digambar, susunannya panjang ke samping, panjang ke belakang, dan tinggi. Tiga arah, tetapi isinya kotak."
+Pada bentuk $4^3$:
 
-## 2. Perkalian yang berulang
+- angka 4 disebut **basis**, yaitu bilangan yang dikalikan;
+- angka 3 disebut **eksponen**, yaitu banyaknya faktor basis.
 
-Pak Rahmat mendekat dengan teko teh di tangan. Ia tidak langsung menjawab pertanyaan Kiki. "Kalau satu lapisan berisi $4 \times 4$ kotak dan ada empat lapisan, bagaimana kamu menulis seluruhnya dengan satu bentuk?"
+$$
+4^3 = 4 \times 4 \times 4 = 64
+$$
 
-Nara menulis di papan: $4 \times 4 \times 4$. "Ini masih bisa dibaca, tetapi kalau lapisannya banyak, tulisannya panjang."
+Basis dan eksponen tidak boleh bertukar. $4^3$ memakai tiga faktor 4. Jika angkanya dibalik menjadi $3^4$, yang muncul adalah empat faktor 3:
 
-"Ada cara yang lebih pendek," kata Raka. "Tinggal tulis berapa kali angka empat muncul."
+$$
+3^4 = 3 \times 3 \times 3 \times 3 = 81
+$$
 
-Bentuk pendek dari $4 \times 4 \times 4$ adalah $4^3$. Dibaca "empat pangkat tiga". Angka 4 disebut **basis**, yaitu bilangan yang dikalikan. Angka 3 disebut **eksponen**, yaitu banyaknya faktor basis.
-
-$$4^3 = 4 \times 4 \times 4 = 64$$
-
-Kiki menulis di buku pertanyaannya. "Jadi $4^3$ bukan $4 \times 3$, ya?"
-
-"Bukan," kata Nara. "$4 \times 3$ berarti tiga kelompok berisi empat, hasilnya 12. $4^3$ berarti tiga faktor empat yang dikalikan, hasilnya 64. Tanda pangkat mengubah cara menghitung, bukan hanya memendekkan tulisan."
-
-Pak Rahmat menunjuk papan. "Coba bandingkan $4^2$ dan $4^3$. Apa yang berubah ketika eksponennya naik satu?"
-
-Bima menghitung. $4^2 = 4 \times 4 = 16$. $4^3 = 4 \times 4 \times 4 = 64$. "Nilainya naik dari enam belas ke enam puluh empat. Bukan tambah empat, tetapi kali empat."
-
-"Jadi setiap eksponen bertambah satu, hasilnya dikalikan basis," kata Nara. "Itu sebabnya tumpukan kecil bisa cepat menjadi banyak."
-
-Bilangan berpangkat dua punya nama khusus. $4^2$ disebut empat kuadrat, karena bisa digambar sebagai persegi berisi $4 \times 4$ kotak. Kebalikannya adalah **akar kuadrat**. Jika luas persegi 64 kotak, panjang sisinya 8 kotak, sehingga $\sqrt{64} = 8$.
-
-:::warning
-**Pertanyaan Kiki.** Kalau $4^2$ berarti $4 \times 4$, mengapa $\sqrt{64}$ tidak ditulis $\sqrt{4 \times 4 \times 4}$? Coba jelaskan dengan gambar persegi.
-:::
-
-## 3. Coba di meja kerja
-
-Raka mendorong buku sketsanya ke tengah meja. "Geser basis dan eksponennya. Lihat apakah hasilnya cocok dengan gambarku."
-
-<PowerLab />
-
-Mulai dari basis 4 dan eksponen 3. Lab menampilkan $4^3 = 64$ dan bentuk perkalian $4 \times 4 \times 4$. Kalau eksponen diturunkan menjadi 2, hasilnya 16. Kalau basis diubah menjadi 5 dan eksponennya 2, hasilnya 25.
-
-Perhatikan kolom akar kuadrat di bawah hasil. Saat hasilnya 49, akarnya 7. Saat hasilnya 64, akarnya 8. Akar kuadrat mencari bilangan yang jika dikalikan dirinya sendiri menghasilkan bilangan itu.
-
-Bima mengangguk. "Jadi kalau aku punya 81 kotak dan mau menyusunnya jadi persegi, sisinya sembilan."
-
-"Kalau 80 kotak?" tanya Kiki.
-
-Bima menatap layar. "Delapan kali delapan enam puluh empat. Sembilan kali sembilan delapan puluh satu. Berarti delapan puluh ada di antara keduanya." Ia menulis $\sqrt{80}$ di antara 8 dan 9.
-
-## 4. Catatan klub
-
-Nara membuka halaman baru dan menulis judul: *Menghitung kotak hadiah*.
+Pangkat juga bukan perkalian biasa. $4^3$ berbeda dari $4 \times 3$.
 
 | Bentuk | Arti | Nilai |
 |---|---|---|
-| $3^4$ | $3 \times 3 \times 3 \times 3$ | 81 |
-| $5^3$ | $5 \times 5 \times 5$ | 125 |
-| $7^2$ | $7 \times 7$ | 49 |
-| $\sqrt{49}$ | bilangan yang dikuadratkan menjadi 49 | 7 |
-| $\sqrt{144}$ | bilangan yang dikuadratkan menjadi 144 | 12 |
+| $4 \times 3$ | tiga kelompok berisi 4 | $12$ |
+| $4^3$ | tiga faktor 4 dikalikan | $64$ |
+| $3^4$ | empat faktor 3 dikalikan | $81$ |
+| $5^3$ | tiga faktor 5 dikalikan | $125$ |
+| $7^2$ | dua faktor 7 dikalikan | $49$ |
 
-Mereka memakai contoh dari gudang. Petugas menurunkan satu krat berisi kotak kecil yang tersusun $5 \times 5 \times 5$.
+Setiap kali eksponen naik satu, hasilnya dikalikan basis. Itu sebabnya bilangan kecil bisa cepat menjadi besar.
 
-Langkah menghitungnya:
+| Bentuk | Perhitungan | Nilai |
+|---|---|---|
+| $4^1$ | $4$ | $4$ |
+| $4^2$ | $4 \times 4$ | $16$ |
+| $4^3$ | $4 \times 4 \times 4$ | $64$ |
+| $4^4$ | $4 \times 4 \times 4 \times 4$ | $256$ |
+
+Dua aturan kecil yang sering dipakai:
+
+- $a^1 = a$, karena hanya ada satu faktor.
+- $a^0 = 1$ untuk $a \neq 0$, karena tidak ada faktor yang dikalikan.
+
+## 3. Kuadrat dan susunan kubus
+
+Pangkat dua punya nama khusus, yaitu **kuadrat**. Bentuk $4^2$ disebut empat kuadrat karena dapat digambar sebagai persegi berisi $4 \times 4$ kotak, seluruhnya 16 kotak.
+
+$$
+4^2 = 4 \times 4 = 16
+$$
+
+Pangkat tiga disebut **kubus**, karena bentuknya sesuai dengan kubus: panjang, lebar, dan tinggi sama.
+
+Contoh susunan kubus dengan 5 kotak pada setiap sisi:
 
 1. Hitung satu lapisan: $5 \times 5 = 25$ kotak.
 2. Kalikan dengan banyak lapisan: $25 \times 5 = 125$ kotak.
 3. Tulis dalam bentuk pangkat: $5^3 = 125$.
-4. Periksa dengan arah lain. Panjang 5, lebar 5, tinggi 5. Hasilnya tetap 125.
+4. Periksa dari arah lain: panjang 5, lebar 5, tinggi 5, hasilnya tetap 125.
 
-Nara menambahkan satu contoh untuk akar kuadrat. "Kalau 144 kotak disusun menjadi persegi, berapa kotak pada satu sisi?"
+Jika alas tetap $4 \times 4$ tetapi tingginya 5 lapis, susunannya bukan kubus lagi. Jumlah kotaknya $4 \times 4 \times 5 = 80$, bukan $4^4$. Bentuk $4^4$ memakai empat faktor 4, yaitu $4 \times 4 \times 4 \times 4 = 256$.
 
-Bima menyusun angka. $12 \times 12 = 144$, jadi satu sisi berisi 12 kotak. Mereka menulis $\sqrt{144} = 12$.
+## 4. Akar kuadrat
+
+Akar kuadrat adalah kebalikan dari kuadrat. Akar kuadrat suatu bilangan adalah bilangan yang jika dikalikan dengan dirinya sendiri menghasilkan bilangan itu.
+
+$$
+\sqrt{64} = 8 \quad \text{karena} \quad 8 \times 8 = 64
+$$
+
+Beberapa akar kuadrat yang sering muncul:
+
+| Akar | Alasan | Hasil |
+|---|---|---|
+| $\sqrt{49}$ | $7 \times 7 = 49$ | $7$ |
+| $\sqrt{64}$ | $8 \times 8 = 64$ | $8$ |
+| $\sqrt{81}$ | $9 \times 9 = 81$ | $9$ |
+| $\sqrt{144}$ | $12 \times 12 = 144$ | $12$ |
+
+Tidak semua bilangan punya akar kuadrat bulat. Untuk $\sqrt{80}$, periksa kuadrat di sekitarnya:
+
+$$
+8^2 = 64 \qquad 9^2 = 81
+$$
+
+Karena 80 terletak di antara 64 dan 81, nilai $\sqrt{80}$ terletak di antara 8 dan 9. Hasilnya bukan bilangan bulat.
+
+Akar kuadrat juga dipakai untuk membaca susunan. Jika 144 kotak disusun menjadi persegi, satu sisinya berisi $\sqrt{144} = 12$ kotak.
+
+## 5. Lab
+
+Geser basis dan eksponen. Perhatikan hasil, bentuk perkalian, dan akar kuadrat dari hasil.
+
+<PowerLab />
+
+Mulai dari basis 4 dan eksponen 3. Lab menampilkan $4^3 = 64$ beserta bentuk $4 \times 4 \times 4$. Jika eksponen diturunkan menjadi 2, hasilnya 16. Jika basis diubah menjadi 5 dan eksponennya 2, hasilnya 25.
+
+Kolom akar kuadrat di bawah hasil menunjukkan bilangan yang jika dikuadratkan menghasilkan nilai tersebut. Saat hasilnya 49, akarnya 7. Saat hasilnya 64, akarnya 8.
+
+## 6. Menerapkan pada kotak hadiah
+
+Sebuah tumpukan berisi $4^3 = 64$ kotak. Setiap kotak diisi 3 pensil.
+
+$$
+64 \times 3 = 192
+$$
+
+Jadi seluruh tumpukan memuat 192 pensil.
+
+Contoh lain: tersedia 100 kotak dan kamu ingin menyusun kubus terbesar tanpa lubang di dalamnya. Bandingkan pangkat tiga:
+
+$$
+4^3 = 64 \qquad 5^3 = 125
+$$
+
+Kubus terbesar yang dapat dibuat memakai $4^3 = 64$ kotak. Sisanya $100 - 64 = 36$ kotak. Jika sisa itu ditaruh di atas, tingginya tidak lagi sama dengan sisi alas, jadi susunannya bukan kubus.
 
 :::tip
-**Catatan Nara.** Tulis basis dan eksponen sebelum menghitung. Untuk akar kuadrat, cari dua bilangan sama yang hasil kalinya diketahui. Jangan menebak jauh, periksa dengan kuadrat di sekitarnya.
+**Cara memeriksa.** Tulis basis dan eksponen sebelum menghitung. Untuk akar kuadrat, cari dua bilangan sama yang hasil kalinya diketahui, lalu periksa dengan kuadrat di sekitarnya.
 :::
 
-## 5. Kembali ke misi
+## 7. Kesalahan umum
 
-Nara menutup daftar hadiah. "Jadi tumpukan di sudut itu berisi $4^3 = 64$ kotak. Kita tidak perlu membongkarnya."
+- Menghitung $4^3$ sebagai $4 \times 3 = 12$. Pangkat berarti perkalian berulang, jadi $4^3 = 64$.
+- Menukar basis dan eksponen. $4^3$ dan $3^4$ memiliki nilai berbeda, yaitu 64 dan 81.
+- Menganggap eksponen bertambah berarti hasilnya bertambah basis. Hasilnya dikalikan basis.
+- Menganggap $\sqrt{80} = 8$ karena 80 dekat dengan 81. Nilainya di antara 8 dan 9.
+- Menyusun kotak dengan alas dan tinggi berbeda lalu menyebutnya kubus. Kubus memerlukan tiga ukuran yang sama.
+- Lupa bahwa akar kuadrat mencari satu bilangan, bukan hasil bagi. $\sqrt{81} = 9$, bukan $81 \div 2$.
 
-Bima menepuk tumpukan paling atas. "Enam puluh empat kotak. Kalau setiap kotak diisi tiga pensil, totalnya $64 \times 3 = 192$ pensil."
+## 8. Ringkasan
 
-Nara menulis angka itu di papan, di bawah hitungan mundur Pekan Angka. Angka 64 juga ia lingkari dengan spidol biru.
+- Bilangan berpangkat menuliskan perkalian berulang dalam bentuk pendek.
+- Basis adalah bilangan yang dikalikan. Eksponen menunjukkan banyaknya faktor.
+- $a^n$ berarti $n$ faktor $a$ dikalikan.
+- Pangkat dua disebut kuadrat, pangkat tiga disebut kubus.
+- Setiap kenaikan eksponen satu membuat hasil dikalikan basis.
+- Akar kuadrat adalah kebalikan dari kuadrat.
+- Susunan kotak berbentuk kubus dihitung dengan pangkat tiga.
+- Akar kuadrat bilangan yang bukan kuadrat sempurna terletak di antara dua bilangan bulat.
 
-Kiki masih menatap susunan kotak. "Kalau kita menambah satu lapisan lagi, tingginya jadi lima. Berarti $4 \times 4 \times 5$, bukan $4^4$?"
-
-"Bukan $4^4$," kata Raka. "$4^4$ berarti empat lapisan lagi dengan panjang dan lebar yang sama, jadi $4 \times 4 \times 4 \times 4$. Kalau tingginya lima dan alasnya tetap $4 \times 4$, bentuknya bukan kubus lagi."
-
-Pak Rahmat mengangkat teko. "Jadi kalau kotak yang tersedia 100, berapa susunan kubus terbesar yang bisa kamu buat tanpa menyisakan lubang?"
-
-Bima melihat papan. "Empat pangkat tiga enam puluh empat. Lima pangkat tiga seratus dua puluh lima. Berarti empat, dan masih ada sisa."
-
-Kiki menulis jawaban itu, lalu bertanya lagi. "Kalau sisanya kita taruh di atas, apakah tumpukannya masih bisa disebut kubus?"
-
-## 6. Cek pemahaman
+## 9. Latihan
 
 <QuizRunner quizId="number-powers" />
 
 <LessonComplete lessonId="g7-numbers-powers" />
+
+---
+
+**Cerita Bab 1:** [Kas yang tidak seimbang ?](/learn/grade-7/integers/cerita)

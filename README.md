@@ -1,9 +1,10 @@
 # Cakrawala — Interactive Grade 7 Mathematics
 
 Cakrawala is a Docusaurus + React + TypeScript site for junior-high mathematics.
-Every lesson is a scene in the story of the **Klub Matematika** at **SMP
-Cakrawala**, an ordinary secondary school preparing its small mathematics week.
-The Grade 7 curriculum is complete; Grades 8 and 9 are placeholders.
+Each subchapter is a material-first lesson. At the end of every chapter, one
+story follows the **Klub Matematika** at **SMP Cakrawala**, an ordinary secondary
+school preparing its small mathematics week. The Grade 7 curriculum is complete;
+Grades 8 and 9 are placeholders.
 
 The site is in Indonesian. Documentation and code are in English.
 
@@ -30,8 +31,8 @@ npm run serve      # inspect the build
 ## What is implemented
 
 - Nine ATP Grade 7 chapters, one enrichment chapter, 45 lessons, 40 practice sets
-- Story-driven MDX lessons with recurring characters and one preparation task
-  per chapter
+- Material-first MDX lessons with labs and practice, plus one illustrated
+  chapter story at the end
 - Interactive React labs, including a three.js 3D similarity lab
 - KaTeX math, quiz hints and explanations, local progress and best scores
 - Responsive layout, keyboard-accessible controls, reduced-motion support

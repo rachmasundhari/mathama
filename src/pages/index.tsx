@@ -64,7 +64,7 @@ export default function Home(): React.ReactNode {
         <div className="heroCopy"><div className="announcement"><span>✳</span> KELAS 7 · SATU SEMESTER, SATU CERITA</div>
           <h1>Matematika yang <em>punya cerita.</em></h1>
           <p>Ikuti Raka, Nara, Bima, dan Kiki di Klub Matematika SMP Cakrawala. Mereka menyiapkan Pekan Angka, dan matematika jadi alat yang benar-benar dipakai.</p>
-          <div className="heroButtons"><Link to="/learn/grade-7/integers/number-line" className="button primaryButton bigButton">Mulai cerita <span>↗</span></Link><Link to="/courses" className="button outlineButton bigButton">Jelajahi materi <span>→</span></Link></div>
+          <div className="heroButtons"><Link to="/learn/grade-7/integers/number-line" className="button primaryButton bigButton">Mulai belajar <span>↗</span></Link><Link to="/courses" className="button outlineButton bigButton">Jelajahi materi <span>→</span></Link></div>
           <div className="heroTrust"><div className="tinyAvatars"><span>∑</span><span>π</span><span>∞</span></div><div><strong>9 bab · 45 pelajaran · 40 latihan</strong><small>Kurikulum Merdeka Kelas 7</small></div></div>
         </div>
         <div className="heroVisual"><div className="floatingNote noteTop"><span>✧</span> Coba, bukan cuma baca</div><HeroExperiment/><div className="floatingNote noteBottom">✦ "Oh, ternyata begitu."</div></div>
