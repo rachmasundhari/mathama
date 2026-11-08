@@ -33,24 +33,43 @@ Materi ini memuat konsep lengkap untuk subbab ini: definisi, contoh bertahap, la
 
 ## 1. Satu baris, banyak operasi
 
-Satu baris hitung sering memuat beberapa operasi sekaligus. Contohnya catatan kas sebuah kelas:
+Buku kas mencatat baris berikut:
 
 $$
 250.000 + 4 \times 15.000 - 3 \times 18.000 + 10\% \times 250.000
 $$
 
-Baris ini berisi penjumlahan, pengurangan, perkalian, dan persen. Kalau setiap orang bebas memilih operasi mana yang dikerjakan lebih dulu, satu baris bisa menghasilkan beberapa jawaban berbeda.
+Dua orang menghitung baris yang sama dan mendapat jawaban berbeda. Satu mengerjakan dari kiri ke kanan, satu mendahulukan perkalian. Baris ini berisi penjumlahan, pengurangan, perkalian, dan persen. Kalau setiap orang bebas memilih operasi mana yang dikerjakan lebih dulu, satu baris bisa menghasilkan beberapa jawaban berbeda.
+
+<img className="lessonIllustration" src="/img/lessons/g7-numbers-mixed-operations-01-objek.webp" alt="Buku kas terbuka dengan tanda plus dan minus, kalkulator, dan pensil di atas meja" />
 
 Operasi campuran adalah baris hitung yang memuat lebih dari satu jenis operasi. Agar semua orang membaca baris yang sama dengan cara yang sama, ada kesepakatan urutan pengerjaan.
 
 ## 2. Urutan operasi
 
-Urutan operasi berlaku untuk semua bilangan, baik bulat, pecahan, desimal, maupun persen:
+Urutan operasi adalah kesepakatan tentang operasi mana yang dikerjakan lebih dulu. Urutan ini berlaku untuk semua bilangan, baik bulat, pecahan, desimal, maupun persen:
 
 1. Kerjakan isi tanda kurung lebih dulu.
 2. Hitung bilangan berpangkat dan akar.
 3. Kerjakan perkalian dan pembagian dari kiri ke kanan.
 4. Terakhir, kerjakan penjumlahan dan pengurangan dari kiri ke kanan.
+
+<figure className="conceptFigure">
+  <svg viewBox="0 0 640 250" role="img" aria-label="Urutan operasi: kurung, pangkat dan akar, perkalian dan pembagian, lalu penjumlahan dan pengurangan">
+    <rect x="40" y="24" width="560" height="40" rx="8" fill="var(--c-ocean)"/>
+    <text x="60" y="50" fontSize="15" fontWeight="700" fill="var(--c-white)">1. Kurung</text>
+    <text x="560" y="50" textAnchor="end" fontSize="13" fill="var(--c-sky)">paling dalam lebih dulu</text>
+    <rect x="40" y="78" width="560" height="40" rx="8" fill="var(--c-teal)"/>
+    <text x="60" y="104" fontSize="15" fontWeight="700" fill="var(--c-white)">2. Pangkat dan akar</text>
+    <rect x="40" y="132" width="560" height="40" rx="8" fill="var(--c-aqua)"/>
+    <text x="60" y="158" fontSize="15" fontWeight="700" fill="var(--c-ink)">3. Perkalian dan pembagian</text>
+    <text x="560" y="158" textAnchor="end" fontSize="13" fill="var(--c-ink)">kiri ke kanan</text>
+    <rect x="40" y="186" width="560" height="40" rx="8" fill="var(--c-sky)"/>
+    <text x="60" y="212" fontSize="15" fontWeight="700" fill="var(--c-ink)">4. Penjumlahan dan pengurangan</text>
+    <text x="560" y="212" textAnchor="end" fontSize="13" fill="var(--c-ink)">kiri ke kanan</text>
+  </svg>
+  <figcaption>Kerjakan dari atas ke bawah. Di dalam satu tingkat, kerjakan dari kiri ke kanan.</figcaption>
+</figure>
 
 Perhatikan bedanya:
 
@@ -87,7 +106,23 @@ $$
 256.000 \div 2 = 128.000
 $$
 
-Selisihnya besar, padahal angkanya sama. Jadi pasang tanda kurung ketika satu operasi harus berlaku untuk seluruh jumlah, bukan hanya untuk suku terakhir.
+<figure className="conceptFigure">
+  <svg viewBox="0 0 640 190" role="img" aria-label="Tanpa kurung hasilnya dua ratus delapan puluh tiga ribu, dengan kurung hasilnya seratus dua puluh delapan ribu">
+    <rect x="25" y="30" width="270" height="120" rx="14" fill="var(--c-white)" stroke="var(--c-sky)" strokeWidth="2"/>
+    <text x="160" y="62" textAnchor="middle" fontSize="13" fill="var(--c-muted)">tanpa kurung</text>
+    <text x="160" y="98" textAnchor="middle" fontSize="18" fontWeight="700" fill="var(--c-ocean)">250.000 + 60.000</text>
+    <text x="160" y="124" textAnchor="middle" fontSize="18" fontWeight="700" fill="var(--c-ocean)">− 54.000 ÷ 2</text>
+    <text x="160" y="150" textAnchor="middle" fontSize="16" fontWeight="800" fill="var(--c-ink)">= 283.000</text>
+    <rect x="345" y="30" width="270" height="120" rx="14" fill="var(--c-white)" stroke="var(--c-teal)" strokeWidth="2"/>
+    <text x="480" y="62" textAnchor="middle" fontSize="13" fill="var(--c-muted)">dengan kurung</text>
+    <text x="480" y="98" textAnchor="middle" fontSize="18" fontWeight="700" fill="var(--c-ocean)">(250.000 + 60.000</text>
+    <text x="480" y="124" textAnchor="middle" fontSize="18" fontWeight="700" fill="var(--c-ocean)">− 54.000) ÷ 2</text>
+    <text x="480" y="150" textAnchor="middle" fontSize="16" fontWeight="800" fill="var(--c-teal)">= 128.000</text>
+  </svg>
+  <figcaption>Kurung menentukan apakah yang dibagi hanya pengeluaran atau seluruh sisa.</figcaption>
+</figure>
+
+Selisihnya besar, padahal angkanya sama. Jadi pasang tanda kurung ketika satu operasi harus berlaku untuk seluruh jumlah, bukan hanya untuk angka terakhir.
 
 Jika ada kurung di dalam kurung, kerjakan yang paling dalam lebih dulu, lalu keluar:
 

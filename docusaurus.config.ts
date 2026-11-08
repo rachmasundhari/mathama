@@ -4,8 +4,8 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
-  title: 'Cakrawala: Matematika lewat cerita',
-  tagline: 'Pelajari konsep lewat cerita, coba sendiri, lalu jadi paham.',
+  title: 'Cakrawala: Matematika Kelas 7',
+  tagline: 'Pelajari konsepnya, coba sendiri, lalu jadi paham.',
   favicon: 'img/favicon.svg',
   // IMPORTANT: change to your production domain before deployment.
   url: 'https://cakrawala.example.com',
@@ -66,7 +66,7 @@ const config: Config = {
           {label: 'Tentang proyek', to: '/about'},
         ]},
       ],
-      copyright: `© ${new Date().getFullYear()} Cakrawala. Belajar matematika lewat cerita.`,
+      copyright: `© ${new Date().getFullYear()} Cakrawala. Matematika yang bisa dicoba.`,
     },
     prism: {theme: prismThemes.github, darkTheme: prismThemes.dracula},
   },

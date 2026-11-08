@@ -32,6 +32,10 @@ Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 1 ada di akhir bab
 
 ## 1. Faktor dan kelipatan
 
+Dua kardus berisi $24$ pensil dan $36$ penghapus. Keduanya harus dibagi menjadi bungkus yang isinya sama, tanpa sisa. Berapa bungkus terbanyak yang bisa dibuat? Untuk menjawabnya, kita perlu dua alat: faktor dan kelipatan.
+
+<img className="lessonIllustration" src="/img/lessons/g7-integers-factors-01-objek.webp" alt="Dua kardus berisi pensil dan penghapus, dengan dua belas bungkus hadiah kecil di atas meja" />
+
 Faktor adalah bilangan yang membagi habis suatu bilangan, tanpa sisa. Kelipatan adalah hasil mengalikan suatu bilangan dengan $1$, $2$, $3$, dan seterusnya.
 
 Faktor selalu lebih kecil atau sama dengan bilangan itu, sedangkan kelipatan selalu lebih besar atau sama dengan bilangan itu.
@@ -61,7 +65,7 @@ $$
 
 Bilangan prima adalah bilangan lebih dari $1$ yang hanya punya dua faktor, yaitu $1$ dan bilangan itu sendiri. Contohnya $2, 3, 5, 7, 11,$ dan $13$. Bilangan $1$ bukan prima karena hanya punya satu faktor. Bilangan lain seperti $4, 6, 8, 9,$ dan $10$ disebut bilangan komposit.
 
-Setiap bilangan komposit dapat dipecah menjadi perkalian bilangan prima. Cara ini disebut faktorisasi prima, biasanya ditulis sebagai pohon faktor lalu dirapikan dengan pangkat.
+Setiap bilangan komposit dapat dipecah menjadi perkalian bilangan prima. Cara ini disebut faktorisasi prima. Salah satu cara menuliskannya adalah **pohon faktor**, yaitu diagram bercabang yang memecah bilangan sampai semua cabang terakhirnya bilangan prima.
 
 $$
 24 = 2 \times 2 \times 2 \times 3 = 2^3 \times 3
@@ -70,6 +74,38 @@ $$
 $$
 36 = 2 \times 2 \times 3 \times 3 = 2^2 \times 3^2
 $$
+
+<figure className="conceptFigure">
+  <svg viewBox="0 0 640 260" role="img" aria-label="Pohon faktor 24 dan 36">
+    <text x="150" y="28" textAnchor="middle" fontSize="16" fontWeight="700" fill="var(--c-ocean)">24</text>
+    <line x1="150" y1="38" x2="90" y2="78" stroke="var(--c-muted)" strokeWidth="2"/>
+    <line x1="150" y1="38" x2="210" y2="78" stroke="var(--c-muted)" strokeWidth="2"/>
+    <text x="78" y="94" textAnchor="middle" fontSize="16" fill="var(--c-ink)">2</text>
+    <text x="210" y="94" textAnchor="middle" fontSize="16" fill="var(--c-ink)">12</text>
+    <line x1="210" y1="104" x2="160" y2="144" stroke="var(--c-muted)" strokeWidth="2"/>
+    <line x1="210" y1="104" x2="260" y2="144" stroke="var(--c-muted)" strokeWidth="2"/>
+    <text x="155" y="160" textAnchor="middle" fontSize="16" fill="var(--c-ink)">2</text>
+    <text x="260" y="160" textAnchor="middle" fontSize="16" fill="var(--c-ink)">6</text>
+    <line x1="260" y1="170" x2="220" y2="210" stroke="var(--c-muted)" strokeWidth="2"/>
+    <line x1="260" y1="170" x2="300" y2="210" stroke="var(--c-muted)" strokeWidth="2"/>
+    <text x="215" y="226" textAnchor="middle" fontSize="16" fill="var(--c-ink)">2</text>
+    <text x="300" y="226" textAnchor="middle" fontSize="16" fill="var(--c-ink)">3</text>
+    <text x="480" y="28" textAnchor="middle" fontSize="16" fontWeight="700" fill="var(--c-ocean)">36</text>
+    <line x1="480" y1="38" x2="420" y2="78" stroke="var(--c-muted)" strokeWidth="2"/>
+    <line x1="480" y1="38" x2="540" y2="78" stroke="var(--c-muted)" strokeWidth="2"/>
+    <text x="408" y="94" textAnchor="middle" fontSize="16" fill="var(--c-ink)">2</text>
+    <text x="540" y="94" textAnchor="middle" fontSize="16" fill="var(--c-ink)">18</text>
+    <line x1="540" y1="104" x2="490" y2="144" stroke="var(--c-muted)" strokeWidth="2"/>
+    <line x1="540" y1="104" x2="590" y2="144" stroke="var(--c-muted)" strokeWidth="2"/>
+    <text x="485" y="160" textAnchor="middle" fontSize="16" fill="var(--c-ink)">2</text>
+    <text x="590" y="160" textAnchor="middle" fontSize="16" fill="var(--c-ink)">9</text>
+    <line x1="590" y1="170" x2="550" y2="210" stroke="var(--c-muted)" strokeWidth="2"/>
+    <line x1="590" y1="170" x2="630" y2="210" stroke="var(--c-muted)" strokeWidth="2"/>
+    <text x="545" y="226" textAnchor="middle" fontSize="16" fill="var(--c-ink)">3</text>
+    <text x="630" y="226" textAnchor="middle" fontSize="16" fill="var(--c-ink)">3</text>
+  </svg>
+  <figcaption>Pohon faktor memecah bilangan sampai semua daunnya prima.</figcaption>
+</figure>
 
 Langkahnya: bagi bilangan dengan prima terkecil yang habis, mulai dari $2$; bagi hasilnya dengan prima yang habis lagi; ulangi sampai hasil bagi terakhir prima; lalu tulis semua pembagi sebagai perkalian.
 
@@ -91,6 +127,23 @@ $$
 $$
 
 Jadi $24$ pensil dan $36$ penghapus dapat dibagi menjadi $12$ bungkus hadiah dengan isi sama. Setiap bungkus berisi $24 \div 12 = 2$ pensil dan $36 \div 12 = 3$ penghapus.
+
+<figure className="conceptFigure">
+  <svg viewBox="0 0 640 260" role="img" aria-label="Dua belas bungkus hadiah, masing-masing berisi dua pensil dan tiga penghapus">
+    {Array.from({length: 12}, (_, index) => {
+      const col = index % 4;
+      const row = Math.floor(index / 4);
+      const x = 32 + col * 148;
+      const y = 28 + row * 72;
+      return <g key={index}>
+        <rect x={x} y={y} width="130" height="52" rx="10" fill="var(--c-white)" stroke="var(--c-teal)" strokeWidth="2"/>
+        <text x={x + 65} y={y + 22} textAnchor="middle" fontSize="12" fontWeight="700" fill="var(--c-ocean)">bungkus {index + 1}</text>
+        <text x={x + 65} y={y + 40} textAnchor="middle" fontSize="12" fill="var(--c-muted)">2 pensil · 3 penghapus</text>
+      </g>;
+    })}
+  </svg>
+  <figcaption>FPB 12 menentukan jumlah bungkus. Isi tiap bungkus baru dihitung setelah jumlah bungkus diketahui.</figcaption>
+</figure>
 
 FPB menentukan **jumlah bungkus**. Isi tiap bungkus dihitung setelah jumlah bungkus diketahui. Kalau jumlah bungkus dibuat lebih banyak dari FPB, pasti ada barang yang tersisa.
 
@@ -116,6 +169,26 @@ Contoh jadwal. Pemasok pensil datang setiap $4$ hari dan pemasok penghapus setia
 Kelipatan $4$: $4, 8, 12, 16, 20, \ldots$ dan kelipatan $6$: $6, 12, 18, 24, \ldots$
 
 Bilangan pertama yang muncul di kedua baris adalah $12$. Jadi mereka bertemu lagi $12$ hari kemudian. Dengan faktorisasi prima, $4 = 2^2$ dan $6 = 2 \times 3$, sehingga $\text{KPK} = 2^2 \times 3 = 12$.
+
+<figure className="conceptFigure">
+  <svg viewBox="0 0 640 190" role="img" aria-label="Jadwal pensil setiap empat hari dan penghapus setiap enam hari bertemu pada hari kedua belas">
+    <line x1="40" y1="70" x2="600" y2="70" stroke="var(--c-ink)" strokeWidth="2"/>
+    {[0, 4, 6, 8, 12].map(day => {
+      const x = 40 + day * 46;
+      return <g key={day}>
+        <line x1={x} y1="62" x2={x} y2="78" stroke="var(--c-ink)" strokeWidth="2"/>
+        <text x={x} y="94" textAnchor="middle" fontSize="13" fill={day === 12 ? 'var(--c-ocean)' : 'var(--c-muted)'} fontWeight={day === 12 ? '700' : '400'}>{day}</text>
+      </g>;
+    })}
+    <text x="20" y="130" fontSize="13" fill="var(--c-muted)">pensil</text>
+    {[4, 8, 12].map(day => <circle key={`p-${day}`} cx={40 + day * 46} cy="126" r={day === 12 ? 9 : 6} fill={day === 12 ? 'var(--c-teal)' : 'var(--c-sky)'}/>)}
+    <text x="20" y="166" fontSize="13" fill="var(--c-muted)">penghapus</text>
+    {[6, 12].map(day => <circle key={`h-${day}`} cx={40 + day * 46} cy="162" r={day === 12 ? 9 : 6} fill={day === 12 ? 'var(--c-teal)' : 'var(--c-aqua)'}/>)}
+    <text x="592" y="60" fontSize="12" fill="var(--c-muted)">hari</text>
+  </svg>
+  <figcaption>Pensil datang pada hari 4, 8, dan 12. Penghapus datang pada hari 6 dan 12. Hari pertama yang sama adalah 12, yaitu KPK dari 4 dan 6.</figcaption>
+</figure>
+
 
 ## 5. Contoh bertahap
 

@@ -1,230 +1,241 @@
 ---
-title: "Membaca Garis Bilangan"
+title: "Bilangan Bulat"
 sidebar_position: 1
 slug: /grade-7/integers/number-line
 ---
 
 import NumberLineLab from '@site/src/components/NumberLineLab';
+import NumberLineFigure from '@site/src/components/NumberLineFigure';
 import LessonComplete from '@site/src/components/LessonComplete';
 import QuizRunner from '@site/src/components/QuizRunner';
 
-<div className="lessonKicker">KELAS 7 · BILANGAN BULAT · 12 MENIT</div>
+<div className="lessonKicker">KELAS 7 · BILANGAN BULAT · ±20 MENIT</div>
 
-# Membaca Garis Bilangan
+# Bilangan Bulat
 
-Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 1 ada di akhir bab.
+Pernah melihat suhu **−2°C** atau lantai **B1** di gedung parkir? Kedua contoh itu menunjukkan keadaan di bawah nol, yang tidak bisa ditulis dengan bilangan 0, 1, 2, 3, dan seterusnya.
 
-**Tujuan belajar:** Membaca, membandingkan, dan mengurutkan bilangan bulat pada garis bilangan, menjelaskan lawan bilangan dan nilai mutlak, serta memakai garis bilangan untuk membaca perpindahan dan saldo sederhana.
+Di pelajaran ini, kita akan mengenal bilangan bulat, membaca posisinya, membandingkan dan mengurutkannya, lalu memakai bilangan bulat untuk membaca perpindahan dan catatan kas sederhana.
 
-**Kata kunci:** bilangan bulat, bilangan negatif, bilangan positif, nol, garis bilangan, lawan bilangan, nilai mutlak.
+**Tujuan belajar:** Setelah mempelajari materi ini, kamu dapat:
 
-**Dalam materi ini:**
+1. Mengenali bilangan bulat negatif, nol, dan bilangan bulat positif.
+2. Menentukan posisi bilangan bulat berdasarkan urutannya.
+3. Membandingkan dan mengurutkan bilangan bulat.
+4. Menentukan posisi akhir dari perpindahan sederhana.
+5. Membaca catatan uang masuk dan uang keluar sederhana.
 
-1. Bilangan bulat dan arahnya
-2. Garis bilangan
-3. Membandingkan dan mengurutkan
-4. Lawan bilangan dan nilai mutlak
-5. Bergerak di garis bilangan
-6. Menerapkan pada buku kas
-7. Lab
-8. Kesalahan umum
-9. Ringkasan
-10. Latihan
+**Kata kunci:** bilangan bulat, bilangan negatif, bilangan positif, nol, garis bilangan, urutan bilangan, perpindahan.
 
-<img className="lessonIllustration" src="/img/lessons/g7-integers-number-line-02-masalah.webp" alt="Buku kas kelas terbuka dengan kolom pemasukan dan pengeluaran, kalkulator, dan struk di atas meja" />
+## 1. Mengenal bilangan bulat
 
-## 1. Bilangan bulat dan arahnya
+Bilangan **0, 1, 2, 3, …** disebut *bilangan cacah*. Kita menggunakannya untuk menghitung jumlah benda, misalnya 3 buku atau 12 pensil.
 
-Bilangan bulat adalah bilangan tanpa pecahan atau desimal. Bilangan bulat terdiri atas bilangan negatif, nol, dan bilangan positif.
+Namun, bagaimana cara menuliskan suhu **3 derajat di bawah nol**? Kita menuliskannya sebagai **−3°C**. Tanda **−** menunjukkan bahwa suhunya berada di bawah 0°C.
+
+Bilangan yang kurang dari nol disebut **bilangan negatif**. Bilangan yang lebih dari nol disebut **bilangan positif**. Bilangan negatif, nol, dan bilangan positif membentuk **bilangan bulat**:
 
 $$
-\ldots,\ -3,\ -2,\ -1,\ 0,\ 1,\ 2,\ 3,\ \ldots
+\ldots, -4, -3, -2, -1, 0, 1, 2, 3, 4, \ldots
 $$
 
-Dalam kehidupan sehari-hari, bilangan negatif dipakai untuk menyatakan arah yang berlawanan:
-
-- suhu di bawah nol,
-- ruang bawah tanah di bawah lantai dasar,
-- uang keluar dalam buku kas,
-- utang atau kekurangan saldo,
-- kedalaman di bawah permukaan laut.
-
-Nol bukan bilangan positif dan bukan bilangan negatif. Nol adalah titik acuan.
-
-## 2. Garis bilangan
-
-Garis bilangan adalah garis lurus yang diberi titik-titik dan angka. Jarak antartitik dibuat sama.
-
-<svg viewBox="0 0 640 120" role="img" aria-label="Garis bilangan dari negatif tiga sampai tiga" style={{display: 'block', width: '100%', maxWidth: 640, margin: '18px auto'}}>
-  <line x1="40" y1="60" x2="600" y2="60" stroke="var(--c-ink)" strokeWidth="3"/>
-  <path d="M40 60l12-7v14z" fill="var(--c-ink)"/>
-  <path d="M600 60l-12-7v14z" fill="var(--c-ink)"/>
-  {[-3, -2, -1, 0, 1, 2, 3].map((value, index) => {
-    const x = 100 + index * 73;
-    return <g key={value}>
-      <line x1={x} y1="50" x2={x} y2="70" stroke="var(--c-ink)" strokeWidth="2"/>
-      <text x={x} y="96" textAnchor="middle" fontSize="16" fontWeight="700" fill={value === 0 ? 'var(--c-ocean)' : 'var(--c-muted)'}>{value}</text>
-    </g>;
-  })}
-  <text x="320" y="28" textAnchor="middle" fontSize="13" fill="var(--c-muted)">kiri: berkurang · kanan: bertambah</text>
-</svg>
-
-Aturan membaca garis bilangan:
-
-1. Cari angka nol sebagai titik acuan.
-2. Ke kanan dari nol berarti bertambah.
-3. Ke kiri dari nol berarti berkurang.
-4. Semakin ke kanan, nilai bilangan semakin besar.
-5. Semakin ke kiri, nilai bilangan semakin kecil.
-
-Contoh posisi:
-
-- $-3$ berada tiga langkah di kiri nol.
-- $-1$ berada satu langkah di kiri nol.
-- $2$ berada dua langkah di kanan nol.
-
-## 3. Membandingkan dan mengurutkan
-
-Untuk membandingkan bilangan bulat, lihat posisinya di garis bilangan. Bilangan yang lebih ke kanan lebih besar.
-
-| Perbandingan | Benar? | Alasan |
+| Kelompok | Contoh | Keterangan |
 |---|---|---|
-| $-1 \gt -2$ | Benar | $-1$ berada di kanan $-2$ |
-| $-3 \lt 0$ | Benar | $-3$ berada di kiri $0$ |
-| $2 \gt -5$ | Benar | semua bilangan positif di kanan bilangan negatif |
-| $-4 \gt 1$ | Salah | $-4$ berada di kiri $1$ |
+| Bilangan bulat negatif | $-1, -2, -3, \ldots$ | Kurang dari nol |
+| Nol | $0$ | Bukan positif dan bukan negatif |
+| Bilangan bulat positif | $1, 2, 3, \ldots$ | Lebih dari nol |
 
-Urutan dari kecil ke besar dapat dibaca dari kiri ke kanan:
+Bilangan bulat **tidak mencakup pecahan atau desimal**, seperti $\frac{1}{2}$ atau $2{,}5$.
+
+<details className="thinkCard">
+<summary>
+
+**Coba pikirkan** Manakah yang dapat ditulis dengan bilangan bulat negatif: suhu di bawah 0°C, tiga buah apel, atau lantai basement di bawah lantai dasar?
+
+</summary>
+
+**Jawaban:** Suhu di bawah 0°C dan lantai basement di bawah lantai dasar.
+
+</details>
+
+## 2. Memahami garis bilangan
+
+**Garis bilangan** adalah garis lurus yang menunjukkan letak bilangan secara berurutan. Jarak antara dua angka yang berdekatan selalu sama.
+
+<NumberLineFigure min={-4} max={4} ariaLabel="Garis bilangan dari negatif empat sampai positif empat, dengan nol berada di tengah" />
+
+Cara membacanya:
+
+1. **Temukan 0** sebagai titik acuan, yaitu titik tempat pembacaan dimulai.
+2. Bilangan negatif berada **di sebelah kiri 0**.
+3. Bilangan positif berada **di sebelah kanan 0**.
+4. Semakin **ke kanan**, bilangan semakin **besar**. Semakin **ke kiri**, bilangan semakin **kecil**.
+
+Sebagai contoh, $-3$ terletak tiga satuan di kiri 0, sedangkan $2$ terletak dua satuan di kanan 0.
+
+<details className="thinkCard">
+<summary>
+
+**Periksa pemahamanmu** Bilangan mana yang lebih besar: $-2$ atau $1$?
+
+</summary>
+
+**Jawaban:** $1$, karena bilangan tersebut berada di kanan bilangan $-2$.
+
+</details>
+
+## 3. Membandingkan bilangan bulat
+
+Untuk membandingkan dua bilangan, lihat letaknya pada garis bilangan. Gunakan tanda:
+
+- $>$ artinya **lebih besar dari**.
+- $<$ artinya **lebih kecil dari**.
+- $=$ artinya **sama dengan**.
+
+| Perbandingan | Hasil | Mengapa? |
+|---|---|---|
+| $-1 > -3$ | Benar | $-1$ berada lebih kanan daripada $-3$ |
+| $-4 < 0$ | Benar | $-4$ berada di kiri 0 |
+| $2 > -5$ | Benar | Bilangan positif lebih besar daripada bilangan negatif |
+| $-6 > -2$ | Salah | $-6$ berada lebih kiri daripada $-2$ |
+
+**Hal penting:** Untuk bilangan negatif, angka yang tampak lebih besar belum tentu menunjukkan bilangan yang lebih besar. Contohnya, $-10 < -2$ karena $-10$ terletak lebih kiri pada garis bilangan.
+
+<details className="thinkCard">
+<summary>
+
+**Coba jawab** Mana yang lebih besar, $-7$ atau $-4$?
+
+</summary>
+
+**Jawaban:** $-4$.
+
+</details>
+
+## 4. Mengurutkan bilangan bulat
+
+Mengurutkan bilangan bulat artinya menyusun bilangan dari yang terkecil ke terbesar, atau sebaliknya.
+
+**Contoh:** Urutkan $3, -2, 0, -5, 1$ dari yang terkecil!
+
+**Langkah 1.** Perhatikan bilangan negatif terlebih dahulu: $-5$ lebih kecil daripada $-2$.
+
+**Langkah 2.** Setelah bilangan negatif, letakkan 0, lalu bilangan positif dari kecil ke besar.
+
+**Jawaban:**
 
 $$
--5 \lt -3 \lt -1 \lt 0 \lt 2 \lt 4
+-5 < -2 < 0 < 1 < 3
 $$
 
-Jangan tertukar: angka negatif yang terlihat lebih besar belum tentu nilainya lebih besar. $-10$ terlihat "sepuluh", tetapi posisinya jauh di kiri, jadi nilainya lebih kecil daripada $-2$.
+<NumberLineFigure points={[-5, -2, 0, 1, 3]} ariaLabel="Garis bilangan dengan titik pada negatif lima, negatif dua, nol, satu, dan tiga, berurutan dari kiri ke kanan" />
 
-## 4. Lawan bilangan dan nilai mutlak
-
-Setiap bilangan bulat punya lawan. Lawan bilangan adalah bilangan yang jaraknya sama dari nol, tetapi arahnya berlawanan.
-
-- Lawan $3$ adalah $-3$.
-- Lawan $-3$ adalah $3$.
-- Lawan $0$ adalah $0$.
-
-Jarak sebuah bilangan dari nol disebut nilai mutlak. Nilai mutlak selalu tidak negatif karena menyatakan jarak, bukan arah.
+Jika diminta dari **terbesar ke terkecil**, urutannya dibalik:
 
 $$
-\lvert 3 \rvert = 3 \qquad \lvert -3 \rvert = 3 \qquad \lvert 0 \rvert = 0
+3 > 1 > 0 > -2 > -5
 $$
 
-Contoh penerapan:
+<details className="thinkCard">
+<summary>
 
-- Uang masuk Rp5.000 dan uang keluar Rp5.000 memiliki jarak yang sama dari nol, yaitu $5$ ribu.
-- Suhu $4^\circ$ di atas nol dan $4^\circ$ di bawah nol memiliki nilai mutlak yang sama, yaitu $4^\circ$.
+**Coba sendiri** Urutkan $-1, 4, -6, 2, 0$ dari yang terkecil ke terbesar.
 
-Nilai mutlak tidak sama dengan lawan bilangan. Lawan bilangan menunjukkan arah yang berlawanan. Nilai mutlak menunjukkan jarak.
+</summary>
 
-## 5. Bergerak di garis bilangan
+**Jawaban:** $-6, -1, 0, 2, 4$.
 
-Penjumlahan dan pengurangan bilangan bulat dapat dibaca sebagai perpindahan.
+</details>
 
-- Menambah bilangan positif berarti bergerak ke kanan.
-- Menambah bilangan negatif berarti bergerak ke kiri.
-- Mengurangi bilangan positif berarti bergerak ke kiri.
-- Mengurangi bilangan negatif berarti bergerak ke kanan.
+## 5. Membaca perpindahan pada garis bilangan
 
-Contoh 1: $-3 + 5$
+Kita juga dapat memakai garis bilangan untuk menunjukkan gerakan atau perubahan posisi.
 
-Mulai dari $-3$, bergerak $5$ langkah ke kanan. Titik berakhir di $2$.
+- Bergerak **ke kanan** berarti posisi bertambah.
+- Bergerak **ke kiri** berarti posisi berkurang.
+- Titik awal **tidak harus 0**.
+
+**Contoh A: bergerak ke kanan**
+
+Mulai dari $-3$, lalu bergerak **5 langkah ke kanan**. Kita melewati $-2, -1, 0, 1$, dan berhenti di $2$.
 
 $$
 -3 + 5 = 2
 $$
 
-Contoh 2: $2 - 5$
+**Contoh B: bergerak ke kiri**
 
-Mulai dari $2$, bergerak $5$ langkah ke kiri. Titik berakhir di $-3$.
-
-$$
-2 - 5 = -3
-$$
-
-Contoh 3: $-2 + (-3)$
-
-Mulai dari $-2$, bergerak $3$ langkah ke kiri. Titik berakhir di $-5$.
+Mulai dari $2$, lalu bergerak **4 langkah ke kiri**. Kita melewati $1, 0, -1$, dan berhenti di $-2$.
 
 $$
--2 + (-3) = -5
+2 - 4 = -2
 $$
 
-Contoh 4: $1 - (-4)$
+Pada bagian ini, kita menggunakan penjumlahan dan pengurangan hanya untuk **membaca perubahan posisi**. Aturan operasi hitungnya akan dipelajari lebih lengkap pada materi berikutnya.
 
-Mengurangi bilangan negatif sama dengan bergerak ke kanan. Mulai dari $1$, bergerak $4$ langkah ke kanan. Titik berakhir di $5$.
+## 6. Coba di lab interaktif
 
-$$
-1 - (-4) = 1 + 4 = 5
-$$
-
-## 6. Menerapkan pada buku kas
-
-Dalam buku kas, pemasukan ditulis positif dan pengeluaran ditulis negatif.
-
-| Catatan | Jumlah (ribu rupiah) | Saldo (ribu rupiah) |
-|---|---:|---:|
-| Kas awal | $0$ | $0$ |
-| Iuran anggota | $+3$ | $3$ |
-| Donasi orang tua | $+2$ | $5$ |
-| Gorengan rapat | $-2$ | $3$ |
-| Spidol | $-1$ | $2$ |
-
-Cara membaca tabel:
-
-1. Mulai dari saldo awal $0$.
-2. Tambahkan setiap pemasukan.
-3. Kurangkan setiap pengeluaran.
-4. Periksa saldo akhir dengan menjumlahkan semua tanda.
-
-$$
-0 + 3 + 2 - 2 - 1 = 2
-$$
-
-Jadi saldo akhirnya $2$ ribu rupiah.
-
-Jarak dari catatan terkecil ke terbesar adalah dari $-2$ ke $3$:
-
-$$
-2 + 3 = 5
-$$
-
-Jadi rentang catatannya $5$ ribu rupiah.
-
-## 7. Coba di meja kerja
-
-Geser titik awal dan panjang langkah. Perhatikan arah gerak dan posisi akhir.
+Sekarang coba buktikan sendiri. Di dalam lab ada tiga tantangan. Atur titik awal dan perubahan, lalu periksa jawabanmu.
 
 <NumberLineLab />
 
-Mulai dari $-3$, lalu bergerak $5$ langkah ke kanan. Titik berakhir di $2$. Jika langkahnya $-4$, titik bergerak ke kiri dan berakhir di $-7$.
+## 7. Bilangan bulat dalam buku kas
+
+<img className="lessonIllustration" src="/img/lessons/g7-integers-number-line-02-masalah.webp" alt="Buku kas kelas dengan catatan pemasukan dan pengeluaran, kalkulator, serta struk" />
+
+Bayangkan kelasmu memiliki uang kas untuk membeli perlengkapan. Uang yang masuk disebut **pemasukan**, uang yang keluar disebut **pengeluaran**, dan sisa uangnya disebut **saldo**. Pemasukan dicatat dengan tanda positif $(+)$, sedangkan pengeluaran dicatat dengan tanda negatif $(-)$.
+
+Perhatikan contoh berikut. Semua angka dinyatakan dalam **rupiah**.
+
+| Kegiatan | Perubahan kas (rupiah) | Saldo (rupiah) |
+|---|---:|---:|
+| Saldo awal | $0$ | $0$ |
+| Iuran kelas | $+3.000$ | $3.000$ |
+| Donasi | $+2.000$ | $5.000$ |
+| Membeli gorengan | $-2.000$ | $3.000$ |
+| Membeli spidol | $-1.000$ | $2.000$ |
+
+Saldo awal adalah Rp0. Setelah menerima iuran Rp3.000 dan donasi Rp2.000, uang kas menjadi Rp5.000. Setelah membayar Rp2.000 dan Rp1.000, uang kas tersisa **Rp2.000**.
+
+$$
+0 + 3.000 + 2.000 - 2.000 - 1.000 = 2.000
+$$
+
+**Ingat:** Tanda negatif pada kolom *perubahan kas* berarti uang berkurang karena pengeluaran. Saldo akhir dibaca dari hasil seluruh pemasukan dan pengeluaran, bukan dari besar pengeluaran saja.
+
+<details className="thinkCard">
+<summary>
+
+**Coba pikirkan** Jika setelah itu kelas membeli penghapus seharga Rp1.000, berapa saldo akhirnya?
+
+</summary>
+
+**Jawaban:** Rp1.000.
+
+</details>
 
 ## 8. Kesalahan umum
 
-- Membaca tanda minus sebagai garis pemisah. Tanda minus menunjukkan arah ke kiri.
-- Menganggap $-10$ lebih besar daripada $-2$ karena angka 10 lebih besar. Posisi di garis bilangan yang menentukan.
-- Menganggap nilai mutlak sama dengan lawan bilangan. Nilai mutlak adalah jarak, lawan bilangan adalah arah yang berlawanan.
-- Menjumlahkan semua angka buku kas tanpa melihat tanda pemasukan dan pengeluaran.
-- Menganggap pengurangan bilangan negatif selalu membuat hasilnya lebih kecil. Mengurangi bilangan negatif sama dengan menambah.
+| Kesalahan | Cara memperbaikinya |
+|---|---|
+| Mengira $-8$ lebih besar daripada $-3$ karena 8 lebih besar daripada 3 | Lihat garis bilangan: $-8$ berada di sebelah kiri $-3$, jadi $-8 < -3$ |
+| Mengira nol adalah bilangan positif | Nol bukan positif dan bukan negatif |
+| Mengira tanda negatif selalu berarti instruksi bergerak ke kiri | Pada $-3$, tanda negatif menunjukkan jenis bilangannya; arah gerak ditentukan oleh instruksi perpindahan |
+| Mengabaikan tanda saat membaca buku kas | Bedakan pemasukan $(+)$ dan pengeluaran $(-)$ |
 
 ## 9. Ringkasan
 
-- Bilangan bulat terdiri atas bilangan negatif, nol, dan bilangan positif.
-- Nol adalah titik acuan pada garis bilangan.
-- Ke kanan berarti bertambah; ke kiri berarti berkurang.
-- Semakin ke kanan, nilai bilangan bulat semakin besar.
-- Lawan bilangan memiliki jarak yang sama dari nol, tetapi arahnya berlawanan.
-- Nilai mutlak adalah jarak bilangan dari nol dan selalu tidak negatif.
-- Penjumlahan dan pengurangan dapat dibaca sebagai perpindahan di garis bilangan.
-- Pemasukan dan pengeluaran pada buku kas dapat ditulis sebagai bilangan positif dan negatif.
+- Bilangan bulat mencakup bilangan negatif, nol, dan bilangan positif.
+- Bilangan bulat tidak memuat pecahan atau desimal.
+- Bilangan negatif kurang dari nol; bilangan positif lebih dari nol.
+- Pada garis bilangan, bilangan yang lebih ke kanan nilainya lebih besar.
+- Bilangan bulat dapat diurutkan dari kecil ke besar atau sebaliknya dengan bantuan garis bilangan.
+- Dalam perpindahan sederhana, bergerak ke kanan berarti bertambah, dan bergerak ke kiri berarti berkurang.
+- Dalam catatan kas, pemasukan dapat diberi tanda positif dan pengeluaran tanda negatif.
 
 ## 10. Latihan
+
+Kerjakan latihan berikut untuk memeriksa pemahamanmu tentang **bilangan bulat, garis bilangan, perbandingan, urutan, perpindahan, dan buku kas**.
 
 <QuizRunner quizId="integer-basics" />
 

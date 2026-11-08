@@ -34,6 +34,8 @@ Materi ini memuat konsep lengkap untuk subbab ini.
 
 Pada kartu resep, jumlah gula ditulis $\frac{3}{4}$ cangkir. Tulisan itu bukan dua angka terpisah. Tulisan itu satu nilai: tiga bagian dari cangkir yang dibagi empat sama besar.
 
+<img className="lessonIllustration" src="/img/lessons/g7-rational-between-01-objek.webp" alt="Gelas takar berisi tiga per empat gula, kartu resep, telur, dan tepung di atas meja" />
+
 - Angka bawah, yaitu $4$, adalah **penyebut**. Penyebut menyatakan cangkir dibagi menjadi berapa bagian.
 - Angka atas, yaitu $3$, adalah **pembilang**. Pembilang menyatakan berapa bagian yang dipakai.
 
@@ -53,6 +55,25 @@ $$
 0 < \frac{1}{4} < \frac{1}{2} < \frac{3}{4} < 1
 $$
 
+<figure className="conceptFigure">
+  <svg viewBox="0 0 640 150" role="img" aria-label="Garis bilangan dari nol sampai satu dengan pecahan seperempat, setengah, dan tiga per empat">
+    <line x1="50" y1="78" x2="590" y2="78" stroke="var(--c-ink)" strokeWidth="3"/>
+    <path d="M50 78l12-7v14z" fill="var(--c-ink)"/>
+    <path d="M590 78l-12-7v14z" fill="var(--c-ink)"/>
+    {[0, 1, 2, 3, 4].map(index => {
+      const x = 80 + index * 130;
+      const labels = ['0', '1/4', '1/2', '3/4', '1'];
+      return <g key={index}>
+        <line x1={x} y1="68" x2={x} y2="88" stroke="var(--c-ink)" strokeWidth="2"/>
+        <text x={x} y="116" textAnchor="middle" fontSize="16" fontWeight="700" fill={index === 2 ? 'var(--c-ocean)' : 'var(--c-muted)'}>{labels[index]}</text>
+      </g>;
+    })}
+    <circle cx="470" cy="78" r="8" fill="var(--c-teal)"/>
+    <text x="470" y="50" textAnchor="middle" fontSize="13" fill="var(--c-teal)" fontWeight="700">3/4</text>
+  </svg>
+  <figcaption>Tiga per empat berada di antara nol dan satu, lebih dekat ke satu.</figcaption>
+</figure>
+
 Jarak antara dua bilangan bulat tidak kosong. Di antara $3$ dan $4$ ada $3,1$, lalu $3,5$, lalu $3,75$. Cara cepatnya adalah mengambil nilai tengah.
 
 $$
@@ -64,6 +85,8 @@ Antara $3$ dan $3,5$ masih ada bilangan lain, misalnya $3,25$. Proses ini dapat 
 ## 3. Pecahan senilai
 
 Bagian cangkir dapat dipotong lebih kecil tanpa mengubah isinya. Potong setiap bagian menjadi dua, maka $\frac{3}{4}$ berganti nama menjadi $\frac{6}{8}$.
+
+Dua pecahan yang berbeda tulisan tetapi menunjuk nilai yang sama disebut **pecahan senilai**.
 
 $$
 \frac{3}{4}=\frac{3 \times 2}{4 \times 2}=\frac{6}{8}
@@ -78,6 +101,21 @@ $$
 Yang tidak boleh adalah menambah angka yang sama pada pembilang dan penyebut. $\frac{3+2}{4+2}=\frac{5}{6}$, bukan $\frac{3}{4}$.
 
 Pecahan senilai berguna untuk membandingkan. Untuk membandingkan $\frac{3}{4}$ dan $\frac{5}{8}$, ubah $\frac{3}{4}$ menjadi $\frac{6}{8}$.
+
+<figure className="conceptFigure">
+  <svg viewBox="0 0 640 190" role="img" aria-label="Tiga per empat dan enam per delapan menutup bagian yang sama">
+    <text x="20" y="28" fontSize="15" fontWeight="700" fill="var(--c-ocean)">3/4</text>
+    <rect x="20" y="42" width="600" height="42" rx="8" fill="var(--c-white)" stroke="var(--c-sky)" strokeWidth="2"/>
+    {[0, 1, 2].map(index => <rect key={`a-${index}`} x={20 + index * 150} y="42" width="150" height="42" fill="var(--c-teal)" opacity="0.75"/>)}
+    <line x1="170" y1="42" x2="170" y2="84" stroke="var(--c-white)" strokeWidth="3"/>
+    <line x1="320" y1="42" x2="320" y2="84" stroke="var(--c-white)" strokeWidth="3"/>
+    <line x1="470" y1="42" x2="470" y2="84" stroke="var(--c-white)" strokeWidth="3"/>
+    <text x="20" y="126" fontSize="15" fontWeight="700" fill="var(--c-ocean)">6/8</text>
+    <rect x="20" y="140" width="600" height="34" rx="8" fill="var(--c-white)" stroke="var(--c-sky)" strokeWidth="2"/>
+    {[0, 1, 2, 3, 4, 5].map(index => <rect key={`b-${index}`} x={20 + index * 75} y="140" width="75" height="34" fill="var(--c-aqua)" opacity="0.75"/>)}
+  </svg>
+  <figcaption>Bagian yang diwarnai sama panjang. Memotong tiap bagian menjadi dua mengubah nama pecahan, bukan nilainya.</figcaption>
+</figure>
 
 $$
 \frac{5}{8} < \frac{6}{8} \quad \text{sehingga} \quad \frac{5}{8} < \frac{3}{4}

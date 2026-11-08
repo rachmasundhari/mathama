@@ -55,7 +55,7 @@ export default function QuizRunner({quizId = 'algebra-basics'}: {quizId?: string
           <span className="optionLetter">{option.id.toUpperCase()}</span><span>{option.label}</span>
         </label>)}
       </div> : <label className="mathInputLabel">Jawabanmu
-        <input className="mathTextInput" type="text" inputMode="decimal" autoComplete="off" aria-label="Jawabanmu" placeholder="Contoh: 11 atau 3/4" disabled={checked} value={response} onChange={e=>setResponses(old=>({...old,[question.id]:e.target.value}))}/>
+        <input className="mathTextInput" type="text" inputMode="decimal" autoComplete="off" aria-label="Jawabanmu" placeholder="Contoh: 11 atau 3/4" disabled={checked} value={response} onChange={e=>setResponses(old=>({...old,[question.id]:e.target.value}))} onKeyDown={e=>{if(e.key==='Enter'){e.preventDefault();if(response.trim())setChecked(true);}}}/>
       </label>}
       {checked && <div className={`feedback ${isCorrect?'feedbackCorrect':'feedbackIncorrect'}`} role="status">
         <strong>{isCorrect ? '✓ Tepat sekali!' : '↗ Belum tepat, yuk pelajari pembahasannya.'}</strong>

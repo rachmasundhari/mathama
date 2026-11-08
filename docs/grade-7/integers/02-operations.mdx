@@ -4,7 +4,6 @@ sidebar_position: 2
 slug: /grade-7/integers/operations
 ---
 
-import NumberLineLab from '@site/src/components/NumberLineLab';
 import IntegerOpsLab from '@site/src/components/IntegerOpsLab';
 import LessonComplete from '@site/src/components/LessonComplete';
 import QuizRunner from '@site/src/components/QuizRunner';
@@ -15,22 +14,25 @@ import QuizRunner from '@site/src/components/QuizRunner';
 
 Materi ini memuat konsep lengkap untuk subbab ini. Cerita Bab 1 ada di akhir bab.
 
-**Tujuan belajar:** Menghitung penjumlahan, pengurangan, perkalian, pembagian, dan perpangkatan bilangan bulat dengan aturan tanda yang benar, serta memakainya untuk memeriksa catatan uang kas.
+**Tujuan belajar:** Menghitung penjumlahan, pengurangan, perkalian, dan pembagian bilangan bulat dengan aturan tanda yang benar, serta memakainya untuk memeriksa catatan uang kas.
 
-**Kata kunci:** penjumlahan, pengurangan, perkalian, pembagian, aturan tanda, lawan bilangan, urutan pengerjaan.
+**Kata kunci:** penjumlahan, pengurangan, perkalian, pembagian, aturan tanda, lawan bilangan.
 
 **Dalam materi ini:**
 
 1. Penjumlahan dan pengurangan
 2. Aturan tanda pada perkalian dan pembagian
-3. Perpangkatan dan urutan pengerjaan
-4. Contoh bertahap pada uang kas
-5. Lab
-6. Kesalahan umum
-7. Ringkasan
-8. Latihan
+3. Contoh bertahap pada uang kas
+4. Lab
+5. Kesalahan umum
+6. Ringkasan
+7. Latihan
 
-## 1. Penjumlahan dan pengurangan
+## 1. Dari catatan kas ke aturan tanda
+
+Buku kas mencatat iuran $+4$, donasi $+3$, gorengan $-2$, dan spidol $-1$. Jika semua angka dijumlah tanpa melihat tanda, hasilnya $10$. Setelah pengeluaran dihitung, saldonya $4$. Selisih $6$ ribu itu muncul karena tanda menunjukkan arah, bukan hiasan.
+
+<img className="lessonIllustration" src="/img/lessons/g7-integers-operations-01-objek.webp" alt="Buku kas terbuka dengan tanda plus dan minus, kalkulator, serta struk di atas meja" />
 
 Bilangan negatif menunjukkan arah yang berlawanan. Pada buku kas, pemasukan ditulis positif dan pengeluaran ditulis negatif. Pada garis bilangan, bilangan positif bergerak ke kanan dan bilangan negatif bergerak ke kiri.
 
@@ -69,6 +71,25 @@ $$
 5 - (-3) = 5 + 3 = 8
 $$
 
+<figure className="conceptFigure">
+  <svg viewBox="0 0 640 150" role="img" aria-label="Mengurangi negatif tiga sama dengan bergerak tiga langkah ke kanan dari lima ke delapan">
+    <line x1="60" y1="78" x2="580" y2="78" stroke="var(--c-ink)" strokeWidth="3"/>
+    <path d="M60 78l12-7v14z" fill="var(--c-ink)"/>
+    <path d="M580 78l-12-7v14z" fill="var(--c-ink)"/>
+    {[4, 5, 6, 7, 8, 9].map((value, index) => {
+      const x = 110 + index * 80;
+      return <g key={value}>
+        <line x1={x} y1="68" x2={x} y2="88" stroke="var(--c-ink)" strokeWidth="2"/>
+        <text x={x} y="116" textAnchor="middle" fontSize="16" fontWeight="700" fill={value === 5 || value === 8 ? 'var(--c-ocean)' : 'var(--c-muted)'}>{value}</text>
+      </g>;
+    })}
+    <path d="M190 48h240" stroke="var(--c-teal)" strokeWidth="4" strokeLinecap="round"/>
+    <path d="M430 48l-10-6v12z" fill="var(--c-teal)"/>
+    <text x="310" y="34" textAnchor="middle" fontSize="13" fill="var(--c-teal)" fontWeight="700">+3 langkah</text>
+  </svg>
+  <figcaption>Mengurangi $-3$ sama dengan menambah $3$. Dari $5$, titik bergerak ke kanan dan berakhir di $8$.</figcaption>
+</figure>
+
 Mengurangi bilangan negatif sama dengan menambah. Kalau catatan pengeluaran tiga ribu dihapus, saldo naik tiga ribu. Sebaliknya, menghapus catatan pemasukan tiga ribu berarti saldo turun tiga ribu.
 
 ## 2. Aturan tanda pada perkalian dan pembagian
@@ -81,6 +102,25 @@ Perkalian bilangan bulat mengikuti aturan tanda berikut.
 | positif $\times$ negatif | negatif | $4 \times (-3) = -12$ |
 | negatif $\times$ positif | negatif | $(-4) \times 3 = -12$ |
 | negatif $\times$ negatif | positif | $(-4) \times (-3) = 12$ |
+
+<figure className="conceptFigure">
+  <svg viewBox="0 0 640 190" role="img" aria-label="Aturan tanda perkalian dan pembagian: tanda sama menghasilkan positif, tanda berbeda menghasilkan negatif">
+    <rect x="15" y="20" width="140" height="120" rx="14" fill="var(--c-white)" stroke="var(--c-teal)" strokeWidth="2"/>
+    <text x="85" y="72" textAnchor="middle" fontSize="26" fontWeight="700" fill="var(--c-ocean)">+ × +</text>
+    <text x="85" y="112" textAnchor="middle" fontSize="30" fontWeight="800" fill="var(--c-teal)">+</text>
+    <rect x="170" y="20" width="140" height="120" rx="14" fill="var(--c-white)" stroke="var(--c-sky)" strokeWidth="2"/>
+    <text x="240" y="72" textAnchor="middle" fontSize="26" fontWeight="700" fill="var(--c-ocean)">+ × −</text>
+    <text x="240" y="112" textAnchor="middle" fontSize="30" fontWeight="800" fill="var(--c-ocean)">−</text>
+    <rect x="325" y="20" width="140" height="120" rx="14" fill="var(--c-white)" stroke="var(--c-sky)" strokeWidth="2"/>
+    <text x="395" y="72" textAnchor="middle" fontSize="26" fontWeight="700" fill="var(--c-ocean)">− × +</text>
+    <text x="395" y="112" textAnchor="middle" fontSize="30" fontWeight="800" fill="var(--c-ocean)">−</text>
+    <rect x="480" y="20" width="140" height="120" rx="14" fill="var(--c-white)" stroke="var(--c-teal)" strokeWidth="2"/>
+    <text x="550" y="72" textAnchor="middle" fontSize="26" fontWeight="700" fill="var(--c-ocean)">− × −</text>
+    <text x="550" y="112" textAnchor="middle" fontSize="30" fontWeight="800" fill="var(--c-teal)">+</text>
+    <text x="320" y="174" textAnchor="middle" fontSize="13" fill="var(--c-muted)">tanda sama: hasil positif · tanda berbeda: hasil negatif</text>
+  </svg>
+  <figcaption>Aturan yang sama berlaku untuk pembagian.</figcaption>
+</figure>
 
 Aturan ini dapat dilihat dari pola. Setiap kali pengalinya turun satu, hasilnya naik tiga.
 
@@ -106,42 +146,7 @@ $$
 
 Pembagian oleh nol tidak memiliki hasil. Bentuk $5 \div 0$ tidak terdefinisi.
 
-## 3. Perpangkatan dan urutan pengerjaan
-
-Perpangkatan adalah perkalian berulang. Pangkat ganjil pada bilangan negatif memberi hasil negatif. Pangkat genap memberi hasil positif.
-
-$$
-(-2)^3 = (-2) \times (-2) \times (-2) = -8
-$$
-
-$$
-(-2)^2 = (-2) \times (-2) = 4
-$$
-
-Saat satu hitungan memuat beberapa operasi, kerjakan dengan urutan berikut.
-
-1. Isi kurung.
-2. Perpangkatan dan akar.
-3. Perkalian dan pembagian, dari kiri ke kanan.
-4. Penjumlahan dan pengurangan, dari kiri ke kanan.
-
-Contoh:
-
-$$
-3 + 2 \times (-4) - (-6) \div 3
-$$
-
-Kerjakan perkalian dan pembagian lebih dulu.
-
-$$
-= 3 + (-8) - (-2)
-$$
-
-$$
-= 3 - 8 + 2 = -3
-$$
-
-## 4. Contoh bertahap pada uang kas
+## 3. Contoh bertahap pada uang kas
 
 Perhatikan catatan uang kas kelas berikut. Semua jumlah dalam ribu rupiah.
 
@@ -178,7 +183,7 @@ $$
 2 - (-1) = 2 + 1 = 3
 $$
 
-## 5. Lab
+## 4. Lab
 
 Pilih operasi, lalu geser kedua bilangan. Perhatikan kapan hasilnya berubah tanda.
 
@@ -186,33 +191,23 @@ Pilih operasi, lalu geser kedua bilangan. Perhatikan kapan hasilnya berubah tand
 
 Mula-mula layar menunjukkan $(-6) \times 4 = -24$. Geser bilangan kedua ke $-4$, maka hasilnya menjadi $24$. Ganti operasi menjadi tambah. $(-6) + 4 = -2$, sedangkan $(-6) + (-4) = -10$. Pada penjumlahan, tanda mengikuti arah gerak di garis bilangan. Pada perkalian, dua tanda negatif menghasilkan positif.
 
-Garis bilangan membantu membaca pengurangan sebagai perpindahan. Mengurangi bilangan positif berarti bergerak ke kiri. Mengurangi bilangan negatif berarti bergerak ke kanan.
-
-<NumberLineLab />
-
-Mulai dari $-4$, lalu bergerak $4$ langkah ke kanan. Titik berakhir di $0$, yaitu titik acuan kas. Mengurangi bilangan negatif bergerak ke kanan, bukan ke kiri.
-
-## 6. Kesalahan umum
+## 5. Kesalahan umum
 
 - Menerapkan aturan tanda perkalian pada penjumlahan. $(-4) + (-3) = -7$, bukan $7$.
 - Menghapus dua tanda minus tanpa mengubah operasinya. $5 - (-3) = 8$, bukan $2$.
 - Menganggap pengurangan selalu membuat hasil lebih kecil. Mengurangi bilangan negatif menambah nilai.
-- Menghitung dari kiri ke kanan tanpa mendahulukan perkalian atau pembagian.
-- Menganggap pangkat genap pada bilangan negatif menghasilkan bilangan negatif. $(-2)^2 = 4$.
 - Menulis hasil pembagian oleh nol. Pembagian oleh nol tidak terdefinisi.
 - Menjumlahkan semua angka pada buku kas tanpa melihat tanda pemasukan dan pengeluaran.
 
-## 7. Ringkasan
+## 6. Ringkasan
 
 - Penjumlahan dengan tanda sama memakai tanda bersama. Penjumlahan dengan tanda berbeda memakai tanda bilangan yang nilainya lebih besar.
 - Pengurangan adalah penjumlahan dengan lawan bilangan.
 - Perkalian dan pembagian dengan tanda sama menghasilkan positif.
 - Perkalian dan pembagian dengan tanda berbeda menghasilkan negatif.
-- Pangkat ganjil pada bilangan negatif memberi hasil negatif. Pangkat genap memberi hasil positif.
-- Urutan pengerjaan: kurung, pangkat, perkalian dan pembagian, lalu penjumlahan dan pengurangan.
 - Buku kas memakai bilangan positif untuk pemasukan dan bilangan negatif untuk pengeluaran.
 
-## 8. Latihan
+## 7. Latihan
 
 <QuizRunner quizId="integer-operations" />
 

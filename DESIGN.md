@@ -83,22 +83,25 @@ text uses none.
 | Role | Size | Weight | Line height | Tracking |
 |---|---|---|---|---|
 | Hero h1 | `clamp(44px, 4.2vw, 58px)` | 850 | 1.08 | -0.075em |
-| Page h1 | `clamp(34px, 3.4vw, 48px)` | 850 | 1.12 | -0.05em |
-| Section h2 | `clamp(29px, 3vw, 42px)` | 830 | 1.1 | -0.04em |
-| Lesson h2 | 29px | 830 | 1.2 | -0.045em |
-| Card h3 | 20–22px | 800 | 1.25 | -0.035em |
-| Body | 16px | 400 | 1.8 | 0 |
-| Body small | 14px | 400 | 1.7 | 0 |
-| Label / eyebrow | 10–11px | 850 | 1.4 | 0.1em, uppercase |
-| Metadata | 12px | 500 | 1.6 | 0 |
+| Page h1 | `clamp(32px, 3vw, 42px)` | 850 | 1.14 | -0.045em |
+| Section h2 | 27px | 830 | 1.2 | -0.03em |
+| Card h3 | 22px | 800 | 1.3 | -0.02em |
+| Body | 15px | 400 | 1.8 | 0 |
+| UI text | 14px | 400 | 1.7 | 0 |
+| Metadata | 13px | 500 | 1.6 | 0 |
+| Caption | 12px | 500 | 1.6 | 0 |
+| Label / eyebrow | 11px | 850 | 1.4 | 0.1em, uppercase |
+| Big number | 30px | 750 | 1.2 | -0.02em |
+
+The scale lives in `design/tokens.json` and generates the `--type-*` variables.
+Use those variables in components. Do not add a new font size for one element.
 
 Rules:
 
-- Reading text never goes below 16px. Any 12–13px text in a lab or card is
-  supporting detail, not the main explanation.
-- Body line length stays at 65–75 characters on desktop. Hero paragraphs cap
-  at 455px; the docs article column caps at 74ch so lesson prose keeps the
-  same measure beside the table of contents.
+- Reading text is 15px. Any 13px text in a lab or card is supporting detail,
+  not the main explanation.
+- Body line length stays comfortable on desktop. Hero paragraphs cap
+  at 455px; the docs article column caps at 880px including 24px side padding.
 - Heading levels never skip. A card title is `h3` only when an `h2` precedes it
   in the same region.
 - Numerals shown as data use `clamp()` at display scale and stay attached to
@@ -149,6 +152,9 @@ oversized radii on small controls.
 | Card lift | 200ms | ease |
 | Image scale | 350ms | ease |
 | Progress bar | 200ms | ease |
+| Marble pop, value flip | 420–450ms | `cubic-bezier(.16,1,.3,1)` |
+| Hero entrance | 580–720ms | `cubic-bezier(.16,1,.3,1)` |
+| Ambient loop | 6–24s | ease-in-out, alternate |
 | Page-level scroll | browser default | smooth, disabled by reduced motion |
 
 Rules:
@@ -159,8 +165,36 @@ Rules:
 - Every animation is disabled under `prefers-reduced-motion: reduce`. The
   global override at the end of `custom.css` handles most cases; the palette
   horizon waves need it explicitly.
-- Motion explains a state change. Decorative idle animation is limited to the
-  horizon sample on `/palette`.
+- Motion explains a state change. Decorative idle motion stays in three approved
+  places: the horizon sample on `/palette`, the home hero, and the chapter card
+  symbols on the home page. A symbol sits straight, then wobbles under 2.5°.
+  The wobble is two sine waves at unrelated periods summed in `rotate`, run
+  linearly, so it never stops at a pivot. Fixed keyframes always pause at each
+  stop, which reads as ticking. Do not promote the symbol to its own layer with
+  `will-change`: a rotated text layer resamples glyphs and shimmers, while
+  re-rasterised text stays clean. The wobble stops under the pointer and focus.
+
+### 6.1 Home hero
+
+The hero is the one authored motion sequence on the site. It carries the
+product idea: a variable changes, and the picture and the equation change with
+it.
+
+- The lab demo may run by itself, one value step every 2.6s. It pauses when the
+  demo leaves the viewport, stops for good once the visitor touches the slider
+  or focuses it, and never starts under reduced motion. A value never changes
+  under the visitor's hand.
+- Entrance is choreographed once: copy children rise in order (580ms, 70ms
+  apart), the demo settles its tilt (720ms), the notes arrive last. No element
+  waits longer than 900ms, and the page stays readable if animations do not run.
+- Each marble and the equation result acknowledge the new value (420–450ms).
+  This is feedback, not decoration.
+- Ambient loops (floating notes, spotlight boxes, hero aura) run 6–24s and are
+  never the only cue for a state. The spotlight boxes bob and share the symbol
+  noise sets, on their own delays. The demo card itself stays still: it holds a
+  slider, and the value must not move under the visitor's hand.
+- Use the separate `translate` and `scale` properties for idle loops so they do
+  not fight a `transform` that carries a static rotation.
 
 ## 7. Components
 

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
-import {coreColors} from '../design/tokens.generated';
+import {coreColors, designTokens} from '../design/tokens.generated';
 import '../css/palette.css';
 
 type Swatch = {name: string; hex: string; role: string; note: string; dark?: boolean};
@@ -26,6 +26,23 @@ const groups = [
   {title: 'Laut & langit', colors: ['#A7D8CD', '#62C4C3', '#7EC6C9', '#1A9DB5', '#0F6B8F', '#0A4F6B'], note: 'Dari air dangkal sampai laut dalam.'},
   {title: 'Tinta', colors: ['#173A46', '#5F747B', '#86979C'], note: 'Teks dan metadata.'},
 ];
+
+const typeLabels: Record<string, string> = {
+  hero: 'Hero',
+  page: 'Judul halaman',
+  section: 'Judul bagian',
+  cardTitle: 'Judul kartu',
+  body: 'Teks bacaan',
+  bodySmall: 'Teks UI',
+  metadata: 'Metadata',
+  caption: 'Caption',
+  label: 'Label',
+  number: 'Angka besar',
+};
+
+const typeScale = Object.entries(designTokens.typography)
+  .filter(([, value]) => typeof value === 'object')
+  .map(([key, value]) => [key, value as {size: string; weight: number; lineHeight: number; tracking: string}] as [string, {size: string; weight: number; lineHeight: number; tracking: string}]);
 
 function SwatchCard({swatch, onCopy}: {swatch: Swatch; onCopy: (hex: string) => void}) {
   return <button type="button" className="swatch" onClick={() => onCopy(swatch.hex)} title={`Salin ${swatch.hex}`}>
@@ -118,6 +135,22 @@ export default function Palette(): React.ReactNode {
             <p>Header memakai langit pucat. Isi memakai putih. Laut dan toska muncul di tombol serta data, bukan di seluruh halaman.</p>
             <div className="paletteNote" style={{background: '#FFFFFF'}}>Putih membuat halaman terasa lapang. Biru dan toska memberi kedalaman tanpa menghangatkan layar.</div>
           </div>
+        </div>
+      </section>
+
+      <section className="paletteSection">
+        <h2>Tipografi</h2>
+        <p>Satu skala untuk seluruh halaman. Ukuran, ketebalan, dan jarak baris diambil dari <code>design/tokens.json</code>, bukan ditulis per komponen.</p>
+        <div className="typeScale">
+          {typeScale.map(([key, value]) => <div className="typeRow" key={key}>
+            <div className="typeMeta">
+              <strong>{typeLabels[key] ?? key}</strong>
+              <code>{value.size} · {value.weight} · {value.lineHeight}</code>
+            </div>
+            <p className="typeSample" style={{fontSize: value.size, fontWeight: value.weight, lineHeight: value.lineHeight, letterSpacing: value.tracking, textTransform: key === 'label' ? 'uppercase' : undefined}}>
+              {key === 'hero' || key === 'page' || key === 'section' ? 'Bilangan bulat.' : 'Bilangan bulat dipakai untuk mencatat suhu di bawah nol.'}
+            </p>
+          </div>)}
         </div>
       </section>
 

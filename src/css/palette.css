@@ -78,3 +78,12 @@
   .paletteRow,.paletteUsage {grid-template-columns:1fr;}
   .swatchColor {height:92px;}
 }
+
+.typeScale {border:1px solid var(--c-sky);border-radius:18px;background:var(--c-white);overflow:hidden;}
+.typeRow {display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:baseline;padding:18px 22px;border-top:1px solid var(--c-sky);}
+.typeRow:first-child {border-top:0;}
+.typeMeta {display:flex;flex-direction:column;gap:4px;}
+.typeMeta strong {font-size:var(--type-metadata-size);font-weight:750;color:var(--c-ocean);}
+.typeMeta code {font-size:11px;color:var(--c-slate);}
+.typeSample {margin:0;color:var(--c-ink);text-wrap:balance;}
+@media (max-width:640px) {.typeRow {grid-template-columns:1fr;gap:8px;padding:16px 18px;}}
